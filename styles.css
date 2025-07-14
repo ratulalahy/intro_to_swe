@@ -1,5 +1,6 @@
 /* Custom styles following MyST documentation */
 /* https://mystmd.org/guide/website-style */
+/* Version: Clean - No red background or diagnostic styles */
 
 /* Purple gradient headers - elegant and professional */
 h1, h2, h3, h4, h5, h6 {
@@ -13,17 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Fallback for browsers that don't support background-clip */
 @supports not (background-clip: text) {
   h1, h2, h3, h4, h5, h6 {
-    color: #6366f1 !important;
-    background: none !important;
-    -webkit-text-fill-color: initial !important;
-  }
-}
-
-/* Fallback for browsers that don't support background-clip */
-@supports not (background-clip: text) {
-  main h1, main h2, main h3, main h4, main h5, main h6,
-  article h1, article h2, article h3, article h4, article h5, article h6,
-  .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
     color: #6366f1 !important;
     background: none !important;
     -webkit-text-fill-color: initial !important;
