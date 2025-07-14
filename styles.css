@@ -1,27 +1,22 @@
 /* Custom styles following MyST documentation */
 /* https://mystmd.org/guide/website-style */
 
-/* Test if CSS is loading - should see red background */
-body { 
-  background-color: red !important; 
-}
-
-/* Purple gradient headers - trying different selectors */
+/* Purple gradient headers - elegant and professional */
 h1, h2, h3, h4, h5, h6 {
-  color: #6366f1 !important;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
   font-weight: 700 !important;
 }
 
-/* Also try with MyST specific classes */
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-  color: #8b5cf6 !important;
-  font-weight: 700 !important;
-}
-
-/* Try article wrapper */
-article h1, article h2, article h3, article h4, article h5, article h6 {
-  color: #a855f7 !important;
-  font-weight: 700 !important;
+/* Fallback for browsers that don't support background-clip */
+@supports not (background-clip: text) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #6366f1 !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+  }
 }
 
 /* Fallback for browsers that don't support background-clip */
