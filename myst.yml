@@ -1,0 +1,47 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 1b8151fc-4bba-4ebc-a448-0381e2e0c09d
+  title: Introduction to Software Engineering
+  description: A comprehensive course covering fundamental software engineering principles, practices, and methodologies
+  keywords: 
+    - software engineering
+    - programming
+    - development
+    - agile
+    - testing
+    - design patterns
+  authors:
+    - name: Dr. Qratul Alahy
+      email: qratul@uvu.edu
+      affiliation: Utah Valley University
+  github: https://github.com/ratulalahy/intro_to_swe
+  license: CC-BY-4.0
+  
+site:
+  template: book-theme
+  title: Introduction to Software Engineering
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
+  nav:
+    - title: Home
+      url: /
+    - title: Lectures
+      url: /lectures
+    - title: Assignments
+      url: /assignments
+    - title: Projects
+      url: /projects
+    - title: Resources
+      url: /resources
+  options:
+    logo_text: SWE Course
+    repository_url: https://github.com/ratulalahy/intro_to_swe
+    repository_branch: main
+    use_repository_button: true
+    use_issues_button: true
+    use_edit_page_button: true
+    analytics_google: # Add your Google Analytics ID
+  actions:
+    - title: View on GitHub
+      url: https://github.com/ratulalahy/intro_to_swe
