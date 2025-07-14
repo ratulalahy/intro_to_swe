@@ -206,13 +206,9 @@ Permanent project history
 ## **Hands-On Exercise: Your First Repository**
 
 ```{admonition} Let's Code Together!
-:class: important icon-code
-
-**Time to get your hands dirty!** Follow along as we create your first Git repository step by step.
-```
 :class: important
 
-Follow along as we create your first Git repository. Open your terminal and let's go!
+**Time to get your hands dirty!** Follow along as we create your first Git repository step by step. Open your terminal and let's go!
 ```
 
 ### Step 1: Initial Setup
@@ -230,10 +226,6 @@ git config --list
 ```
 
 ```{admonition} Pro Tip
-:class: tip icon-tip
-
-Use descriptive commit messages! Future you (and your teammates) will thank you when trying to understand what changed.
-```
 :class: tip
 
 Use the same email address you'll use for GitHub to link your commits to your GitHub profile!
@@ -392,7 +384,6 @@ git push origin --delete feature/old-feature
 ::::{grid} 2
 
 :::{grid-item-card} **Issues & Project Management**
- text-white
 
 - Bug tracking
 - Feature requests  
@@ -400,7 +391,7 @@ git push origin --delete feature/old-feature
 - Milestone planning
 
 ```{code-block} markdown
-:caption: Sample Issue Template
+:caption: Bug Report Template
 
 ## Bug Report
 
@@ -418,7 +409,6 @@ git push origin --delete feature/old-feature
 :::
 
 :::{grid-item-card} **Pull Requests**
- text-white
 
 - Code review process
 - Discussion threads
@@ -426,7 +416,7 @@ git push origin --delete feature/old-feature
 - Merge management
 
 ```{code-block} markdown
-:caption: Sample PR Template
+:caption: Pull Request Template
 
 ## Changes Made
 - [ ] Added login functionality
@@ -467,6 +457,9 @@ git push origin --delete feature/old-feature
 ### The GitHub Flow
 
 ```{mermaid}
+:align: center
+:caption: GitHub Workflow
+
 graph TD
     A[Create Branch] --> B[Make Changes]
     B --> C[Create Pull Request]
@@ -678,7 +671,7 @@ D) All of the above (depending on workflow)
 ### GitHub Actions (CI/CD Preview)
 
 ```{code-block} yaml
-:caption: Simple GitHub Actions workflow
+:caption: GitHub Actions Workflow
 :linenos:
 
 name: Test and Deploy
@@ -830,27 +823,27 @@ git branch -d <name>      # Delete branch
 ```{admonition} 🏁 What You've Learned Today
 :class: success
 
-✅ **Version Control Fundamentals**
-- Why version control is essential for software development
-- The difference between Git and GitHub
+✅ **Version Control Fundamentals**  
+- Why version control is essential for software development  
+- The difference between Git and GitHub  
 
-✅ **Git Basics**
-- Essential Git commands and workflows
-- The three trees: Working Directory, Staging Area, Repository
+✅ **Git Basics**  
+- Essential Git commands and workflows  
+- The three trees: Working Directory, Staging Area, Repository  
 
-✅ **Branching Strategies**
-- How to create, switch, and merge branches
-- Best practices for branch naming and management
+✅ **Branching Strategies**  
+- How to create, switch, and merge branches  
+- Best practices for branch naming and management  
 
-✅ **GitHub Collaboration**
-- Pull Request workflow
-- Code review process
-- Project management features
+✅ **GitHub Collaboration**  
+- Pull Request workflow  
+- Code review process  
+- Project management features  
 
-✅ **Real-World Skills**
-- Handling merge conflicts
-- Writing good commit messages
-- Using GitHub for team collaboration
+✅ **Real-World Skills**  
+- Handling merge conflicts  
+- Writing good commit messages  
+- Using GitHub for team collaboration  
 ```
 
 ## 🔜 Coming Up Next
