@@ -132,6 +132,7 @@ timeline
 - Git basics: repositories, commits, branches
 - GitHub collaboration: remote repos, pull requests
 - **Project:** GitHub repo setup, initial commit
+- 🎭 **[Interactive Presentation](slides/02-version-control/README.md)** - Premium Slidev presentation
 :::
 
 :::{tab-item} **Weeks 3-6: Agile & Requirements**

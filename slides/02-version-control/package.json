@@ -1,0 +1,57 @@
+{
+  "name": "git-version-control-presentation",
+  "version": "1.0.0",
+  "description": "Interactive Slidev presentation for Git and Version Control with GitHub",
+  "type": "module",
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev",
+    "export": "slidev export",
+    "preview": "slidev --remote"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.48.0",
+    "@slidev/theme-default": "latest"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.25",
+    "@iconify-json/logos": "^1.1.42",
+    "@iconify-json/mdi": "^1.1.58",
+    "playwright-chromium": "^1.40.0"
+  },
+  "slidev": {
+    "theme": "default",
+    "highlighter": "shiki",
+    "lineNumbers": false,
+    "colorSchema": "auto",
+    "routerMode": "hash",
+    "aspectRatio": "16/9",
+    "canvasWidth": 980,
+    "exportFormat": "pdf",
+    "export": {
+      "format": "pdf",
+      "timeout": 30000,
+      "dark": false,
+      "withClicks": false,
+      "withToc": false
+    }
+  },
+  "keywords": [
+    "git",
+    "github",
+    "version-control",
+    "presentation",
+    "slidev",
+    "education",
+    "software-engineering"
+  ],
+  "author": "Qratul Alahy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ratulalahy/intro_to_swe.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
