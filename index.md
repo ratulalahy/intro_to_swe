@@ -27,7 +27,7 @@ keywords:
 
 This course provides a comprehensive introduction to software engineering principles, methodologies, and best practices. Students will learn essential skills for developing high-quality software systems in team environments using Agile/Scrum methodologies.
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 By the end of this course, students will be able to:
 
@@ -38,7 +38,7 @@ By the end of this course, students will be able to:
 - Write comprehensive tests and maintain code quality
 - Work effectively in collaborative development teams
 
-## 📅 14-Week Course Journey
+##  14-Week Course Journey
 
 Our course follows a structured learning path with hands-on project development using 2-week Scrum sprints:
 
@@ -74,7 +74,7 @@ gantt
     Review & Agile Practice      :review, 13, 14
 ```
 
-### 🚀 Project Timeline with Scrum Sprints
+###  Project Timeline with Scrum Sprints
 
 ```{mermaid}
 timeline
@@ -116,7 +116,7 @@ timeline
             : Team Retrospectives
 ```
 
-## 📚 Weekly Course Breakdown
+##  Weekly Course Breakdown
 
 ::::{tab-set}
 
@@ -128,7 +128,7 @@ timeline
 - Historical context & software engineering vs programming
 - **Project:** Team formation, brainstorm ideas
 
-**Week 2: Version Control with Git & GitHub** ⭐
+**Week 2: Version Control with Git & GitHub** 
 - Git basics: repositories, commits, branches
 - GitHub collaboration: remote repos, pull requests
 - **Project:** GitHub repo setup, initial commit
@@ -138,13 +138,13 @@ timeline
 :::{tab-item} **Weeks 3-6: Agile & Requirements**
 :sync: agile
 
-**Weeks 3-4: SDLC & Agile Scrum** ⭐
+**Weeks 3-4: SDLC & Agile Scrum** 
 - SDLC models: Waterfall vs Agile
 - Scrum framework: roles, ceremonies, artifacts
 - Zenhub project management setup
 - **Milestone 1 (Week 3):** Product Backlog & SRS Draft
 
-**Weeks 5-6: Requirements Engineering** ⭐
+**Weeks 5-6: Requirements Engineering** 
 - Stakeholder analysis & user stories
 - Functional/non-functional requirements
 - UML diagrams: class, use case, sequence
@@ -159,11 +159,11 @@ timeline
 - Software architectures: Layered, MVC
 - **Milestone 3 (Week 7):** Wireframes & UML Diagrams
 
-**Week 8: Design Principles** ⭐
+**Week 8: Design Principles** 
 - Conceptual integrity, information hiding
 - Cohesion, coupling, SOLID principles
 
-**Weeks 9-10: Design Patterns** ⭐
+**Weeks 9-10: Design Patterns** 
 - Essential patterns: Factory, Singleton, Observer
 - Strategy, Adapter patterns
 - **Milestone 4 (Week 9):** Implementation with Patterns
@@ -172,7 +172,7 @@ timeline
 :::{tab-item} **Weeks 11-14: Quality & Wrap-up**
 :sync: quality
 
-**Week 11: Testing** ⭐
+**Week 11: Testing** 
 - Unit testing & integration testing
 - Test-Driven Development (TDD)
 - **Milestone 5 (Week 11):** Final Project with Tests 🏁
@@ -192,7 +192,7 @@ timeline
 
 ::::
 
-## 🏆 Project Milestones & Deliverables
+##  Project Milestones & Deliverables
 
 ::::{grid} 1 1 2 3
 
@@ -234,7 +234,7 @@ timeline
 
 ::::
 
-## 🎯 Scrum Framework Integration
+##  Scrum Framework Integration
 
 Our project follows authentic Scrum practices:
 
@@ -253,7 +253,7 @@ Our project follows authentic Scrum practices:
 - **Retrospectives:** Post-milestone reflection
 :::
 
-:::{grid-item-card} 📊 **Scrum Artifacts**
+:::{grid-item-card}  **Scrum Artifacts**
 - **Product Backlog:** Maintained throughout course
 - **Sprint Backlog:** Updated each milestone
 - **Increment:** Working software each sprint
@@ -261,7 +261,7 @@ Our project follows authentic Scrum practices:
 
 ::::
 
-## 🔗 Course Navigation
+##  Course Navigation
 
 ::::{grid} 2
 
@@ -280,16 +280,16 @@ Individual coding tasks and analysis exercises
 Team-based Scrum project development
 :::
 
-:::{grid-item-card} 📚 **Resources**
+:::{grid-item-card}  **Resources**
 :link: resources
 Setup guides, tools, and additional materials
 :::
 
 ::::
 
-## ⭐ Key Course Highlights
+##  Key Course Highlights
 
-```{admonition} What Makes This Course Special 🚀
+```{admonition} What Makes This Course Special 
 :class: tip
 
 ✅ **Real Scrum Experience:** Authentic 2-week sprints with proper ceremonies and artifacts
@@ -305,6 +305,6 @@ Setup guides, tools, and additional materials
 
 ---
 
-*Ready to become a software engineering professional? Let's build something amazing together!* 🚀
+*Ready to become a software engineering professional? Let's build something amazing together!* 
 
 **Start Here:** [Introduction to Software Engineering →](lectures/01-introduction/index.md)

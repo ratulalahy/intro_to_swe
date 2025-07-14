@@ -60,7 +60,7 @@ layout: center
 class: text-center
 ---
 
-# Learning Objectives 🎯
+# Learning Objectives 
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 
@@ -111,7 +111,7 @@ background: https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&h=1
 <div>
 <h3 class="text-green-600 font-bold mb-4">With Git:</h3>
 <ul class="text-lg space-y-2">
-<li>📚 Complete history of all changes</li>
+<li> Complete history of all changes</li>
 <li>👥 Multiple developers working simultaneously</li>
 <li>🌿 Safe experimentation with branches</li>
 <li>⏪ Easy rollback to any version</li>
@@ -158,7 +158,7 @@ image: https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=800&h=600&fit
 layout: center
 ---
 
-# Real-World Impact 🌍
+# Real-World Impact 
 
 <div class="grid grid-cols-3 gap-6 mt-8">
 
@@ -175,7 +175,7 @@ layout: center
 </div>
 
 <div class="text-center">
-<div class="text-6xl mb-4">🚀</div>
+<div class="text-6xl mb-4"></div>
 <h3 class="font-bold text-xl mb-2">Netflix</h3>
 <p class="text-sm">Deploys 1000+ times per day<br>Thanks to Git workflows</p>
 </div>
@@ -219,7 +219,7 @@ layout: center
 </div>
 
 <div class="bg-gradient-to-b from-green-400 to-green-600 rounded-lg p-6 text-white text-center">
-<div class="text-4xl mb-4">🏛️</div>
+<div class="text-4xl mb-4"></div>
 <h3 class="font-bold text-xl mb-2">Repository</h3>
 <p class="text-sm">Permanent project history</p>
 <ul class="text-xs mt-2 space-y-1">
@@ -306,7 +306,7 @@ class: text-center
 </div>
 
 <div class="mt-8">
-<p class="text-xl">Open your terminal and follow along! 🚀</p>
+<p class="text-xl">Open your terminal and follow along! </p>
 </div>
 
 ---
@@ -324,7 +324,7 @@ layout: two-cols
 </div>
 
 <div class="mt-6 p-4 bg-blue-100 rounded">
-<h4 class="font-bold text-blue-800">💡 Pro Tip</h4>
+<h4 class="font-bold text-blue-800"> Pro Tip</h4>
 <p class="text-blue-700 text-sm">Use the same email you'll use for GitHub to link your commits to your profile!</p>
 </div>
 
@@ -351,7 +351,7 @@ layout: two-cols
 layout: center
 ---
 
-# Step 3: Your First Commit 🎉
+# Step 3: Your First Commit 
 
 <div class="bg-gray-900 rounded-lg p-6 text-green-400 font-mono max-w-4xl mx-auto">
 <div class="text-gray-500"># Create a README file</div>
@@ -459,7 +459,7 @@ layout: center
 background: https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1920&h=1080&fit=crop
 ---
 
-# GitHub: Collaboration Supercharged 🚀
+# GitHub: Collaboration Supercharged 
 
 <div class="bg-black bg-opacity-70 rounded-lg p-8 mx-auto max-w-4xl text-white">
 
@@ -471,7 +471,7 @@ background: https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1920&h=1
 <li>☁️ Remote repository hosting</li>
 <li>👥 Team collaboration tools</li>
 <li>📋 Issue tracking</li>
-<li>📊 Project management</li>
+<li> Project management</li>
 <li>🔄 Pull requests & code review</li>
 <li>🤖 GitHub Actions (CI/CD)</li>
 </ul>
@@ -480,10 +480,10 @@ background: https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1920&h=1
 <div>
 <h3 class="text-2xl font-bold mb-4 text-green-300">🌟 Why GitHub?</h3>
 <ul class="space-y-2 text-lg">
-<li>🌍 65+ million developers</li>
-<li>📚 200+ million repositories</li>
+<li> 65+ million developers</li>
+<li> 200+ million repositories</li>
 <li>🏢 Used by every major company</li>
-<li>🚀 Powers open source</li>
+<li> Powers open source</li>
 <li>💼 Industry standard</li>
 <li>🎓 Great for portfolios</li>
 </ul>
@@ -533,7 +533,7 @@ graph TD
 <p class="font-semibold">Review</p>
 </div>
 <div>
-<div class="text-3xl mb-2">🚀</div>
+<div class="text-3xl mb-2"></div>
 <p class="font-semibold">Deploy</p>
 </div>
 </div>
@@ -610,7 +610,7 @@ layout: center
 </ol>
 
 <div class="mt-4 p-3 bg-blue-100 rounded">
-<p class="text-blue-800 text-sm font-semibold">💡 Pro Tip: Communicate with your team to avoid conflicts!</p>
+<p class="text-blue-800 text-sm font-semibold"> Pro Tip: Communicate with your team to avoid conflicts!</p>
 </div>
 </div>
 
@@ -620,7 +620,7 @@ layout: center
 layout: center
 ---
 
-# Git Best Practices 🏆
+# Git Best Practices 
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 
@@ -659,7 +659,7 @@ layout: center
 <div class="max-w-4xl mx-auto">
 
 <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg p-6 mb-8">
-<h3 class="text-xl font-bold mb-4">🎯 Perfect Commit Message Format</h3>
+<h3 class="text-xl font-bold mb-4"> Perfect Commit Message Format</h3>
 <div class="bg-black rounded p-4 font-mono">
 <div class="text-yellow-400">type(scope): short description</div>
 <div class="text-gray-400 mt-2">
@@ -731,7 +731,7 @@ git stash push -m "WIP"
 </div>
 
 <div class="mt-8 text-center">
-<p class="text-lg font-semibold">Master these for next-level Git proficiency! 🚀</p>
+<p class="text-lg font-semibold">Master these for next-level Git proficiency! </p>
 </div>
 
 ---
@@ -795,7 +795,7 @@ layout: center
 </div>
 
 <div class="mt-8 text-center">
-<p class="text-xl font-bold">🎉 Great job! You're becoming a Git expert!</p>
+<p class="text-xl font-bold"> Great job! You're becoming a Git expert!</p>
 </div>
 
 </div>
@@ -804,7 +804,7 @@ layout: center
 layout: center
 ---
 
-# Hands-On Challenges 🏆
+# Hands-On Challenges 
 
 <div class="grid grid-cols-3 gap-6 mt-8">
 
@@ -853,25 +853,25 @@ layout: center
 layout: center
 ---
 
-# Essential Resources 📚
+# Essential Resources 
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 
 <div class="bg-blue-100 rounded-lg p-6">
 <h3 class="text-blue-800 font-bold text-xl mb-4">📖 Documentation</h3>
 <ul class="text-blue-700 space-y-2">
-<li><a href="https://git-scm.com/doc" class="hover:underline">🔗 Git Official Documentation</a></li>
-<li><a href="https://guides.github.com/" class="hover:underline">🔗 GitHub Guides</a></li>
-<li><a href="https://www.atlassian.com/git/tutorials" class="hover:underline">🔗 Atlassian Git Tutorials</a></li>
+<li><a href="https://git-scm.com/doc" class="hover:underline"> Git Official Documentation</a></li>
+<li><a href="https://guides.github.com/" class="hover:underline"> GitHub Guides</a></li>
+<li><a href="https://www.atlassian.com/git/tutorials" class="hover:underline"> Atlassian Git Tutorials</a></li>
 </ul>
 </div>
 
 <div class="bg-purple-100 rounded-lg p-6">
 <h3 class="text-purple-800 font-bold text-xl mb-4">🎮 Interactive Learning</h3>
 <ul class="text-purple-700 space-y-2">
-<li><a href="https://learngitbranching.js.org/" class="hover:underline">🔗 Learn Git Branching</a></li>
-<li><a href="https://lab.github.com/" class="hover:underline">🔗 GitHub Learning Lab</a></li>
-<li><a href="http://gitimmersion.com/" class="hover:underline">🔗 Git Immersion</a></li>
+<li><a href="https://learngitbranching.js.org/" class="hover:underline"> Learn Git Branching</a></li>
+<li><a href="https://lab.github.com/" class="hover:underline"> GitHub Learning Lab</a></li>
+<li><a href="http://gitimmersion.com/" class="hover:underline"> Git Immersion</a></li>
 </ul>
 </div>
 
@@ -879,7 +879,7 @@ layout: center
 
 <div class="mt-8 text-center">
 <div class="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg p-6 mx-auto max-w-2xl text-white">
-<h3 class="font-bold text-xl mb-2">🎯 Your Mission</h3>
+<h3 class="font-bold text-xl mb-2"> Your Mission</h3>
 <p class="text-lg">Practice these concepts daily. Git mastery comes through consistent use!</p>
 </div>
 </div>
@@ -907,7 +907,7 @@ layout: center
 </div>
 
 <div>
-<h3 class="text-xl font-bold mb-4">🚀 What's Next</h3>
+<h3 class="text-xl font-bold mb-4"> What's Next</h3>
 <ul class="space-y-2">
 <li>📋 Software Development Life Cycle</li>
 <li>🏃 Agile & Scrum methodologies</li>
@@ -921,7 +921,7 @@ layout: center
 </div>
 
 <div class="mt-8 text-center">
-<p class="text-2xl font-bold">🎉 You're now ready for professional development!</p>
+<p class="text-2xl font-bold"> You're now ready for professional development!</p>
 </div>
 
 </div>
@@ -933,7 +933,7 @@ class: text-center
 
 # Thank You! 🙏
 
-<div class="text-6xl mb-8">🚀</div>
+<div class="text-6xl mb-8"></div>
 
 <h2 class="text-3xl font-bold mb-4">Ready to change the world with Git?</h2>
 
@@ -942,7 +942,7 @@ class: text-center
 <div class="space-y-4">
 <p class="text-lg">📧 <strong>Questions?</strong> qratul@uvu.edu</p>
 <p class="text-lg">🐙 <strong>Course Repo:</strong> github.com/ratulalahy/intro_to_swe</p>
-<p class="text-lg">📚 <strong>Next:</strong> SDLC & Agile Methodologies</p>
+<p class="text-lg"> <strong>Next:</strong> SDLC & Agile Methodologies</p>
 </div>
 
 <div class="mt-12">

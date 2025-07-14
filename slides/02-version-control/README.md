@@ -2,7 +2,7 @@
 
 An engaging, premium-quality [Slidev](https://sli.dev/) presentation covering Git fundamentals and GitHub collaboration for Software Engineering students.
 
-## 🚀 Features
+##  Features
 
 - **Interactive Learning**: Hands-on exercises and live coding demonstrations
 - **Premium Design**: Beautiful gradients, animations, and visual effects
@@ -90,7 +90,7 @@ An engaging, premium-quality [Slidev](https://sli.dev/) presentation covering Gi
 - **High Contrast**: Ensures accessibility and readability
 - **Dark Mode**: Full dark theme support
 
-## 📊 Presentation Structure
+##  Presentation Structure
 
 ### Introduction (Slides 1-5)
 - Course objectives and motivation
@@ -121,7 +121,7 @@ An engaging, premium-quality [Slidev](https://sli.dev/) presentation covering Gi
 - Resource recommendations
 - Next steps
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 Students will be able to:
 
@@ -190,7 +190,7 @@ Improvements and suggestions are welcome! Areas for contribution:
 - Accessibility improvements
 - Mobile optimization
 
-## 📚 Resources
+##  Resources
 
 ### Documentation
 - [Slidev Documentation](https://sli.dev/)
@@ -215,6 +215,6 @@ This presentation is part of the Introduction to Software Engineering course mat
 
 ---
 
-**Happy Learning! 🚀**
+**Happy Learning! **
 
 *Transform your understanding of version control with this interactive, engaging presentation designed for the next generation of software engineers.*

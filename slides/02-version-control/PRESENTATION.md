@@ -1,10 +1,10 @@
 # Git & Version Control - Slidev Presentation
 
-🎯 **Premium Interactive Presentation**
+ **Premium Interactive Presentation**
 
 An engaging, visually stunning presentation covering Git fundamentals and GitHub collaboration, built with [Slidev](https://sli.dev/).
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Option 1: Direct Launch
 ```bash
@@ -44,7 +44,7 @@ After starting the server, open:
 - ✅ Dark/light mode support
 - ✅ Mobile responsive design
 
-### 📚 Content Quality
+###  Content Quality
 - ✅ 40+ interactive slides
 - ✅ Live coding demonstrations
 - ✅ Hands-on exercises with step-by-step instructions
@@ -60,7 +60,7 @@ After starting the server, open:
 - ✅ Hot reload during development
 - ✅ Multiple export formats
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 Students will master:
 
@@ -155,7 +155,7 @@ npm run export -- --format png
 npm run export -- --format pptx
 ```
 
-## 📊 Presentation Structure
+##  Presentation Structure
 
 | Section | Slides | Duration | Focus |
 |---------|--------|----------|-------|
@@ -168,7 +168,7 @@ npm run export -- --format pptx
 
 **Total Duration**: ~75 minutes (perfect for class period)
 
-## 🎯 Assessment Integration
+##  Assessment Integration
 
 ### Knowledge Checks
 - **Interactive Quizzes**: Multiple choice with instant feedback
@@ -194,7 +194,7 @@ npm run export -- --format pptx
 - **Self-Paced Review**: Accessible anytime for review
 - **Career Relevant**: Industry-standard tools and practices
 
-## 🚀 Next Steps
+##  Next Steps
 
 After this presentation, students will be ready for:
 

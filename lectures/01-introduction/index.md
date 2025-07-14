@@ -11,7 +11,7 @@ keywords:
   - professional practice
 ---
 
-:::{admonition} Welcome to Software Engineering! 🚀
+:::{admonition} Welcome to Software Engineering! 
 :class: tip
 
 **"Our civilization runs on software."** - Bjarne Stroustrup, Creator of C++
@@ -30,7 +30,7 @@ Welcome to the most exciting field in computer science! Software engineering is 
 The digital world we've built with software
 ```
 
-## 🌍 Software is Everywhere
+##  Software is Everywhere
 
 Take a moment to think about your day so far. How many software systems have you interacted with?
 
@@ -50,7 +50,7 @@ Take a moment to think about your day so far. How many software systems have you
 - Electric vehicle software
 :::
 
-:::{grid-item-card} 💰 **Finance**
+:::{grid-item-card}  **Finance**
 - Mobile banking
 - Payment systems
 - ATMs
@@ -86,7 +86,7 @@ Take a moment to think about your day so far. How many software systems have you
 The Linux kernel (the core of many servers, smartphones, and devices) has over **30 million lines of code** and involves contributions from **65,000+ developers** worldwide. That's like a digital city built by people from every corner of the globe!
 ```
 
-## 📊 The Scale of Software Today
+##  The Scale of Software Today
 
 Let's put the software industry in perspective:
 
@@ -114,7 +114,7 @@ Let's put the software industry in perspective:
   - More repositories than there are books in print
 ```
 
-## 🎯 What Makes Software Engineering Special?
+##  What Makes Software Engineering Special?
 
 Software engineering isn't just programming - it's a complete discipline that combines:
 
@@ -178,7 +178,7 @@ Software engineering isn't just programming - it's a complete discipline that co
 
 ::::
 
-## 🏛️ A Brief History: How We Got Here
+##  A Brief History: How We Got Here
 
 Let's take a journey through the evolution of software engineering:
 
@@ -219,7 +219,7 @@ timeline
                : Software eating the world
 ```
 
-### 🎬 The Birth of Software Engineering
+###  The Birth of Software Engineering
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/QGqlcL1lffM" title="History of Software Engineering" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -243,7 +243,7 @@ Software must constantly evolve. Success brings more feature requests, not stabi
 **Example:** Facebook started as a college directory and evolved into a global social platform serving billions.
 :::
 
-:::{grid-item-card} 🎯 **Conformity**
+:::{grid-item-card}  **Conformity**
 Software must adapt to changing environments, laws, and business needs.
 
 **Example:** GDPR regulations forced thousands of apps to redesign their privacy features overnight.
@@ -265,7 +265,7 @@ Brooks argued there's no single technology that will solve all software problems
 Think about it: Building a social network, a medical device, and a video game all require fundamentally different approaches.
 ```
 
-## 🗺️ The Software Engineering Landscape
+## The Software Engineering Landscape
 
 Software engineering encompasses many interconnected areas:
 
@@ -371,13 +371,13 @@ mindmap
 - Bug prevention techniques
 ::::
 
-## 🎯 Types of Software Systems
+##  Types of Software Systems
 
 Not all software is created equal. Different types require different approaches:
 
 ::::{tab-set}
 
-:::{tab-item} 🚀 **Mission-Critical Systems**
+:::{tab-item}  **Mission-Critical Systems**
 :sync: critical
 
 **Examples:** Medical devices, aircraft control, nuclear power
@@ -427,7 +427,7 @@ Not all software is created equal. Different types require different approaches:
 
 ::::
 
-## 💰 The Economics of Software
+##  The Economics of Software
 
 Understanding the business side is crucial for any software engineer:
 
@@ -458,13 +458,13 @@ Understanding the business side is crucial for any software engineer:
 
 ::::
 
-```{admonition} The 80/20 Rule 📊
+```{admonition} The 80/20 Rule 
 :class: important
 
 **80% of a software's total cost** comes AFTER the initial release! This is why writing maintainable, evolvable code is crucial - you'll be living with it for years.
 ```
 
-## 🧑‍💻 What Does a Software Engineer Actually Do?
+##  What Does a Software Engineer Actually Do?
 
 Let's break down a typical day (it's more varied than you think!):
 
@@ -529,7 +529,7 @@ pie title Skills Distribution in Software Engineering
 - **Code reviews:** Giving and receiving constructive feedback
 ::::
 
-## 🏆 Career Paths in Software Engineering
+##  Career Paths in Software Engineering
 
 The field offers incredible diversity and growth opportunities:
 
@@ -573,7 +573,7 @@ graph TD
 **Focus:** People management, strategy, business alignment
 :::
 
-:::{tab-item} 🎯 **Specialized Roles**
+:::{tab-item}  **Specialized Roles**
 :sync: specialized
 
 **Domain Expertise:**
@@ -615,21 +615,21 @@ Exciting trends shaping our field:
 - Supply chain security
 :::
 
-:::{grid-item-card} 🌍 **Sustainability**
+:::{grid-item-card}  **Sustainability**
 - Green computing practices
 - Energy-efficient algorithms
 - Carbon-aware development
 - Sustainable tech solutions
 :::
 
-:::{grid-item-card} 🚀 **Low-Code/No-Code**
+:::{grid-item-card}  **Low-Code/No-Code**
 - Visual development platforms
 - Citizen developers
 - Rapid prototyping
 - Business logic automation
 :::
 
-:::{grid-item-card} 🔗 **Web3 & Blockchain**
+:::{grid-item-card}  **Web3 & Blockchain**
 - Decentralized applications
 - Smart contracts
 - Digital identity systems
@@ -638,13 +638,13 @@ Exciting trends shaping our field:
 
 ::::
 
-## 🎯 Course Overview & What You'll Learn
+##  Course Overview & What You'll Learn
 
 This course will transform you from someone who can write code into someone who can engineer software systems:
 
 ::::{grid} 2
 
-:::{grid-item-card} 📚 **Foundational Knowledge**
+:::{grid-item-card}  **Foundational Knowledge**
 - Software engineering principles
 - Requirements gathering and analysis
 - System design and architecture
@@ -662,7 +662,7 @@ This course will transform you from someone who can write code into someone who 
 
 ::::
 
-### 📅 Course Journey
+###  Course Journey
 
 ```{mermaid}
 gantt
@@ -689,7 +689,7 @@ gantt
     Final Project                :18, 22
 ```
 
-### 🎯 Learning Objectives
+###  Learning Objectives
 
 By the end of this course, you'll be able to:
 
@@ -704,7 +704,7 @@ By the end of this course, you'll be able to:
 - **Collaborate** effectively in software development teams using professional workflows
 ```
 
-## 🚀 Your First Challenge
+##  Your First Challenge
 
 Let's start with a fun exercise to get you thinking like a software engineer:
 
@@ -730,7 +730,7 @@ Let's start with a fun exercise to get you thinking like a software engineer:
 **Due:** Next class session
 ```
 
-## 📚 Essential Resources
+##  Essential Resources
 
 ::::{grid} 2
 
@@ -750,16 +750,16 @@ Let's start with a fun exercise to get you thinking like a software engineer:
 
 ::::
 
-### 🎬 Recommended Documentaries
+###  Recommended Documentaries
 
 - **"Code Red: The Story of Linux"** - Open source revolution
 - **"The Internet's Own Boy"** - Aaron Swartz and digital freedom
 - **"AlphaGo"** - AI and software engineering
 - **"Terms and Conditions May Apply"** - Software ethics and privacy
 
-## 🎉 Welcome to the Journey!
+##  Welcome to the Journey!
 
-```{admonition} Your Software Engineering Adventure Starts Now! 🚀
+```{admonition} Your Software Engineering Adventure Starts Now! 
 :class: tip
 
 Software engineering is more than a career - it's a superpower that lets you build solutions to real problems, create value for millions of users, and shape the future of human civilization.

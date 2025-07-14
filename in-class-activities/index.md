@@ -3,7 +3,7 @@ title: In-Class Activities
 description: Hands-on exercises and collaborative learning experiences
 ---
 
-## 🎯 Interactive Learning Activities
+##  Interactive Learning Activities
 
 In-class activities are designed to reinforce lecture concepts through hands-on practice, group collaboration, and real-world problem solving. These activities promote active learning and peer interaction.
 
@@ -37,7 +37,7 @@ In-class activities are designed to reinforce lecture concepts through hands-on 
 
 :::
 
-:::{grid-item-card} 📊 Analysis Tasks
+:::{grid-item-card}  Analysis Tasks
 
 - Case study evaluations
 - Technology comparisons
@@ -47,7 +47,7 @@ In-class activities are designed to reinforce lecture concepts through hands-on 
 :::
 ::::
 
-## 📅 Weekly Activity Schedule
+##  Weekly Activity Schedule
 
 ```{note}
 Activities are conducted during regular class time and are designed to be completed within the session. Materials and instructions will be provided at the beginning of each activity.
@@ -111,7 +111,7 @@ Activities are conducted during regular class time and are designed to be comple
   - Kanban workflow optimization
 ```
 
-## 🏆 Participation and Assessment
+##  Participation and Assessment
 
 ### Participation Guidelines
 
@@ -161,7 +161,7 @@ Activities are conducted during regular class time and are designed to be comple
 - **Communication:** Discord, Slack for team coordination
 - **Project Management:** Trello, GitHub Projects for activity tracking
 
-## 💡 Activity Formats
+##  Activity Formats
 
 ### Individual Activities
 

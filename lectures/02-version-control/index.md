@@ -760,7 +760,7 @@ jobs:
 6. Complete the merge
 ```
 
-## 📚 Resources & Next Steps
+##  Resources & Next Steps
 
 ### Essential Resources
 

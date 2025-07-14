@@ -13,7 +13,7 @@ A comprehensive course website built with [MyST Markdown](https://mystmd.org) co
 
 Visit the course website: [https://ratulalahy.github.io/intro_to_swe](https://ratulalahy.github.io/intro_to_swe)
 
-## 📚 Course Topics
+##  Course Topics
 
 - Introduction to Software Engineering
 - Version Control with Git and GitHub
@@ -51,7 +51,7 @@ Visit the course website: [https://ratulalahy.github.io/intro_to_swe](https://ra
 - **Development:** VS Code, Git, Node.js
 - **Design:** Responsive web design with modern UI
 
-## 🚀 Local Development
+##  Local Development
 
 ### Prerequisites
 
@@ -117,7 +117,7 @@ The course website emphasizes:
 - **Responsiveness:** Optimized for all device sizes
 - **Usability:** Intuitive structure and easy navigation
 
-## 📊 Course Organization
+##  Course Organization
 
 - **Lectures:** 12 comprehensive topics with interactive content
 - **Assignments:** 5 individual projects (700 points total)
@@ -137,7 +137,7 @@ This repository serves as course material. Students and faculty can:
 Course content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
 Code examples and projects may have different licenses as specified.
 
-## 🔗 Links
+##  Links
 
 - **Course Website:** [https://ratulalahy.github.io/intro_to_swe](https://ratulalahy.github.io/intro_to_swe)
 - **MyST Documentation:** [https://mystmd.org](https://mystmd.org)

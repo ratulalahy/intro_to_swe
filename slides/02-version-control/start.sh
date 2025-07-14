@@ -2,7 +2,7 @@
 
 # Git & Version Control Presentation Startup Script
 
-echo "🚀 Starting Git & Version Control Interactive Presentation..."
+echo " Starting Git & Version Control Interactive Presentation..."
 echo "📍 Location: /Users/qratul/uvu/courses/swe_2/slides/02-version-control"
 echo ""
 
@@ -18,7 +18,7 @@ fi
 echo "🎭 Starting Slidev presentation server..."
 echo ""
 echo "📖 Presentation: Git & Version Control with GitHub"
-echo "🎯 Features: Interactive learning, premium design, live coding"
+echo " Features: Interactive learning, premium design, live coding"
 echo ""
 echo "🌐 URLs:"
 echo "   • Development: http://localhost:3030"

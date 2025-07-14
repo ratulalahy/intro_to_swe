@@ -3,11 +3,11 @@ title: Resources
 description: Additional materials, tools, and references for course success
 ---
 
-## 📚 Course Resources
+##  Course Resources
 
 This section provides supplementary materials to enhance your learning experience. Find setup guides, recommended tools, reading materials, and quick reference sheets.
 
-## 🔗 Quick Access
+##  Quick Access
 
 ::::{grid} 2
 :::{grid-item-card} 🛠️ [Setup Guide](setup-guide)
@@ -134,7 +134,7 @@ Quick reference guides and syntax reminders
 - **Lighthouse:** Performance auditing
 - **ColorZilla:** Color picker and analyzer
 
-## 📚 Recommended Reading
+##  Recommended Reading
 
 ### Essential Books
 
@@ -182,7 +182,7 @@ Quick reference guides and syntax reminders
 - **Software Development Times:** Industry news and trends
 - **InfoQ:** Enterprise software development
 
-## 🚀 Professional Development
+##  Professional Development
 
 ### Career Resources
 

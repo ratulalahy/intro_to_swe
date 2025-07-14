@@ -43,7 +43,7 @@ Projects provide hands-on experience with software development in team environme
   - Full SDLC, all course concepts integrated
 ```
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 ::::{grid} 2
 :::{grid-item-card} 🤝 Collaboration Skills
@@ -64,7 +64,7 @@ Projects provide hands-on experience with software development in team environme
 
 :::
 
-:::{grid-item-card} 📊 Project Management
+:::{grid-item-card}  Project Management
 
 - Agile/Scrum methodology
 - Sprint planning and execution
@@ -145,7 +145,7 @@ graph TD
   - Retrospective Report, Next Sprint Plan
 ```
 
-## 📊 Assessment Criteria
+##  Assessment Criteria
 
 ### Project Evaluation Rubric
 
@@ -176,7 +176,7 @@ graph TD
 - **Contribution Tracking:** Git commits, code reviews, meeting participation
 - **Peer Evaluations:** Anonymous feedback on team member contributions
 
-## 🚀 Project Phases
+##  Project Phases
 
 ### Phase 1: Project Initiation
 - Team formation and roles assignment
@@ -208,7 +208,7 @@ graph TD
 - Project retrospective and lessons learned
 - Portfolio addition and reflection
 
-## 💡 Success Strategies
+##  Success Strategies
 
 ```{tip}
 **Project Success Tips:**

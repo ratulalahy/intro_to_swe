@@ -3,7 +3,7 @@
 # Git Practice Script
 # This script demonstrates basic Git commands
 
-echo "🚀 Git Practice Session"
+echo " Git Practice Session"
 echo "======================"
 
 # Initialize repository

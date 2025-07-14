@@ -53,7 +53,7 @@ Assignments are designed to reinforce lecture concepts through practical applica
   - 📝 Coming Soon
 ```
 
-## 🎯 Assignment Types
+##  Assignment Types
 
 ::::{grid} 2
 :::{grid-item-card} 💻 Coding Assignments
@@ -65,7 +65,7 @@ Assignments are designed to reinforce lecture concepts through practical applica
 
 :::
 
-:::{grid-item-card} 📊 Analysis Assignments
+:::{grid-item-card}  Analysis Assignments
 
 - SDLC methodology comparison
 - Requirements documentation
@@ -93,7 +93,7 @@ Assignments are designed to reinforce lecture concepts through practical applica
 :::
 ::::
 
-## 📚 Submission Guidelines
+##  Submission Guidelines
 
 ### GitHub Classroom Workflow
 
@@ -125,7 +125,7 @@ assignment-repo/
 └── .gitignore            # Git ignore rules
 ```
 
-## 🏆 Grading Rubrics
+##  Grading Rubrics
 
 ### Coding Assignments
 
@@ -181,7 +181,7 @@ assignment-repo/
   - Unclear/disorganized
 ```
 
-## 💡 Success Tips
+##  Success Tips
 
 ```{tip}
 **For Success in Assignments:**

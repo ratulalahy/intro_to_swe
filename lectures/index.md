@@ -3,7 +3,7 @@ title: Lectures
 description: Interactive lectures with examples, demonstrations, and engaging multimedia content
 ---
 
-## 📅 Lecture Schedule
+##  Lecture Schedule
 
 ```{list-table} Lecture Overview
 :header-rows: 1
@@ -63,7 +63,7 @@ description: Interactive lectures with examples, demonstrations, and engaging mu
   - Kanban board setup, Flow metrics
 ```
 
-## 🎯 Learning Approach
+##  Learning Approach
 
 Our lectures feature:
 
@@ -77,7 +77,7 @@ Our lectures feature:
 
 :::
 
-:::{grid-item-card} 💡 Hands-on Learning
+:::{grid-item-card}  Hands-on Learning
 
 - Code-along exercises
 - Group discussions
@@ -86,7 +86,7 @@ Our lectures feature:
 
 :::
 
-:::{grid-item-card} 📊 Visual Learning
+:::{grid-item-card}  Visual Learning
 
 - Infographics and charts
 - Process flowcharts
@@ -95,7 +95,7 @@ Our lectures feature:
 
 :::
 
-:::{grid-item-card} 🔗 Real-world Context
+:::{grid-item-card}  Real-world Context
 
 - Industry case studies
 - Current technology trends
@@ -105,7 +105,7 @@ Our lectures feature:
 :::
 ::::
 
-## 📚 How to Use Lecture Materials
+##  How to Use Lecture Materials
 
 ```{tip}
 **Before Each Lecture:**
