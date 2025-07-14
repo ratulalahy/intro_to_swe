@@ -17,10 +17,11 @@ keywords:
   - workflows
 ---
 
-:::{admonition} 🎯 Learning Objectives
+:::{admonition} **Learning Objectives**
 :class: tip
 
 By the end of this lecture, you will be able to:
+
 - Explain the importance of version control in software development
 - Set up and configure Git on your development machine
 - Create repositories and track changes using Git commands
@@ -28,11 +29,11 @@ By the end of this lecture, you will be able to:
 - Implement branching strategies for team development
 :::
 
-# Version Control with Git and GitHub 🚀
+# Version Control with Git and GitHub
 
 Welcome to the world of modern software collaboration! Today we'll explore how Git and GitHub revolutionize the way developers work together.
 
-## 🤔 Why Version Control?
+## **Why Version Control?**
 
 ::::{tab-set}
 
@@ -74,11 +75,11 @@ Welcome to the world of modern software collaboration! Today we'll explore how G
 **Did you know?** The Linux kernel, one of the world's largest software projects, has over 25,000 contributors and millions of lines of code - all managed through Git!
 ```
 
-## 🎭 Git vs GitHub: Understanding the Difference
+## **Git vs GitHub: Understanding the Difference**
 
 ::::{grid} 2
 
-:::{grid-item-card} Git 🔧
+:::{grid-item-card} **Git - Local Version Control**
 :class-header: bg-primary text-white
 
 **Local Version Control System**
@@ -91,7 +92,7 @@ Welcome to the world of modern software collaboration! Today we'll explore how G
 
 :::
 
-:::{grid-item-card} GitHub 🌐
+:::{grid-item-card} **GitHub - Cloud Platform**
 :class-header: bg-success text-white
 
 **Cloud-Based Git Hosting**
@@ -122,7 +123,7 @@ graph LR
     style C fill:#fff3e0
 ```
 
-## 🛠️ Git Fundamentals
+## **Git Fundamentals**
 
 ### The Three Trees of Git
 
@@ -130,35 +131,38 @@ Git organizes your work into three main areas, each serving a specific purpose i
 
 ::::{grid} 3
 
-:::{grid-item-card} Working Directory 📁
+:::{grid-item-card} **Working Directory**
 :class-header: bg-info text-white
 
 Your current project files
 
 **What it contains:**
+
 - Modified files
 - New files
 - Deleted files
 
 :::
 
-:::{grid-item-card} Staging Area 📦
+:::{grid-item-card} **Staging Area**
 :class-header: bg-warning text-white
 
 Prepared changes for commit
 
 **What it contains:**
+
 - Files ready to be committed
 - Snapshot of selected changes
 
 :::
 
-:::{grid-item-card} Repository 🏛️
+:::{grid-item-card} **Repository**
 :class-header: bg-success text-white
 
 Permanent project history
 
 **What it contains:**
+
 - All committed changes
 - Complete project timeline
 - Branch information
@@ -203,9 +207,9 @@ Permanent project history
   - Getting latest changes
 ```
 
-## 🏃‍♂️ Hands-On Exercise: Your First Repository
+## **Hands-On Exercise: Your First Repository**
 
-```{admonition} 💻 Let's Code Together!
+```{admonition} **Let's Code Together!**
 :class: important
 
 Follow along as we create your first Git repository. Open your terminal and let's go!
@@ -225,7 +229,7 @@ git config --global user.email "your.email@example.com"
 git config --list
 ```
 
-```{admonition} 🔍 Pro Tip
+```{admonition} **Pro Tip**
 :class: tip
 
 Use the same email address you'll use for GitHub to link your commits to your GitHub profile!
@@ -249,7 +253,7 @@ git init
 git status
 ```
 
-````{dropdown} 📋 Expected Output
+````{dropdown} **Expected Output**
 :color: success
 
 ```bash
@@ -299,19 +303,18 @@ Just like tree branches grow from the main trunk, Git branches allow you to deve
 ### Branching Workflow Visualization
 
 ```{mermaid}
-:caption: Git Branching Strategy
-
-gitgraph
-    commit id: "Initial commit"
-    commit id: "Add README"
-    branch feature/login
-    checkout feature/login
-    commit id: "Add login form"
-    commit id: "Add validation"
-    checkout main
-    commit id: "Fix typo in README"
-    merge feature/login
-    commit id: "Merge login feature"
+graph TD
+    A[Initial commit] --> B[Add README]
+    B --> C[Feature branch created]
+    C --> D[Add login form]
+    D --> E[Add validation]
+    E --> F[Merge to main]
+    B --> G[Fix typo in README]
+    G --> F
+    
+    style A fill:#e1f5fe
+    style F fill:#c8e6c9
+    style C fill:#fff3e0
 ```
 
 ### Common Branching Commands
@@ -384,7 +387,7 @@ git push origin --delete feature/old-feature
 
 ::::{grid} 2
 
-:::{grid-item-card} 📊 Issues & Project Management
+:::{grid-item-card} **Issues & Project Management**
 :class-header: bg-primary text-white
 
 - Bug tracking
@@ -410,7 +413,7 @@ git push origin --delete feature/old-feature
 
 :::
 
-:::{grid-item-card} 🔍 Pull Requests
+:::{grid-item-card} **Pull Requests**
 :class-header: bg-success text-white
 
 - Code review process
@@ -460,8 +463,6 @@ git push origin --delete feature/old-feature
 ### The GitHub Flow
 
 ```{mermaid}
-:caption: GitHub Flow Process
-
 graph TD
     A[Create Branch] --> B[Make Changes]
     B --> C[Create Pull Request]
@@ -478,7 +479,7 @@ graph TD
 
 ### Best Practices for Collaboration
 
-::::{dropdown} 💡 Commit Message Best Practices
+::::{dropdown} **Commit Message Best Practices**
 :color: primary
 
 **Good commit messages are:**
@@ -510,7 +511,7 @@ test(auth): add unit tests for login validation
 ```
 ::::
 
-::::{dropdown} 🔄 Pull Request Workflow
+::::{dropdown} **Pull Request Workflow**
 :color: success
 
 **Step-by-Step PR Process:**
@@ -543,7 +544,7 @@ test(auth): add unit tests for login validation
 
 :::{tab-item} Merge Conflicts
 
-```{admonition} ⚠️ When Merge Conflicts Happen
+```{admonition} **Warning: When Merge Conflicts Happen**
 :class: warning
 
 Merge conflicts occur when Git can't automatically combine changes from different branches.
@@ -620,7 +621,7 @@ git log --follow filename.txt
 
 ::::
 
-## 🎯 Interactive Quiz
+## **Interactive Quiz**
 
 ```{exercise} Git Knowledge Check
 :label: git-quiz
@@ -649,7 +650,7 @@ C) `git pull origin main`
 D) All of the above (depending on workflow)
 ```
 
-````{dropdown} 🔍 Quiz Answers
+````{dropdown} **Quiz Answers**
 :color: success
 
 **Answer 1:** B) `git checkout -- filename` - This discards uncommitted changes in the working directory.
@@ -662,7 +663,7 @@ D) All of the above (depending on workflow)
 - `git pull origin main` gets latest changes first
 ````
 
-## 🎨 Advanced GitHub Features
+## **Advanced GitHub Features**
 
 ### GitHub Actions (CI/CD Preview)
 
@@ -713,7 +714,7 @@ jobs:
   - Q&A and brainstorming
 ```
 
-## 🏆 Practice Challenges
+## **Practice Challenges**
 
 ```{exercise} Challenge 1: Repository Setup
 :label: challenge-1
@@ -814,7 +815,7 @@ git branch -d <name>      # Delete branch
 ```
 ```
 
-## 🎯 Key Takeaways
+## **Key Takeaways**
 
 ```{admonition} 🏁 What You've Learned Today
 :class: success
@@ -846,7 +847,7 @@ git branch -d <name>      # Delete branch
 
 In our next lecture, we'll explore the **Software Development Life Cycle (SDLC)** and see how version control fits into the bigger picture of software engineering processes.
 
-```{admonition} 📝 Homework Preview
+```{admonition} **Homework Preview**
 :class: note
 
 **Assignment 1: Git Mastery** will be released this week! You'll create a personal portfolio repository and practice all the skills we covered today.
@@ -854,4 +855,4 @@ In our next lecture, we'll explore the **Software Development Life Cycle (SDLC)*
 
 ---
 
-*"Git is not just a tool, it's a way of thinking about collaboration and code evolution."* 🚀
+*"Git is not just a tool, it's a way of thinking about collaboration and code evolution."*
