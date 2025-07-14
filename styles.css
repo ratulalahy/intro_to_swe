@@ -1,6 +1,12 @@
 /* Custom styles following MyST documentation */
 /* https://mystmd.org/guide/website-style */
 
+/* DIAGNOSTIC TEST - Remove this after confirming CSS loads */
+body { 
+  background-color: red !important; 
+  border: 10px solid blue !important;
+}
+
 /* Purple gradient headers - more specific selectors with !important */
 main h1, 
 main h2, 
