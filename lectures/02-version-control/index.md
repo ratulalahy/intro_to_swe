@@ -126,12 +126,7 @@ graph LR
 
 ### The Three Trees of Git
 
-```{figure} ./assets/git-trees.png
-:name: git-trees
-:width: 600px
-
-Git's three main areas: Working Directory, Staging Area, and Repository
-```
+Git organizes your work into three main areas, each serving a specific purpose in the version control workflow.
 
 ::::{grid} 3
 

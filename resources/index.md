@@ -212,7 +212,6 @@ Quick reference guides and syntax reminders
 ### Common Issues
 
 ```{dropdown} Installation Problems
-:color: warning
 
 **Git Installation Issues:**
 - Verify PATH environment variable

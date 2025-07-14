@@ -21,19 +21,8 @@ project:
 site:
   template: book-theme
   title: Introduction to Software Engineering
-  logo: assets/images/logo.png
-  favicon: assets/images/favicon.ico
-  nav:
-    - title: Home
-      url: /
-    - title: Lectures
-      url: /lectures
-    - title: Assignments
-      url: /assignments
-    - title: Projects
-      url: /projects
-    - title: Resources
-      url: /resources
+  domains:
+    - ratulalahy.github.io
   options:
     logo_text: SWE Course
     repository_url: https://github.com/ratulalahy/intro_to_swe

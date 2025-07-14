@@ -4,52 +4,20 @@ chapters:
   - file: lectures/index
     title: Lectures
     sections:
-      - file: lectures/01-introduction
+      - file: lectures/01-introduction/index
         title: "Lecture 1: Introduction to Software Engineering"
-      - file: lectures/02-version-control
+      - file: lectures/02-version-control/index
         title: "Lecture 2: Version Control with Git and GitHub"
-      - file: lectures/03-sdlc
-        title: "Lecture 3: Software Development Life Cycle"
-      - file: lectures/04-agile-scrum
-        title: "Lecture 4: Agile Scrum"
-      - file: lectures/05-requirements
-        title: "Lecture 5: Requirements Engineering"
-      - file: lectures/06-ui-design
-        title: "Lecture 6: User Interface Design"
-      - file: lectures/07-architecture
-        title: "Lecture 7: Software Architecture"
-      - file: lectures/08-design-principles
-        title: "Lecture 8: Design Principles"
-      - file: lectures/09-design-patterns
-        title: "Lecture 9: Design Patterns"
-      - file: lectures/10-testing
-        title: "Lecture 10: Testing"
-      - file: lectures/11-refactoring
-        title: "Lecture 11: Refactoring"
-      - file: lectures/12-kanban
-        title: "Lecture 12: Kanban"
   - file: assignments/index
     title: Assignments
     sections:
       - file: assignments/assignment-1
         title: "Assignment 1: Git Basics"
-      - file: assignments/assignment-2
-        title: "Assignment 2: SDLC Analysis"
-      - file: assignments/assignment-3
-        title: "Assignment 3: Requirements Gathering"
-      - file: assignments/assignment-4
-        title: "Assignment 4: UI Design"
-      - file: assignments/assignment-5
-        title: "Assignment 5: Testing Strategy"
   - file: projects/index
     title: Projects
     sections:
       - file: projects/project-1
         title: "Project 1: Team Portfolio Website"
-      - file: projects/project-2
-        title: "Project 2: Software Engineering Tool"
-      - file: projects/final-project
-        title: "Final Project: Complete Software Solution"
   - file: in-class-activities/index
     title: In-Class Activities
   - file: resources/index
@@ -57,9 +25,3 @@ chapters:
     sections:
       - file: resources/setup-guide
         title: "Development Environment Setup"
-      - file: resources/tools
-        title: "Recommended Tools"
-      - file: resources/reading-list
-        title: "Additional Reading"
-      - file: resources/cheat-sheets
-        title: "Cheat Sheets"
