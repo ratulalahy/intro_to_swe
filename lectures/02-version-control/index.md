@@ -80,7 +80,6 @@ Welcome to the world of modern software collaboration! Today we'll explore how G
 ::::{grid} 2
 
 :::{grid-item-card} **Git - Local Version Control**
-:class-header: bg-primary text-white
 
 **Local Version Control System**
 
@@ -93,7 +92,6 @@ Welcome to the world of modern software collaboration! Today we'll explore how G
 :::
 
 :::{grid-item-card} **GitHub - Cloud Platform**
-:class-header: bg-success text-white
 
 **Cloud-Based Git Hosting**
 
@@ -108,8 +106,6 @@ Welcome to the world of modern software collaboration! Today we'll explore how G
 ::::
 
 ```{mermaid}
-:caption: Git and GitHub Relationship
-
 graph LR
     A[Your Computer] --> B[Local Git Repository]
     B --> C[GitHub Remote Repository]
@@ -132,7 +128,7 @@ Git organizes your work into three main areas, each serving a specific purpose i
 ::::{grid} 3
 
 :::{grid-item-card} **Working Directory**
-:class-header: bg-info text-white
+ text-white
 
 Your current project files
 
@@ -145,7 +141,7 @@ Your current project files
 :::
 
 :::{grid-item-card} **Staging Area**
-:class-header: bg-warning text-white
+ text-white
 
 Prepared changes for commit
 
@@ -157,7 +153,7 @@ Prepared changes for commit
 :::
 
 :::{grid-item-card} **Repository**
-:class-header: bg-success text-white
+ text-white
 
 Permanent project history
 
@@ -262,7 +258,7 @@ git status
 ```
 
 ````{dropdown} **Expected Output**
-:color: success
+
 
 ```bash
 $ git init
@@ -396,7 +392,7 @@ git push origin --delete feature/old-feature
 ::::{grid} 2
 
 :::{grid-item-card} **Issues & Project Management**
-:class-header: bg-primary text-white
+ text-white
 
 - Bug tracking
 - Feature requests  
@@ -422,7 +418,7 @@ git push origin --delete feature/old-feature
 :::
 
 :::{grid-item-card} **Pull Requests**
-:class-header: bg-success text-white
+ text-white
 
 - Code review process
 - Discussion threads
@@ -488,7 +484,7 @@ graph TD
 ### Best Practices for Collaboration
 
 ::::{dropdown} **Commit Message Best Practices**
-:color: primary
+
 
 **Good commit messages are:**
 
@@ -520,7 +516,7 @@ test(auth): add unit tests for login validation
 ::::
 
 ::::{dropdown} **Pull Request Workflow**
-:color: success
+
 
 **Step-by-Step PR Process:**
 
@@ -665,7 +661,7 @@ D) All of the above (depending on workflow)
 ```
 
 ````{dropdown} **Quiz Answers**
-:color: success
+
 
 **Answer 1:** B) `git checkout -- filename` - This discards uncommitted changes in the working directory.
 
@@ -778,7 +774,7 @@ jobs:
 ::::{grid} 2
 
 :::{grid-item-card} 📖 Documentation
-:class-header: bg-info text-white
+ text-white
 
 - [Git Official Documentation](https://git-scm.com/doc)
 - [GitHub Guides](https://guides.github.com/)
@@ -787,7 +783,7 @@ jobs:
 :::
 
 :::{grid-item-card} 🎮 Interactive Learning
-:class-header: bg-success text-white
+ text-white
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
 - [GitHub Learning Lab](https://lab.github.com/)
@@ -800,7 +796,7 @@ jobs:
 ### Cheat Sheets
 
 ```{dropdown} 📄 Git Command Cheat Sheet
-:color: primary
+
 
 **Repository Setup:**
 ```bash
