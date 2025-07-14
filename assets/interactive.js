@@ -1,70 +1,33 @@
-// Interactive functionality for the course website
+// Simplified interactive functionality for MyST compatibility
 
-// Enhanced dropdown functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Font Awesome icons
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
-    document.head.appendChild(link);
-
-    // Add interactive icons to sections
-    addInteractiveIcons();
+    console.log('Interactive features loading...');
     
-    // Initialize tabs
-    initializeTabs();
-    
-    // Add smooth scrolling
+    // Add basic interactivity
+    addBasicStyling();
     addSmoothScrolling();
+    addCodeCopyButtons();
     
-    // Add progress indicators
-    addProgressIndicators();
+    console.log('Interactive features loaded successfully!');
 });
 
-function addInteractiveIcons() {
-    // Replace text-based headers with icon classes
-    const iconMappings = [
-        { text: '**Learning Objectives**', icon: 'icon-learning' },
-        { text: '**Let\'s Code Together!**', icon: 'icon-code' },
-        { text: '**Pro Tip**', icon: 'icon-tip' },
-        { text: '**Interactive Quiz**', icon: 'icon-quiz' },
-        { text: '**Hands-On Exercise**', icon: 'icon-exercise' },
-        { text: '**Advanced GitHub Features**', icon: 'icon-advanced' },
-        { text: '**Practice Challenges**', icon: 'icon-practice' },
-        { text: '**Key Takeaways**', icon: 'icon-key' },
-        { text: '**Homework Preview**', icon: 'icon-homework' }
-    ];
-
-    iconMappings.forEach(mapping => {
-        const elements = document.querySelectorAll(`h1, h2, h3, h4, h5, h6, .admonition-title`);
-        elements.forEach(el => {
-            if (el.textContent.includes(mapping.text.replace(/\*\*/g, ''))) {
-                el.classList.add(mapping.icon);
-            }
-        });
+function addBasicStyling() {
+    // Add custom classes to elements for better styling
+    const admonitions = document.querySelectorAll('.admonition');
+    admonitions.forEach(admonition => {
+        admonition.style.transition = 'all 0.3s ease';
     });
-}
-
-function initializeTabs() {
-    // Enhanced tab functionality with smooth transitions
-    const tabContainers = document.querySelectorAll('.tab-container');
     
-    tabContainers.forEach(container => {
-        const buttons = container.querySelectorAll('.tab-button');
-        const contents = container.querySelectorAll('.tab-content');
-        
-        buttons.forEach((button, index) => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons and contents
-                buttons.forEach(btn => btn.classList.remove('active'));
-                contents.forEach(content => content.classList.remove('active'));
-                
-                // Add active class to clicked button and corresponding content
-                button.classList.add('active');
-                if (contents[index]) {
-                    contents[index].classList.add('active');
-                }
-            });
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.style.transition = 'all 0.3s ease';
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-4px)';
+            this.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.15)';
+        });
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
         });
     });
 }
@@ -85,20 +48,59 @@ function addSmoothScrolling() {
     });
 }
 
-function addProgressIndicators() {
-    // Add reading progress indicator
-    const progressBar = document.createElement('div');
-    progressBar.className = 'reading-progress';
-    progressBar.innerHTML = '<div class="progress-fill"></div>';
-    document.body.appendChild(progressBar);
+function addCodeCopyButtons() {
+    // Add copy buttons to code blocks
+    const codeBlocks = document.querySelectorAll('pre');
     
-    const progressFill = progressBar.querySelector('.progress-fill');
-    
-    window.addEventListener('scroll', () => {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        progressFill.style.width = scrolled + '%';
+    codeBlocks.forEach(block => {
+        const copyButton = document.createElement('button');
+        copyButton.innerHTML = 'Copy';
+        copyButton.style.cssText = `
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+            z-index: 10;
+        `;
+        
+        copyButton.addEventListener('click', async () => {
+            const code = block.querySelector('code');
+            if (code) {
+                try {
+                    await navigator.clipboard.writeText(code.textContent);
+                    copyButton.innerHTML = 'Copied!';
+                    copyButton.style.background = '#10b981';
+                    setTimeout(() => {
+                        copyButton.innerHTML = 'Copy';
+                        copyButton.style.background = '#6366f1';
+                    }, 2000);
+                } catch (err) {
+                    console.error('Failed to copy code:', err);
+                    copyButton.innerHTML = 'Error';
+                    setTimeout(() => {
+                        copyButton.innerHTML = 'Copy';
+                    }, 2000);
+                }
+            }
+        });
+        
+        copyButton.addEventListener('mouseenter', function() {
+            this.style.background = '#4f46e5';
+        });
+        
+        copyButton.addEventListener('mouseleave', function() {
+            this.style.background = '#6366f1';
+        });
+        
+        block.style.position = 'relative';
+        block.appendChild(copyButton);
     });
 }
 
