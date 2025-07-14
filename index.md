@@ -16,6 +16,12 @@ keywords:
 date: 2025-01-14
 ---
 
+<style>
+h1 { color: purple !important; font-weight: bold !important; }
+h2 { color: #8b5cf6 !important; font-weight: bold !important; }
+h3 { color: #a855f7 !important; font-weight: bold !important; }
+</style>
+
 ```{note}
 **Course Information**
 - **Course Code:** CS 2450
