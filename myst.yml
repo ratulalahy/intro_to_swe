@@ -17,6 +17,9 @@ project:
       affiliation: Utah Valley University
   github: https://github.com/ratulalahy/intro_to_swe
   license: CC-BY-4.0
+  resources:
+    - assets/custom.css
+    - assets/interactive.js
   
 site:
   template: book-theme

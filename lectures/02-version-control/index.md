@@ -17,8 +17,8 @@ keywords:
   - workflows
 ---
 
-:::{admonition} **Learning Objectives**
-:class: tip
+:::{admonition} Learning Objectives
+:class: tip icon-learning
 
 By the end of this lecture, you will be able to:
 
@@ -209,7 +209,11 @@ Permanent project history
 
 ## **Hands-On Exercise: Your First Repository**
 
-```{admonition} **Let's Code Together!**
+```{admonition} Let's Code Together!
+:class: important icon-code
+
+**Time to get your hands dirty!** Follow along as we create your first Git repository step by step.
+```
 :class: important
 
 Follow along as we create your first Git repository. Open your terminal and let's go!
@@ -229,7 +233,11 @@ git config --global user.email "your.email@example.com"
 git config --list
 ```
 
-```{admonition} **Pro Tip**
+```{admonition} Pro Tip
+:class: tip icon-tip
+
+Use descriptive commit messages! Future you (and your teammates) will thank you when trying to understand what changed.
+```
 :class: tip
 
 Use the same email address you'll use for GitHub to link your commits to your GitHub profile!
@@ -621,7 +629,13 @@ git log --follow filename.txt
 
 ::::
 
-## **Interactive Quiz**
+## Interactive Quiz
+
+::::{admonition} Test Your Knowledge
+:class: important icon-quiz
+
+Let's see how well you understand Git and GitHub concepts!
+::::
 
 ```{exercise} Git Knowledge Check
 :label: git-quiz
