@@ -29,14 +29,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
 
       - name: Install MyST CLI
         run: npm install -g mystmd
 
       - name: Build MyST site
         run: |
-          myst build --html
+          BASE_URL=/intro_to_swe myst build --html
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
