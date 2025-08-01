@@ -1,6 +1,6 @@
 ---
 title: Introduction to Software Engineering
-subtitle: CS 2450 - Utah Valley University
+subtitle: CS 2450 - U## Weekly Course Breakdown Valley University
 description: A comprehensive course covering fundamental software engineering principles, practices, and methodologies
 authors:
   - name: Dr. Qratul Alahy
@@ -227,17 +227,17 @@ graph TD
 
 **Week 3**
 
-**Deliverables:**
+**Overview:**
+- Establish project scope and team structure
+- Define user needs through comprehensive analysis
+- Create foundational project documentation
+- Set clear vision and development roadmap
+
+**Key Outcomes:**
 - Product Backlog with prioritized user stories
 - Software Requirements Specification (SRS) Draft
 - Team formation and role assignments
 - Project vision and scope definition
-
-**Evaluation Criteria:**
-- Clarity of user stories (25%)
-- Requirements completeness (35%)
-- Team organization (20%)
-- Documentation quality (20%)
 :::
 
 :::{grid-item-card} **Milestone 2: Requirements Finalization**
@@ -245,17 +245,17 @@ graph TD
 
 **Week 5**
 
-**Deliverables:**
+**Overview:**
+- Solidify project requirements and constraints
+- Define minimum viable product scope
+- Create comprehensive system models
+- Assess project risks and mitigation strategies
+
+**Key Outcomes:**
 - Final SRS with detailed requirements
 - Minimum Viable Product (MVP) definition
 - Initial UML diagrams (Use Case, Class)
 - Risk assessment and mitigation plan
-
-**Evaluation Criteria:**
-- Requirements quality and detail (40%)
-- UML diagram accuracy (30%)
-- MVP scope definition (20%)
-- Risk analysis depth (10%)
 :::
 
 :::{grid-item-card} **Milestone 3: Design & Architecture**
@@ -263,17 +263,17 @@ graph TD
 
 **Week 7**
 
-**Deliverables:**
+**Overview:**
+- Design user-centered interface and experience
+- Architect scalable system structure
+- Create comprehensive system blueprints
+- Establish design standards and guidelines
+
+**Key Outcomes:**
 - User interface wireframes and mockups
 - System architecture diagram
 - Complete UML diagrams (Sequence, Activity)
 - UI/UX design specifications
-
-**Evaluation Criteria:**
-- Design quality and usability (35%)
-- Architecture appropriateness (30%)
-- UML completeness (25%)
-- Design consistency (10%)
 :::
 
 :::{grid-item-card} **Milestone 4: Core Implementation**
@@ -281,17 +281,17 @@ graph TD
 
 **Week 9**
 
-**Deliverables:**
+**Overview:**
+- Implement fundamental application features
+- Apply software design patterns effectively
+- Establish code quality standards
+- Track development progress systematically
+
+**Key Outcomes:**
 - Core application features implemented
 - Design patterns integration
 - Code review documentation
 - Implementation progress report
-
-**Evaluation Criteria:**
-- Code quality and patterns (40%)
-- Feature completeness (30%)
-- Code review quality (20%)
-- Progress documentation (10%)
 :::
 
 :::{grid-item-card} **Final Milestone: Complete System**
@@ -299,18 +299,18 @@ graph TD
 
 **Week 11**
 
-**Deliverables:**
+**Overview:**
+- Deliver fully functional application
+- Ensure comprehensive testing coverage
+- Implement automated deployment pipeline
+- Complete all project documentation
+
+**Key Outcomes:**
 - Complete application with all features
 - Comprehensive testing suite
 - CI/CD pipeline setup
 - Complete project documentation
 - Demo video
-
-**Evaluation Criteria:**
-- Application functionality (35%)
-- Testing coverage (25%)
-- Documentation quality (20%)
-- CI/CD implementation (20%)
 :::
 
 :::{grid-item-card} **Project Presentations**
@@ -318,20 +318,18 @@ graph TD
 
 **Week 13**
 
-**Presentation Requirements:**
+**Overview:**
+- Demonstrate technical achievements and learning
+- Showcase application functionality and architecture
+- Reflect on agile development process
+- Share insights and lessons learned
+
+**Presentation Structure:**
 - 15-minute presentation per team
 - Live demo of the application
 - Technical architecture overview
 - Agile process reflection
 - Lessons learned and future improvements
-
-**Evaluation Criteria:**
-- Presentation clarity (25%)
-- Demo quality (30%)
-- Technical depth (25%)
-- Team collaboration evidence (20%)
-
-**Audience:** Students, instructor, and invited industry professionals
 :::
 
 ::::
@@ -340,22 +338,22 @@ graph TD
 
 ::::{grid} 2
 
-:::{grid-item-card} 📖 **Lectures**
+:::{grid-item-card} **Lectures**
 :link: lectures
 Interactive lessons with real-world examples and demonstrations
 :::
 
-:::{grid-item-card} 📝 **Assignments**
+:::{grid-item-card} **Assignments**
 :link: assignments
 Individual coding tasks and analysis exercises
 :::
 
-:::{grid-item-card} 🏗️ **Projects** 
+:::{grid-item-card} **Projects**
 :link: projects
 Team-based Scrum project development
 :::
 
-:::{grid-item-card}  **Resources**
+:::{grid-item-card} **Resources**
 :link: resources
 Setup guides, tools, and additional materials
 :::
