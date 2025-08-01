@@ -18,16 +18,15 @@ keywords:
 ```{note}
 **Course Information**
 - **Course Code:** CS 2450
-- **Semester:** Spring 2025
 - **Instructor:** Dr. Qratul Alahy
 - **Email:** qratul@uvu.edu
 ```
 
-## Course Overview
+## 📚 Course Overview
 
 This course provides a comprehensive introduction to software engineering principles, methodologies, and best practices. Students will learn essential skills for developing high-quality software systems in team environments using Agile/Scrum methodologies.
 
-##  Learning Outcomes
+## 🎓 Learning Outcomes
 
 By the end of this course, students will be able to:
 
@@ -38,230 +37,306 @@ By the end of this course, students will be able to:
 - Write comprehensive tests and maintain code quality
 - Work effectively in collaborative development teams
 
-##  14-Week Course Journey
+## 🎯 14-Week Course Journey
 
 Our course follows a structured learning path with hands-on project development using 2-week Scrum sprints:
 
 ```{mermaid}
-gantt
-    title Software Engineering Course Timeline
-    dateFormat  X
-    axisFormat Week %s
-
-    section Foundations
-    Introduction to SWE           :intro, 0, 1
-    Version Control (Git/GitHub)  :git, 1, 2
-
-    section Agile & Process
-    SDLC & Agile Scrum           :agile, 2, 4
-    Scrum with Zenhub            :scrum, 3, 4
+graph TD
+    A[Week 1: Introduction to SWE] --> B[Week 2: Version Control Git/GitHub]
+    B --> C[Week 3-4: SDLC & Agile Scrum]
+    C --> D[Week 5-6: Requirements Engineering]
+    D --> E[Week 7: UI Design & Architecture]
+    E --> F[Week 8: Design Principles]
+    F --> G[Week 9-10: Design Patterns]
+    G --> H[Week 11: Testing & TDD]
+    H --> I[Week 12: Refactoring & DevOps]
+    I --> J[Week 13: Presentations & Kanban]
+    J --> K[Week 14: Review & Agile Practice]
     
-    section Requirements
-    Requirements Engineering      :req, 4, 6
-    Analysis & UML               :uml, 5, 6
-
-    section Design
-    UI Design & Architecture     :ui, 6, 7
-    Design Principles            :principles, 7, 8
-    Design Patterns              :patterns, 8, 10
-
-    section Quality
-    Testing & TDD                :testing, 10, 11
-    Refactoring & DevOps         :devops, 11, 12
-
-    section Wrap-up
-    Presentations & Kanban       :present, 12, 13
-    Review & Agile Practice      :review, 13, 14
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style B fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    style C fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style D fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style E fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style F fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style G fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style H fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+    style I fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+    style J fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style K fill:#fce4ec,stroke:#c2185b,stroke-width:2px
 ```
 
-###  Project Timeline with Scrum Sprints
+## � Weekly Course Breakdown
 
-```{mermaid}
-timeline
-    title Project Development with 2-Week Scrum Sprints
-    
-    Week 2 : Project Kickoff
-           : Team Formation
-           : GitHub Repository Setup
-           : Initial Brainstorming
-           
-    Week 3 : Sprint 1 - Planning
-           : Milestone 1 📋
-           : Product Backlog Creation
-           : User Stories & SRS Draft
-           
-    Week 5 : Sprint 2 - Requirements
-           : Milestone 2 📝
-           : Finalized SRS & MVP
-           : UML Diagrams Start
-           
-    Week 7 : Sprint 3 - Design
-           : Milestone 3 🎨
-           : Wireframes & Mockups
-           : Class/Use Case Diagrams
-           
-    Week 9 : Sprint 4 - Implementation
-           : Milestone 4 ⚙️
-           : Core Features & Patterns
-           : Design Pattern Integration
-           
-    Week 11 : Sprint 5 - Final Release
-            : Milestone 5 🏁
-            : Complete Application
-            : Testing & Refactoring
-            : CI/CD Pipeline
-            
-    Week 13 : Project Presentations
-            : Sprint Review
-            : Team Retrospectives
-```
+## 📊 Weekly Course Breakdown
 
-##  Weekly Course Breakdown
+::::{grid} 2 2 2 3
 
-::::{tab-set}
+:::{grid-item-card} 📚 **Week 1: Introduction to SWE**
+:class-card: border-primary
 
-:::{tab-item} **Weeks 1-2: Foundations**
-:sync: foundations
+🎯 Course overview & importance of software engineering  
+🏛️ Historical context & software engineering vs programming  
+👥 **Project:** Team formation, brainstorm ideas
 
-**Week 1: Introduction to Software Engineering**
-- Course overview & importance of software engineering
-- Historical context & software engineering vs programming
-- **Project:** Team formation, brainstorm ideas
-
-**Week 2: Version Control with Git & GitHub** 
-- Git basics: repositories, commits, branches
-- GitHub collaboration: remote repos, pull requests
-- **Project:** GitHub repo setup, initial commit
-- 🎭 **[Interactive Presentation](slides/02-version-control/README.md)** - Premium Slidev presentation
+**Phase:** 🔵 Foundation
 :::
 
-:::{tab-item} **Weeks 3-6: Agile & Requirements**
-:sync: agile
+:::{grid-item-card} 🌿 **Week 2: Version Control with Git & GitHub**
+:class-card: border-primary
 
-**Weeks 3-4: SDLC & Agile Scrum** 
-- SDLC models: Waterfall vs Agile
-- Scrum framework: roles, ceremonies, artifacts
-- Zenhub project management setup
-- **Milestone 1 (Week 3):** Product Backlog & SRS Draft
+⚡ Git basics: repositories, commits, branches  
+🤝 GitHub collaboration: remote repos, pull requests  
+📁 **Project:** GitHub repo setup, initial commit  
+🎭 **[Interactive Presentation](slides/02-version-control/README.md)**
 
-**Weeks 5-6: Requirements Engineering** 
-- Stakeholder analysis & user stories
-- Functional/non-functional requirements
-- UML diagrams: class, use case, sequence
-- **Milestone 2 (Week 5):** Finalized SRS & MVP
+**Phase:** 🔵 Foundation
 :::
 
-:::{tab-item} **Weeks 7-10: Design**
-:sync: design
+:::{grid-item-card} 🔄 **Week 3: SDLC & Agile Scrum**
+:class-card: border-warning
 
-**Week 7: UI Design & Architecture**
-- GUI concepts, wireframes, mockups
-- Software architectures: Layered, MVC
-- **Milestone 3 (Week 7):** Wireframes & UML Diagrams
+📈 SDLC models: Waterfall vs Agile  
+🏃‍♂️ Scrum framework: roles, ceremonies, artifacts  
+📊 Zenhub project management setup  
+📋 **Milestone 1:** Product Backlog & SRS Draft
 
-**Week 8: Design Principles** 
-- Conceptual integrity, information hiding
-- Cohesion, coupling, SOLID principles
-
-**Weeks 9-10: Design Patterns** 
-- Essential patterns: Factory, Singleton, Observer
-- Strategy, Adapter patterns
-- **Milestone 4 (Week 9):** Implementation with Patterns
+**Phase:** 🟡 Agile Process
 :::
 
-:::{tab-item} **Weeks 11-14: Quality & Wrap-up**
-:sync: quality
+:::{grid-item-card} 🎯 **Week 4: Scrum Deep Dive**
+:class-card: border-warning
 
-**Week 11: Testing** 
-- Unit testing & integration testing
-- Test-Driven Development (TDD)
-- **Milestone 5 (Week 11):** Final Project with Tests 🏁
+🔄 Sprint ceremonies and artifacts  
+📈 User story estimation and velocity  
+🛠️ Agile tools and practices
 
-**Week 12: Refactoring & DevOps**
-- Code refactoring & identifying smells
-- CI/CD pipelines & DevOps basics
-
-**Week 13: Presentations & Kanban**
-- Project presentations (Sprint Review)
-- Introduction to Kanban methodology
-
-**Week 14: Review & Agile Practice**
-- UML diagram review & reinforcement
-- Real-world Agile practices & team dynamics
+**Phase:** 🟡 Agile Process
 :::
 
-::::
+:::{grid-item-card} 📝 **Week 5: Requirements Engineering**
+:class-card: border-warning
 
-##  Project Milestones & Deliverables
+👥 Stakeholder analysis & user stories  
+⚙️ Functional/non-functional requirements  
+📊 UML diagrams: class, use case, sequence  
+📄 **Milestone 2:** Finalized SRS & MVP
 
-::::{grid} 1 1 2 3
-
-:::{grid-item-card} 📋 **Milestone 1**
-**Week 3**
-- Product Backlog
-- SRS Draft
-- User Stories
+**Phase:** 🟡 Requirements
 :::
 
-:::{grid-item-card} 📝 **Milestone 2** 
-**Week 5**
-- Final SRS
-- MVP Definition
-- Initial UML
+:::{grid-item-card} 🔍 **Week 6: Analysis & UML**
+:class-card: border-warning
+
+📐 Advanced UML diagrams  
+🎯 Requirements validation and verification  
+🔄 Change management processes
+
+**Phase:** 🟡 Requirements
 :::
 
-:::{grid-item-card} 🎨 **Milestone 3**
-**Week 7** 
-- Wireframes
-- Mockups
-- Complete UML
+:::{grid-item-card} 🎨 **Week 7: UI Design & Architecture**
+:class-card: border-info
+
+🖼️ GUI concepts, wireframes, mockups  
+🏗️ Software architectures: Layered, MVC  
+🎯 **Milestone 3:** Wireframes & UML Diagrams
+
+**Phase:** 🔮 Design
 :::
 
-:::{grid-item-card} ⚙️ **Milestone 4**
-**Week 9**
-- Core Implementation
-- Design Patterns
-- Code Review
+:::{grid-item-card} 🏗️ **Week 8: Design Principles**
+:class-card: border-info
+
+🧩 Conceptual integrity, information hiding  
+🔗 Cohesion, coupling, SOLID principles  
+📐 Design quality metrics
+
+**Phase:** 🔮 Design
 :::
 
-:::{grid-item-card} 🏁 **Final Milestone**
-**Week 11**
-- Complete Application
-- Testing Suite
-- CI/CD Pipeline
-- Documentation
+:::{grid-item-card} 🔧 **Week 9: Design Patterns**
+:class-card: border-info
+
+🏭 Essential patterns: Factory, Singleton, Observer  
+⚡ Strategy, Adapter patterns  
+⚙️ **Milestone 4:** Implementation with Patterns
+
+**Phase:** 🔮 Design
+:::
+
+:::{grid-item-card} 🔨 **Week 10: Advanced Patterns**
+:class-card: border-info
+
+🏗️ Architectural patterns  
+📱 Pattern application in real projects  
+🔄 Refactoring to patterns
+
+**Phase:** 🔮 Design
+:::
+
+:::{grid-item-card} 🧪 **Week 11: Testing & TDD**
+:class-card: border-success
+
+✅ Unit testing & integration testing  
+🔄 Test-Driven Development (TDD)  
+🏁 **Milestone 5:** Final Project with Tests
+
+**Phase:** 🟢 Quality
+:::
+
+:::{grid-item-card} 🚀 **Week 12: Refactoring & DevOps**
+:class-card: border-success
+
+♻️ Code refactoring & identifying smells  
+🔄 CI/CD pipelines & DevOps basics  
+📊 Code quality metrics
+
+**Phase:** 🟢 Quality
+:::
+
+:::{grid-item-card} 🎤 **Week 13: Presentations & Kanban**
+:class-card: border-danger
+
+📢 Project presentations (Sprint Review)  
+📋 Introduction to Kanban methodology  
+🎯 **Project Presentations**
+
+**Phase:** 🔴 Wrap-up
+:::
+
+:::{grid-item-card} 🎓 **Week 14: Review & Practice**
+:class-card: border-danger
+
+📊 UML diagram review & reinforcement  
+🤝 Real-world Agile practices & team dynamics  
+🎉 Course reflection and next steps
+
+**Phase:** 🔴 Wrap-up
 :::
 
 ::::
 
-##  Scrum Framework Integration
+## 🏆 Project Milestones & Deliverables
 
-Our project follows authentic Scrum practices:
+::::{grid} 2 2 3 3
 
-::::{grid} 3
+:::{grid-item-card} 📋 **Milestone 1: Project Foundation**
+:class-card: border-primary
 
-:::{grid-item-card} 👥 **Scrum Roles**
-- **Students:** Development Team members
-- **Rotating Scrum Master:** Different student each sprint
-- **Product Owner:** Instructor
+**📅 Week 3**
+
+**Deliverables:**
+- ✅ Product Backlog with prioritized user stories
+- 📄 Software Requirements Specification (SRS) Draft
+- 👥 Team formation and role assignments
+- 🎯 Project vision and scope definition
+
+**Evaluation Criteria:**
+- Clarity of user stories (25%)
+- Requirements completeness (35%)
+- Team organization (20%)
+- Documentation quality (20%)
 :::
 
-:::{grid-item-card} 🔄 **Scrum Ceremonies**
-- **Sprint Planning:** Start of each 2-week sprint
-- **Daily Standups:** Weekly progress checks
-- **Sprint Review:** Milestone presentations
-- **Retrospectives:** Post-milestone reflection
+:::{grid-item-card} 📝 **Milestone 2: Requirements Finalization**
+:class-card: border-warning
+
+**📅 Week 5**
+
+**Deliverables:**
+- 📋 Final SRS with detailed requirements
+- 🎯 Minimum Viable Product (MVP) definition
+- 📊 Initial UML diagrams (Use Case, Class)
+- 🔍 Risk assessment and mitigation plan
+
+**Evaluation Criteria:**
+- Requirements quality and detail (40%)
+- UML diagram accuracy (30%)
+- MVP scope definition (20%)
+- Risk analysis depth (10%)
 :::
 
-:::{grid-item-card}  **Scrum Artifacts**
-- **Product Backlog:** Maintained throughout course
-- **Sprint Backlog:** Updated each milestone
-- **Increment:** Working software each sprint
+:::{grid-item-card} 🎨 **Milestone 3: Design & Architecture**
+:class-card: border-info
+
+**📅 Week 7**
+
+**Deliverables:**
+- 🖼️ User interface wireframes and mockups
+- 🏗️ System architecture diagram
+- 📊 Complete UML diagrams (Sequence, Activity)
+- 🎨 UI/UX design specifications
+
+**Evaluation Criteria:**
+- Design quality and usability (35%)
+- Architecture appropriateness (30%)
+- UML completeness (25%)
+- Design consistency (10%)
+:::
+
+:::{grid-item-card} ⚙️ **Milestone 4: Core Implementation**
+:class-card: border-success
+
+**📅 Week 9**
+
+**Deliverables:**
+- 💻 Core application features implemented
+- 🔧 Design patterns integration
+- 🔍 Code review documentation
+- 📊 Implementation progress report
+
+**Evaluation Criteria:**
+- Code quality and patterns (40%)
+- Feature completeness (30%)
+- Code review quality (20%)
+- Progress documentation (10%)
+:::
+
+:::{grid-item-card} 🏁 **Final Milestone: Complete System**
+:class-card: border-danger
+
+**📅 Week 11**
+
+**Deliverables:**
+- 🚀 Complete application with all features
+- 🧪 Comprehensive testing suite
+- 🔄 CI/CD pipeline setup
+- 📚 Complete project documentation
+- 🎥 Demo video
+
+**Evaluation Criteria:**
+- Application functionality (35%)
+- Testing coverage (25%)
+- Documentation quality (20%)
+- CI/CD implementation (20%)
+:::
+
+:::{grid-item-card} 🎤 **Project Presentations**
+:class-card: border-purple
+
+**📅 Week 13**
+
+**Presentation Requirements:**
+- 🕐 15-minute presentation per team
+- 🎯 Live demo of the application
+- 📊 Technical architecture overview
+- 🔄 Agile process reflection
+- 📈 Lessons learned and future improvements
+
+**Evaluation Criteria:**
+- Presentation clarity (25%)
+- Demo quality (30%)
+- Technical depth (25%)
+- Team collaboration evidence (20%)
+
+**Audience:** Students, instructor, and invited industry professionals
 :::
 
 ::::
 
-##  Course Navigation
+## 🧭 Course Navigation
 
 ::::{grid} 2
 
@@ -287,24 +362,8 @@ Setup guides, tools, and additional materials
 
 ::::
 
-##  Key Course Highlights
-
-```{admonition} What Makes This Course Special 
-:class: tip
-
-✅ **Real Scrum Experience:** Authentic 2-week sprints with proper ceremonies and artifacts
-
-✅ **Early Project Start:** Hands-on coding begins Week 2, not just theory
-
-✅ **Industry Tools:** Git/GitHub, Zenhub, CI/CD pipelines, modern development practices
-
-✅ **Collaborative Learning:** Team-based project with peer code reviews
-
-✅ **Practical Focus:** Every concept applied immediately in the ongoing project
-```
-
 ---
 
-*Ready to become a software engineering professional? Let's build something amazing together!* 
+*Ready to become a software engineering professional? Let's build something amazing together!*
 
 **Start Here:** [Introduction to Software Engineering →](lectures/01-introduction/index.md)
