@@ -1,17 +1,21 @@
----
-title: "Milestone 5.2: Final Submission"
-description: Complete project documentation and final code submission
----
-
-# Milestone 5.2: Project Presentation
+# Milestone 5.2: Project Presentation (Online)
 
 ---
 
 ## Overview
 
-> In this final milestone, your group will deliver a **10-minute in-person presentation** to showcase your To-Do List project, covering all aspects from planning to testing. This is your chance to present your work to the instructor and peers in class, like a client meeting with executives. You’ll highlight features, software engineering practices, **testing**, **robustness (try-catch)**, and **code smell removal**. Presentations will occur during class time on July 29–August 1, 2025, with peers encouraged to attend for extra credit.
+> In this final milestone, your group will deliver a **10-minute online presentation** to showcase your To-Do List project, covering all aspects from planning to testing. This is your chance to present your work to the instructor and peers, like a client meeting with executives. You’ll highlight features, software engineering practices, **testing**, **robustness (try-catch)**, and **code smell removal**. Presentations will be held via `MS Teams` from July 29–August 1, 2025, with peers encouraged to attend for extra credit.
 
 By completing this milestone, you’ll demonstrate your project’s quality and your team’s engineering skills.
+
+---
+
+## Scheduling
+
+- **Select a Time**: Choose a 30-minute slot (10-minute presentation + 5–10-minute Q&A) between **July 29–August 1, 2025**.
+- **How to Schedule**: Email your top three preferred slots (e.g., “July 29 at 2:00 PM MT”) by **July 29, 2025**. Slots are first-come, first-served.
+- **Platform**: Use `MS Teams`. The meeting link will be shared after confirmation.
+- **Peer Attendance**: Presentation times and links will be shared with all groups for extra credit attendance.
 
 ---
 
@@ -29,8 +33,8 @@ By completing this milestone, you’ll demonstrate your project’s quality and 
   - Live demo: Show working features (e.g., task creation, prioritization).
   - Future ideas: Possible enhancements (e.g., mobile app).
 
-### 2. **In-Person Presentation**
-**Format:** 10-minute presentation in class + 5–10-minute Q&A  
+### 2. **Live Presentation**
+**Format:** 10-minute presentation via `MS Teams` + 5–10-minute Q&A  
 
 - All team members must speak and answer questions.
 - Show your `Zenhub` board to explain team contributions.
@@ -115,24 +119,10 @@ Total: **40 points**. Assessed on clarity and professionalism.
 - **Tips**:
   - Highlight **testing** and **code smell removal**.
   - Ensure demo runs smoothly.
-  - Test presentation setup.
+  - Verify `MS Teams` setup.
 - **Extra Credit**: 5 points for attending another presentation and asking questions.
 - **Support**: Presentation coaching; peer feedback.
 
 ---
 
 > **Show off your project’s quality—deliver a clear, confident presentation!**
-
-## Navigation
-
-- **Previous:** [Milestone 5.1: Final Presentation](milestone-5-1)
-- **Next:** [Final Project Submission](final-submission)
-
-### All Project Milestones
-1. [Milestone 1: Project Initiation](milestone-1)
-2. [Milestone 2: Requirements Engineering](milestone-2)
-3. [Milestone 3: System Modeling](milestone-3)
-4. [Milestone 4: Advanced Features](milestone-4)
-5. [Milestone 5.1: Final Presentation](milestone-5-1)
-6. **[Milestone 5.2: Final Submission](milestone-5-2)** ← Current
-7. [Final Project Submission](final-submission)

@@ -3,20 +3,86 @@ title: Project Milestones
 description: Semester-long To-Do List application development through structured milestones
 ---
 
-## 🏗️ Project Overview
+# Project Overview: To-Do List Application Development
 
-Projects provide hands-on experience with software development in team environments. You'll apply course concepts to build real-world applications while practicing collaboration, project management, and professional development workflows.
+## Introduction
 
-The semester-long To-Do List application project is divided into structured milestones that align with course modules and build progressively toward a complete software solution.
+In this Introduction to Software Engineering course, you will embark on a semester-long group project to design, develop, and deploy a Python-based To-Do List application (also referred to as a Task Manager). This hands-on project simulates real-world software engineering practices, emphasizing Agile methodologies, collaborative tools, and iterative development. Working in teams of 3-5 students, you will apply concepts from the course textbook (*Software Engineering: A Modern Approach* by Marco Tulio Valente) and lectures to build a functional application that helps users organize, prioritize, and track tasks efficiently.
 
-```{note}
-**Project Guidelines**
-- Teams of 3-5 students
-- Agile development methodology
-- Regular sprint reviews and retrospectives
-- Professional-quality deliverables
-- GitHub releases for milestone submissions
-```
+The project encourages creativity: while the core functionality is a standard To-Do List, teams are expected to plan and incorporate unique features (e.g., AI-driven task suggestions, collaborative sharing, or integration with calendars) to differentiate their application. As of August 02, 2025, this project aligns with current industry trends in agile development, DevOps, and user-centered design, preparing you for professional roles in software engineering.
+
+## Project Objectives
+
+The primary goals of this project are to:
+
+- **Apply Software Engineering Principles**: Implement SDLC processes (e.g., Agile/Scrum), requirements engineering, design patterns, testing, and refactoring in a practical setting.
+- **Foster Collaboration and Teamwork**: Form cross-functional teams, rotate roles (e.g., Scrum Master), and use tools for seamless communication and task management.
+- **Build Technical Proficiency**: Develop a Python application with modular architecture (e.g., MVC), incorporating UML modeling, SOLID principles, and design patterns.
+- **Emphasize Quality and Iteration**: Achieve high test coverage, automate workflows with DevOps, and iterate based on feedback to produce maintainable, scalable code.
+- **Promote Innovation and Reflection**: Customize the To-Do List with team-specific features, reflect on processes, and present outcomes professionally.
+
+By the end of the semester, your team will have a polished, version-controlled repository showcasing a complete application, demonstrating mastery of course topics.
+
+## Scope and Features
+
+The To-Do List application must include **core functionalities** such as:
+
+- Task creation, viewing, editing, deletion, and prioritization.
+- Basic user authentication (e.g., simple login for multi-user support).
+- Console-based MVP evolving to a GUI (e.g., using Tkinter).
+
+**Potential advanced features** (planned via backlog):
+
+- Task categorization/tagging, due dates with reminders.
+- Search/filtering, export/import (e.g., CSV).
+- Collaborative sharing or integration with external APIs (e.g., calendar sync).
+- Unique innovations: Gamification (e.g., points for completed tasks) or AI prioritization.
+
+The scope is managed through Agile sprints (2-week milestones), ensuring incremental progress without overcommitment. Non-functional requirements include responsiveness (e.g., load times under 2 seconds), cross-platform compatibility, and 80%+ test coverage.
+
+## Tools and Technologies
+
+- **Programming Language**: Python 3.x (with libraries like Tkinter for GUI, pytest for testing).
+- **Version Control**: Git/GitHub (branching strategy: main, dev, feature branches; releases for milestones).
+- **Project Management**: Zenhub (integrated with GitHub for backlogs, epics, and sprints).
+- **Modeling/Diagramming**: draw.io or PlantUML for UML (class, use case, activity, sequence diagrams); Figma/Balsamiq for wireframes.
+- **DevOps**: GitHub Actions for CI/CD (automated testing/linting).
+- **Documentation**: Markdown for README, SRS, reports; IEEE-style templates for formal docs.
+- **Collaboration**: Canvas for submissions; Slack/Teams for communication.
+
+No external installations beyond standard Python libraries; adhere to course prerequisites (e.g., OOP in Python).
+
+## Milestones Overview
+
+The project is divided into iterative milestones, each building on the previous:
+
+- **Milestone 1 (Week 4)**: Team formation, product backlog, draft planning, Git/Zenhub setup.
+- **Milestone 2 (Week 6)**: SRS, console MVP, user stories, use case diagrams, basic tests.
+- **Milestone 3 (Week 8)**: UML diagrams (class, activity, sequence), MVC code setup, wireframes, basic tests.
+- **Milestone 4 (Week 10)**: 3-7 features implemented with design principles/patterns, tests.
+- **Milestone 5.1 (Week 12)**: Comprehensive tests/coverage, refactoring, DevOps setup.
+- **Milestone 5.2 (Week 13)**: Presentation, Kanban intro, retrospective.
+- **Final Submission (Week 14)**: Issue resolutions, repo reorganization, polished README.
+
+Each milestone includes a mid-week progress check (minor GitHub release) and end-of-week final submission (major release). Weekly reflections and meetings ensure consistency.
+
+## Expectations and Grading
+
+- **Team Dynamics**: Equitable contribution; rotate Scrum Master; hold weekly standups.
+- **Submissions**: Via GitHub release URLs; professional, error-free docs/code.
+- **Grading Breakdown**: 40% milestones (rubrics per phase), 20% midterm/final exams (project-related questions), 20% presentation, 10% reflections, 10% overall quality (e.g., coverage, innovation).
+- **Best Practices**: Commit frequently with descriptive messages; use pull requests; achieve 80%+ test coverage; document decisions.
+- **Academic Integrity**: Original work; cite sources (e.g., patterns from textbook); no AI-generated code without attribution.
+- **Support**: Office hours, TA feedback on progress checks, peer reviews.
+
+## Resources
+
+- **Primary Textbook**: *Software Engineering: A Modern Approach* (https://softengbook.org/) – Chapters mapped to milestones.
+- **Supplementary**: *Clean Code* (Uncle Bob) for principles; *Hands-On Software Engineering with Python* for implementation.
+- **Online**: GitHub Education, Zenhub docs, UML tutorials.
+- **Course Materials**: Lecture slides, example repos on Canvas.
+
+This project is your opportunity to synthesize course knowledge into a tangible product—approach it with curiosity and rigor for a rewarding experience. If issues arise, consult the instructor early.
 
 ## � Project Milestones
 
@@ -79,41 +145,6 @@ Polish and issue resolution
 ::::
 
 ## 🎯 Project Objectives
-
-::::{grid} 2
-:::{grid-item-card} 🤝 Collaboration Skills
-
-- Git workflows and branching strategies
-- Code reviews and pair programming  
-- Team communication and coordination
-- Conflict resolution and consensus building
-
-:::
-
-:::{grid-item-card} 🔧 Technical Skills
-
-- Software architecture design
-- Testing strategy implementation
-- CI/CD pipeline setup
-- Documentation and deployment
-
-:::
-
-:::{grid-item-card}  Project Management
-
-- Agile/Scrum methodology
-- Sprint planning and execution
-- Progress tracking and reporting
-- Risk management and mitigation
-
-:::
-
-:::{grid-item-card} 💼 Professional Practices
-
-- Requirements gathering and analysis
-- User-centered design approach
-- Quality assurance processes
-- Professional presentation skills
 
 :::
 ::::

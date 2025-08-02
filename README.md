@@ -6,7 +6,7 @@ A comprehensive course website built with [MyST Markdown](https://mystmd.org) co
 
 - **Course Code:** CS 2450
 - **Semester:** Spring 2025
-- **Instructor:** Dr. Qratul Alahy
+- **Instructor:** Ratul Alahy
 - **Institution:** Utah Valley University
 
 ## 🌐 Website

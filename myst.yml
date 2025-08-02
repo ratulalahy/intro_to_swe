@@ -12,7 +12,7 @@ project:
     - testing
     - design patterns
   authors:
-    - name: Dr. Qratul Alahy
+    - name: Ratul Alahy
       email: qratul@uvu.edu
       affiliation: Utah Valley University
   github: https://github.com/ratulalahy/intro_to_swe

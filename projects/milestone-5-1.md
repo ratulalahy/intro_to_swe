@@ -3,147 +3,133 @@ title: "Milestone 5.1: Final Presentation"
 description: Project demonstration and presentation to stakeholders
 ---
 
-# Milestone 5.1: Testing, Refactoring, and DevOps Integration
+# Milestone 5.1: Testing, Robustness, and Code Smell Removal
+
+---
 
 ## Overview
 
-As the penultimate development phase of your To-Do List application, Milestone 5.1 prioritizes quality assurance and operational efficiency. This milestone involves creating extensive test suites with coverage analysis, refactoring code to eliminate smells, and introducing DevOps practices for automated workflows. Aligned with textbook guidance on testing and refactoring, you will elevate your project's reliability and maintainability, preparing it for presentation and final deployment. This reflects rigorous engineering standards in advanced academic curricula, where validation and automation are key to professional-grade software.
+> As the penultimate development phase of your To-Do List application, **Milestone 5.1** prioritizes quality assurance through **_testing_**, **_robustness (try-catch/exception)_**, **_test coverage reporting_**, and **_code smell removal_**. This week-long milestone involves creating extensive test suites with coverage analysis and refactoring code to eliminate smells, enhancing reliability and maintainability. Aligned with textbook guidance on testing and refactoring, you will prepare your project for presentation and final deployment, reflecting rigorous engineering standards in advanced academic curricula where validation is key to professional-grade software.
 
-By completing this milestone, your team will deliver a thoroughly tested, optimized codebase with CI/CD capabilities, ensuring robustness and streamlined processes.
+By completing this milestone, your team will deliver a thoroughly tested, optimized codebase with robust error handling and documented code smell removal, ensuring a high-quality application.
+
+---
 
 ## Learning Objectives
 
 Upon successful completion of this milestone, you will be able to:
 
-- Construct and execute a comprehensive test suite encompassing unit, integration, and end-to-end tests, while evaluating coverage to identify gaps.
+- **Construct and execute** a comprehensive test suite encompassing unit, integration, and end-to-end tests, while evaluating coverage to identify gaps.
+- **Detect and resolve** code smells through systematic refactoring, preserving functionality while enhancing code quality.
+- **Incorporate robust error handling** using try-catch/exception mechanisms to improve application stability.
+- **Update project artifacts** and tools to reflect quality improvements, facilitating traceability and collaboration.
+- **Incorporate iterative feedback** via releases, reinforcing Agile refinement.
 
-- Detect and resolve code smells through systematic refactoring, preserving functionality while enhancing code quality.
-
-- Configure basic DevOps pipelines for continuous integration and deployment, automating testing and builds.
-
-- Update project artifacts and tools to reflect quality improvements, facilitating traceability and collaboration.
-
-- Incorporate iterative feedback via progress checks and releases, reinforcing Agile refinement.
+---
 
 ## Deliverables
 
-Submit the GitHub release link for progress check and final 5.1 submission via the course platform. Commit all code, tests, and docs to the repository, linking them in release notes. Reference Chapters 8 (Testing), 9 (Refactoring), and 10 (DevOps) for techniques and examples.
+> **Submit** the `GitHub` release link for the final 5.1 submission via the course platform. Commit all code, tests, and docs to the repository, linking them in release notes. Reference Chapters 8 (*Testing*) and 9 (*Refactoring*) for techniques and examples. Focus on **_testing_**, **_robustness (try-catch/exception)_**, **_test coverage reporting_**, and **_code smell removal_**.
 
-1. **Test Suite and Coverage Report** (In repo/tests; PDF report in docs):
+### 1. **_Test Suite and Coverage Report_**
+**Format:** In `repo/tests`; *PDF report* in `repo/docs`  
 
-   - 20+ tests for features/patterns (unit for components, integration for interactions, E2E for flows).
+- 20+ tests for features/patterns (unit for components, integration for interactions, E2E for flows), including **_try-catch/exception_** handling for robustness.
+- Coverage analysis (e.g., `pytest-cov` report, targeting 80%+; include metrics and visualizations).
 
-   - Coverage analysis (e.g., pytest-cov report, targeting 80%+; include metrics and visualizations).
+### 2. **_Refactoring Documentation_**
+**Format:** *PDF or Markdown* in `repo/docs`, 1-2 pages  
 
-2. **Refactoring Documentation** (PDF or Markdown in repo/docs, 1-2 pages):
+- Identification and removal of 5+ **_code smells_** (e.g., long methods, duplication) with before/after code examples.
+- Refactored segments in `repo/src`, with explanations of applied techniques (e.g., extract class).
 
-   - Identification of 5+ code smells (e.g., long methods, duplication) with before/after code examples.
+### 3. **_Tool Updates_**
 
-   - Refactored segments in src, with explanations of applied techniques (e.g., extract class).
+- **`Zenhub`:** Tasks marked complete; backlog refined for final phase.
+- **`GitHub`:** Commits for refactors/tests; updated `README` with test execution guide.
 
-3. **DevOps Pipeline Setup** (YAML in repo/.github/workflows):
+### 4. **_Individual Reflections_**
+**Format:** Submitted separately via form  
 
-   - CI/CD configuration (e.g., GitHub Actions for linting, testing on pushes/pull requests).
+- Responses to: (1) How did achieving test coverage influence your code's reliability? (2) What refactoring technique proved most impactful, and why?
 
-   - README section on pipeline usage and triggers.
+### 5. **_GitHub Release_**
 
-4. **Tool Updates**:
+#### Final 5.1 Submission (End of Week)
+Major version (e.g., `v5.1`) tagged `"milestone5.1"`. Link all deliverables in release notes, with a changelog detailing improvements. Include a comment specifying which **_code smells_** were found and removed (e.g., "Found and removed long methods and duplicated code"). **Submit** URL.
 
-   - Zenhub: Tasks marked complete; backlog refined for final phase.
+**Example GitHub Release Creation:**  
+```markdown
+- Repo > Releases > New release.
+- Tag: "milestone5.1" (final).
+- Title: "Milestone 5.1 Final".
+- Description: " - Coverage Report: [docs/coverage.pdf] \n - Refactoring Log: [docs/refactor.md] \n - Changelog: Added E2E tests and fixed smells. \n - Code Smells Removed: Long methods, duplicated code."
+```
 
-   - GitHub: Commits for refactors/tests; updated README with test execution guide.
-
-5. **Individual Reflections** (Submitted separately via form):
-
-   - Responses to: (1) How did achieving test coverage influence your code's reliability? (2) What refactoring technique proved most impactful, and why?
-
-6. **GitHub Releases**:
-
-   - **Progress Check (Mid-Week)**: Minor version (e.g., v4.1) tagged "milestone5.1-progress". Include initial tests/refactors/pipeline draft. Notes: Progress overview (e.g., "Implemented unit tests; 60% coverage"). Submit URL.
-
-   - **Final 5.1 Submission (End of Week)**: Major version (e.g., v5.1) tagged "milestone5.1". Link all deliverables; changelog from check (e.g., "Refactored duplicates; CI pipeline operational"). Submit URL.
-
-   **Example GitHub Release Creation**:
-
-   - Repo > Releases > New release.
-
-   - Tag: "milestone5.1" (final) or "milestone5.1-progress-v4.1" (check).
-
-   - Title: "Milestone 5.1 Final" or "Milestone 5.1 Progress".
-
-   - Description: " - Coverage Report: [docs/coverage.pdf] \n - Refactoring Log: [docs/refactor.md] \n - Changelog: Added E2E tests and fixed smells."
+---
 
 ## Tasks and Instructions
 
-Extend Milestone 4; use branches like "refactor/smell-resolution".
+Extend Milestone 4; use branches like `"refactor/smell-resolution"`.
 
-1. **Test Suite Creation**:
+### 1. **Test Suite Creation**
+- Expand prior tests; follow TDD for refactors per Chapter 8 (*Testing*).
+- Include **_try-catch/exception_** handling in tests to ensure robustness.
+- Run coverage tools (e.g., `pytest-cov`); address low-coverage areas.
 
-   - Expand prior tests; follow TDD for refactors per Chapter 8.
+### 2. **Code Refactoring**
+- Audit for **_code smells_** using Chapter 9 (*Refactoring*); refactor iteratively (e.g., inline temp variables).
+- Document specific smells found and removed (e.g., long methods, duplication).
+- Verify with tests to ensure no regressions.
 
-   - Run coverage tools; address low-coverage areas.
+### 3. **Artifact Updates**
+- Sync `Zenhub`/`GitHub`; document changes in `README` with test execution guide.
 
-2. **Code Refactoring**:
+### 4. **Release Management**
 
-   - Audit for smells using Chapter 9; refactor iteratively (e.g., inline temp variables).
+#### End of Week
+Full validation with tests, refactored code, and coverage report. Create major release (`v5.1`). *Expect*: Passing tests, optimized code with removed **_code smells_**, high **_test coverage_**.
 
-   - Verify with tests to ensure no regressions.
-
-3. **DevOps Implementation**:
-
-   - Draft YAML for Actions; test locally/on GitHub.
-
-   - Integrate with existing code (e.g., run pytest in pipeline).
-
-4. **Artifact Updates**:
-
-   - Sync Zenhub/GitHub; document changes.
-
-5. **Progress Check and Release Management**:
-
-   - **Mid-Week**: Partial suite/refactors. Minor release. Expect: Early coverage, draft YAML.
-
-   - **End of Week**: Full validation. Major release. Expect: Passing pipeline, optimized code.
+---
 
 ## Evaluation Rubric
 
-Total: 60 points. Assess on thoroughness and automation.
+Total: **40 points**. Assess on thoroughness, robustness, and code smell removal.
 
-| Criteria                  | Points | Description |
+| **Criteria**              | **Points** | **Description**                                                                 |
+|---------------------------|------------|---------------------------------------------------------------------------------|
+| **Test Suite & Coverage**| 16         | Extensive tests with **_try-catch/exception_**; high coverage with analysis.     |
+| **Refactoring**           | 12         | Effective **_code smell_** removal; documented improvements.                     |
+| **Tool Updates & Releases**| 7         | Complete updates; detailed versioning with **_code smell_** comments.            |
+| **Individual Reflections**| 3          | Insightful ties to quality practices.                                            |
 
-|---------------------------|--------|-------------|
+> **Note:** Daily late penalty: 10%. Failing tests require fixes.
 
-| **Test Suite & Coverage**| 20     | Extensive tests; high coverage with analysis. |
-
-| **Refactoring**          | 15     | Effective resolutions; documented improvements. |
-
-| **DevOps Pipeline**      | 10     | Functional automation; integrates seamlessly. |
-
-| **Tool Updates & Releases**| 10    | Complete updates; detailed versioning. |
-
-| **Individual Reflections**| 5      | Insightful ties to quality practices. |
-
-Daily late penalty: 10%. Failing pipelines require fixes.
+---
 
 ## Resources and Best Practices
 
-- **Textbook**: Chapter 8 (Coverage, TDD); Chapter 9 (Smells, Techniques); Chapter 10 (CI/CD).
+### Textbook Integration
+- Chapter 8 (*Testing: Coverage, TDD*); Chapter 9 (*Refactoring: Smells, Techniques*).
 
-- **Tools**: pytest-cov; GitHub Actions starters.
+### Tools
+- [`pytest-cov`](https://pytest-cov.readthedocs.io/en/latest/) for test coverage analysis.
+- [`coverage.py`](https://coverage.readthedocs.io/en/latest/) for alternative coverage reporting.
+- [`unittest`](https://docs.python.org/3/library/unittest.html) for built-in Python testing framework.
+- [`nose2`](https://docs.nose2.io/en/latest/) for extended testing capabilities.
 
-- **Tips**:
+### Tips for Excellence
+- **Coverage:** Focus on branches/conditions; include **_exception_** cases.
+- **Refactor:** Document specific **_code smells_** removed; use small steps and test.
+- **Release:** Clearly comment on removed **_code smells_** in release notes.
+- **Avoid Pitfalls:** Ensure cross-platform compatibility; verify tests pass.
 
-  - Coverage: Focus on branches/conditions.
+### Support
+- Debugging sessions; refactoring examples.
 
-  - Refactor: Small steps; always test.
+---
 
-  - Pipeline: Start simple (test-only).
-
-  - Avoid Pitfalls: Ensure cross-platform compatibility.
-
-- **Support**: Debugging sessions; refactoring examples.
-
-Refine your project to peak quality—testing fortifies your engineering prowess.
+> **Refine your project to peak quality—rigorous testing, robust error handling, and code smell removal fortify your engineering prowess.**
 
 ## Navigation
 
