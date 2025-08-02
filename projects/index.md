@@ -1,6 +1,6 @@
 ---
-title: Projects
-description: Team-based software development projects applying course concepts
+title: Project Milestones
+description: Semester-long To-Do List application development through structured milestones
 ---
 
 ## 🏗️ Project Overview
@@ -29,18 +29,18 @@ Team formation, vision, planning, and tool setup
 **Due:** End of Week 2
 :::
 
-:::{grid-item-card} [Milestone 2: Requirements & Design](milestone-2)
+:::{grid-item-card} [Milestone 2: Requirements Engineering](milestone-2)
 :link: milestone-2
 
-Requirements analysis and system design
+Requirements engineering, use case modeling, and console MVP
 
 **Due:** End of Week 4
 :::
 
-:::{grid-item-card} [Milestone 3: Core Development](milestone-3)
+:::{grid-item-card} [Milestone 3: System Modeling](milestone-3)
 :link: milestone-3
 
-MVP implementation and testing
+UML modeling, MVC architecture, and wireframes
 
 **Due:** End of Week 8
 :::
@@ -78,35 +78,7 @@ Polish and issue resolution
 :::
 ::::
 
-## 📋 Legacy Project Archive
-
-```{list-table} Previous Project Structure
-:header-rows: 1
-:name: project-schedule
-
-* - Project
-  - Duration
-  - Team Size
-  - Points
-  - Key Focus Areas
-* - [Project 1: Team Portfolio Website](project-1)
-  - 3 weeks
-  - 3-4 students
-  - 200
-  - Git collaboration, UI design, basic web dev
-* - [Project 2: Software Engineering Tool](project-2)
-  - 4 weeks
-  - 3-4 students
-  - 300
-  - Architecture, testing, documentation
-* - [Final Project: Complete Software Solution](final-project)
-  - 6 weeks
-  - 3-4 students
-  - 500
-  - Full SDLC, all course concepts integrated
-```
-
-##  Project Objectives
+## 🎯 Project Objectives
 
 ::::{grid} 2
 :::{grid-item-card} 🤝 Collaboration Skills

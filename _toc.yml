@@ -14,10 +14,22 @@ chapters:
       - file: assignments/assignment-1
         title: "Assignment 1: Git Basics"
   - file: projects/index
-    title: Projects
+    title: Project Milestones
     sections:
-      - file: projects/project-1
-        title: "Project 1: Team Portfolio Website"
+      - file: projects/milestone-1
+        title: "Milestone 1: Project Initiation"
+      - file: projects/milestone-2
+        title: "Milestone 2: Requirements Engineering"
+      - file: projects/milestone-3
+        title: "Milestone 3: System Modeling"
+      - file: projects/milestone-4
+        title: "Milestone 4: Advanced Features"
+      - file: projects/milestone-5-1
+        title: "Milestone 5.1: Final Presentation"
+      - file: projects/milestone-5-2
+        title: "Milestone 5.2: Final Submission"
+      - file: projects/final-submission
+        title: "Final Project Submission"
   - file: in-class-activities/index
     title: In-Class Activities
   - file: resources/index
