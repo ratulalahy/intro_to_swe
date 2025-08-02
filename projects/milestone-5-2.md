@@ -137,3 +137,12 @@ Celebrate your progress— this milestone highlights your growth as engineers.
 
 - **Previous:** [Milestone 5.1: Final Presentation](milestone-5-1)
 - **Next:** [Final Project Submission](final-submission)
+
+### All Project Milestones
+1. [Milestone 1: Project Initiation](milestone-1)
+2. [Milestone 2: Requirements Engineering](milestone-2)
+3. [Milestone 3: System Modeling](milestone-3)
+4. [Milestone 4: Advanced Features](milestone-4)
+5. [Milestone 5.1: Final Presentation](milestone-5-1)
+6. **[Milestone 5.2: Final Submission](milestone-5-2)** ← Current
+7. [Final Project Submission](final-submission)

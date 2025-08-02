@@ -346,7 +346,7 @@ Interactive lessons with real-world examples and demonstrations
 Individual coding tasks and analysis exercises
 :::
 
-:::{grid-item-card} **Projects**
+:::{grid-item-card} **Project Milestones**
 :link: projects
 Team-based Scrum project development
 :::

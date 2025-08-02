@@ -146,5 +146,14 @@ Submissions are assessed for depth, professionalism, and alignment with objectiv
 
 ## Navigation
 
-- **Previous:** [Project Overview](index)
-- **Next:** [Milestone 2: Requirements & Design](milestone-2)
+- **Previous:** [Project Milestones Overview](index)
+- **Next:** [Milestone 2: Requirements Engineering](milestone-2)
+
+### All Project Milestones
+1. **[Milestone 1: Project Initiation](milestone-1)** ← Current
+2. [Milestone 2: Requirements Engineering](milestone-2)
+3. [Milestone 3: System Modeling](milestone-3)
+4. [Milestone 4: Advanced Features](milestone-4)
+5. [Milestone 5.1: Final Presentation](milestone-5-1)
+6. [Milestone 5.2: Final Submission](milestone-5-2)
+7. [Final Project Submission](final-submission)

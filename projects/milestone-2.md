@@ -143,4 +143,13 @@ Assessed for rigor, clarity, and integration (total: 100 points). Prioritize tex
 ## Navigation
 
 - **Previous:** [Milestone 1: Project Initiation](milestone-1)
-- **Next:** [Milestone 3: Core Development](milestone-3)
+- **Next:** [Milestone 3: System Modeling](milestone-3)
+
+### All Project Milestones
+1. [Milestone 1: Project Initiation](milestone-1)
+2. **[Milestone 2: Requirements Engineering](milestone-2)** ← Current
+3. [Milestone 3: System Modeling](milestone-3)
+4. [Milestone 4: Advanced Features](milestone-4)
+5. [Milestone 5.1: Final Presentation](milestone-5-1)
+6. [Milestone 5.2: Final Submission](milestone-5-2)
+7. [Final Project Submission](final-submission)
