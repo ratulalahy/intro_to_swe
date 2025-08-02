@@ -7,17 +7,80 @@ description: Team-based software development projects applying course concepts
 
 Projects provide hands-on experience with software development in team environments. You'll apply course concepts to build real-world applications while practicing collaboration, project management, and professional development workflows.
 
+The semester-long To-Do List application project is divided into structured milestones that align with course modules and build progressively toward a complete software solution.
+
 ```{note}
 **Project Guidelines**
-- Teams of 3-4 students
+- Teams of 3-5 students
 - Agile development methodology
 - Regular sprint reviews and retrospectives
 - Professional-quality deliverables
+- GitHub releases for milestone submissions
 ```
 
-## 📋 Project Timeline
+## � Project Milestones
 
-```{list-table} Project Schedule
+::::{grid} 2
+:::{grid-item-card} [Milestone 1: Project Initiation](milestone-1)
+:link: milestone-1
+
+Team formation, vision, planning, and tool setup
+
+**Due:** End of Week 2
+:::
+
+:::{grid-item-card} [Milestone 2: Requirements & Design](milestone-2)
+:link: milestone-2
+
+Requirements analysis and system design
+
+**Due:** End of Week 4
+:::
+
+:::{grid-item-card} [Milestone 3: Core Development](milestone-3)
+:link: milestone-3
+
+MVP implementation and testing
+
+**Due:** End of Week 8
+:::
+
+:::{grid-item-card} [Milestone 4: Advanced Features](milestone-4)
+:link: milestone-4
+
+Feature enhancement and integration
+
+**Due:** End of Week 12
+:::
+
+:::{grid-item-card} [Milestone 5.1: Final Presentation](milestone-5-1)
+:link: milestone-5-1
+
+Project demonstration and presentation
+
+**Due:** Week 15
+:::
+
+:::{grid-item-card} [Milestone 5.2: Final Submission](milestone-5-2)
+:link: milestone-5-2
+
+Complete project documentation and code
+
+**Due:** Finals Week
+:::
+
+:::{grid-item-card} [Final Project Submission](final-submission)
+:link: final-submission
+
+Polish and issue resolution
+
+**Due:** Post-Finals
+:::
+::::
+
+## 📋 Legacy Project Archive
+
+```{list-table} Previous Project Structure
 :header-rows: 1
 :name: project-schedule
 

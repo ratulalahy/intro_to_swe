@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Software Engineering Course Schedule (Fall 2025)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        tr td:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        tr td:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .topic-cell {
+            font-weight: bold;
+            color: #212529;
+        }
+        .midterm-row td, .final-row td {
+            background-color: #e9ecef !important; /* Neutral gray for exams */
+            font-weight: bold;
+            text-align: center;
+        }
+        .holiday-note {
+            color: #dc3545; /* Red for holiday notes */
+            font-style: italic;
+        }
+        .intro { background-color: #add8e6; } /* Light Blue */
+        .sdlc-agile { background-color: #90ee90; } /* Light Green */
+        .version-control { background-color: #ffffe0; } /* Light Yellow */
+        .project-mgmt { background-color: #98fb98; } /* Pale Green */
+        .requirements { background-color: #ffdab9; } /* Peach Puff */
+        .ui-arch { background-color: #dda0dd; } /* Plum */
+        .design-principles { background-color: #ffb6c1; } /* Light Pink */
+        .design-patterns { background-color: #ffc0cb; } /* Pink */
+        .testing { background-color: #f4a460; } /* Sandy Brown */
+        .refactor-devops { background-color: #d3d3d3; } /* Light Gray */
+        .presentation-kanban { background-color: #e0ffff; } /* Light Cyan */
+        .revision-agile { background-color: #b0c4de; } /* Light Steel Blue */
+        table tr:hover td {
+            background-color: #e9ecef !important; /* Hover effect overrides color */
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Intro to Software Engineering Course Schedule (Fall 2025)</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Dates</th>
+                <th>Topics</th>
+                <th>Lectures/Details</th>
+                <th>In-class Work</th>
+                <th>Homework/Assignments</th>
+                <th>Reading (Before Class)</th>
+                <th>Project Milestones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Aug 18–24</td>
+                <td class="topic-cell intro">Introduction to Software Engineering</td>
+                <td>Course overview, importance, historical context, SE vs. programming. <span class="holiday-note">Note: Classes start Aug 20.</span></td>
+                <td> </td>
+                <td> </td>
+                <td>Chapter 1: Introduction (Historical Context, Topics of Study)</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Aug 25–31</td>
+                <td class="topic-cell sdlc-agile">SDLC and Agile Scrum</td>
+                <td>SDLC overview (Waterfall, Agile, XP), Agile principles, Scrum intro.</td>
+                <td>Simulate a Scrum planning session.</td>
+                <td>Read Chapter 2; compare Waterfall vs. Agile.</td>
+                <td>Chapter 2: Processes (Agile Manifesto, XP, Scrum)</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sep 1–7</td>
+                <td class="topic-cell version-control">Version Control with Git and GitHub</td>
+                <td>Git basics, GitHub essentials. <span class="holiday-note">Note: Labor Day (Sep 1).</span></td>
+                <td>Hands-on Git exercises: commit, branch.</td>
+                <td>Create a GitHub repo and submit a simple project.</td>
+                <td>Appendix: Git</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sep 8–14</td>
+                <td class="topic-cell project-mgmt">Project Management Board, Scrum (Advanced)</td>
+                <td>Scrum roles, ceremonies, artifacts, Zenhub; advanced Git.</td>
+                <td>Zenhub demo and setup for teams; merge exercises.</td>
+                <td>Set up Zenhub for a mock project.</td>
+                <td>Chapter 2: Processes (Scrum, Kanban)</td>
+                <td>Milestone 1: Team formation, product backlog, first draft planning, Git/Zenhub setup.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sep 15–21</td>
+                <td class="topic-cell requirements">Requirements Engineering I</td>
+                <td>High-level analysis, low-level analysis (stories, use cases, use case diagram, functional and non-functional requirements, SRS).</td>
+                <td>Write user stories for a sample app.</td>
+                <td>Draft SRS for a simple system.</td>
+                <td>Chapter 3: Requirements (User Stories, Use Cases)</td>
+                <td>Progress check: Update Zenhub with stories.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Sep 22–28</td>
+                <td class="topic-cell requirements">Requirements Engineering II</td>
+                <td>MVP, A/B testing, planning poker, UML intro. Create class and use case diagrams.</td>
+                <td>Create class and use case diagrams.</td>
+                <td>Practice planning poker on sample stories.</td>
+                <td>Chapter 3: Requirements (MVP, A/B Testing)</td>
+                <td>Milestone 2: SRS, MVP with console, user stories, use case diagram, basic test cases.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Sep 29–Oct 5</td>
+                <td class="topic-cell ui-arch">UI Design and Architecture</td>
+                <td>GUI concepts, wireframes, mockup, prototype, architectures (Layered, MVC). <span class="holiday-note">Note: Asynchronous Midterm Exam this week.</span></td>
+                <td>Design wireframes for a UI.</td>
+                <td>Read Chapter 7; diagram an MVC app.</td>
+                <td>Chapter 7: Architecture (MVC, Microservices)</td>
+                <td>Progress check: Propose wireframes.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Oct 6–12</td>
+                <td class="topic-cell design-principles">Design Principles</td>
+                <td>Conceptual integrity, hiding, cohesion, coupling, SOLID.</td>
+                <td>Apply SOLID to code examples.</td>
+                <td>Refactor code to follow SOLID.</td>
+                <td>Chapter 5: Design Principles (Conceptual Integrity, Information Hiding, Cohesion, Coupling, SOLID)</td>
+                <td>Milestone 3: UML diagrams (class, activity, sequence), MVC code setup, wireframes, basic tests.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Oct 13–19</td>
+                <td class="topic-cell design-patterns">Design Patterns I</td>
+                <td>Factory, Singleton, Observer, Strategy. <span class="holiday-note">Note: Fall Break (Oct 16–18).</span></td>
+                <td>Implement a pattern in Python.</td>
+                <td>Read Chapter 6; code examples.</td>
+                <td>Chapter 6: Design Patterns (Factory, Singleton, Observer, Strategy)</td>
+                <td>Progress check: Identify patterns for features.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Oct 20–26</td>
+                <td class="topic-cell design-patterns">Design Patterns II</td>
+                <td>Adapter, pattern review and application.</td>
+                <td>Group pattern application to projects.</td>
+                <td>Extend homework with more patterns.</td>
+                <td>Chapter 6: Design Patterns (Adapter, etc.)</td>
+                <td>Milestone 4: Adopt 3–7 features, design principles/patterns, test cases.</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Oct 27–Nov 2</td>
+                <td class="topic-cell testing">Testing</td>
+                <td>Unit, integration testing, TDD, tools, test coverage.</td>
+                <td>Write unit tests for sample code.</td>
+                <td>Read Chapter 8; test a small app.</td>
+                <td>Chapter 8: Testing (Unit Tests, Coverage, TDD)</td>
+                <td>Progress check: Add tests to code.</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Nov 3–9</td>
+                <td class="topic-cell refactor-devops">Refactoring and DevOps</td>
+                <td>Refactoring, code smells, DevOps, CI/CD.</td>
+                <td>Refactor code snippets.</td>
+                <td>Set up basic CI pipeline.</td>
+                <td>Chapter 9: Refactoring; Chapter 10: DevOps (CI/CD)</td>
+                <td>Milestone 5.1: Test cases + coverage.</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Nov 10–16</td>
+                <td class="topic-cell presentation-kanban">Project Presentation and Kanban</td>
+                <td>Project presentations, intro to Kanban.</td>
+                <td>Presentations and feedback.</td>
+                <td>Reflection on Kanban vs. Scrum.</td>
+                <td>Chapter 2: Processes (Kanban)</td>
+                <td>Milestone 5.2: Presentation, retrospective.</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Nov 17–23</td>
+                <td class="topic-cell revision-agile">Critical Revision and Agile in Practice</td>
+                <td>Review UML, Agile in practice.</td>
+                <td>Group review of key concepts.</td>
+                <td> </td>
+                <td>Chapter 4: Models (UML Diagrams)</td>
+                <td>Final submission: Address issues.</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Nov 24–30</td>
+                <td class="topic-cell revision-agile">Course Review</td>
+                <td>Review key concepts, prepare for final exam. <span class="holiday-note">Note: Thanksgiving Break (Nov 24–29).</span></td>
+                <td>Asynchronous review quiz.</td>
+                <td>Complete review quiz.</td>
+                <td>Review Chapters 1–10</td>
+                <td> </td>
+            </tr>
+            <tr class="final-row">
+                <td>16</td>
+                <td>Dec 1–7 (Finals: Dec 8–12)</td>
+                <td colspan="6">Final Exam (Scheduled during finals week, Dec 8–12)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

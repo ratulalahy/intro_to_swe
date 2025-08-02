@@ -67,8 +67,6 @@ graph TD
     style K fill:#64b5f6,stroke:#2196f3,stroke-width:3px
 ```
 
-## � Weekly Course Breakdown
-
 ## Weekly Course Breakdown
 
 ::::{grid} 2
