@@ -1,9 +1,9 @@
 ---
-title: "Milestone 5.1: Final Presentation"
-description: Project demonstration and presentation to stakeholders
+title: "Milestone 5.1: Testing"
+description: Testing, robustness, and code smell removal
 ---
 
-# Milestone 5.1: Testing, Robustness, and Code Smell Removal
+# Milestone 5.1: Testing
 
 ---
 
@@ -133,14 +133,14 @@ Total: **40 points**. Assess on thoroughness, robustness, and code smell removal
 
 ## Navigation
 
-- **Previous:** [Milestone 4: Advanced Features](milestone-4)
-- **Next:** [Milestone 5.2: Final Submission](milestone-5-2)
+- **Previous:** [Milestone 4](milestone-4)
+- **Next:** [Milestone 5.2](milestone-5-2)
 
 ### All Project Milestones
-1. [Milestone 1: Project Initiation](milestone-1)
-2. [Milestone 2: Requirements Engineering](milestone-2)
-3. [Milestone 3: System Modeling](milestone-3)
-4. [Milestone 4: Advanced Features](milestone-4)
-5. **[Milestone 5.1: Final Presentation](milestone-5-1)** ← Current
-6. [Milestone 5.2: Final Submission](milestone-5-2)
-7. [Final Project Submission](final-submission)
+1. [Milestone 1](milestone-1)
+2. [Milestone 2](milestone-2)
+3. [Milestone 3](milestone-3)
+4. [Milestone 4](milestone-4)
+5. **[Milestone 5.1](milestone-5-1)** ← Current
+6. [Milestone 5.2](milestone-5-2)
+7. [Final Submission](milestone-final-submission)

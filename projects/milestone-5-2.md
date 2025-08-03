@@ -1,6 +1,6 @@
 ---
-title: "Milestone 5.2: Final Submission"
-description: Complete project documentation and final code submission
+title: "Milestone 5.2: Project Presentation"
+description: Project demonstration and presentation to stakeholders
 ---
 
 # Milestone 5.2: Project Presentation

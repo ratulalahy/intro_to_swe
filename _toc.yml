@@ -17,19 +17,19 @@ chapters:
     title: Project Milestones
     sections:
       - file: projects/milestone-1
-        title: "Milestone 1: Project Initiation"
+        title: "Milestone 1"
       - file: projects/milestone-2
-        title: "Milestone 2: Requirements Engineering"
+        title: "Milestone 2"
       - file: projects/milestone-3
-        title: "Milestone 3: System Modeling"
+        title: "Milestone 3"
       - file: projects/milestone-4
-        title: "Milestone 4: Advanced Features"
+        title: "Milestone 4"
       - file: projects/milestone-5-1
-        title: "Milestone 5.1: Final Presentation"
+        title: "Milestone 5.1"
       - file: projects/milestone-5-2
-        title: "Milestone 5.2: Final Submission"
-      - file: projects/final-submission
-        title: "Final Project Submission"
+        title: "Milestone 5.2"
+      - file: projects/milestone-final-submission
+        title: "Final Submission"
   - file: in-class-activities/index
     title: In-Class Activities
   - file: resources/index

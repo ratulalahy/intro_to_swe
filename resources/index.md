@@ -10,28 +10,28 @@ This section provides supplementary materials to enhance your learning experienc
 ##  Quick Access
 
 ::::{grid} 2
-:::{grid-item-card} [Setup Guide](setup-guide)
+:::{grid-item-card} 🛠️ [Setup Guide](setup-guide)
 :link: setup-guide
 
 Complete development environment setup instructions
 
 :::
 
-:::{grid-item-card} [Recommended Tools](tools)
+:::{grid-item-card} 🧰 [Recommended Tools](tools)
 :link: tools
 
 Curated list of software engineering tools
 
 :::
 
-:::{grid-item-card} [Reading List](reading-list)
+:::{grid-item-card} 📖 [Reading List](reading-list)
 :link: reading-list
 
 Books, articles, and online resources
 
 :::
 
-:::{grid-item-card} [Cheat Sheets](cheat-sheets)
+:::{grid-item-card} 📄 [Cheat Sheets](cheat-sheets)
 :link: cheat-sheets
 
 Quick reference guides and syntax reminders
@@ -39,7 +39,7 @@ Quick reference guides and syntax reminders
 :::
 ::::
 
-## Learning Resources
+## 🎓 Learning Resources
 
 ### Online Platforms
 

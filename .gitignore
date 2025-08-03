@@ -62,3 +62,9 @@ logs
 *.tmp
 *.temp
 .cache/
+
+# MyST build outputs
+_build
+
+# MyST build outputs
+_build
