@@ -1,6 +1,6 @@
 ---
 title: "Milestone 1: Project Initiation and Setup"
-description: Team formation, vision planning, and tool configuration for the To-Do List application project
+description: Team formation, vision planning, and tool configuration for the {guilabel}`To-Do List` application project
 ---
 
 # Milestone 1: Project Initiation and Setup
@@ -9,7 +9,7 @@ description: Team formation, vision planning, and tool configuration for the To-
 
 ## Overview
 
-Welcome to **Milestone 1** of your *Introduction to Software Engineering* course project. This foundational phase launches your semester-long development of a **To-Do List** application, employing Agile methodologies and industry-standard tools. As emerging software engineers, you will assemble collaborative teams, articulate a project vision, perform initial planning, and configure essential infrastructure for version control and task management. This milestone underscores the principles of structured collaboration, strategic planning, and tool proficiency, mirroring professional software development environments at top-tier institutions and companies.
+Welcome to **Milestone 1** of your *Introduction to Software Engineering* course project. This foundational phase launches your semester-long development of a **{guilabel}`To-Do List`** application, employing Agile methodologies and industry-standard tools. As emerging software engineers, you will assemble collaborative teams, articulate a project vision, perform initial planning, and configure essential infrastructure for version control and task management. This milestone underscores the principles of structured collaboration, strategic planning, and tool proficiency, mirroring professional software development environments at top-tier institutions and companies.
 
 By the end of this milestone, your team will have established a cohesive structure, a preliminary product backlog, a draft project plan, and operational tools, ensuring a strong foundation for iterative refinement and high-quality outcomes. All progress and final submissions will be tracked via `GitHub` releases, promoting version control best practices.
 
@@ -20,7 +20,7 @@ By the end of this milestone, your team will have established a cohesive structu
 Upon successful completion of this milestone, you will be able to:
 
 * **Form and organize** a high-functioning team with defined roles and communication protocols, promoting equity and accountability.
-* **Develop a clear project vision** and initial backlog for your To-Do List application, aligning with user needs and Agile practices.
+* **Develop a clear project vision** and initial backlog for your {guilabel}`To-Do List` application, aligning with user needs and Agile practices.
 * **Conduct preliminary planning** to outline core features, timelines, and risks, fostering proactive decision-making.
 * **Configure and integrate tools** like `Git`/`GitHub` for version control and `Zenhub` for task management, enabling efficient workflow tracking.
 * **Apply foundational Agile concepts** to initiate sprint planning, emphasizing adaptability and continuous improvement.
@@ -54,7 +54,7 @@ Upon successful completion of this milestone, you will be able to:
 
 ### 4. Project Vision and Planning
 
-* Brainstorm To-Do List scope, users (e.g., students), and unique features (e.g., task categorization) in the first meeting.
+* Brainstorm {guilabel}`To-Do List` scope, users (e.g., students), and unique features (e.g., task categorization) in the first meeting.
 * Draft vision statement and project plan (timeline, risks, mitigation).
 * Commit to `/task_manager_app/docs/vision_plan.md` after team feedback.
 
