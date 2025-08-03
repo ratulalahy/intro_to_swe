@@ -31,6 +31,8 @@ site:
     use_issues_button: true
     use_edit_page_button: true
     style: ./styles.css
+  assets:
+    - ./todo-styling.js
   actions:
     - title: View on GitHub
       url: https://github.com/ratulalahy/intro_to_swe

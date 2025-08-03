@@ -1,15 +1,17 @@
 ---
 title: Project Milestones
 description: Semester-long To-Do List application development through structured milestones
+substitutions:
+  todo: "<span class='todo-styled'>To-Do List</span>"
 ---
 
 # Project Overview: To-Do List Application Development
 
 ## Introduction
 
-In this Introduction to Software Engineering course, you will embark on a semester-long group project to design, develop, and deploy a Python-based {guilabel}`To-Do List` application (also referred to as a Task Manager). This hands-on project simulates real-world software engineering practices, emphasizing Agile methodologies, collaborative tools, and iterative development. Working in teams of 3-5 students, you will apply concepts from the course textbook (*Software Engineering: A Modern Approach* by Marco Tulio Valente) and lectures to build a functional application that helps users organize, prioritize, and track tasks efficiently.
+In this Introduction to Software Engineering course, you will embark on a semester-long group project to design, develop, and deploy a Python-based **{{todo}}** application (also referred to as a Task Manager). This hands-on project simulates real-world software engineering practices, emphasizing Agile methodologies, collaborative tools, and iterative development. Working in teams of 3-5 students, you will apply concepts from the course textbook (*Software Engineering: A Modern Approach* by Marco Tulio Valente) and lectures to build a functional application that helps users organize, prioritize, and track tasks efficiently.
 
-The project encourages creativity: while the core functionality is a standard {guilabel}`To-Do List`, teams are expected to plan and incorporate unique features (e.g., AI-driven task suggestions, collaborative sharing, or integration with calendars) to differentiate their application. As of August 02, 2025, this project aligns with current industry trends in agile development, DevOps, and user-centered design, preparing you for professional roles in software engineering.
+The project encourages creativity: while the core functionality is a standard **{{todo}}**, teams are expected to plan and incorporate unique features (e.g., AI-driven task suggestions, collaborative sharing, or integration with calendars) to differentiate their application. As of August 02, 2025, this project aligns with current industry trends in agile development, DevOps, and user-centered design, preparing you for professional roles in software engineering.
 
 ## Project Objectives
 

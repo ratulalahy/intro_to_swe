@@ -144,7 +144,7 @@ Assessed for rigor, clarity, and integration (total: **100 points**). Prioritize
 ### Tips for Excellence
 - **User-Centric Focus:** Base stories on real scenarios; validate with peers.
 - **Code Quality:** Follow PEP 8; include docstrings/comments.
-- **Innovation:** Plan To-Do List extensions (e.g., due dates) while keeping MVP minimal.
+- **Innovation:** Plan {guilabel}`To-Do List` extensions (e.g., due dates) while keeping MVP minimal.
 - **Avoid Pitfalls:** Ensure tests pass; link everything in releases for easy review.
 
 ### Support
