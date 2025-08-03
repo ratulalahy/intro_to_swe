@@ -1,6 +1,8 @@
 ---
 title: "Milestone 2: Requirements Engineering and MVP Development"
 description: Requirements engineering, use case modeling, and console-based MVP implementation
+substitutions:
+  todo: "<span class='todo-styled'>To-Do List</span>"
 ---
 
 # Milestone 2: Requirements Engineering and MVP Development
@@ -9,7 +11,7 @@ description: Requirements engineering, use case modeling, and console-based MVP 
 
 ## Overview
 
-> Building on the solid foundation established in Milestone 1, **Milestone 2** advances your {guilabel}`To-Do List` application project by delving into requirements engineering. This phase focuses on formalizing user needs through a comprehensive Software Requirements Specification (SRS), visualizing interactions via use case diagrams, and implementing a Minimum Viable Product (MVP) as a console-based prototype in Python. Emphasizing precision in documentation and early validation, you will refine your product backlog, integrate feedback from prior planning, and ensure traceability across tools. This milestone aligns with professional practices in requirements elicitation and MVP development, as seen in agile teams at leading tech firms and academic programs.
+> Building on the solid foundation established in Milestone 1, **Milestone 2** advances your {{todo}} application project by delving into requirements engineering. This phase focuses on formalizing user needs through a comprehensive Software Requirements Specification (SRS), visualizing interactions via use case diagrams, and implementing a Minimum Viable Product (MVP) as a console-based prototype in Python. Emphasizing precision in documentation and early validation, you will refine your product backlog, integrate feedback from prior planning, and ensure traceability across tools. This milestone aligns with professional practices in requirements elicitation and MVP development, as seen in agile teams at leading tech firms and academic programs.
 
 By completing this milestone, your team will have a detailed SRS, actionable use cases, and a functional console MVP with basic testing, enabling iterative enhancements while mitigating scope risks.
 
@@ -19,7 +21,7 @@ By completing this milestone, your team will have a detailed SRS, actionable use
 
 Upon successful completion of this milestone, you will be able to:
 
-- **Elicit, analyze, and document** functional and non-functional requirements for your {guilabel}`To-Do List` application, ensuring completeness and stakeholder alignment.
+- **Elicit, analyze, and document** functional and non-functional requirements for your {{todo}} application, ensuring completeness and stakeholder alignment.
 - **Create use case diagrams** and descriptions to model system interactions, applying UML standards for clear communication.
 - **Develop and test** a console-based MVP in Python, demonstrating core functionalities and basic quality assurance.
 - **Update and maintain** project artifacts in `Zenhub` and `GitHub`, linking requirements to tasks for enhanced traceability.
@@ -62,7 +64,7 @@ Upon successful completion of this milestone, you will be able to:
 ### 6. **Individual Reflections**
 **Format:** Submitted separately via online form  
 
-- Responses to: (1) How did requirements analysis shape your understanding of the {guilabel}`To-Do List`'s user needs? (2) What improvement in your Python coding or testing skills do you target next?
+- Responses to: (1) How did requirements analysis shape your understanding of the {{todo}}'s user needs? (2) What improvement in your Python coding or testing skills do you target next?
 
 ### 7. **GitHub Releases**
 
@@ -144,7 +146,7 @@ Assessed for rigor, clarity, and integration (total: **100 points**). Prioritize
 ### Tips for Excellence
 - **User-Centric Focus:** Base stories on real scenarios; validate with peers.
 - **Code Quality:** Follow PEP 8; include docstrings/comments.
-- **Innovation:** Plan {guilabel}`To-Do List` extensions (e.g., due dates) while keeping MVP minimal.
+- **Innovation:** Plan {{todo}} extensions (e.g., due dates) while keeping MVP minimal.
 - **Avoid Pitfalls:** Ensure tests pass; link everything in releases for easy review.
 
 ### Support
