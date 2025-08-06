@@ -7,7 +7,7 @@ description: Final refinement and organization of project repository based on fe
 
 ## Overview
 
-As the culminating step in your Introduction to Software Engineering course project, this final submission focuses on refining your To-Do List application based on feedback from Milestone 5.2 (presentation and retrospective). This phase is dedicated to addressing identified issues, reorganizing project artifacts for clarity and accessibility, and ensuring all components are properly placed and documented. Emphasizing professional polish and maintainability, you will apply insights from the semester to produce a cohesive, production-ready repository. This mirrors post-review revisions in industry workflows, where teams iterate to resolve defects and optimize structure before archiving or handover.
+As the culminating step in your Introduction to Software Engineering course project, this final submission focuses on refining your {span .text-gradient-todo}`**To-Do List**` application based on feedback from Milestone 5.2 (presentation and retrospective). This phase is dedicated to addressing identified issues, reorganizing project artifacts for clarity and accessibility, and ensuring all components are properly placed and documented. Emphasizing professional polish and maintainability, you will apply insights from the semester to produce a cohesive, production-ready repository. This mirrors post-review revisions in industry workflows, where teams iterate to resolve defects and optimize structure before archiving or handover.
 
 By completing this submission, your team will deliver a fully resolved, well-organized project repository, demonstrating attention to detail and commitment to quality engineering standards.
 

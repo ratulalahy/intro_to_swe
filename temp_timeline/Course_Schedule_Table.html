@@ -1,48 +1,9 @@
-<script type="text/javascript">
-        var gk_isXlsx = false;
-        var gk_xlsxFileLookup = {};
-        var gk_fileData = {};
-        function filledCell(cell) {
-          return cell !== '' && cell != null;
-        }
-        function loadFileData(filename) {
-        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
-            try {
-                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
-                var firstSheetName = workbook.SheetNames[0];
-                var worksheet = workbook.Sheets[firstSheetName];
-
-                // Convert sheet to JSON to filter blank rows
-                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
-                // Filter out blank rows (rows where all cells are empty, null, or undefined)
-                var filteredData = jsonData.filter(row => row.some(filledCell));
-
-                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
-                var headerRowIndex = filteredData.findIndex((row, index) =>
-                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
-                );
-                // Fallback
-                if (headerRowIndex === -1 || headerRowIndex > 25) {
-                  headerRowIndex = 0;
-                }
-
-                // Convert filtered JSON back to CSV
-                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
-                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
-                return csv;
-            } catch (e) {
-                console.error(e);
-                return "";
-            }
-        }
-        return gk_fileData[filename] || "";
-        }
-        </script><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Updated Intro to Software Engineering Course Schedule</title>
+    <title>Final Revised Intro to Software Engineering Course Schedule</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -82,24 +43,31 @@
             font-weight: bold;
             color: #212529;
         }
+        .milestone-row td {
+            background-color: #e5d5ff;/* Green for milestones */
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px;
+        }
         .midterm-row td, .final-row td {
-            background-color: #ffc107 !important; /* Yellow for exams */
+            background-color: #ffb1b1 !important; /* Yellow for exams */
             font-weight: bold;
             text-align: center;
         }
         /* Color codes by topic category */
-        .intro { background-color: #add8e6; } /* Light Blue */
-        .sdlc-agile { background-color: #90ee90; } /* Light Green */
-        .version-control { background-color: #ffffe0; } /* Light Yellow */
-        .project-mgmt { background-color: #98fb98; } /* Pale Green */
-        .requirements { background-color: #ffdab9; } /* Peach Puff */
-        .ui-arch { background-color: #dda0dd; } /* Plum */
-        .design-principles { background-color: #ffb6c1; } /* Light Pink */
-        .design-patterns { background-color: #ffc0cb; } /* Pink */
-        .testing { background-color: #f4a460; } /* Sandy Brown */
-        .refactor-devops { background-color: #d3d3d3; } /* Light Gray */
-        .presentation-kanban { background-color: #e0ffff; } /* Light Cyan */
-        .revision-agile { background-color: #b0c4de; } /* Light Steel Blue */
+        .intro { background-color: #ffffff; } 
+        .sdlc-agile { background-color: #caee90; } 
+        .version-control { background-color: #a8d8f9; } 
+        .project-mgmt { background-color: #98fb98; } 
+        .requirements { background-color: #b9f1ff; } 
+        .ui-arch { background-color: #f8bae9; } 
+        .design-principles { background-color: #f5ff9a; } 
+        .design-patterns { background-color: #f5ff9a; } 
+        .testing { background-color: #f4a460; } 
+        .refactor-devops { background-color: #d3d3d3; } 
+        .presentation-kanban { background-color: none; }
+        .devops-agile { background-color: #caee90; } 
         table tr:hover td {
             background-color: #e9ecef !important; /* Hover effect overrides color */
             transition: background-color 0.3s ease;
@@ -107,16 +75,14 @@
     </style>
 </head>
 <body>
-    <h1>Updated Course Schedule with Readings</h1>
+    <h1>Course Schedule</h1>
     <table>
         <thead>
             <tr>
                 <th>Week</th>
                 <th>Topics</th>
-                <th>Lectures/Details</th>
-                <th>In-class Work</th>
-                <th>Homework/Assignments</th>
-                <th>Reading (Before Class)</th>
+                <th>Lectures/Details (Key Points)</th>
+                <th>Reading</th>
                 <th>Project Milestones</th>
             </tr>
         </thead>
@@ -124,134 +90,118 @@
             <tr>
                 <td>1</td>
                 <td class="topic-cell intro">Introduction to Software Engineering</td>
-                <td>Course overview, importance, historical context, SE vs. programming.</td>
-                <td> </td>
-                <td> </td>
-                <td>Chapter 1: Introduction (Historical Context, Topics of Study)</td>
-                <td> </td>
+                <td>Course syllabus, grading, resources; SE definition/scope; historical evolution (software crisis, milestones); SE principles vs. programming (processes, teamwork, quality); industry role (scalability, maintainability, ethics).</td>
+                <td>Chapter 1: Introduction</td>
+                <td>None</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td class="topic-cell sdlc-agile">SDLC and Agile Scrum</td>
-                <td>SDLC overview (Waterfall, Agile, XP), Agile principles, Scrum intro.</td>
-                <td>Simulate a Scrum planning session.</td>
-                <td>Read Chapter 2; compare Waterfall vs. Agile.</td>
-                <td>Chapter 2: Processes (Agile Manifesto, XP, Scrum)</td>
-                <td> </td>
+                <td class="topic-cell version-control">Version Control with Git and GitHub</td>
+                <td>Git fundamentals (repos, commits, branches, staging area); GitHub features (remotes, PRs, issues, collaboration, actions); advanced (merges, rebase, conflicts, tags/releases); best practices (commit messages, branching models like Git Flow, .gitignore).</td>
+                <td>Appendix: Git</td>
+                <td>None</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td class="topic-cell version-control">Version Control with Git and GitHub</td>
-                <td>Git basics, GitHub essentials, advanced Git.</td>
-                <td>Hands-on Git exercises: commit, branch, merge.</td>
-                <td>Create a GitHub repo and submit a simple project.</td>
-                <td>Appendix: Git</td>
-                <td> </td>
+                <td class="topic-cell sdlc-agile">SDLC, Agile Scrum, and Project Management with Zenhub</td>
+                <td>SDLC models (Waterfall phases/pros/cons, Agile iterative/Manifesto, XP practices); Scrum framework (sprints, roles - PO/SM/Team, ceremonies - planning/standup/review/retrospective, artifacts - backlogs/burndowns); Zenhub (boards, epics, task tracking, GitHub integration for issues/PRs/labels).</td>
+                <td>Chapter 2: Processes</td>
+                <td>None</td>
+            </tr>
+            <tr class="milestone-row">
+                <td colspan="5">Milestone 1: Project Launch and Setup (Weeks 4-5) – Using Weeks 1-3 topics: Team roles/rotation, vision statement, initial backlog (10+ stories), Git/Zenhub setup, draft plan/timeline. Mid-check (Week 4 end): Team doc/backlog drafts. Important: Establish branching strategy, communication plan; reflection on Agile application.</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td class="topic-cell project-mgmt">Project Management Board, Scrum (Advanced)</td>
-                <td>Scrum roles, ceremonies, artifacts, Zenhub.</td>
-                <td>Zenhub demo and setup for teams.</td>
-                <td>Set up Zenhub for a mock project.</td>
-                <td>Chapter 2: Processes (Scrum, Kanban)</td>
-                <td>Milestone 1: Team formation, product backlog, first draft planning, Git/Zenhub setup.</td>
+                <td class="topic-cell requirements">Requirements Engineering I</td>
+                <td>High-level analysis (stakeholders, goals elicitation techniques); low-level (user stories format/prioritization, use cases/text/diagrams, functional/non-functional classification, SRS structure/template); UML intro (purpose, notation for use case/class diagrams, tools like draw.io).</td>
+                <td>Chapter 3: Requirements</br>Chapter 4: Models</td>
+                <td>Milestone 1 Ongoing</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td class="topic-cell requirements">Requirements Engineering I</td>
-                <td>High-level analysis, low-level analysis (stories, use cases, use case diagram, functional and non-functional requirements, SRS). Intro to UML diagram.</td>
-                <td>Write user stories for a sample app.</td>
-                <td>Draft SRS for a simple system.</td>
-                <td>Chapter 3: Requirements (User Stories, Use Cases)</td>
-                <td>Progress check: Update Zenhub with stories.</td>
+                <td class="topic-cell requirements">Requirements Engineering II</td>
+                <td>MVP selection (core features, validation methods); A/B testing (hypothesis/design/analysis); planning poker (estimation process, consensus building); UML expansion (class diagram - attributes/methods/relationships for CLI MVP design).</td>
+                <td>Chapter 3: Requirements<br>Chapter 4: Models (Class Diagrams)</td>
+                <td>Milestone 1 Final Due (End of Week 5)</td>
+            </tr>
+            <tr class="milestone-row">
+                <td colspan="5">Milestone 2: Requirements & MVP (Weeks 6-7) – Using Weeks 4-5 topics: SRS (functional/non-functional), 15+ user stories, use case diagrams, CLI-based MVP in Python (e.g., task management features), basic tests (3-5). Mid-check (Week 4 end): SRS/user stories drafts. Important: UML class/use case integration; reflection on MVP validation.</td>
             </tr>
             <tr>
                 <td>6</td>
-                <td class="topic-cell requirements">Requirements Engineering II</td>
-                <td>MVP, A/B testing, planning poker, UML intro. Create class and use case diagrams.</td>
-                <td>Create class and use case diagrams.</td>
-                <td>Practice planning poker on sample stories.</td>
-                <td>Chapter 3: Requirements (MVP, A/B Testing)</td>
-                <td>Milestone 2: SRS, MVP with console, user stories, use case diagram, basic test cases.</td>
+                <td class="topic-cell ui-arch">UI Design and Architecture</td>
+                <td>GUI concepts (usability principles, UX elements, interface design guidelines); wireframes/mockups/prototypes (creation tools, iteration for user feedback); architectures (Layered design - separation of concerns, MVC - Model data/View UI/Controller logic, examples in Python).</td>
+                <td>Chapter 7: Architecture</td>
+                <td>Milestone 2 Ongoing</td>
             </tr>
             <tr>
                 <td>7</td>
-                <td class="topic-cell ui-arch">UI Design and Architecture</td>
-                <td>GUI concepts, wireframes, mockup, prototype, architectures (Layered, MVC).</td>
-                <td>Design wireframes for a UI.</td>
-                <td>Read Chapter 7; diagram an MVC app.</td>
-                <td>Chapter 7: Architecture (MVC, Microservices)</td>
-                <td>Progress check: Propose wireframes.</td>
+                <td class="topic-cell design-principles">Design Principles</td>
+                <td>Conceptual integrity (unified vision, consistency across modules); information hiding (abstraction/modularity benefits); cohesion (high for focused responsibilities); coupling (low for independence/reusability); SOLID principles (Single Responsibility - one change reason, Open-Closed - extend without modify, Liskov Substitution - subtypes interchangeable, Interface Segregation - client-specific interfaces, Dependency Inversion - depend on abstractions).</td>
+                <td>Chapter 5: Design Principles</td>
+                <td>Milestone 2 Final Due (End of Week 7)</td>
             </tr>
             <tr class="midterm-row">
-                <td colspan="7">Midterm Exam</td>
+                <td colspan="5">Midterm Exam</td>
+            </tr>
+            <tr class="milestone-row">
+                <td colspan="5">Milestone 3: Modeling & Architecture (Weeks 8-9) – Using Weeks 6-7 topics: UML diagrams (class, activity, sequence), wireframes/mockups, MVC code setup, SOLID application to MVP, basic tests (5+). Mid-check (Week 8 end): Wireframes/MVC drafts. Reflection on code improvements from principles. Important: Integrate UI prototypes with architecture; ensure modularity.</td>
             </tr>
             <tr>
                 <td>8</td>
-                <td class="topic-cell design-principles">Design Principles</td>
-                <td>Conceptual integrity, hiding, cohesion, coupling, SOLID.</td>
-                <td>Apply SOLID to code examples.</td>
-                <td>Refactor code to follow SOLID.</td>
-                <td>Chapter 5: Design Principles (Conceptual Integrity, Information Hiding, Cohesion, Coupling, SOLID)</td>
-                <td>Milestone 3: UML diagrams (class, activity, sequence), MVC code setup, wireframes, basic tests.</td>
+                <td class="topic-cell design-patterns">Design Patterns I</td>
+                <td>Factory (abstract creation, simple/abstract/method types, when to use for flexibility); Singleton (ensure single instance, lazy/eager initialization, thread-safety); Observer (publish-subscribe pattern, subject/observer roles, event handling); Strategy (algorithm families, context/strategy interface, runtime swapping).</td>
+                <td>Chapter 6: Design Patterns</td>
+                <td>Milestone 3 Ongoing</td>
             </tr>
             <tr>
                 <td>9</td>
-                <td class="topic-cell design-patterns">Design Patterns I</td>
-                <td>Factory, Singleton, Observer, Strategy.</td>
-                <td>Implement a pattern in Python.</td>
-                <td>Read Chapter 6; code examples.</td>
-                <td>Chapter 6: Design Patterns (Factory, Singleton, Observer, Strategy)</td>
-                <td>Progress check: Identify patterns for features.</td>
+                <td class="topic-cell design-patterns">Design Patterns II</td>
+                <td>Adapter (interface compatibility, object/class adapters, legacy integration); pattern review (trade-offs, combinations like Factory with Strategy); application guidelines (when to apply/avoid, common pitfalls in OO design).</td>
+                <td>Chapter 6: Design Patterns</td>
+                <td>Milestone 3 Final Due (End of Week 9)</td>
+            </tr>
+            <tr class="milestone-row">
+                <td colspan="5">Milestone 4: Design Patterns & Feature Integration (Weeks 10-11) – Using Weeks 8-9 topics: Adopt 3-5 patterns to 3-7 backlog features, enhance with prior principles/architecture/UI, 10+ tests. Mid-check (Week 10 end): Pattern/feature drafts. Reflection on design improvements. Important: Ensure patterns fit naturally; integrate with MVC/SOLID.</td>
             </tr>
             <tr>
                 <td>10</td>
-                <td class="topic-cell design-patterns">Design Patterns II</td>
-                <td>Adapter, pattern review and application.</td>
-                <td>Group pattern application to projects.</td>
-                <td>Extend homework with more patterns.</td>
-                <td>Chapter 6: Design Patterns (Adapter, etc.)</td>
-                <td>Milestone 4: Adopt 3-7 features, design principles/patterns, test cases.</td>
+                <td class="topic-cell testing">Testing</td>
+                <td>Unit testing (isolated components, assertions/mocks); integration testing (module interactions, stubs); TDD cycle (red-green-refactor process); tools (pytest/unittest setup); test coverage (statement/branch metrics, tools like coverage.py for analysis).</td>
+                <td>Chapter 8: Testing</td>
+                <td>Milestone 4 Ongoing</td>
             </tr>
             <tr>
                 <td>11</td>
-                <td class="topic-cell testing">Testing</td>
-                <td>Unit, integration testing, TDD, tools, test coverage.</td>
-                <td>Write unit tests for sample code.</td>
-                <td>Read Chapter 8; test a small app.</td>
-                <td>Chapter 8: Testing (Unit Tests, Coverage, TDD)</td>
-                <td>Progress check: Add tests to code.</td>
+                <td class="topic-cell refactor-devops">Refactoring and Clean Code</td>
+                <td>Refactoring techniques (extract method/class, rename, inline temp); code smells (duplication, long methods, large classes - detection/fixes); clean code practices (meaningful naming, small single-responsibility functions, minimal effective comments, consistent formatting, robust error handling); automated refactorings (IDE support, safe changes); benefits (improved readability, maintainability, and testability via test-driven refactoring).</td>
+                <td>Chapter 9: Refactoring</td>
+                <td>Milestone 4 Final Due (End of Week 11)</td>
+            </tr>
+            <tr class="milestone-row">
+                <td colspan="5">Milestone 5: Testing & Refactoring (Weeks 12-13) – Using Weeks 10-11 topics: Comprehensive tests (20+, 80%+ coverage for features/patterns), refactor smells in code, extend prior tests. Mid-check (Week 12 end): Test/coverage drafts. Reflection on quality gains. Important: TDD for refactors; analyze coverage gaps; no new features.</td>
             </tr>
             <tr>
                 <td>12</td>
-                <td class="topic-cell refactor-devops">Refactoring and DevOps</td>
-                <td>Refactoring, code smells, DevOps, CI/CD.</td>
-                <td>Refactor code snippets.</td>
-                <td>Set up basic CI pipeline.</td>
-                <td>Chapter 9: Refactoring; Chapter 10: DevOps (CI/CD)</td>
-                <td>Milestone 5.1: Test cases + coverage.</td>
-            </tr>
+                <td class="topic-cell devops-agile">Critical Revision and Agile in Practice</td>
+                <td>DevOps, UML review (refinements, errors in diagrams); Agile real-world (scaling teams, hybrid models, common challenges like remote collaboration).</td>
+                <td>Chapter 10: DevOps </br>Chapter 4: Models</td>
+                <td>Milestone 5 Final Due (End of Week 13)</td>
+            </tr>            
             <tr>
-                <td>13</td>
-                <td class="topic-cell presentation-kanban">Project Presentation and Kanban</td>
-                <td>Project presentations, intro to Kanban.</td>
-                <td>Presentations and feedback.</td>
-                <td>Reflection on Kanban vs. Scrum.</td>
-                <td>Chapter 2: Processes (Kanban)</td>
-                <td>Milestone 5.2: Presentation, retrospective.</td>
+                <td class="milestone-row">13</td>
+                <td class="topic-cell presentation-kanban">Project Presentation Preparation</td>
+                <td>Presentation structure (intro/demo/design/metrics/Q&A); retrospective methods (well/improve/actions, process lessons).</td>
+                <td>None</td>
+                <td>Milestone 5 Ongoing</td>
             </tr>
-            <tr>
-                <td>14</td>
-                <td class="topic-cell revision-agile">Critical Revision and Agile in Practice</td>
-                <td>Review UML, Agile in practice.</td>
-                <td>Group review of key concepts.</td>
-                <td> </td>
-                <td>Chapter 4: Models (UML Diagrams)</td>
-                <td>Final submission: Address issues.</td>
+
+            <tr class="milestone-row">
+                <td colspan="5">Final Polish (Week 14) – Address issues/code smells from feedback, reorganize README/docs/folders, add missing content (e.g., consolidated diagrams). Important: No new features; focus on fixes/maintainability; reflection on overall process improvements.</td>
             </tr>
             <tr class="final-row">
-                <td colspan="7">Final Exam</td>
+                <td colspan="5">Final Exam</td>
             </tr>
         </tbody>
     </table>

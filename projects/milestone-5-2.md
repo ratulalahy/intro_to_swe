@@ -1,15 +1,15 @@
 ---
-title: "Milestone 5.2: Project Presentation"
+title: "Project Presentation"
 description: Project demonstration and presentation to stakeholders
 ---
 
-# Milestone 5.2: Project Presentation
+# Project Presentation
 
 ---
 
 ## Overview
 
-> In this final milestone, your group will deliver a **10-minute in-person presentation** to showcase your To-Do List project, covering all aspects from planning to testing. This is your chance to present your work to the instructor and peers in class, like a client meeting with executives. You’ll highlight features, software engineering practices, **testing**, **robustness (try-catch)**, and **code smell removal**. Presentations will occur during class time on July 29–August 1, 2025, with peers encouraged to attend for extra credit.
+> In this final milestone, your group will deliver a **10-minute in-person presentation** to showcase your {span .text-gradient-todo}`**To-Do List**` project, covering all aspects from planning to testing. This is your chance to present your work to the instructor and peers in class, like a client meeting with executives. You’ll highlight features, software engineering practices, **testing**, **robustness (try-catch)**, and **code smell removal**. Presentations will occur during class time on July 29–August 1, 2025, with peers encouraged to attend for extra credit.
 
 By completing this milestone, you’ll demonstrate your project’s quality and your team’s engineering skills.
 

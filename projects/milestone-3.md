@@ -3,15 +3,15 @@ title: "Milestone 3: System Modeling and Architecture Implementation"
 description: UML modeling, MVC architecture implementation, and wireframe design
 ---
 
-# Milestone 3: System Modeling and Architecture Implementation
+# Milestone 3: Modeling and Architecture Implementation
 
 ---
 
 ## Overview
 
-> Advancing from the requirements and MVP established in Milestone 2, **Milestone 3** shifts focus to system modeling and architectural design for your To-Do List application. This phase involves creating detailed UML diagrams to visualize structure and behavior, implementing an **_MVC (Model-View-Controller)_** architecture in Python, and integrating wireframe designs for the user interface. By emphasizing modular design and early architectural decisions, you will enhance code maintainability and scalability, reflecting best practices in software engineering curricula at premier universities. This milestone builds on your console MVP, transitioning toward a more structured implementation with basic testing.
+Imagine designing a dream home: You have the basic layout, but now it's time to add the framework that makes it sturdy and beautiful—welcome to Milestone 3, where your {span .text-gradient-todo}`**To-Do List**` app gets its architectural backbone. Motivated by how architects in construction or engineers at firms like Apple ensure buildings (or apps) stand the test of time, this phase lets you relate to practical scenarios like upgrading a simple notebook to a digital powerhouse that handles growing task lists without crashing. You'll expand UML diagrams (putting special spotlight on class diagrams to map out task objects and relationships, alongside activity and sequence for user flows), propose wireframes that sketch intuitive interfaces (think drag-and-drop tasks, relatable to popular apps like Todoist), and implement MVC architecture in Python to organize code logically—Model for data storage, View for user display, Controller for handling actions. Applying SOLID principles will feel like decluttering a messy room, making your app more flexible for future additions, just as industry teams refactor to keep products evolve without breaking. By the end, your project will feel robust and professional, like turning a rough sketch into a blueprint ready for construction, giving you that satisfying "aha" moment of seeing chaos become order.
 
-Upon completion, your team will have robust models, an MVC-based codebase, refined wireframes, and validated components, positioning the project for advanced feature integration while adhering to design principles.
+By the end of this milestone, your team will have enhanced models, MVC code, wireframes, and tests, with reflections on SOLID improvements.
 
 ---
 
@@ -19,147 +19,158 @@ Upon completion, your team will have robust models, an MVC-based codebase, refin
 
 Upon successful completion of this milestone, you will be able to:
 
-- **Develop UML diagrams** (class, activity, sequence) to model system components, flows, and interactions, ensuring clear documentation and team alignment.
-- **Apply MVC architecture** to organize your To-Do List code, separating concerns for better modularity and testability.
-- **Design and propose wireframes** for the GUI, bridging requirements to visual prototypes.
-- **Extend the MVP** with architectural enhancements and basic tests, demonstrating incremental development.
-- **Maintain project traceability** through updated tools and `GitHub` releases, incorporating feedback for continuous refinement.
+- **Develop UML diagrams** (class emphasized, activity, sequence) to model system structure and behavior.
 
----
+- **Design wireframes** and prototypes mapping to requirements.
 
-## Deliverables
+- **Implement MVC architecture**, separating concerns for scalability.
 
-> **Submit** `GitHub` release links for progress check and final submission via the course platform. Place all artifacts in the repository (e.g., diagrams in `docs`, code in `src`), linking them in release notes. Format professionally, referencing textbook Chapter 4 (*Models*) and Chapter 7 (*Architecture*) for standards.
+- **Apply SOLID principles** to refactor and improve code quality.
 
-### 1. **_UML Diagrams_**
-**Format:** *Exported images/PDF* in `repo/docs`, with source files if applicable  
+- **Update project artifacts** (SRS with new diagrams, Zenhub backlog) for traceability.
 
-- Class diagram: Depicting entities (e.g., `Task`, `User`), attributes, methods, and relationships.
-- Activity diagram: Modeling workflows (e.g., task creation process).
-- Sequence diagram: Illustrating interactions (e.g., user adding a task via MVC components).
-- Brief explanatory notes for each diagram, highlighting key design decisions.
-
-### 2. **_MVC Architecture Implementation_**
-**Format:** Python code in `repo/src`  
-
-- Refactored codebase from Milestone 2 MVP, structured as `Model` (data logic, e.g., `Task` class), `View` (console/GUI stubs), `Controller` (handling inputs/outputs).
-- Initial integration of wireframe concepts (e.g., mock GUI layout in comments or basic `Tkinter` setup).
-
-### 3. **_Wireframe Proposals_**
-**Format:** *PDF or image files* in `repo/docs`, 2-3 pages  
-
-- Detailed wireframes for key screens (e.g., task list view, add task form), created with tools like `Figma` or `Balsamiq`.
-- Annotations explaining UX decisions and mapping to requirements.
-
-### 4. **_Basic Test Cases_**
-**Format:** In `repo/tests` folder  
-
-- Expanded from prior: 5+ unit/integration tests covering MVC components (e.g., `test_model_add_task()`, using `pytest`).
-
-### 5. **_Tool and Documentation Updates_**
-
-- **`Zenhub` board:** Updated backlog with architecture-related tasks; linked to new issues/commits.
-- **`GitHub`:** Commits for diagrams/code; updated `README` with architecture overview and run instructions.
-
-### 6. **_Team Meeting Minutes_**
-**Format:** *PDF or Markdown* in repo, 1 page  
-
-- From at least one meeting: Attendance, agenda (e.g., diagram review), decisions, action items.
-
-### 7. **_Individual Reflections_**
-**Format:** Submitted separately via form  
-
-- Responses to: (1) How has modeling with UML clarified your To-Do List's design? (2) What aspect of MVC implementation challenged you, and how did you overcome it?
-
-### 8. **_GitHub Releases_**
-
-#### Progress Check (Mid-Week)
-Minor version (e.g., `v2.1`) tagged `"milestone3-progress"`. Include drafts (e.g., preliminary UML, initial MVC code). Notes: Highlight status (e.g., "Class diagram drafted; MVC skeleton committed"). **Submit** URL.
-
-#### Final Milestone Submission (End of Week)
-Major version (e.g., `v3.0`) tagged `"milestone3"`. Link all deliverables; changelog from progress check (e.g., "Finalized sequence diagram and added tests"). **Submit** URL.
-
-**Example GitHub Release Creation:**  
-```markdown
-- Repo > Releases > New release.
-- Tag: "milestone3" (final) or "milestone3-progress-v2.1" (check).
-- Title: "Milestone 3 Final" or "Milestone 3 Progress".
-- Description: "- UML Diagrams: [docs/uml.pdf] \n - MVC Code: [src/controller.py] \n - Changelog: Incorporated feedback on activity diagram."
-```
+- **Reflect on design improvements** from principles.
 
 ---
 
 ## Tasks and Instructions
 
-Leverage prior artifacts; use feature branches (e.g., `"feature/uml-modeling"`) for development.
+### 1. UML Modeling
 
-### 1. **UML Modeling**
-- Analyze SRS/use cases from Milestone 2; create diagrams per textbook Chapter 4 (*Class, Activity, Sequence Diagrams*).
-- Validate for consistency (e.g., classes match requirements).
+- Extend prior UML: Create class diagram (attributes/methods/relationships, emphasized for structure), activity (workflows), sequence (interactions).
 
-### 2. **MVC Setup**
-- Restructure code: `Model` for data, `View` for presentation, `Controller` for logic.
-- Extend console MVP; prepare for GUI by mocking views.
+- Use tools like draw.io; export images to `/task_manager_app/docs/uml`.
 
-### 3. **Wireframe Design**
-- Sketch interfaces based on user stories; iterate with team input.
+- Update SRS (using https://github.com/jam01/SRS-Template/blob/master/template.md) by adding diagrams in appropriate sections.
 
-### 4. **Testing Integration**
-- Write tests for new components; aim for 70%+ coverage on core functions.
+- Commit descriptions in `/task_manager_app/docs/uml_notes.md`.
 
-### 5. **Tool Maintenance**
-- Sync `Zenhub` issues with diagrams/code; use labels for priorities.
+### 2. Wireframe and Prototype Design
 
-### 6. **Meetings and Planning**
-- Review progress; plan Milestone 4 tasks.
+- Design wireframes for key screens (e.g., task list, add task) using Figma/Balsamiq.
 
-### 7. **Progress Check and Release Management**
+- Create basic prototypes (mock GUI layout in Python comments or Tkinter stubs).
 
-#### Mid-Week
-50% done (e.g., draft diagrams, MVC outline). Minor release for feedback. *Expect*: Committed drafts, partial tests.
+- Commit to `/task_manager_app/docs/wireframes` with annotations linking to use cases.
 
-#### End of Week
-Complete, tested artifacts. Major release. *Expect*: Runnable code, full diagrams, integrated repo.
+### 3. MVC Architecture Implementation
 
----
+- Restructure MVP code into MVC: Model (data logic, e.g., Task class), View (console/UI stubs), Controller (input handling).
 
-## Evaluation Rubric
+- Apply SOLID principles (e.g., Single Responsibility for classes); document before/after in code comments.
 
-Total: **100 points**. Focus on accuracy, modularity, and documentation.
+### 4. Basic Testing
 
-| **Criteria**              | **Points** | **Description**                                                                 |
-|---------------------------|------------|---------------------------------------------------------------------------------|
-| **UML Diagrams**          | 25         | Accurate, comprehensive models; well-annotated and UML-compliant.                |
-| **MVC Implementation**    | 25         | Modular code structure; functional enhancements with clean separation.           |
-| **Wireframes**            | 15         | Intuitive designs; annotated and requirements-aligned.                           |
-| **Tests & Quality**       | 15         | Effective tests; coverage and error-free execution.                              |
-| **Tool Updates & Releases**| 10         | Updated artifacts; professional releases with changelogs.                        |
-| **Meeting Minutes**       | 5          | Action-oriented documentation.                                                  |
-| **Individual Reflections**| 5          | Reflective and tied to modeling/architecture concepts.                           |
+- Add 5+ unit/integration tests for MVC components (e.g., test_model_task_add) in `/task_manager_app/tests`.
 
-> **Note:** Daily late penalty: 10%. Non-runnable code requires revision.
+### 5. Tool Updates
 
----
+- Update Zenhub backlog with modeling/architecture tasks; link to new issues/commits.
 
-## Resources and Best Practices
+- Enhance GitHub README with architecture overview and diagram links.
 
-### Textbook Integration
-- Chapter 4 (*Models: Diagrams*) for UML; Chapter 7 (*Architecture: MVC*) for patterns.
+### 6. Team Meeting Execution
 
-### Tool Guides
-- `draw.io` for UML; `Tkinter` docs for future GUI.
+- Hold meeting to review diagrams/MVC; assign actions.
 
-### Tips for Excellence
-- **Consistency:** Ensure diagrams match code.
-- **Innovation:** Add unique UML elements (e.g., state diagrams for task lifecycle).
-- **Avoid Issues:** Version diagrams; test MVC isolation.
+- Document in `/task_manager_app/docs/meeting_minutes/milestone_3/week_1.md`.
 
-### Support
-- Instructor feedback on drafts; online UML examples.
+### 7. Individual Reflections
+
+- Submit a `.md` file via Canvas with release/Zenhub links and reflection answers (see Submission Checklist).
+
+### 8. GitHub Releases
+
+- **Progress Check (One Week):** Create a minor release (`v2.1`, tagged `milestone3-progress-v2.1`) with drafts (UML/wireframes/MVC). Submit URL via Canvas. **Note**: Missing this incurs a 20% penalty.
+
+- **Final Submission (Two Week):** Create a major release (`v3.0`, tagged `milestone3`) with all deliverables linked in release notes and a changelog (e.g., "Updated SRS with class diagram"). Submit URL via Canvas.
 
 ---
 
-> **This milestone solidifies your design—precise modeling now enables seamless feature expansion.**
+## Submission Checklist
+
+### Submit via Canvas:
+
+- A `.md` file containing:
+
+  - GitHub release link (e.g., `https://github.com/user_name/project_name/releases/tag/v3.0`)
+
+  - Zenhub board link (e.g., `https://app.zenhub.com/workspaces/...`)
+
+  - **Reflection answers:**
+
+    - **Contribution to the project (50–100 words):** Describe your specific contributions (e.g., class diagram, MVC coding).
+
+    - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate collaboration and communication; explain your rating.
+
+    - **How did SOLID principles improve your code structure? (50–100 words):** Discuss specific before/after examples.
+
+    - **Feedback/comment about this milestone (50 words):** Suggest one improvement for modeling process.
+
+### Repository Documents
+
+All documents must be checked into the GitHub repository under `/task_manager_app/docs` and linked in release notes. Use checkboxes to confirm completion:
+
+- [ ] **Updated SRS** (`/task_manager_app/docs/srs.md`)
+
+  - Added UML diagrams, refined reqs.
+
+- [ ] **UML Notes and Images** (`/task_manager_app/docs/uml_notes.md`, images in `/task_manager_app/docs/uml`)
+
+  - Class diagram emphasized, activity/sequence included.
+
+- [ ] **Wireframes** (`/task_manager_app/docs/wireframes`)
+
+  - Screens with annotations.
+
+- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_3/week_1.md`)
+
+  - Attendance, agenda, decisions, action items.
+
+---
+
+## Evaluation Rubric (100 Points)
+
+| Criteria               | Points | Description                                   |
+| :---------------------- | :------: | :----------------: |
+| **UML Diagrams**           | 30     | Accurate class emphasis, activity/sequence     |
+| **Wireframes/Prototypes**  | 20     | Detailed, reqs-aligned designs                |
+| **MVC Code & SOLID**       | 25     | Modular implementation, principle application |
+| **Tests & Tool Updates**   | 15     | Basic tests, Zenhub/README refinements        |
+| **Meeting Minutes**        | 5      | Detailed notes                                |
+| **Individual Reflections** | 5      | Insightful responses                          |
+
+{span .text-red-500}`**Penalties:** 20% for missing progress check.`
+
+---
+
+## Resources
+
+### Textbook
+
+- Chapter 4: Models (UML Diagrams)
+
+- Chapter 5: Design Principles (SOLID)
+
+- Chapter 7: Architecture (MVC)
+
+### Tutorials
+
+- [SRS Template](https://github.com/jam01/SRS-Template/blob/master/template.md)
+
+- [draw.io UML Guide](https://www.draw.io/)
+
+- [MVC in Python](https://realpython.com/the-model-view-controller-mvc-paradigm-summarized-with-legos/)
+
+### Best Practices
+
+- Update SRS with new diagrams for traceability.
+
+- Use meaningful commit messages (e.g., "Add class diagram to SRS").
+
+- Ensure Zenhub reflects milestone tasks.
+
+---
 
 ## Navigation
 

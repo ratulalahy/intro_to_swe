@@ -3,15 +3,18 @@ title: "Milestone 4: Advanced Features and Integration"
 description: Enhancement of core application with advanced features and third-party integrations
 ---
 
-# Milestone 4: Feature Implementation with Design Principles and Patterns
+# Milestone 4: Testing and Refactoring
+
+---
+# Milestone 4: Design Patterns and Feature Integration
 
 ---
 
 ## Overview
 
-> Progressing from the architectural foundation in Milestone 3, **Milestone 4** emphasizes the application of **_SOLID principles_** and **_design patterns_** to expand your To-Do List application's functionality. This phase involves selecting and implementing 3-7 features from your product backlog, integrating **_SOLID principles_** for code quality, and applying relevant design patterns to solve common problems elegantly. With a focus on maintainable, scalable code and comprehensive testing, you will evolve your MVP into a more feature-rich prototype. This milestone draws on professional software design practices taught in elite engineering programs, ensuring your project embodies reusability, flexibility, and robustness.
+Imagine your {span .text-gradient-todo}`**To-Do List**` app as a basic skeleton—now it's time to add the muscles and joints that make it flexible and powerful, like how fitness apps evolve from simple trackers to personalized coaches. Milestone 4 brings the excitement of enhancement, motivated by how developers at companies like Uber use patterns to handle complex features without reinventing the wheel, saving time and reducing errors. In this dynamic phase, relatable to upgrading a basic planner notebook to a smart digital assistant that anticipates your needs (e.g., auto-sorting tasks for a harried parent or remote worker), you'll select 3-7 backlog features (like search or tagging), integrate them with prior MVC and SOLID, and apply 3-5 design patterns (e.g., Observer for real-time updates, Strategy for customizable sorting) to make your app adaptable and efficient. Updating the SRS with pattern details and refining the class diagram keeps everything synced, like fine-tuning a recipe after tasting to perfect the flavor.
 
-By the end of this milestone, your team will have an enhanced application with principled design, patterned solutions, and thorough tests, ready for advanced quality assurance and deployment considerations.
+By the end, your project will flex with new capabilities and clean design, delivering that "wow" moment of seeing a static app become dynamic, empowering you with skills to build resilient software that scales in real-life scenarios like growing startups or personal productivity tools.
 
 ---
 
@@ -19,150 +22,140 @@ By the end of this milestone, your team will have an enhanced application with p
 
 Upon successful completion of this milestone, you will be able to:
 
-- **Select and prioritize** features from the backlog, implementing them in Python while adhering to Agile iteration principles.
-- **Apply SOLID design principles** to refactor and structure code, minimizing dependencies and maximizing cohesion.
-- **Incorporate 3-5 design patterns** (e.g., `Factory`, `Observer`) to address recurring design challenges in your To-Do List application.
-- **Develop and execute** test cases for new features, ensuring functionality and edge-case coverage.
-- **Manage project evolution** through updated tools and `GitHub` releases, facilitating peer review and versioned progress tracking.
+- **Select and apply design patterns** to solve problems in your {span .text-gradient-todo}`**To-Do List**` app.
 
----
+- **Implement and integrate features** from backlog with prior architecture/principles/UI.
 
-## Deliverables
+- **Update project documents** (SRS with pattern details, refined class diagram, Zenhub backlog).
 
-> **Submit** `GitHub` release links for progress check and final submission via the course platform. Commit code, tests, and docs to the repository, linking them in release notes. Reference textbook Chapters 5 (*Design Principles*) and 6 (*Design Patterns*) for justification and examples.
+- **Develop tests** for new features and patterns.
 
-### 1. **_Feature Implementation Report_**
-**Format:** *PDF or Markdown* in `repo/docs`, 2-3 pages  
-
-- Description of 3-7 selected backlog features (e.g., task categorization, search functionality, due date reminders).
-- Rationale for prioritization and how each aligns with the project vision.
-
-### 2. **_Design Principles Application_**
-**Format:** Annotated code/comments in `repo/src`  
-
-- Evidence of **_SOLID principles_** (e.g., `Single Responsibility` in task classes, `Open-Closed` for extensibility).
-- Before/after code snippets showing refactorings.
-
-### 3. **_Design Patterns Integration_**
-**Format:** *PDF or Markdown* in `repo/docs`, 1-2 pages + code  
-
-- 3-5 patterns applied (e.g., `Observer` for notifications, `Strategy` for sorting algorithms).
-- Diagrams or explanations of each pattern's use, with code excerpts demonstrating implementation.
-
-### 4. **_Updated Codebase and Tests_**
-**Format:** In `repo/src` and `repo/tests`  
-
-- Python code for new features, building on MVC from prior milestones.
-- 10+ test cases (unit/integration) covering features and patterns (e.g., `test_observer_notification()`).
-
-### 5. **_Tool Updates_**
-
-- **`Zenhub`:** Backlog refinements, completed tasks moved, new issues for patterns/features.
-- **`GitHub`:** Feature branches merged; `README` updated with new usage instructions.
-
-### 6. **_Team Meeting Minutes_**
-**Format:** *PDF or Markdown* in repo, 1 page  
-
-- Coverage of feature selection, pattern discussions, and task assignments.
-
-### 7. **_Individual Reflections_**
-**Format:** Submitted separately via form  
-
-- Responses to: (1) How did applying design patterns improve your To-Do List's code? (2) Which SOLID principle was most challenging to implement, and why?
-
-### 8. **_GitHub Releases_**
-
-#### Progress Check (Mid-Week)
-Minor version (e.g., `v3.1`) tagged `"milestone4-progress"`. Include partial implementations (e.g., 2 features coded, initial patterns). Notes: Outline advancements (e.g., "Implemented search feature with `Strategy` pattern draft"). **Submit** URL.
-
-#### Final Milestone Submission (End of Week)
-Major version (e.g., `v4.0`) tagged `"milestone4"`. Link all deliverables; changelog from check (e.g., "Completed 5 features; refined `Observer` pattern based on tests"). **Submit** URL.
-
-**Example GitHub Release Creation:**  
-```markdown
-- Repo > Releases > New release.
-- Tag: "milestone4" (final) or "milestone4-progress-v3.1" (check).
-- Title: "Milestone 4 Final" or "Milestone 4 Progress".
-- Description: " - Features Report: [docs/features.pdf] \n - Patterns Code: [src/observer.py] \n - Changelog: Added tests for all new features."
-```
+- **Reflect on design enhancements** from patterns/principles.
 
 ---
 
 ## Tasks and Instructions
 
-Extend Milestone 3 work; use branches like `"feature/task-search"` for isolation.
+### 1. Feature Selection and Implementation
 
-### 1. **Feature Selection and Prioritization**
-- Review backlog in `Zenhub`; choose 3-7 items based on value and feasibility.
-- Map to vision: Ensure features enhance core To-Do List utility.
+- Choose 3-7 backlog features (e.g., search, reminders).
 
-### 2. **Applying Design Principles**
-- Audit code for **_SOLID_** violations; refactor (e.g., `Interface Segregation` for flexible APIs).
-- Document changes per Chapter 5 (*Design Principles*) guidelines.
+- Code in `/task_manager_app/src`, integrating with MVC/SOLID/wireframes.
 
-### 3. **Integrating Design Patterns**
-- Select patterns fitting features (e.g., `Singleton` for config, `Factory` for task types).
-- Implement and diagram per Chapter 6 (*Design Patterns*); justify choices.
+### 2. Design Patterns Integration
 
-### 4. **Code and Test Development**
-- Code features in Python; maintain MVC.
-- Write tests first (TDD-inspired); cover nominal and edge cases.
+- Adopt 3-5 patterns (e.g., Observer for updates, Strategy for sorting).
 
-### 5. **Tool and Documentation Sync**
-- Link `Zenhub` issues to pattern/feature commits.
-- Update `README` with build/test commands.
+- Document in `/task_manager_app/docs/patterns.md` with diagrams/explanations.
 
-### 6. **Meetings and Iteration**
-- Discuss implementations; plan Milestone 5.
+- Update SRS (https://github.com/jam01/SRS-Template/blob/master/template.md) with pattern sections; refine class diagram in `/task_manager_app/docs/uml`.
 
-### 7. **Progress Check and Release Management**
+### 3. Testing
 
-#### Mid-Week
-50% features/patterns done. Minor release for review. *Expect*: Partial code commits, draft docs/tests.
+- Add 10+ unit/integration tests for features/patterns in `/task_manager_app/tests`.
 
-#### End of Week
-Full integration, tested. Major release. *Expect*: Runnable app with new features, complete patterns, high test coverage.
+### 4. Tool Updates
 
----
+- Update Zenhub backlog with pattern/feature tasks; link to commits.
 
-## Evaluation Rubric
+- Enhance GitHub README with feature/pattern overviews.
 
-Total: **100 points**. Evaluate on design elegance, code quality, and integration.
+### 5. Team Meeting Execution
 
-| **Criteria**              | **Points** | **Description**                                                                 |
-|---------------------------|------------|---------------------------------------------------------------------------------|
-| **Feature Implementation**| 25         | Selected features well-integrated; functional and user-aligned.                  |
-| **Design Principles**     | 20         | Effective **_SOLID_** application; improved code quality demonstrated.           |
-| **Design Patterns**       | 25         | Appropriate patterns implemented; clear explanations and usage.                  |
-| **Tests & Codebase**      | 15         | Comprehensive tests; clean, modular code.                                        |
-| **Tool Updates & Releases**| 10         | Updated artifacts; detailed releases.                                            |
-| **Meeting Minutes**       | 5          | Collaborative insights documented.                                               |
-| **Individual Reflections**| 5          | Thoughtful analysis of design impacts.                                           |
+- Hold meeting to review patterns/features; assign actions.
 
-> **Note:** Daily late penalty: 10%. Failing tests require fixes.
+- Document in `/task_manager_app/docs/meeting_minutes/milestone_4/week_1.md`.
+
+### 6. Individual Reflections
+
+- Submit a `.md` file via Canvas with release/Zenhub links and reflection answers (see Submission Checklist).
+
+### 7. GitHub Releases
+
+- **Progress Check (One Week):** Create a minor release (`v3.1`, tagged `milestone4-progress-v3.1`) with feature/pattern drafts. Submit URL via Canvas. **Note**: Missing this incurs a 20% penalty.
+
+- **Final Submission (Two Week):** Create a major release (`v4.0`, tagged `milestone4`) with all linked in notes and changelog (e.g., "Added Strategy pattern to sorting; refined class diagram"). Submit URL via Canvas.
 
 ---
 
-## Resources and Best Practices
+## Submission Checklist
 
-### Textbook Integration
-- Chapter 5 (*Design Principles: SOLID*) for refactoring; Chapter 6 (*Design Patterns: Factory, etc.*) for examples.
+### Submit via Canvas:
 
-### Tools
-- `pylint` for code quality; `pytest` for advanced testing.
+- A `.md` file containing:
 
-### Tips for Excellence
-- **Balance:** Choose patterns that fit naturally; avoid over-engineering.
-- **Testing:** Aim for 80% coverage; include pattern-specific tests.
-- **Innovation:** Enhance To-Do List with patterns (e.g., `Decorator` for task decorators).
-- **Avoid Pitfalls:** Document pattern rationale; ensure releases are self-contained.
+  - GitHub release link (e.g., `https://github.com/user_name/project_name/releases/tag/v4.0`)
 
-### Support
-- Code review sessions; textbook exercises for patterns.
+  - Zenhub board link (e.g., `https://app.zenhub.com/workspaces/...`)
+
+  - **Reflection answers:**
+
+    - **Contribution to the project (50–100 words):** Describe your specific contributions (e.g., pattern implementation, feature coding).
+
+    - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate collaboration; explain.
+
+    - **How did design patterns enhance your code from previous milestones? (50–100 words):** Discuss improvements.
+
+    - **Feedback/comment about this milestone (50 words):** Suggest improvement.
+
+### Repository Documents
+
+All documents must be checked into the GitHub repository under `/task_manager_app/docs` and linked in release notes. Use checkboxes to confirm completion:
+
+- [ ] **Feature Report** (`/task_manager_app/docs/features.md`)
+
+  - Selected features, pattern rationale.
+
+- [ ] **Patterns Documentation** (`/task_manager_app/docs/patterns.md`)
+
+  - Diagrams, explanations; updated SRS with patterns.
+
+- [ ] **Updated UML** (`/task_manager_app/docs/uml`)
+
+  - Refined class diagram.
+
+- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_4/week_1.md`)
+
+  - Attendance, agenda, decisions, action items.
 
 ---
 
-> **This milestone elevates your design—principled implementation ensures a resilient application.**
+## Evaluation Rubric (100 Points)
+
+| Criteria               | Points | Description                                   |
+| :---------------------- | :------: | :----------------: |
+| **Feature Implementation** | 25     | 3-7 features integrated effectively           |
+| **Design Patterns**        | 30     | 3-5 patterns applied, documented/diagrammed   |
+| **Document Updates**       | 20     | SRS/patterns added, class diagram refined     |
+| **Tests & Tool Updates**   | 15     | Tests for features, Zenhub/README updated     |
+| **Meeting Minutes**        | 5      | Detailed notes                                |
+| **Individual Reflections** | 5      | Insightful responses                          |
+
+{span .text-red-500}`**Penalties:** 20% for missing progress check.`
+
+---
+
+## Resources
+
+### Textbook
+
+- Chapter 6: Design Patterns (Factory, Singleton, etc.)
+
+### Tutorials
+
+- [Design Patterns in Python](https://refactoring.guru/design-patterns/python)
+
+- [SRS Template](https://github.com/jam01/SRS-Template/blob/master/template.md)
+
+### Best Practices
+
+- Update Zenhub with pattern tasks for traceability.
+
+- Use commit messages like "Integrate Strategy pattern for sorting".
+
+- Ensure releases have detailed changelogs.
+
+---
 
 ## Navigation
 

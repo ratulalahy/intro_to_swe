@@ -203,14 +203,15 @@ blockquote {
 
 /* Gradient Logo for To-Do List */
 .text-gradient-todo {
-  background: linear-gradient(135deg, #c026d3, #f0abfc, var(--primary-400));
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #c026d3, #4820e9, var(--primary-400));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 800;
-  font-size: 1.5rem;
+  font-weight: 100;
+  font-size: 1.2rem;
   letter-spacing: -0.015em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: inline-block;
   padding: 0.2rem 0.4rem;
 }
@@ -666,7 +667,7 @@ table {
 }
 
 th, td {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
   text-align: left;
   border-bottom: 1px solid rgba(59, 130, 246, 0.1);
   transition: all 0.3s ease;
@@ -717,7 +718,7 @@ tr:hover td {
   }
   
   th, td {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0.75rem 0.5rem 1rem;
   }
 }
 
@@ -781,7 +782,7 @@ tr:hover td {
   }
 
   .text-gradient-todo {
-    background: linear-gradient(135deg, #d946ef, #f0abfc, #93c5fd) !important;
+    background: linear-gradient(90deg, #d946ef, #7507b0, #005eea) !important;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -4,7 +4,7 @@
 
 ## Overview
 
-> In this final milestone, your group will deliver a **10-minute online presentation** to showcase your To-Do List project, covering all aspects from planning to testing. This is your chance to present your work to the instructor and peers, like a client meeting with executives. You’ll highlight features, software engineering practices, **testing**, **robustness (try-catch)**, and **code smell removal**. Presentations will be held via `MS Teams` from July 29–August 1, 2025, with peers encouraged to attend for extra credit.
+> In this final milestone, your group will deliver a **10-minute online presentation** to showcase your {span .text-gradient-todo}`**To-Do List**` project, covering all aspects from planning to testing. This is your chance to present your work to the instructor and peers, like a client meeting with executives. You’ll highlight features, software engineering practices, **testing**, **robustness (try-catch)**, and **code smell removal**. Presentations will be held via `MS Teams` from July 29–August 1, 2025, with peers encouraged to attend for extra credit.
 
 By completing this milestone, you’ll demonstrate your project’s quality and your team’s engineering skills.
 
