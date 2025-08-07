@@ -3,19 +3,14 @@ title: "Introduction to Software Engineering"
 subtitle: "Fall 2025"
 description: "Explore the foundational principles and practices of software engineering through hands-on projects, collaborative teamwork, and industry-aligned methodologies. Transform from a coder to a proficient engineer ready to tackle real-world challenges."
 authors:
-  - name: Your Instructor Name
-    orcid: 0000-0000-0000-0000
+  - name: Ratul
+    email: qratul@uvu.edu
     affiliations:
-      - University Department
+      - Utah Valley University
 banner: "path/to/banner-image.jpg"  # Optional: Add a premium banner image for visual appeal
 ---
 
-# Welcome to Introduction to Software Engineering 🚀
-
-```{admonition} Course Announcement
-:class: tip dropdown
-We're excited to kick off this semester! This 2000-level course is designed for second-year students eager to bridge theory and practice in software development. Expect an engaging blend of lectures, discussions, and a semester-long project that simulates professional workflows.
-```
+## Welcome to Introduction to Software Engineering 
 
 Discover the art and science of building reliable, scalable software. In this course, you'll delve into **Agile methodologies**, **requirements engineering**, **system design**, **implementation patterns**, and **quality assurance**—core concepts that power innovative products at leading tech firms. Through a collaborative project (e.g., developing a productivity application like a {span .text-gradient-todo}`To-Do List`), you'll focus on the *process*: iterating on ideas, managing teams, and ensuring maintainability, preparing you for dynamic careers in tech.
 
@@ -333,10 +328,9 @@ The project is supported by modules covering key software engineering topics thr
 | **Milestone 4** | **Design Patterns & Feature Integration** | Using Weeks 8-9 topics: Adopt 3-5 patterns to 3-7 backlog features, enhance with prior principles/architecture/UI, 10+ tests. Mid-check (Week 8 end): Pattern/feature drafts. **Important:** Ensure patterns fit naturally; integrate with MVC/SOLID; reflection on design improvements. | - |
 | 10 | **Testing** | Unit testing (isolated components, assertions/mocks); integration testing (module interactions, stubs); TDD cycle (red-green-refactor process); tools (pytest/unittest setup); test coverage (statement/branch metrics, tools like coverage.py for analysis). | Chapter 8: Testing |
 | 11 | **Refactoring and Clean Code** | Refactoring techniques (extract method/class, rename, inline temp); code smells (duplication, long methods, large classes - detection/fixes); clean code practices (meaningful naming, small single-responsibility functions, minimal effective comments, consistent formatting, robust error handling); automated refactorings (IDE support, safe changes); benefits (improved readability, maintainability, and testability via test-driven refactoring). | Chapter 9: Refactoring |
-| **Milestone 5** | **Testing & Refactoring** | Using Weeks 10-11 topics: Comprehensive tests (20+, 80%+ coverage for features/patterns), refactor smells in code, extend prior tests. Mid-check (Week 10 end): Test/coverage drafts. **Important:** TDD for refactors; analyze coverage gaps; no new features; reflection on quality gains. | - |
-| 12 | **Critical Revision and Agile in Practice** | UML review (refinements, errors in diagrams); Agile real-world (scaling teams, hybrid models, common challenges like remote collaboration). | Chapter 4: Models<br>Chapter 10: DevOps |
+| **Milestone 5** | **Testing, Refactoring & Presentation** | Using Weeks 10-11 topics: Comprehensive tests (20+, 80%+ coverage for features/patterns), refactor smells in code, extend prior tests. Mid-check (Week 10 end): Test/coverage drafts. **Important:** no new features; reflection on quality gains. | - |
+| 12 | **DevOps & Critical Revision** | DevOps, UML review (refinements, errors in diagrams); Agile real-world (scaling teams, hybrid models, common challenges like remote collaboration). | Chapter 10: DevOps<br>Chapter 4: Models |
 | 13 | **Project Presentation Preparation** | Presentation structure (intro/demo/design/metrics/Q&A); retrospective methods (well/improve/actions, process lessons). | None |
-| **Milestone 5.2** | **Project Presentation** | Prepare slides, demo app, highlight engineering aspects. Deliver in-class presentation with Q&A. Focus: Professional communication. | - |
 | **Final Submission** | **Final Polish** | Address issues/code smells from feedback, reorganize README/docs/folders, add missing content (e.g., consolidated diagrams). **Important:** No new features; focus on fixes/maintainability; reflection on overall process improvements. | - |
 | **Final Exam** | - | - | - |
 

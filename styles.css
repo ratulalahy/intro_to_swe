@@ -866,7 +866,7 @@ tr:hover td {
   .form-input:focus {
     border-color: var(--primary-300) !important;
     box-shadow: 
-      0 0 0 3px rgba(147, 197, 253, 0.1) !important,
+      0 0 0 3px rgba(147, 197, 253, 0.1),
       0 2px 8px rgba(147, 197, 253, 0.08) !important;
   }
 

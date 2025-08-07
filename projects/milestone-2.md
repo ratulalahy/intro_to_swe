@@ -1,78 +1,107 @@
 ---
 title: "Milestone 2: Requirements Engineering and MVP Development"
-description: Requirements engineering, use case modeling, and console-based MVP implementation
----
-
-# Milestone 2: Requirements Engineering and MVP Development
-
+description: Requirements engineering, use case modeling, and CLI-based MVP implementation
 ---
 
 ## Overview
 
-Ever tried organizing a road trip with friends, only to realize halfway through that no one thought about the destination or must-have stops? That's the trap Milestone 2 helps you avoid in your {span .text-gradient-todo}`**To-Do List**` app project, turning vague ideas into a clear path forward. Drawing from everyday frustrations like forgetting deadlines or losing track of chores, this phase motivates you to dive into requirements engineering—think interviewing "users" (your team or peers) to capture what makes an app truly useful, such as quick task addition or smart reminders that mimic real-life productivity hacks used by busy executives or students cramming for exams. You'll create a detailed SRS to outline functional features (like editing tasks) and non-functional ones (like fast loading to fit hectic schedules), sketch UML diagrams to visualize flows (with class diagrams as the star for structuring data like task lists), and build a simple console MVP in Python to test the basics with early tests. It's like prototyping a new gadget in a garage workshop—relatable to how companies like Airbnb iterated their early ideas to match user needs. By the end, you'll have a working prototype that feels tangible and exciting, boosting your confidence as you see how solid planning prevents future rework and makes your app a go-to tool for real people. This milestone highlights elicitation and early validation.
+With your project foundation set, it's time to define what your {span .text-gradient-todo}`**To-Do List**` app truly needs—like turning vague ideas into precise specs, just as engineering teams do before building. In this milestone, you'll refine your feature list into structured user stories, create a `Software Requirements Specification (SRS)`, model key elements with `UML diagrams`, select a `Minimum Viable Product (MVP)`, and implement a simple `Command-Line Interface (CLI)` version in Python (e.g., basic task addition, listing, and completion). This draws on requirements engineering and modeling concepts, focusing on clarity and feasibility without advanced design or automated testing—validate manually to ensure it works as intended.
 
-By the end of this milestone, your team will have a detailed SRS, models, and MVP, with updates for traceability.
+By the end of this milestone, you'll have documented requirements, visual models, and a functional CLI MVP, ready for expansion in later phases. Continue using GitHub releases for versioning.
 
 ---
 
 ## Learning Objectives
 
 Upon successful completion of this milestone, you will be able to:
-- **Elicit and document** functional/non-functional requirements, stories, and use cases.
-- **Create UML diagrams** (class emphasized, use case) for system visualization.
-- **Develop a console-based MVP** in Python with basic tests.
-- **Update project artifacts** (SRS with diagrams, Zenhub backlog) for consistency.
-- **Reflect on requirements process** to improve planning.
+
+- **Elicit and document requirements** using user stories, use cases, and a structured SRS.
+- **Model software systems** with UML use case, class diagrams and sequence diagrams to visualize interactions and structure.
+- **Define an MVP** by selecting core features and outlining validation approaches.
+- **Implement a basic CLI application** in Python, applying requirements and models.
+- **Prioritize requirements** using techniques like planning poker for consensus.
+- **Manually validate** the MVP to confirm it meets initial requirements.
 
 ---
 
 ## Tasks and Instructions
 
-### 1. Requirements Documentation
+### 1. Team Meeting Execution
+Align your team on requirements and MVP through focused discussions.
 
-- Build SRS using https://github.com/jam01/SRS-Template/blob/master/template.md: Include scope, reqs, 15+ stories with criteria.
+- Hold team meetings with agendas covering backlog refinement, SRS drafting, UML creation, and MVP implementation.
+- Assign action items with owners and deadlines.
+- Document in:
+  - `/task_manager_app/docs/meeting_minutes/milestone_2/week_1.md`
+  - `/task_manager_app/docs/meeting_minutes/milestone_2/week_2.md`
 
-- Prioritize with planning poker; format stories properly.
+### 2. Refine Product Backlog
+Transform your initial feature list into actionable, user-focused items.
 
-- Commit to `/task_manager_app/docs/srs.md`.
+- Convert features to 15+ user stories in the format: 
+    ```plaintext
+    As a [user], I want [feature] so that [benefit].
+    ```
+- Include functional and non-functional requirements; prioritize using planning poker for estimation and consensus.
+- Update `/task_manager_app/docs/backlog.md` and **import/refine issues in Zenhub with priorities and assignees.**
 
-### 2. Use Case and UML Modeling
+### 3. Create SRS
 
-- Develop 5+ use cases (actors, flows).
+Develop a formal **Software Requirements Specification (SRS)** to document your system's intended functionality and constraints.
 
-- Create UML use case and class diagrams (class emphasized for structure).
+- Use the [SRS template](https://github.com/jam01/SRS-Template/blob/master/template.md) as your structural guide. Modify or omit sections only if clearly justified.
+- Complete the SRS based on what you have developed so far in **Milestone 1 (vision, backlog, roles)** and **Milestone 2 (user stories, UML diagrams, MVP design)**.
+- Your initial SRS should include:
 
-- Export to `/task_manager_app/docs/uml`; describe in `/task_manager_app/docs/use_cases.md`.
+  - **Introduction & Purpose**
+  - **Overall Description** (system context, user characteristics, assumptions)
+  - **Functional Requirements** (mapped from user stories and backlog)
+  - **Non-Functional Requirements** (e.g., usability, performance, platform constraints)
+  - **Use Cases or User Interactions** (linked to UML diagrams)
+  - **Assumptions and Constraints**
+- Reference related artifacts in your documentation (e.g., link specific user stories, diagram files, or backlog items).
+- As your project evolves, you are expected to **continuously update this SRS** in future milestones to reflect changes in features, scope, and design decisions.
+- Save the document as:
 
-- Update prior SRS/vision with new diagrams.
+  - `/task_manager_app/docs/srs.md`
 
-### 3. Console MVP Implementation
+> **Tips**: Treat the SRS as a dynamic contract between your team and your users. Keep it aligned with implementation decisions, feedback, and design iterations throughout the course.
 
-- Code core features (add/view/edit/delete/prioritize) in `/task_manager_app/src`.
+### 4. UML Modeling
+Visualize your system's interactions and structure.
 
-- Add 3-5 unit tests in `/task_manager_app/tests`.
+- Create UML use case diagrams (showing actors like "User" and cases like "Add Task").
+- Develop class diagrams for the CLI MVP (attributes, methods, relationships, e.g., Task class with title, due_date).
+- Create sequence diagrams for key interactions (e.g., adding a task, listing tasks).
+- Use tools like draw.io; export diagrams as images or embeddable files.
+- Save to `/task_manager_app/docs/uml_use_case.md` and `/task_manager_app/docs/uml_class.md` (include diagrams and explanations).
 
-### 4. Tool Updates
+### 5. Define and Implement MVP
+Focus on core functionality for a testable prototype.
 
-- Refine Zenhub backlog with stories/use cases; link to commits.
-
-- Update GitHub README with MVP overview.
-
-### 5. Team Meeting Execution
-
-- Review SRS/MVP; assign actions.
-
-- Document in `/task_manager_app/docs/meeting_minutes/milestone_2/week_1.md`.
+- Select MVP features (e.g., add task, list tasks, mark as complete) based on priorities; outline validation (manual testing scenarios).
+- Implement in Python CLI:
+  - Create `/task_manager_app/src/task_manager.py` with basic functions (use lists or simple data structures; no database yet).
+  - Example: Command-line menu for operations; persist data in a text file if needed.
+- Manually validate: Run the app, document sample inputs/outputs in `/task_manager_app/docs/mvp_validation.md`.
 
 ### 6. Individual Reflections
-
-- Submit a `.md` file via Canvas with release/Zenhub links and reflection answers (see Submission Checklist).
+- Submit a `.md` file via Canvas with links and reflection answers (see Submission Checklist).
 
 ### 7. GitHub Releases
+- **Progress Check (End of Week 6):**
+  - Create a minor release: `v1.1`
+  - Tag example: `milestone2-progress-v1.1`
+  - Include drafts of SRS, backlog, UML, and initial code.
+  - Submit the release URL via Canvas
 
-- **Progress Check (One Week):** Create a minor release (`v1.1`, tagged `milestone2-progress-v1.1`) with drafts. Submit URL via Canvas. **Note**: Missing this incurs a 20% penalty.
+> **Warning** Missing this release = 20% deduction from total milestone score
 
-- **Final Submission (Two Week):** Create a major release (`v2.0`, tagged `milestone2`) with all linked in notes and changelog (e.g., "Added class diagram to SRS"). Submit URL via Canvas.
+- **Final Submission (End of Week 7):**
+  - Create a major release: `v2.0`
+  - Tag example: `milestone2`
+  - Include final documents, code, and changelog summarizing additions/edits since `v1.1`.
+  - Submit the final release URL via Canvas
 
 ---
 
@@ -80,37 +109,21 @@ Upon successful completion of this milestone, you will be able to:
 
 ### Submit via Canvas:
 
-- A `.md` file containing:
-
-  - GitHub release link (e.g., `https://github.com/user_name/project_name/releases/tag/v2.0`)
-
-  - Zenhub board link (e.g., `https://app.zenhub.com/workspaces/...`)
-
-  - **Reflection answers:**
-
-    - **Contribution to the project (50–100 words):** Describe your specific contributions (e.g., class diagram, MVP coding).
-
-    - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate collaboration; explain.
-
-    - **How did requirements analysis shape user needs understanding? (50–100 words):** Discuss insights.
-
-    - **Feedback/comment about this milestone (50 words):** Suggest improvement.
+#### A `.md` file containing:
+- [ ] **GitHub release link** (e.g., `https://github.com/user_name/project_name/releases/tag/v2.0`)
+- [ ] **Zenhub board link** (e.g., `https://app.zenhub.com/workspaces/...`)
+- [ ] **Reflection answers:**
+  - **Your Contribution to the project (50–100 words):** Describe your role (e.g., UML modeling).
+  - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate and explain collaboration.
+  - **How does the project vision align with your software engineering goals? (50–100 words):** Connect to personal aspirations.
+  - **Feedback on this milestone (50 words):** Suggest improvements.
 
 ### Repository Documents
-
-All documents must be checked into the GitHub repository under `/task_manager_app/docs` and linked in release notes. Use checkboxes to confirm completion:
-
+- [ ] **Refined Product Backlog** (`/task_manager_app/docs/backlog.md`)
 - [ ] **SRS** (`/task_manager_app/docs/srs.md`)
-
-  - Functional/non-functional, stories; updated with diagrams.
-
-- [ ] **Use Cases and UML** (`/task_manager_app/docs/use_cases.md`)
-
-  - Descriptions, images in `/task_manager_app/docs/uml` (class emphasized).
-
-- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_2/week_1.md`)
-
-  - Attendance, agenda, decisions, action items.
+- [ ] **UML Diagrams** (`/task_manager_app/docs/uml_use_case.md`, `/task_manager_app/docs/uml_class.md`)
+- [ ] **MVP Validation** (`/task_manager_app/docs/mvp_validation.md`)
+- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_2/`)
 
 ---
 
@@ -118,14 +131,14 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 
 | Criteria               | Points | Description                                   |
 | :---------------------- | :------: | :----------------: |
-| **SRS Documentation**      | 30     | Comprehensive, using template, updated        |
-| **Use Cases and UML**      | 25     | Detailed, class diagram emphasized            |
-| **MVP Code and Tests**     | 25     | Functional prototype, basic tests             |
-| **Tool Setup & Releases**  | 10     | Updated backlog/README, proper releases       |
-| **Meeting Minutes**        | 5      | Detailed notes                                |
-| **Individual Reflections** | 5      | Insightful responses                          |
+| **Team Meetings**          | 5     | Detailed, actionable minutes                  |
+| **Refined Backlog**        | 20     | 15+ user stories, prioritized effectively     |
+| **SRS**                    | 15     | Comprehensive and well-structured             |
+| **UML Modeling**           | 20     | Accurate use case, class, and sequence diagrams          |
+| **MVP Implementation & Validation** | 35    | Functional CLI with manual proof              |
+| **Individual Reflections** | 5     | Insightful responses                          |
 
-{span .text-red-500}`**Penalties:** 20% for missing progress check.`
+*Penalties: 20% for missing progress check after first week.*
 
 ---
 
@@ -133,32 +146,47 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 
 ### Textbook
 
-- Chapter 3: Requirements (Stories, Use Cases, MVP)
+- [Chapter 3: Requirements](https://softengbook.org/chapter3)
+- [Chapter 4: Models](https://softengbook.org/chapter4)
+
+### Beginner Friendly Resources
+- [User Stories Explained](https://www.youtube.com/watch?v=6E0T9uin2dk)
+- [UML Basics](https://www.youtube.com/watch?v=UI6lqHOVHic)
+- [Building a CLI in Python](https://realpython.com/python-cli-intro/)
+- [Working with JSON in Python](https://realpython.com/python-json/)
 
 ### Tutorials
 
-- [SRS Template](https://github.com/jam01/SRS-Template/blob/master/template.md)
+- [Writing Effective User Stories](https://www.atlassian.com/agile/agile-at-scale/user-stories)
+- [draw.io for UML](https://www.drawio.com/doc/faq/uml-diagrams)
+- [Planning Poker Guide](https://www.mountaingoatsoftware.com/agile/planning-poker)
+- [SRS Template](https://www.softwaretestinghelp.com/requirements-specification-srs/)
+- [Reading and Writing Files in Python](https://realpython.com/read-write-files-python/)
 
-- [UML Class Diagram Guide](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-class-diagram/)
+### CLI Enhancement Libraries (Python)
 
-- [Python Testing with Pytest](https://realpython.com/pytest-python-testing/)
+#### [`Rich`](https://rich.readthedocs.io/en/stable/)
+A modern Python library for creating visually appealing command-line interfaces, supporting features such as tables, panels, markdown rendering, and syntax highlighting.
+- Documentation: [rich.readthedocs.io](https://rich.readthedocs.io/en/stable/)
+- Tutorial: [Real Python – Using the Rich Package](https://realpython.com/python-rich-package/)
+**Suggested Use**: Enhance the CLI experience with colored output, formatted tables for task lists, and readable sections for prompts or validation results.
 
-### Best Practices
+#### [`Typer`](https://typer.tiangolo.com/)
 
-- Update Zenhub with new tasks for traceability.
+A lightweight library for building intuitive command-line interfaces using Python type hints. Built on top of Click, Typer simplifies CLI app development with automatic help generation and command parsing.
 
-- Commit with messages like "Update SRS with class diagram".
+- Documentation: [typer.tiangolo.com](https://typer.tiangolo.com/)
+- Tutorial: [Quickstart Guide](https://typer.tiangolo.com/tutorial/)
+**Suggested Use**: Create structured CLI commands like `add`, `list`, or `complete` for task operations with clear argument handling and auto-generated help menus.
 
-- Ensure class diagram reflects MVP structure.
+#### [`cmd2`](https://cmd2.readthedocs.io/en/latest/)
+An enhanced wrapper around Python's built-in `cmd` module that adds advanced features like tab completion, command history, and argument parsing.
+- Documentation: [cmd2.readthedocs.io](https://cmd2.readthedocs.io/en/latest/)
+- Tutorial: [Getting Started](https://cmd2.readthedocs.io/en/latest/tutorials/basic_cli.html)
+**Suggested Use**: Develop a shell-like interface with interactive commands and command chaining for task management.
+
 
 ---
-
-**Leverage this milestone to validate your vision—rigorous requirements now prevent rework later.**
-
-## Navigation
-
-- **Previous:** [Milestone 1: Project Initiation](milestone-1)
-- **Next:** [Milestone 3: System Modeling](milestone-3)
 
 ### All Project Milestones
 1. [Milestone 1: Project Initiation](milestone-1)
