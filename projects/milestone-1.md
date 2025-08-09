@@ -32,7 +32,7 @@ Before coding begins, a well-organized digital workspace must be in place. This 
 
 - Initialize a [GitHub](https://github.com/) Repository:
   - Create a new public or private repository under one team member’s account.
-  - Add all team members as collaborators.
+  - Add all team members as collaborators. Add your instructor (email id: qratul@uvu.edu) too.
   - Establish these branches:
     - `main` – production-ready commits
     - `dev` – staging area for features and fixes
@@ -41,6 +41,8 @@ Before coding begins, a well-organized digital workspace must be in place. This 
     - `/task_manager_app/docs/`: documentation and planning assets
 
 - Connect and Configure [Zenhub](https://www.zenhub.com/):
+  - Add your team members to the Zenhub workspace.
+  - Add instructor (email id: qratul@uvu.edu) to the Zenhub workspace.
   - Enable Zenhub on the GitHub repository.
   - Create:
     - 1–2 Epics (e.g., “Core Task Features”)

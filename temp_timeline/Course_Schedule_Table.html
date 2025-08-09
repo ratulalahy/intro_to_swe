@@ -9,27 +9,41 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 40px;
             background-color: #f8f9fa;
+            line-height: 1.6;
         }
         h1 {
             text-align: center;
             color: #343a40;
+            margin-bottom: 30px;
+        }
+        .table-container {
+            overflow-x: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            background-color: #ffffff;
         }
         table {
             width: 100%;
             border-collapse: separate;
             border-spacing: 0 10px;
+            min-width: 800px; /* Ensures better readability on larger screens */
         }
         th, td {
-            padding: 12px 15px;
+            padding: 15px 20px;
             text-align: left;
             background-color: #ffffff;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 1px solid #dee2e6;
+            vertical-align: top;
         }
         th {
             background-color: #007bff;
             color: white;
             text-transform: uppercase;
             letter-spacing: 1px;
+            position: sticky;
+            top: 0;
+            z-index: 1;
         }
         tr td:first-child {
             border-top-left-radius: 8px;
@@ -44,7 +58,7 @@
             color: #212529;
         }
         .milestone-row td {
-            background-color: #e5d5ff;/* Green for milestones */
+            background-color: #e5d5ff; /* Green for milestones */
             font-weight: bold;
             color: rgb(0, 0, 0);
             text-align: center;
@@ -66,144 +80,258 @@
         .design-patterns { background-color: #f5ff9a; } 
         .testing { background-color: #f4a460; } 
         .refactor-devops { background-color: #d3d3d3; } 
-        .presentation-kanban { background-color: none; }
+        .presentation-kanban { background-color: transparent; }
         .devops-agile { background-color: #caee90; } 
         table tr:hover td {
             background-color: #e9ecef !important; /* Hover effect overrides color */
             transition: background-color 0.3s ease;
         }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            margin: 0 0 10px 0;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        ul li:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: 768px) {
+            table {
+                border-spacing: 0 5px;
+            }
+            th, td {
+                padding: 10px 12px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Course Schedule</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Week</th>
-                <th>Topics</th>
-                <th>Lectures/Details (Key Points)</th>
-                <th>Reading</th>
-                <th>Project Milestones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td class="topic-cell intro">Introduction to Software Engineering</td>
-                <td>Course syllabus, grading, resources; SE definition/scope; historical evolution (software crisis, milestones); SE principles vs. programming (processes, teamwork, quality); industry role (scalability, maintainability, ethics).</td>
-                <td>Chapter 1: Introduction</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td class="topic-cell version-control">Version Control with Git and GitHub</td>
-                <td>Git fundamentals (repos, commits, branches, staging area); GitHub features (remotes, PRs, issues, collaboration, actions); advanced (merges, rebase, conflicts, tags/releases); best practices (commit messages, branching models like Git Flow, .gitignore).</td>
-                <td>Appendix: Git</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td class="topic-cell sdlc-agile">SDLC, Agile Scrum, and Project Management with Zenhub</td>
-                <td>SDLC models (Waterfall phases/pros/cons, Agile iterative/Manifesto, XP practices); Scrum framework (sprints, roles - PO/SM/Team, ceremonies - planning/standup/review/retrospective, artifacts - backlogs/burndowns); Zenhub (boards, epics, task tracking, GitHub integration for issues/PRs/labels).</td>
-                <td>Chapter 2: Processes</td>
-                <td>None</td>
-            </tr>
-            <tr class="milestone-row">
-                <td colspan="5">Milestone 1: Project Launch and Setup (Weeks 4-5) – Using Weeks 1-3 topics: Team roles/rotation, vision statement, initial backlog (10+ stories), Git/Zenhub setup, draft plan/timeline. Mid-check (Week 4 end): Team doc/backlog drafts. Important: Establish branching strategy, communication plan; reflection on Agile application.</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td class="topic-cell requirements">Requirements Engineering I</td>
-                <td>High-level analysis (stakeholders, goals elicitation techniques); low-level (user stories format/prioritization, use cases/text/diagrams, functional/non-functional classification, SRS structure/template); UML intro (purpose, notation for use case/class diagrams, tools like draw.io).</td>
-                <td>Chapter 3: Requirements</br>Chapter 4: Models</td>
-                <td>Milestone 1 Ongoing</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td class="topic-cell requirements">Requirements Engineering II</td>
-                <td>MVP selection (core features, validation methods); A/B testing (hypothesis/design/analysis); planning poker (estimation process, consensus building); UML expansion (class diagram - attributes/methods/relationships for CLI MVP design).</td>
-                <td>Chapter 3: Requirements<br>Chapter 4: Models (Class Diagrams)</td>
-                <td>Milestone 1 Final Due (End of Week 5)</td>
-            </tr>
-            <tr class="milestone-row">
-                <td colspan="5">Milestone 2: Requirements & MVP (Weeks 6-7) – Using Weeks 4-5 topics: SRS (functional/non-functional), 15+ user stories, use case diagrams, CLI-based MVP in Python (e.g., task management features), basic tests (3-5). Mid-check (Week 4 end): SRS/user stories drafts. Important: UML class/use case integration; reflection on MVP validation.</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td class="topic-cell ui-arch">UI Design and Architecture</td>
-                <td>GUI concepts (usability principles, UX elements, interface design guidelines); wireframes/mockups/prototypes (creation tools, iteration for user feedback); architectures (Layered design - separation of concerns, MVC - Model data/View UI/Controller logic, examples in Python).</td>
-                <td>Chapter 7: Architecture</td>
-                <td>Milestone 2 Ongoing</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td class="topic-cell design-principles">Design Principles</td>
-                <td>Conceptual integrity (unified vision, consistency across modules); information hiding (abstraction/modularity benefits); cohesion (high for focused responsibilities); coupling (low for independence/reusability); SOLID principles (Single Responsibility - one change reason, Open-Closed - extend without modify, Liskov Substitution - subtypes interchangeable, Interface Segregation - client-specific interfaces, Dependency Inversion - depend on abstractions).</td>
-                <td>Chapter 5: Design Principles</td>
-                <td>Milestone 2 Final Due (End of Week 7)</td>
-            </tr>
-            <tr class="midterm-row">
-                <td colspan="5">Midterm Exam</td>
-            </tr>
-            <tr class="milestone-row">
-                <td colspan="5">Milestone 3: Modeling & Architecture (Weeks 8-9) – Using Weeks 6-7 topics: Wireframes/mockups, MVC code setup, SOLID application to MVP, manual validation scenarios (5+). Mid-check (Week 8 end): Wireframes/MVC drafts. Reflection on code improvements from principles. Important: Integrate UI prototypes with architecture; ensure modularity.</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td class="topic-cell design-patterns">Design Patterns I</td>
-                <td>Factory (abstract creation, simple/abstract/method types, when to use for flexibility); Singleton (ensure single instance, lazy/eager initialization, thread-safety); Observer (publish-subscribe pattern, subject/observer roles, event handling); Strategy (algorithm families, context/strategy interface, runtime swapping).</td>
-                <td>Chapter 6: Design Patterns</td>
-                <td>Milestone 3 Ongoing</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td class="topic-cell design-patterns">Design Patterns II</td>
-                <td>Adapter (interface compatibility, object/class adapters, legacy integration); pattern review (trade-offs, combinations like Factory with Strategy); application guidelines (when to apply/avoid, common pitfalls in OO design).</td>
-                <td>Chapter 6: Design Patterns</td>
-                <td>Milestone 3 Final Due (End of Week 9)</td>
-            </tr>
-            <tr class="milestone-row">
-                <td colspan="5">Milestone 4: Design Patterns & Feature Integration (Weeks 10-11) – Using Weeks 8-9 topics: Adopt 3-5 patterns to 3-7 backlog features, enhance with prior principles/architecture/UI, 10+ tests. Mid-check (Week 10 end): Pattern/feature drafts. Reflection on design improvements. Important: Ensure patterns fit naturally; integrate with MVC/SOLID.</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td class="topic-cell testing">Testing</td>
-                <td>Unit testing (isolated components, assertions/mocks); integration testing (module interactions, stubs); TDD cycle (red-green-refactor process); tools (pytest/unittest setup); test coverage (statement/branch metrics, tools like coverage.py for analysis).</td>
-                <td>Chapter 8: Testing</td>
-                <td>Milestone 4 Ongoing</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td class="topic-cell refactor-devops">Refactoring and Clean Code</td>
-                <td>Refactoring techniques (extract method/class, rename, inline temp); code smells (duplication, long methods, large classes - detection/fixes); clean code practices (meaningful naming, small single-responsibility functions, minimal effective comments, consistent formatting, robust error handling); automated refactorings (IDE support, safe changes); benefits (improved readability, maintainability, and testability via test-driven refactoring).</td>
-                <td>Chapter 9: Refactoring</td>
-                <td>Milestone 4 Final Due (End of Week 11)</td>
-            </tr>
-            <tr class="milestone-row">
-                <td colspan="5">Milestone 5: Testing, Refactoring & Presentation (Weeks 12-13) – Using Weeks 10-11 topics: Comprehensive tests (20+, 80%+ coverage for features/patterns), refactor smells in code, extend prior tests. Mid-check (Week 12 end): Test/coverage drafts. Reflection on quality gains. Important: TDD for refactors; analyze coverage gaps; no new features.</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td class="topic-cell devops-agile">DevOps and Critical Revision</td>
-                <td>DevOps, UML review (refinements, errors in diagrams); Agile real-world (scaling teams, hybrid models, common challenges like remote collaboration).</td>
-                <td>Chapter 10: DevOps </br>Chapter 4: Models</td>
-                <td>Milestone 5 Final Due (End of Week 13)</td>
-            </tr>            
-            <tr>
-                <td class="milestone-row">13</td>
-                <td class="topic-cell presentation-kanban">Project Presentation Preparation</td>
-                <td>Presentation structure (intro/demo/design/metrics/Q&A); retrospective methods (well/improve/actions, process lessons).</td>
-                <td>None</td>
-                <td>Milestone 5 Ongoing</td>
-            </tr>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Topics</th>
+                    <th>Lectures/Details (Key Points)</th>
+                    <th>Reading</th>
+                    <th>Project Milestones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="topic-cell intro">Introduction to Software Engineering</td>
+                    <td>
+                        <ul>
+                            <li>Course syllabus, grading, resources</li>
+                            <li>SE definition/scope; historical evolution (software crisis, milestones) </li>
+                            <li>SE principles vs. programming (processes, teamwork, quality)</li>
+                            <li>Industry role (scalability, maintainability, ethics).</li>
+                        </ul> 
+                    </td>
+                    <td><a href="https://softengbook.org/chapter1.html">Chapter 1: Introduction</a></td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="topic-cell version-control">Version Control with Git and GitHub</td>
+                    <td>
+                        <ul>
+                            <li> <a href="https://git-scm.com/">git</a> fundamentals (repos, commits, branches, staging area)</li>
+                            <li> <a href="https://github.com/">GitHub</a> features (remotes, PRs, issues, collaboration, actions)</li>
+                            <li>Advanced (merges, rebase, conflicts, tags/releases)</li>
+                            <li>Best practices (commit messages, branching models like Git Flow, .gitignore)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapterAp.html">Appendix: Git</a></td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="topic-cell sdlc-agile">SDLC, Agile Scrum, and Project Management with Zenhub</td>
+                    <td>
+                        <ul>
+                            <li>SDLC models (Waterfall phases/pros/cons, Agile iterative/Manifesto, XP practices)</li>
+                            <li>Scrum framework (sprints, roles - PO/SM/Team, ceremonies - planning/standup/review/retrospective, artifacts - backlogs/burndowns)</li>
+                            <li> <a href="https://www.zenhub.com/github">Zenhub</a> (boards, epics, task tracking, GitHub integration for issues/PRs/labels)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter2.html">Chapter 2: Processes</a></td>
+                    <td>None</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="5">Milestone 1: Project Launch and Setup (Weeks 4-5) – Using Weeks 1-3 topics: Team roles/rotation, vision statement, initial backlog (10+ stories), Git/Zenhub setup, draft plan/timeline. Mid-check (Week 4 end): Team doc/backlog drafts. Important: Establish branching strategy, communication plan; reflection on Agile application.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="topic-cell requirements">Requirements Engineering I</td>
+                    <td>
+                        <ul>
+                            <li>High-level analysis (stakeholders, goals elicitation techniques)</li>
+                            <li>Low-level (user stories format/prioritization, use cases/text/diagrams, functional/non-functional classification, SRS structure/template)</li>
+                            <li>UML intro (purpose, notation for use case/class diagrams, tools like draw.io)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter3.html">Chapter 3: Requirements</a></br><a href="https://softengbook.org/chapter4.html">Chapter 4: Models</a></td>
+                    <td>Milestone 1 Ongoing</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="topic-cell requirements">Requirements Engineering II</td>
+                    <td>
+                        <ul>
+                            <li>MVP selection (core features, validation methods)</li>
+                            <li>A/B testing (hypothesis/design/analysis)</li>
+                            <li>planning poker (estimation process, consensus building)</li>
+                            <li>UML expansion (class diagram - attributes/methods/relationships for CLI MVP design)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter3.html">Chapter 3: Requirements</a><br><a href="https://softengbook.org/chapter4.html#class-diagrams">Chapter 4: Models (Class Diagrams)</a></td>
+                    <td>Milestone 1 Final Due (End of Week 5)</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="5">Milestone 2: Requirements & MVP (Weeks 6-7) – Using Weeks 4-5 topics: SRS (functional/non-functional), 15+ user stories, use case diagrams, CLI-based MVP in Python (e.g., task management features), basic tests (3-5). Mid-check (Week 4 end): SRS/user stories drafts. Important: UML class/use case integration; reflection on MVP validation.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="topic-cell ui-arch">UI Design and Architecture</td>
+                    <td>
+                        <ul>
+                            <li>GUI concepts (usability principles, UX elements, interface design guidelines)</li>
+                            <li>Wireframes/Mockups/Prototypes (creation tools, iteration for user feedback)</li>
+                            <li>Architectures (Layered design - separation of concerns, MVC - Model data/View UI/Controller logic, examples in Python)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter7.html">Chapter 7: Architecture</a></td>
+                    <td>Milestone 2 Ongoing</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="topic-cell design-principles">Design Principles</td>
+                    <td>
+                        <ul>
+                            <li>Conceptual integrity (unified vision, consistency across modules)</li>
+                            <li>Information hiding (abstraction/modularity benefits)</li>
+                            <li>cohesion (high for focused responsibilities)</li>
+                            <li>Coupling (low for independence/reusability)</li>
+                            <li>SOLID principles (Single Responsibility - one change reason, Open-Closed - extend without modify, Liskov Substitution - subtypes interchangeable, Interface Segregation - client-specific interfaces, Dependency Inversion - depend on abstractions)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter5.html">Chapter 5: Design Principles</a></td>
+                    <td>Milestone 2 Final Due (End of Week 7)</td>
+                </tr>
+                <tr class="midterm-row">
+                    <td colspan="5">Midterm Exam</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="5">Milestone 3: Modeling & Architecture (Weeks 8-9) – Using Weeks 6-7 topics: Wireframes/mockups, MVC code setup, SOLID application to MVP, manual validation scenarios (5+). Mid-check (Week 8 end): Wireframes/MVC drafts. Reflection on code improvements from principles. Important: Integrate UI prototypes with architecture; ensure modularity.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="topic-cell design-patterns">Design Patterns I</td>
+                    <td>
+                        <ul>
+                            <li>Factory (abstract creation, simple/abstract/method types, when to use for flexibility)</li>
+                            <li>Singleton (ensure single instance, lazy/eager initialization, thread-safety)</li>
+                            <li>Observer (publish-subscribe pattern, subject/observer roles, event handling)</li>
+                            <li>Strategy (algorithm families, context/strategy interface, runtime swapping)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter6.html">Chapter 6: Design Patterns</a></td>
+                    <td>Milestone 3 Ongoing</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="topic-cell design-patterns">Design Patterns II</td>
+                    <td>
+                        <ul>
+                            <li>Adapter (interface compatibility, object/class adapters, legacy integration)</li>
+                            <li>Pattern review (trade-offs, combinations like Factory with Strategy)</li>
+                            <li>Application guidelines (when to apply/avoid, common pitfalls in OO design)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter6.html">Chapter 6: Design Patterns</a></td>
+                    <td>Milestone 3 Final Due (End of Week 9)</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="5">Milestone 4: Design Patterns & Feature Integration (Weeks 10-11) – Using Weeks 8-9 topics: Adopt 3-5 patterns to 3-7 backlog features, enhance with prior principles/architecture/UI, 10+ tests. Mid-check (Week 10 end): Pattern/feature drafts. Reflection on design improvements. Important: Ensure patterns fit naturally; integrate with MVC/SOLID.</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="topic-cell testing">Testing</td>
+                    <td>
+                        <ul>
+                            <li>Unit testing (isolated components, assertions/mocks)</li>
+                            <li>Integration testing (module interactions, stubs)</li>
+                            <li>TDD cycle (red-green-refactor process)</li>
+                            <li>Tools (pytest/unittest setup)</li>
+                            <li>Test coverage (statement/branch metrics, tools like coverage.py for analysis)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter8.html">Chapter 8: Testing</a></td>
+                    <td>Milestone 4 Ongoing</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="topic-cell refactor-devops">Refactoring and Clean Code</td>
+                    <td>
+                        <ul>
+                            <li>Refactoring techniques (extract method/class, rename, inline temp)</li>
+                            <li>Code smells (duplication, long methods, large classes - detection/fixes)</li>
+                            <li>Clean code practices (meaningful naming, small single-responsibility functions, minimal effective comments, consistent formatting, robust error handling)</li>
+                            <li>Automated refactorings (IDE support, safe changes)</li>
+                            <li>Benefits (improved readability, maintainability, and testability via test-driven refactoring)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter9.html">Chapter 9: Refactoring</a></td>
+                    <td>Milestone 4 Final Due (End of Week 11)</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="5">Milestone 5: Testing, Refactoring & Presentation (Weeks 12-13) – Using Weeks 10-11 topics: Comprehensive tests (20+, 80%+ coverage for features/patterns), refactor smells in code, extend prior tests. Mid-check (Week 12 end): Test/coverage drafts. Reflection on quality gains. Important: TDD for refactors; analyze coverage gaps; no new features.</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="topic-cell devops-agile">DevOps and Critical Revision</td>
+                    <td>
+                        <ul>
+                            <li>DevOps, UML review (refinements, errors in diagrams)</li>
+                            <li>Agile real-world (scaling teams, hybrid models, common challenges like remote collaboration)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter10.html">Chapter 10: DevOps</a> </br><a href="https://softengbook.org/chapter4.html">Chapter 4: Models</a></td>
+                    <td>Milestone 5 Final Due (End of Week 13)</td>
+                </tr>            
+                <tr>
+                    <td class="milestone-row">13</td>
+                    <td class="topic-cell presentation-kanban">Project Presentation Preparation</td>
+                    <td>
+                        <ul>
+                            <li>Presentation structure (intro/demo/design/metrics/Q&A)</li>
+                            <li>Retrospective methods (well/improve/actions, process lessons)</li>
+                        </ul>
+                    </td>
+                    <td>None</td>
+                    <td>Milestone 5 Ongoing</td>
+                </tr>
 
-            <tr class="milestone-row">
-                <td colspan="5">Final Polish (Week 14) – Address issues/code smells from feedback, reorganize README/docs/folders, add missing content (e.g., consolidated diagrams). Important: No new features; focus on fixes/maintainability; reflection on overall process improvements.</td>
-            </tr>
-            <tr class="final-row">
-                <td colspan="5">Final Exam</td>
-            </tr>
-        </tbody>
-    </table>
+                <tr class="milestone-row">
+                    <td colspan="5">Final Polish (Week 14) – Address issues/code smells from feedback, reorganize README/docs/folders, add missing content (e.g., consolidated diagrams). Important: No new features; focus on fixes/maintainability; reflection on overall process improvements.</td>
+                </tr>
+                <tr class="final-row">
+                    <td colspan="5">Final Exam</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
