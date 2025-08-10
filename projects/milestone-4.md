@@ -5,7 +5,7 @@ description: Enhancement of core application with advanced features and third-pa
 
 ## Overview
 
-With your {span .text-gradient-todo}`**To-Do List**` app now architected for modularity and enhanced with a GUI, the next step is to infuse it with sophisticated design patterns—like a master craftsman selecting the perfect tools to elevate a creation from functional to elegant and extensible. In this milestone, you'll select 3-5 design patterns from those covered in the course and apply them thoughtfully to implement 3-7 new features from your product backlog. This isn't just about adding functionality; it's an opportunity to refine code quality, ensuring patterns integrate seamlessly with your existing MVC structure, SOLID principles, and UI elements. By weaving these patterns in only where they naturally solve specific design challenges, you'll make your app more maintainable, scalable, and resilient—mirroring how professional teams evolve software to handle growing complexity while keeping the codebase clean and intuitive. Remember, forcing patterns where simpler solutions suffice can lead to unnecessary complexity; focus on genuine improvements.
+With your {span .text-gradient-todo}`**To-Do List**` app now architected for modularity and enhanced with a `GUI`, the next step is to infuse it with sophisticated design patterns—like a master craftsman selecting the perfect tools to elevate a creation from functional to elegant and extensible. In this milestone, you'll select 3-5 design patterns from those covered in the course and apply them thoughtfully to implement 3-7 new features from your product backlog. This isn't just about adding functionality; it's an opportunity to refine code quality, ensuring patterns integrate seamlessly with your existing MVC structure, SOLID principles, and UI elements. By weaving these patterns in only where they naturally solve specific design challenges, you'll make your app more maintainable, scalable, and resilient—mirroring how professional teams evolve software to handle growing complexity while keeping the codebase clean and intuitive. Remember, forcing patterns where simpler solutions suffice can lead to unnecessary complexity; focus on genuine improvements.
 
 By the end of this milestone, your app will boast new features powered by design patterns, validated manually for now (with testing on the horizon), setting a strong stage for quality assurance in the next phase. Continue using GitHub releases to version your progress, emphasizing iterative improvements.
 
@@ -155,7 +155,7 @@ Verify that new features and patterns work as intended.
 1. [Milestone 1: Project Initiation](milestone-1)
 2. [Milestone 2: Requirements Engineering](milestone-2)
 3. [Milestone 3: System Modeling](milestone-3)
-4. **[Milestone 4: Advanced Features](milestone-4)** ← Current
+4. 📌 **[Milestone 4: Advanced Features](milestone-4)** 
 5. [Milestone 5.1: Final Presentation](milestone-5-1)
 6. [Milestone 5.2: Final Submission](milestone-5-2)
 7. [Final Project Submission](final-submission)

@@ -162,6 +162,7 @@ Confirm the refactored app functions correctly.
 - Use version control for code changes.
 
 ### Example Folder Structure After MVC Adoption
+
 ```
 task_manager_app/
 ├── src/
@@ -204,7 +205,7 @@ task_manager_app/
 ### All Project Milestones
 1. [Milestone 1: Project Initiation](milestone-1)
 2. [Milestone 2: Requirements Engineering](milestone-2)
-3. **[Milestone 3: System Modeling](milestone-3)** ← Current
+3. 📌 **[Milestone 3: System Modeling](milestone-3)**
 4. [Milestone 4: Advanced Features](milestone-4)
 5. [Milestone 5.1: Final Presentation](milestone-5-1)
 6. [Milestone 5.2: Final Submission](milestone-5-2)

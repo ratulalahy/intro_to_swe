@@ -4,10 +4,11 @@ description: Requirements engineering, use case modeling, and CLI-based MVP impl
 ---
 
 ## Overview
+In [Milestone 1](milestone-1), you built the foundation for your project — forming your team, defining your vision, setting up tools, and capturing your first high-level feature list. Now it is time to move from vision to definition and from definition to a working first version. In the software industry, this stage is where ideas are transformed into precise requirements, visualized through models, and proven through an early but functional product.
 
 With your project foundation set, it's time to define what your {span .text-gradient-todo}`**To-Do List**` app truly needs—like turning vague ideas into precise specs, just as engineering teams do before building. In this milestone, you'll refine your feature list into structured user stories, create a `Software Requirements Specification (SRS)`, model key elements with `UML diagrams`, select a `Minimum Viable Product (MVP)`, and implement a simple `Command-Line Interface (CLI)` version in Python (e.g., basic task addition, listing, and completion). This draws on requirements engineering and modeling concepts, focusing on clarity and feasibility without advanced design or automated testing—validate manually to ensure it works as intended.
 
-By the end of this milestone, you'll have documented requirements, visual models, and a functional CLI MVP, ready for expansion in later phases. Continue using GitHub releases for versioning.
+By the end of this milestone, you will have `documented requirements`, `visual models`, and a `functional CLI-based MVP` — all versioned through `GitHub releases` for professional tracking. This deliverable will serve as a validated and documented starting point for expanding your application in later milestones, ensuring each new feature builds on a reliable and well-understood base.
 
 ---
 
@@ -43,14 +44,14 @@ Transform your initial feature list into actionable, user-focused items.
     As a [user], I want [feature] so that [benefit].
     ```
 - Include functional and non-functional requirements; prioritize using planning poker for estimation and consensus.
-- Update `/task_manager_app/docs/backlog.md` and **import/refine issues in Zenhub with priorities and assignees.**
+- Update `/task_manager_app/docs/backlog/` and **import/refine issues in Zenhub with priorities and assignees.**
 
 ### 3. Create SRS
 
 Develop a formal **Software Requirements Specification (SRS)** to document your system's intended functionality and constraints.
 
 - Use the [SRS template](https://github.com/jam01/SRS-Template/blob/master/template.md) as your structural guide. Modify or omit sections only if clearly justified.
-- Complete the SRS based on what you have developed so far in **Milestone 1 (vision, backlog, roles)** and **Milestone 2 (user stories, UML diagrams, MVP design)**.
+- Complete the SRS based on what you have developed so far in **Milestone 1 (vision, backlog, roles)** and **Current Milestone (user stories, UML diagrams, MVP design)**.
 - Your initial SRS should include:
 
   - **Introduction & Purpose**
@@ -70,26 +71,26 @@ Develop a formal **Software Requirements Specification (SRS)** to document your 
 ### 4. UML Modeling
 Visualize your system's interactions and structure.
 
-- Create UML use case diagrams (showing actors like "User" and cases like "Add Task").
-- Develop class diagrams for the CLI MVP (attributes, methods, relationships, e.g., Task class with title, due_date).
-- Create sequence diagrams for key interactions (e.g., adding a task, listing tasks).
-- Use tools like draw.io; export diagrams as images or embeddable files.
-- Save to `/task_manager_app/docs/uml_use_case.md` and `/task_manager_app/docs/uml_class.md` (include diagrams and explanations).
+- Create UML `use case diagrams`.
+- Develop `class diagrams` for the CLI MVP.
+- Create `sequence diagrams` for key interactions.
+- Use tools like [draw.io](https://app.diagrams.net/); export diagrams as images or embeddable files.
+- Save to `/task_manager_app/docs/uml/`.
 
 ### 5. Define and Implement MVP
 Focus on core functionality for a testable prototype.
 
 - Select MVP features (e.g., add task, list tasks, mark as complete) based on priorities; outline validation (manual testing scenarios).
 - Implement in Python CLI:
-  - Create `/task_manager_app/src/task_manager.py` with basic functions (use lists or simple data structures; no database yet).
-  - Example: Command-line menu for operations; persist data in a text file if needed.
-- Manually validate: Run the app, document sample inputs/outputs in `/task_manager_app/docs/mvp_validation.md`.
+  - Implement in `/task_manager_app/src/` with basic functions.
+  - Example: Command-line menu for operations; persist data in a text file/json file if needed.
+- Manually [validate](https://www.scrum.org/resources/blog/doing-right-thing-right-validation-and-verification): Run the app, document sample inputs/outputs in `/task_manager_app/docs/mvp_validation.md`.
 
 ### 6. Individual Reflections
 - Submit a `.md` file via Canvas with links and reflection answers (see Submission Checklist).
 
 ### 7. GitHub Releases
-- **Progress Check (End of Week 6):**
+- **Progress Check (After 1 week):**
   - Create a minor release: `v1.1`
   - Tag example: `milestone2-progress-v1.1`
   - Include drafts of SRS, backlog, UML, and initial code.
@@ -97,11 +98,11 @@ Focus on core functionality for a testable prototype.
 
 > **Warning** Missing this release = 20% deduction from total milestone score
 
-- **Final Submission (End of Week 7):**
+- **Final Submission (After 2 weeks):**
   - Create a major release: `v2.0`
   - Tag example: `milestone2`
   - Include final documents, code, and changelog summarizing additions/edits since `v1.1`.
-  - Submit the final release URL via Canvas
+  - Submit (re-submit) the final release URL via Canvas
 
 ---
 
@@ -110,20 +111,20 @@ Focus on core functionality for a testable prototype.
 ### Submit via Canvas:
 
 #### A `.md` file containing:
-- [ ] **GitHub release link** (e.g., `https://github.com/user_name/project_name/releases/tag/v2.0`)
-- [ ] **Zenhub board link** (e.g., `https://app.zenhub.com/workspaces/...`)
+- [ ] **GitHub release link** (_e.g., `https://github.com/user_name/project_name/releases/tag/v2.0`_)
+- [ ] **Zenhub board link** (_e.g., `https://app.zenhub.com/workspaces/...`_)
 - [ ] **Reflection answers:**
   - **Your Contribution to the project (50–100 words):** Describe your role (e.g., UML modeling).
-  - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate and explain collaboration.
+  - **Most important thing you learned in this milestone (40–60 words):** Share a key skill, concept, or tool you now understand better.
   - **How does the project vision align with your software engineering goals? (50–100 words):** Connect to personal aspirations.
   - **Feedback on this milestone (50 words):** Suggest improvements.
 
 ### Repository Documents
-- [ ] **Refined Product Backlog** (`/task_manager_app/docs/backlog.md`)
-- [ ] **SRS** (`/task_manager_app/docs/srs.md`)
-- [ ] **UML Diagrams** (`/task_manager_app/docs/uml_use_case.md`, `/task_manager_app/docs/uml_class.md`)
-- [ ] **MVP Validation** (`/task_manager_app/docs/mvp_validation.md`)
-- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_2/`)
+- [ ] **Refined Product Backlog** (_suggested: `/task_manager_app/docs/backlog/`_)
+- [ ] **SRS** (_suggested: `/task_manager_app/docs/srs.md`_)
+- [ ] **UML Diagrams** (_suggested: `/task_manager_app/docs/uml/`_)
+- [ ] **MVP Validation** (_suggested: `/task_manager_app/docs/mvp_validation.md`_)
+- [ ] **Meeting Minutes** (_suggested: `/task_manager_app/docs/meeting_minutes/milestone_2/`_)
 
 ---
 
@@ -132,10 +133,10 @@ Focus on core functionality for a testable prototype.
 | Criteria               | Points | Description                                   |
 | :---------------------- | :------: | :----------------: |
 | **Team Meetings**          | 5     | Detailed, actionable minutes                  |
-| **Refined Backlog**        | 20     | 15+ user stories, prioritized effectively     |
-| **SRS**                    | 15     | Comprehensive and well-structured             |
+| **Refined Backlog**        | 10     | 15+ user stories, prioritized effectively     |
+| **SRS**                    | 10     | Comprehensive and well-structured             |
 | **UML Modeling**           | 20     | Accurate use case, class, and sequence diagrams          |
-| **MVP Implementation & Validation** | 35    | Functional CLI with manual proof              |
+| **MVP Implementation & Validation** | 50    | Functional CLI with manual proof              |
 | **Individual Reflections** | 5     | Insightful responses                          |
 
 *Penalties: 20% for missing progress check after first week.*
@@ -190,7 +191,7 @@ An enhanced wrapper around Python's built-in `cmd` module that adds advanced fea
 
 ### All Project Milestones
 1. [Milestone 1: Project Initiation](milestone-1)
-2. **[Milestone 2: Requirements Engineering](milestone-2)** ← Current
+2. 📌 **[Milestone 2: Requirements Engineering](milestone-2)** 
 3. [Milestone 3: System Modeling](milestone-3)
 4. [Milestone 4: Advanced Features](milestone-4)
 5. [Milestone 5.1: Final Presentation](milestone-5-1)

@@ -6,9 +6,11 @@ description: Team formation, vision planning, and tool configuration for the {sp
 
 ## Overview
 
-Imagine launching a tech startup where a fresh app idea sparks excitement, but success hinges on solid groundwork—like forming a team and setting up tools to avoid future chaos. In this milestone for your *Introduction to Software Engineering* course project, your team of 3-5 members will kick off a {span .text-gradient-todo}`**To-Do List**` app aimed at helping busy students or professionals manage tasks efficiently. Drawing from real-world practices at companies like Google or Trello, you'll establish team structure, a project vision, an initial feature backlog, and tools like GitHub and Zenhub. This builds directly on foundational concepts from the course intro, version control, and Agile processes, ensuring a smooth start without diving into detailed requirements yet.
+In the real world, the first days of a software project can feel like setting sail on a long voyage. You would not simply jump into a boat and start rowing. You would choose your crew, decide where you are headed, gather supplies, and make sure your navigation tools actually work. Software development is no different. The smartest teams spend time aligning their vision, clarifying responsibilities, and setting up their tools before writing a single line of code. This is what keeps projects from drifting off course.
 
-By the end of this milestone, your team will have a organized setup, a high-level feature list, a draft plan, and working tools, laying the foundation for future iterations. All submissions use GitHub releases for professional versioning.
+In this milestone, you will take those same professional first steps. Your team of three to five members will begin work on a {span .text-gradient-todo}`**To-Do List**` app designed to help busy students or professionals manage their tasks efficiently. Following practices used at companies like Google or Trello, you will establish your team structure, craft a clear project vision, build an initial feature backlog, and configure tools such as GitHub and Zenhub. These activities connect directly to what you have learned about version control, Agile methods, and team collaboration, giving you a smooth and confident start before diving into detailed requirements.
+
+By the time this milestone is complete, your team will have a fully organized setup, a prioritized feature list, a draft project plan, and a working toolkit ready for future development cycles. Every submission will be documented through GitHub releases, giving you hands-on experience with the professional versioning practices used by real-world software teams. This is your launchpad for the rest of the semester — get it right now, and every step that follows will be easier and more effective.
 
 ---
 
@@ -71,24 +73,28 @@ Clear team structure and responsibilities are essential to avoid confusion durin
 Team meetings are crucial for aligning on goals and tasks. 
 - Hold your team meeting with clear agenda, covering roles, vision, and initial features.
 - Assign action items with owners and deadlines.
-- Document in:
+- Document in (_by meeting recorder_):
   - `/task_manager_app/docs/meeting_minutes/milestone_1/week_1.md`.
   - `/task_manager_app/docs/meeting_minutes/milestone_1/week_2.md`.
 
 ### 4. Project Vision and Planning
 
-A shared vision ensures alignment and motivates progress. Your plan should sketch the product's mission, core features, and early risks.
-
-- Vision Statement:
+A shared vision ensures alignment and motivates progress. Your plan should sketch the product's mission, core features, early risks and other [essential elements](https://www.chatprd.ai/templates/prd-product-requirement-document-template).
+_example documentation_
+- **Vision Statement**:
   - Describe the “why” of the project.
   - Mention target users, pain points, and core value.
   
-- Timeline:
+- **Timeline**:
   - List major milestones with tentative deadlines.
   - Example: “Feature freeze by Week 5, testing phase by Week 7.”
 
-- Risks:
+- **Risks**:
   - Identify at least 3 risks (e.g., missed deadlines, scope creep) and their mitigation strategies.
+
+- **Other Elements**(if any):
+  - Include any other relevant information that will guide your project.
+  - Example: Market Opportunities, competitive analysis, etc.
 
 - Save this to:
   - `/task_manager_app/docs/vision_plan.md`
@@ -98,8 +104,8 @@ A shared vision ensures alignment and motivates progress. Your plan should sketc
 Before you write any code, your team should brainstorm and capture a well-prioritized list of user-centered features.
 
 - Each team member proposes **5+** feature ideas using clear, plain text, save it to: 
-  - `/task_manager_app/docs/backlog_<member_1>.md`
-  - `/task_manager_app/docs/backlog_<member_2>.md`
+  - `/task_manager_app/docs/backlog/backlog_<member_1>.md`
+  - `/task_manager_app/docs/backlog/backlog_<member_2>.md`
   - Example: “Enable users to add tasks with deadlines”
 
 - Scrum Master consolidates the list:
@@ -107,7 +113,7 @@ Before you write any code, your team should brainstorm and capture a well-priori
   - Remove duplicates, clarify descriptions.
   - Assign a basic priority (`High`, `Medium`, `Low`)
   - Format the final list in:
-    - `/task_manager_app/docs/backlog.md`
+    - `/task_manager_app/docs/backlog/backlog.md`
 
 - Import all features as Zenhub issues:
   - Link issues to the relevant Epic
@@ -115,27 +121,28 @@ Before you write any code, your team should brainstorm and capture a well-priori
 
 ### 6. Individual Reflections
 
-- Submit a `.md` file via Canvas with links and reflection answers (see Submission Checklist).
+- Submit a `.md` file via Canvas with links and reflection answers (see [Submission Checklist](#a-md-file-containing)).
 
 ### 7. GitHub Releases
 
 Use GitHub Releases to version and document project checkpoints, just as professional teams do.
 
-- **Progress Check (End of Week 4):**
+- **Progress Check (After 1 week):**
   - Create a minor release: `v0.1`
   - Tag example: `milestone1-progress-v0.1`
   - Include drafts of all documents completed so far
   - Submit the release URL via Canvas
-> **Warning** Missing this release = 20% deduction from total milestone score</span>
 
-- **Final Submission (End of Week 5):**
+> **Warning** Missing this release -> 20% deduction from total milestone score</span>
+
+- **Final Submission (After 2 weeks):**
   - Create a major release: `v1.0`
   - Tag example: `milestone1`
   - Include:
     - Final versions of team documents
     - Clean markdown formatting
     - Changelog summarizing what was added/edited since `v0.1`
-  - Submit the final release URL via Canvas
+  - Submit (re-submit) the final release URL via Canvas
 
 ---
 
@@ -153,10 +160,10 @@ Use GitHub Releases to version and document project checkpoints, just as profess
   - **Feedback on this milestone (50 words):** Suggest improvements.
 
 ### Repository Documents
-- [ ] **Team Formation** (`/task_manager_app/docs/team_formation.md`)
-- [ ] **Project Vision and Plan** (`/task_manager_app/docs/vision_plan.md`)
-- [ ] **Initial Product Backlog** (`/task_manager_app/docs/backlog.md`)
-- [ ] **First Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_1/`)
+- [ ] **Team Formation** (_suggested: `/task_manager_app/docs/team_formation.md`_)
+- [ ] **Project Vision and Plan** (_suggested: `/task_manager_app/docs/vision_plan.md`_)
+- [ ] **Initial Product Backlog** (_suggested: `/task_manager_app/docs/backlog/`_)
+- [ ] **First Meeting Minutes** (_suggested: `/task_manager_app/docs/meeting_minutes/milestone_1/`_)
 
 ---
 
@@ -191,7 +198,6 @@ Use GitHub Releases to version and document project checkpoints, just as profess
 - [Zenhub Tutorial](https://www.youtube.com/watch?v=tJ375ju3xTc&list=PLFIGvQyXSp3CGS8X300Aj-hUZ-VLIhHbk)
 
 ### Tutorials
-
 - [Git basics by GitHub](https://docs.github.com/en/get-started/git-basics)
 - [Git usage guide by GitHub](https://docs.github.com/en/get-started/using-git)
 - [Zenhub Quick-Start](https://www.zenhub.com/getting-started)
@@ -202,11 +208,11 @@ Use GitHub Releases to version and document project checkpoints, just as profess
 - Use semantic versioning.
 - Commit with descriptive messages.
 - Test links before submission.
-
+- [Team's Conflict Resolution](https://daily.dev/blog/5-conflict-resolution-tips-for-agile-teams)
 ---
 
 ### All Project Milestones
-1. **[Milestone 1](milestone-1)** ← Current
+1. 📌 **[Milestone 1](milestone-1)**
 2. [Milestone 2](milestone-2)
 3. [Milestone 3](milestone-3)
 4. [Milestone 4](milestone-4)
