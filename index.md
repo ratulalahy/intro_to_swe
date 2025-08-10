@@ -42,7 +42,9 @@ Conduct TDD, achieve high test coverage, and deliver professional presentations,
 
 ## Course Schedule
 
-Navigate the semester through this detailed schedule, integrating lectures, labs, and project milestones. Each week includes key topics, planned activities, and ties to milestones for a cohesive learning experience. Expand sections for in-depth plans.
+[Detailed course schedule](https://intro-to-swe.vercel.app/temp_timeline/Course_Schedule_Table.html) with weekly topics, readings, and milestones.
+
+[Fall 2025 Course Schedule](https://intro-to-swe.vercel.app/temp_timeline/Course_Schedule_Fall_2025.html)
 
 ```{admonition} Week 1: Course Introduction & Agile Foundations
 :class: dropdown

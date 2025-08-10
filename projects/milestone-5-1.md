@@ -1,16 +1,15 @@
 ---
-title: "Milestone 5: Testing and Refactoring"
+title: "Milestone 5 (Mini Milestone): Testing and Refactoring"
 description: Testing, robustness, and code smell removal
 ---
 
-# Milestone 5 (Mini Milestone): Testing and Refactoring
-
----
-
 ## Overview
-Envision your {span .text-gradient-todo}`**To-Do List**` app as a sleek sports car nearing the finish line—now it's the thrilling test drive and tune-up to ensure it handles curves with grace, inspired by how Formula 1 teams refine engines for peak performance and reliability. Milestone 5 channels that precision, motivated by industry tales where thorough testing saved projects from disaster, like debugging a banking app to prevent user losses or refactoring e-commerce code for seamless shopping experiences. In this satisfying phase, relatable to fixing a glitchy personal device that frustrates your daily routine or optimizing a recipe after trial runs to delight guests, you'll craft 20+ tests (unit for isolated functions, integration for flows, TDD to build confidently) aiming for 80%+ coverage, and refactor code smells (e.g., simplifying complex loops or removing redundancies) to make your app faster and easier to maintain. Updating the SRS with test summaries and refining the class diagram if needed keeps everything polished, like detailing a car before a road trip.
+Your {span .text-gradient-todo}`**To-Do List**` app is now feature-rich, visually polished, and architecturally sound—this milestone is about **proving its reliability and fine-tuning it for excellence**. In just one focused week, you’ll put your code under the microscope: building a targeted test suite, aiming for a reasonable coverage percentage (~80%), and refactoring problem areas to ensure the system is clean, maintainable, and ready for real-world use.
 
-By the end, your project will roar with confidence, delivering the engineer's rush of turning potential flaws into strengths, creating an app that's not just functional but dependable for real-world use, like a trusted tool in a busy professional's arsenal.
+This is not a feature-building sprint—it’s a **quality sprint**. You’ll combine unit tests for individual components with integration tests for key flows. Alongside testing, you’ll identify and fix code smells, and add robust error handling with {span .term}`try/except` blocks, simplify complex logic, and eliminate redundancy, keeping changes isolated and well-documented. Updated project artifacts—like adding test summaries to your SRS and refining diagrams if necessary—will ensure your technical documentation matches your final codebase.
+
+By the end of the week, your app will be faster, cleaner, and more dependable, backed by evidence of rigorous testing and thoughtful refactoring. This is your final engineering pit stop before presentation and submission—every adjustment you make now will directly impact how strong and professional your final deliverable feels.
+
 
 ---
 
@@ -21,6 +20,8 @@ Upon successful completion of this milestone, you will be able to:
 - **Develop and execute tests** (unit/integration, TDD) with coverage analysis.
 
 - **Identify and refactor code smells** for improved quality.
+
+- Add **exception handling** with `try/except` for robustness.
 
 - **Update project documents** (SRS with test details, Zenhub backlog) for consistency.
 
@@ -56,13 +57,11 @@ Upon successful completion of this milestone, you will be able to:
 
 ### 5. Individual Reflections
 
-- Submit a `.md` file via Canvas with release/Zenhub links and reflection answers (see Submission Checklist).
+- Submit a `.md` file via Canvas with release/Zenhub links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
 ### 6. GitHub Releases
 
-- **Progress Check (One Week):** Create a minor release (`v4.1`, tagged `milestone5-progress-v4.1`) with test drafts. Submit URL via Canvas. **Note**: Missing this incurs a 20% penalty.
-
-- **Final Submission (Two Week):** Create a major release (`v5.0`, tagged `milestone5`) with all linked in notes and changelog (e.g., "Achieved 85% coverage; refined class diagram in SRS"). Submit URL via Canvas.
+- **Submission:** Create a major release (`v5.0`, tagged `milestone5`) with all linked in notes and changelog (e.g., "Achieved <percent>% coverage; refined class diagram in SRS"). Submit URL via Canvas.
 
 ---
 
@@ -80,9 +79,11 @@ Upon successful completion of this milestone, you will be able to:
 
     - **Contribution to the project (50–100 words):** Describe your specific contributions (e.g., tests, refactoring).
 
-    - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate collaboration; explain.
+    - **How did testing improve your code quality? (50–100 words):** Discuss specific gains.
 
-    - **How did testing/refactoring improve your code quality? (50–100 words):** Discuss specific gains.
+    - **How did refactoring improve your code quality? (50–100 words):** Discuss specific gains.
+
+    - **How did you improve the robustness of your code? (50–100 words):** Discuss specific changes made for error handling.
 
     - **Feedback/comment about this milestone (50 words):** Suggest improvement.
 
@@ -98,24 +99,28 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 
   - Smells fixed, before/after.
 
+- [ ] **Robustness Improvements** (`/task_manager_app/docs/robustness.md`)
+
+  - Error handling changes.
+
 - [ ] **Updated SRS** (`/task_manager_app/docs/srs.md`)
 
   - Test/refactor notes if applicable.
 
-- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_5/week_1.md`)
+- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_5/`)
 
   - Attendance, agenda, decisions, action items.
 
 ---
 
-## Evaluation Rubric (100 Points)
+## Evaluation Rubric (60 Points)
 
 | Criteria               | Points | Description                                   |
 | :---------------------- | :------: | :----------------: |
-| **Test Suite & Coverage**  | 30     | Comprehensive tests, 80%+ coverage            |
-| **Refactoring**            | 25     | Smells fixed, documented improvements         |
-| **Document Updates**       | 20     | SRS/test details added, class diagram if needed |
-| **Tool Setup & Releases**  | 15     | Updated backlog/README, proper releases       |
+| **Test Suite & Coverage**  | 20     | Comprehensive tests, 80%+ coverage            |
+| **Refactoring and Robustness**            | 20     | Smells fixed, documented improvements         |
+| **Document Updates**       | 5     | SRS/test details added, class diagram if needed |
+| **Tool Setup & Releases**  | 5     | Updated backlog/README, proper releases       |
 | **Meeting Minutes**        | 5      | Detailed notes                                |
 | **Individual Reflections** | 5      | Insightful responses                          |
 
@@ -131,6 +136,7 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 ### Tutorials
 - [Pytest Coverage Guide](https://pytest-cov.readthedocs.io/en/latest/)
 - [Refactoring in Python](https://refactoring.com/catalog/)
+- [Robustness with Try/Except](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 
 ### Best Practices
 - Update Zenhub with test tasks for traceability.
@@ -149,6 +155,6 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 2. [Milestone 2](milestone-2)
 3. [Milestone 3](milestone-3)
 4. [Milestone 4](milestone-4)
-5. **[Milestone 5](milestone-5-1)** ← Current
+5. 📌 **[Milestone 5](milestone-5-1)**
 6. [Presentation](milestone-5-2)
 7. [Final Submission](milestone-final-submission)

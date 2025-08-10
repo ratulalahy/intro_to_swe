@@ -95,25 +95,25 @@ Base work on Milestone 5.2 feedback; use a dedicated branch like "final-fixes" f
 
 ## Evaluation Rubric
 
-Total: 50 points. Focus on resolution thoroughness and organization.
+Total: **20 points**. Focus on resolution thoroughness and organization.
 
 | Criteria | Points | Description |
 |----------|--------|-------------|
-| **Issue Resolution** | 20 | All feedback addressed; detailed log with verifications. |
-| **README Reorganization** | 10 | Clear, comprehensive README; user-friendly and professional. |
-| **Content/Doc Placement** | 10 | Logical structure; additions fill gaps effectively. |
+| **Issue Resolution** | 10 | All feedback addressed; detailed log with verifications. |
+| **README Reorganization** | 5 | Clear, comprehensive README; user-friendly and professional. |
+| **Content/Doc Placement** | 5 | Logical structure; additions fill gaps effectively. |
 | **Code/Test Updates** | 5 | Fixes implemented; tests pass without issues. |
 | **Tool & Release** | 5 | Final updates; informative release notes. |
 
-**Note:** Daily late penalty: 10%. Unresolved critical issues may deduct points.
 
 ## Resources and Best Practices
 
-### Textbook Integration
-- Chapter 9 (Refactoring for fixes); Chapter 10 (DevOps for CI verification).
 
 ### Tool Guides
-- Git for reorganization; markdown linters for README.
+- [Basic writing and formatting syntax by GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [The Ultimate Guide to Writing a Great README.md for Your Project](https://medium.com/@kc_clintone/the-ultimate-guide-to-writing-a-great-readme-md-for-your-project-3d49c2023357)
+- [Make a README](https://www.makeareadme.com/)
+- [Awesome README](https://github.com/matiassingers/awesome-readme)
 
 ### Tips for Excellence
 - **Thoroughness:** Cross-check against feedback; test on fresh clone.
@@ -139,4 +139,4 @@ Total: 50 points. Focus on resolution thoroughness and organization.
 4. [Milestone 4: Advanced Features](milestone-4)
 5. [Milestone 5.1: Final Presentation](milestone-5-1)
 6. [Milestone 5.2: Final Submission](milestone-5-2)
-7. **[Final Project Submission](final-submission)** ← Current
+7. 📌 **[Final Project Submission](final-submission)**

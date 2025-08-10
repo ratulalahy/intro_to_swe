@@ -89,16 +89,15 @@ Major version (e.g., `v5.2`) tagged `"milestone5.2"`. Link slides and materials 
 
 ## Evaluation Rubric
 
-Total: **40 points**. Assessed on clarity and professionalism.
+Total: **20 points**. Assessed on clarity and professionalism.
 
 | **Criteria**                       | **Points** | **Description**                                                                 |
 |------------------------------------|------------|---------------------------------------------------------------------------------|
-| **Presentation Content & Demo**    | 20         | Covers all project aspects; demo shows **robustness**.                           |
-| **Team Participation & Professionalism** | 10    | Equal participation; confident Q&A.                                             |
-| **Slides & Supporting Materials**  | 7          | Clear slides; includes **code smell** comment in release.                        |
-| **Individual Reflections**         | 3          | Ties to project strengths and engineering.                                      |
+| **Presentation Content & Demo**    | 10         | Covers all project aspects; demo shows **robustness**.                           |
+| **Team Participation & Professionalism** | 5     | Equal participation; confident Q&A.                                             |
+| **Slides & Supporting Materials**  | 3          | Clear slides; includes **code smell** comment in release.                        |
+| **Individual Reflections**         | 2          | Ties to project strengths and engineering.                                      |
 
-> **Note:** Daily late penalty: 10%. Incomplete submissions need fixes.
 
 ---
 
@@ -134,5 +133,5 @@ Total: **40 points**. Assessed on clarity and professionalism.
 3. [Milestone 3: System Modeling](milestone-3)
 4. [Milestone 4: Advanced Features](milestone-4)
 5. [Milestone 5.1: Final Presentation](milestone-5-1)
-6. **[Milestone 5.2: Final Submission](milestone-5-2)** ← Current
+6. 📌 **[Milestone 5.2: Final Submission](milestone-5-2)**
 7. [Final Project Submission](final-submission)
