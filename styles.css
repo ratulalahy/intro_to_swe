@@ -88,6 +88,8 @@ body, .myst, .site {
   background: inherit;
 }
 
+
+
 .primary-sidebar {
   grid-area: primary-sidebar;
   padding-right: 0.75rem;
@@ -208,14 +210,35 @@ blockquote {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: -100;
-  font-size: 1.15rem;
+  font-weight: 600;
+  font-size: 1.25rem;
   letter-spacing: -0.02em;
   display: inline-block;
   padding: 0.25rem 0.5rem;
   position: relative;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
+
+.term {
+  display: inline-block;
+  padding: 0.15em 0.15em;
+  font: 450 1.05rem "Inter", sans-serif;
+  color: var(--primary-800);
+  /* background: rgba(251, 157, 243, 0.08); */
+  border: 0.2px solid rgba(236, 99, 241, 0.2);
+  border-radius: 7px; 
+  white-space: nowrap;
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+  .term {
+    color: var(--primary-300);
+    background: rgba(147, 197, 253, 0.12);
+    border-color: rgba(147, 197, 253, 0.25);
+  }
+}
+
 
 /* .text-gradient-todo:hover {
   transform: translateY(-1px);
@@ -388,56 +411,60 @@ a[target="_blank"]:hover {
 /* SOPHISTICATED CARDS     */
 /* ======================= */
 
-.card, .grid-item-card {
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
-  margin: 2rem 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: white;
-  color: var(--gray-700);
-  display: flex;
-  flex-direction: column;
+/* Base Card Styling */
+.myst-card,
+div[class*="myst-card"],
+.grid-item-card,
+.card {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  color: #3b82f6;
+  box-shadow: 0 4px 24px rgba(59, 130, 246, 0.08) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  /* background: white !important; */
+  /* border: 1px solid rgba(59, 130, 246, 0.15) !important; */
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+/* Hover Effects */
+.myst-card:hover,
+div[class*="myst-card"]:hover,
+.card:hover, 
+.grid-item-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.15), 
+              0 0 0 1px rgba(59, 130, 246, 0.1) !important;
 }
 
-.card-header {
-  padding: 1.25rem 1.5rem;
-  background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
-  color: white;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
+/* Card Headers - Force Blue Color */
+/* .card > .card-header,
+.card > div:first-child,
+.grid-item-card > div:first-child,
+.grid-item-card > header,
+.card > .card-header p,
+.card > div:first-child p {
+  color: #e63bf6 !important;       
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  padding: 1.25rem 1.5rem !important;
+  margin: 10 !important;
+  border-radius: 12px 12px 0 0 !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2) !important;
+  background: rgb(153, 12, 12) !important;
+}  */
 
+/* Card Bodies - Normal Text */
+/* .myst-card > div:last-child:not(:first-child),
+.grid-item-card > div:last-child:not(:first-child),
 .card-body {
-  padding: 1.5rem;
-  flex-grow: 1;
-  border: 1px solid var(--gray-200);
-  border-top: none;
-}
+  padding: 3.5rem !important;
+  font-weight: normal !important;
+  font-size: 1rem !important;
+  color: inherit !important;
+  background: rgb(212, 23, 23) !important;
+  line-height: 1.6 !important;
+}  */
 
-.card-footer {
-  padding: 1rem 1.5rem;
-  background: var(--gray-100);
-  border-top: 1px solid var(--gray-200);
-  font-size: 0.9rem;
-  color: var(--gray-600);
-}
-
-.card[link], .card[url] {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.card[link]:hover, .card[url]:hover {
-  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.2);
-}
 
 /* ======================= */
 /* LUXURY ADMONITIONS      */
@@ -829,14 +856,78 @@ tr:hover td:last-child {
     border-color: #374151 !important;
   }
 
-  .card, .admonition {
+  .myst-card,
+  div[class*="myst-card"],
+  .sd-card,
+  .card, 
+  .grid-item-card, 
+  .admonition,
+  div[class*="sd-card"],
+  div[class*="grid-item"],
+  [class*="card"] {
     background: #1f2937 !important;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 4px 24px rgba(59, 130, 246, 0.15) !important;
+    border: 1px solid rgba(59, 130, 246, 0.2) !important;
+    /* Remove color override to allow body text inheritance in dark mode */
   }
 
-  .card-body {
-    border-color: #374151 !important;
+  .myst-card:hover,
+  div[class*="myst-card"]:hover,
+  .sd-card:hover,
+  .card:hover, 
+  .grid-item-card:hover,
+  div[class*="sd-card"]:hover,
+  div[class*="grid-item"]:hover,
+  [class*="card"]:hover {
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.25), 0 0 0 1px rgba(59, 130, 246, 0.2) !important;
   }
+
+  /* Dark mode headers - keep background dark, text blue */
+  .myst-card > div:first-child,
+  div[class*="myst-card"] > div:first-child,
+  .myst-card .card-header,
+  .sd-card-header,
+  .sd-card-title,
+  .card-header, 
+  .grid-item-card .card-header {
+    background: #1f2937 !important;
+    color: var(--primary-300) !important;
+  }
+
+  /* Blue separator line in dark mode - make it thinner */
+  .myst-card > div:first-child::after,
+  div[class*="myst-card"] > div:first-child::after,
+  .myst-card .card-header::after,
+  .sd-card-header::after,
+  .sd-card-title::after,
+  .card-header::after, 
+  .grid-item-card .card-header::after {
+    height: 2px !important;
+    background: linear-gradient(90deg, 
+      transparent, 
+      var(--primary-300), 
+      var(--primary-400), 
+      var(--primary-300), 
+      transparent) !important;
+  }
+
+  /* Blue text in headers for dark mode */
+  .myst-card > div:first-child *,
+  div[class*="myst-card"] > div:first-child *,
+  .myst-card .card-header *,
+  .sd-card h4,
+  .sd-card h5,
+  .sd-card strong,
+  .grid-item-card h4,
+  .grid-item-card h5,
+  .grid-item-card .card-title,
+  .grid-item-card strong,
+  .card-header h1, .card-header h2, .card-header h3, .card-header h4, .card-header h5, .card-header h6,
+  .card-header strong {
+    color: var(--primary-300) !important;
+  }
+
+  /* Dark mode card bodies - completely remove all styling to let content be natural */
 
   pre {
     background: var(--gray-800) !important;
@@ -922,8 +1013,17 @@ tr:hover td:last-child {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   }
+
+/* Dark mode adjustment */
+@media (prefers-color-scheme: dark) {
+  .term {
+    color: var(--primary-300);
+    background: var(--gray-800);
+    border-color: var(--gray-600);
+  }
+}
 
   /* .text-gradient-todo:hover {
     transform: translateY(-1px);

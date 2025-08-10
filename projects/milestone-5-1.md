@@ -3,7 +3,7 @@ title: "Milestone 5: Testing and Refactoring"
 description: Testing, robustness, and code smell removal
 ---
 
-# Milestone 5: Testing and Refactoring
+# Milestone 5 (Mini Milestone): Testing and Refactoring
 
 ---
 
@@ -142,13 +142,13 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 ## Navigation
 
 - **Previous:** [Milestone 4](milestone-4)
-- **Next:** [Milestone 5.2](milestone-5-2)
+- **Next:** [Presentation](milestone-5-2)
 
 ### All Project Milestones
 1. [Milestone 1](milestone-1)
 2. [Milestone 2](milestone-2)
 3. [Milestone 3](milestone-3)
 4. [Milestone 4](milestone-4)
-5. **[Milestone 5.1](milestone-5-1)** ← Current
-6. [Milestone 5.2](milestone-5-2)
+5. **[Milestone 5](milestone-5-1)** ← Current
+6. [Presentation](milestone-5-2)
 7. [Final Submission](milestone-final-submission)

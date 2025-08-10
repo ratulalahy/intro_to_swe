@@ -32,9 +32,7 @@ Align your team on requirements and MVP through focused discussions.
 
 - Hold team meetings with agendas covering backlog refinement, SRS drafting, UML creation, and MVP implementation.
 - Assign action items with owners and deadlines.
-- Document in:
-  - `/task_manager_app/docs/meeting_minutes/milestone_2/week_1.md`
-  - `/task_manager_app/docs/meeting_minutes/milestone_2/week_2.md`
+- Save meeting minutes in a structured format in the repository. _e.g.:`/task_manager_app/docs/meeting_minutes/milestone_2/`_
 
 ### 2. Refine Product Backlog
 Transform your initial feature list into actionable, user-focused items.

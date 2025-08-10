@@ -5,7 +5,7 @@ description: Enhancement of core application with advanced features and third-pa
 
 ## Overview
 
-With your {span .text-gradient-todo}`**To-Do List**` app now architected for modularity and enhanced with a `GUI`, the next step is to infuse it with sophisticated design patterns—like a master craftsman selecting the perfect tools to elevate a creation from functional to elegant and extensible. In this milestone, you'll select 3-5 design patterns from those covered in the course and apply them thoughtfully to implement 3-7 new features from your product backlog. This isn't just about adding functionality; it's an opportunity to refine code quality, ensuring patterns integrate seamlessly with your existing MVC structure, SOLID principles, and UI elements. By weaving these patterns in only where they naturally solve specific design challenges, you'll make your app more maintainable, scalable, and resilient—mirroring how professional teams evolve software to handle growing complexity while keeping the codebase clean and intuitive. Remember, forcing patterns where simpler solutions suffice can lead to unnecessary complexity; focus on genuine improvements.
+With your {span .text-gradient-todo}`**To-Do List**` app now architected for modularity and enhanced with a {span .term}`GUI`, the next step is to infuse it with sophisticated {span .term}`design patterns`—like a master craftsman selecting the perfect tools to elevate a creation from functional to elegant and extensible. In this milestone, you'll select 2-4 design patterns from those covered in the course and apply them thoughtfully to **implement 3-7 new features** from your product backlog. This isn't just about adding functionality; it's an opportunity to refine code quality, ensuring patterns integrate seamlessly with your existing MVC structure, SOLID principles, and UI elements. By weaving these patterns in only where they naturally solve specific design challenges, you'll make your app more {span .term}`maintainable`, {span .term}`scalable`, and {span .term}`resilient`—mirroring how professional teams evolve software to handle growing complexity while keeping the codebase clean and intuitive. Remember, forcing patterns where simpler solutions suffice can lead to unnecessary complexity; focus on genuine improvements.
 
 By the end of this milestone, your app will boast new features powered by design patterns, validated manually for now (with testing on the horizon), setting a strong stage for quality assurance in the next phase. Continue using GitHub releases to version your progress, emphasizing iterative improvements.
 
@@ -19,7 +19,7 @@ Upon successful completion of this milestone, you will be able to:
 - **Implement new features** from the backlog, integrating them with existing architecture (MVC), principles (SOLID), and UI.
 - **Improve code quality** by identifying opportunities for patterns to enhance maintainability, flexibility, and reusability without overcomplicating.
 - **Ensure natural integration** of patterns, evaluating if they truly add value or if simpler alternatives are better.
-- **Manually validate** new features and pattern implementations to confirm functionality and improvements.
+- **Manually validate and test** new features and pattern behaviors, documenting results for future reference.
 - **Reflect on design decisions** to articulate how patterns elevate your software engineering practices, including when not to use them.
 
 ---
@@ -33,9 +33,7 @@ Foster collaboration to plan and review pattern adoption and feature implementat
 - Develop detailed agendas covering feature prioritization from backlog, pattern selection criteria (e.g., does it solve a real problem? Is there a simpler way?), integration strategies with MVC/SOLID/UI, and validation planning.
 - Assign specific tasks with owners, deadlines, and milestones; encourage role rotation as per your schedule.
 - Promote active discussion on avoiding forced pattern use—challenge each choice to ensure it addresses a genuine code smell or need.
-- Document in:
-  - `/task_manager_app/docs/meeting_minutes/milestone_4/week_1.md`
-  - `/task_manager_app/docs/meeting_minutes/milestone_4/week_2.md`
+- Save the meeting minutes in the repository.
 
 ### 2. Implement New Features
 Expand your app by adding backlog items, leveraging patterns for better design where appropriate.
@@ -49,7 +47,7 @@ Expand your app by adding backlog items, leveraging patterns for better design w
 ### 3. Select and Draft Design Patterns
 Choose patterns that align with your app's needs and sketch their application.
 
-- Review the patterns from Chapter 6 and identify 3-5 that could address specific issues in your codebase or new features (e.g., handling varying behaviors, managing single instances, adapting interfaces).
+- Identify 2-4 design patterns that could address specific issues in your codebase or new features (e.g., handling varying behaviors, managing single instances, adapting interfaces).
 - For each, evaluate: What problem does it solve? Is it necessary, or would a basic implementation work? Avoid forcing patterns—document alternatives considered.
 - Draft initial implementations or pseudocode, ensuring compatibility with MVC (e.g., patterns in Controller or Model) and SOLID.
 - Document selections, rationale, and non-forced justification in `/task_manager_app/docs/design_patterns_selected.md` (include why each was chosen over simpler options).
@@ -61,7 +59,7 @@ Reflect pattern integrations in your diagrams for accurate documentation.
 - Update class diagrams to include pattern-specific elements (e.g., interfaces and implementations).
 - Revise sequence diagrams for new feature flows involving patterns.
 - Ensure consistency with overall architecture; use draw.io for edits.
-- Save updates to `/task_manager_app/docs/uml_class.md` and `/task_manager_app/docs/uml_sequence.md`.
+- Save updates to `/task_manager_app/docs/uml/`.
 
 ### 5. Manual Validation
 Verify that new features and patterns work as intended.
@@ -69,10 +67,11 @@ Verify that new features and patterns work as intended.
 - Create 10+ validation scenarios targeting new features, pattern behaviors, and integrations (e.g., demonstrating flexibility from a pattern).
 - Execute manually via GUI/CLI; document inputs, expected vs. actual outputs, and any issues resolved.
 - Highlight how patterns improve scenarios without forcing (e.g., easier maintenance if applicable, or note if a pattern was avoided).
+- Add test cases to check functionalities.
 - Save in `/task_manager_app/docs/validation_scenarios.md` (append or update with Milestone 4 section, including screenshots).
 
 ### 6. Individual Reflections
-- Submit a `.md` file via Canvas with links and reflection answers (see Submission Checklist).
+- Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
 ### 7. GitHub Releases
 - **Progress Check (End of Week 10):**
@@ -104,10 +103,10 @@ Verify that new features and patterns work as intended.
   - **Feedback on this milestone (50 words):** Suggest improvements.
 
 ### Repository Documents
-- [ ] **Selected Design Patterns** (`/task_manager_app/docs/design_patterns_selected.md`)
-- [ ] **Updated UML** (`/task_manager_app/docs/uml_class.md`, `/task_manager_app/docs/uml_sequence.md`)
-- [ ] **Validation Scenarios** (`/task_manager_app/docs/validation_scenarios.md`)
-- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_4/week_1.md`)
+- [ ] **Selected Design Patterns** (_suggested: `/task_manager_app/docs/design_patterns_selected.md`_)
+- [ ] **Updated UML** (_suggested: `/task_manager_app/docs/uml_class.md`, `/task_manager_app/docs/uml_sequence.md`)
+- [ ] **Validation and Testing Scenarios** (_suggested: `/task_manager_app/docs/validation_scenarios.md`_)
+- [ ] **Meeting Minutes** (_suggested: `/task_manager_app/docs/meeting_minutes/milestone_4/`_)
 
 ---
 
@@ -115,12 +114,12 @@ Verify that new features and patterns work as intended.
 
 | Criteria               | Points | Description                                   |
 | :---------------------- | :------: | :----------------: |
-| **Team Meetings**          | 10     | Detailed agendas and actionable minutes, emphasizing natural pattern use |
+| **Team Meetings**          | 5     | Detailed agendas and actionable minutes, emphasizing natural pattern use |
 | **Design Pattern Selection & Drafts** | 20    | Thoughtful choice of 3-5 patterns with strong rationale and alternatives considered |
-| **Feature Implementation & Integration** | 30   | 3-7 new features integrated naturally with patterns, MVC/SOLID/UI; no forced applications |
+| **Feature Implementation & Integration** | 50   | 3-7 new features integrated naturally with patterns, MVC/SOLID/UI; no forced applications |
 | **UML Updates**            | 10     | Accurate reflections of patterns in diagrams  |
-| **Manual Validation**      | 20     | 10+ comprehensive scenarios with proof        |
-| **Individual Reflections** | 10     | Insightful discussion on patterns, alternatives, and improvements |
+| **Manual Validation and Testing**      | 10     | Comprehensive scenarios with proof of functionality and adherence to design principles |
+| **Individual Reflections** | 5     | Insightful discussion on patterns, alternatives, and improvements |
 
 *Penalties: 20% for missing progress check after first week. Additional deductions for evidence of forced pattern use.*
 

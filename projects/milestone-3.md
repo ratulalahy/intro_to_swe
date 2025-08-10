@@ -5,8 +5,11 @@ description: UML modeling, MVC architecture implementation, and wireframe design
 ---
 
 ## Overview
+In previous milestones, you transformed your vision into clear requirements, built your first models, and delivered a functional CLI-based MVP. That was like constructing the frame of a house; the structure was sound, but the rooms were bare and the layout simple. Now, it’s time to add architecture, style, and a better living experience.
 
-Now that your {span .text-gradient-todo}`**To-Do List**` app has a solid requirements foundation and basic CLI MVP, it's time to enhance its structure and user experience—like architects designing a building for scalability and usability. In this milestone, you'll refine your existing UML diagrams to incorporate architecture and principles, create wireframes/mockups for a GUI version, set up an MVC architecture in code, apply SOLID principles to refactor your MVP, integrate a basic GUI (e.g., using Tkinter), and validate modularity manually. This builds on UI design, architecture patterns, and design principles, transitioning from CLI to a more robust GUI-enhanced setup without automated testing yet.
+In this milestone, you will evolve your {span .text-gradient-todo}`**To-Do List**` app from a basic working prototype into a structured, scalable, and more user-friendly system. Just as professional teams refine blueprints before moving to full-scale construction, you will update your {span .term}`UML diagrams` to reflect a well-defined architecture, design {span .term}`wireframes` and {span .term}`mockups` for an intuitive {span .term}`GUI`, and restructure your code using the {span .term}`Model-View-Controller (MVC)` pattern. Along the way, you’ll apply {span .term}`SOLID principles` to improve maintainability and prepare your codebase for future features.
+
+This is also where you will take the first step away from the command line by **integrating a basic GUI**, giving users a visual interface to interact with. Finally, you will **manually {span .term}`validate`** that your refactored design works as intended, capturing proof of improved modularity, separation of concerns, and user experience.
 
 By the end, you'll have updated models, UI prototypes, refactored code following SOLID and MVC with GUI integration, and manual validation, preparing for pattern integration next. Continue using GitHub releases for versioning.
 
@@ -34,9 +37,7 @@ Coordinate team efforts through structured meetings.
 - Prepare agendas in advance, covering UML refinements, UI design, MVC setup, SOLID refactoring, GUI integration, and validation scenarios.
 - Assign action items with specific owners, deadlines, and dependencies.
 - Ensure all members participate; rotate roles if per your rotation schedule.
-- Document in:
-  - `/task_manager_app/docs/meeting_minutes/milestone_3/week_1.md`
-  - `/task_manager_app/docs/meeting_minutes/milestone_3/week_2.md`
+- Save meeting minutes. 
 
 ### 2. Refine UML Modeling
 Update diagrams to align with new architecture and principles—focus on incorporating MVC and SOLID impacts.
@@ -45,7 +46,7 @@ Update diagrams to align with new architecture and principles—focus on incorpo
 - Update class diagrams to show MVC classes (e.g., separate Model, View, Controller) and SOLID-compliant relationships.
 - Revise sequence diagrams for flows involving GUI and refactored logic.
 - Use tools like [draw.io](https://draw.io) to ensure diagrams are versioned and explained.
-- Save updates to `/task_manager_app/docs/uml_use_case.md`, `/task_manager_app/docs/uml_class.md`, and `/task_manager_app/docs/uml_sequence.md`.
+- Save updates.
 
 ### 3. UI Design Planning
 Create visual plans for the GUI to guide implementation.
@@ -53,36 +54,38 @@ Create visual plans for the GUI to guide implementation.
 - Design wireframes for key screens (e.g., main task list, add/edit task forms).
 - Apply usability principles like consistency and feedback; gather team input for iterations.
 - Tools: [draw.io](https://draw.io), [Figma](https://www.figma.com/), [Balsamiq](https://balsamiq.com/).
-- Document in `/task_manager_app/docs/ui_wireframes.md` with images and rationale.
+- Document in `/task_manager_app/docs/ui_design/` with images and rationale.
 
 ### 4. Architecture and Principles Implementation
 Restructure code emphasizing modularity and best practices.
 
-- Implement MVC pattern: Divide code into Model (data logic), View (UI rendering, including GUI), Controller (user input handling).
-- Apply SOLID principles: Identify violations in existing code, refactor for better cohesion/coupling (e.g., single responsibility per class).
-- Integrate GUI: Replace or extend CLI with Tkinter-based View for core features (e.g., list tasks in a window, buttons for actions).
+- Implement {span .term}`MVC` pattern: Divide code into {span .term}`Model` (data logic), {span .term}`View` (UI rendering, including GUI), {span .term}`Controller` (user input handling).
+- Apply {span .term}`SOLID` principles: Identify violations in existing code, refactor for better cohesion/coupling (e.g., single responsibility per class).
+- Integrate GUI: Replace or extend CLI with GUI-based interface for core features (e.g., list tasks in a window, buttons for actions).
 - Document refactoring steps in code comments or a separate `/task_manager_app/docs/refactor_notes.md`.
-- Organize folder structure as suggested in resources.
+- Organize files and folder structure as suggested in resources.
 
-### 5. Manual Validation
+### 5. Manual Validation & Testing
 Confirm the refactored app functions correctly.
 
 - Develop 5+ validation scenarios covering GUI interactions, MVC flows, and SOLID benefits (e.g., modifying a class without affecting others).
 - Execute scenarios manually; capture outputs, errors, and observations.
+- Add basic test cases to check functionalities.
 - Document in `/task_manager_app/docs/validation_scenarios.md` with step-by-step results and screenshots.
 
 ### 6. Individual Reflections
-- Submit a `.md` file via Canvas with links and reflection answers (see Submission Checklist).
+
+- Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
 ### 7. GitHub Releases
-- **Progress Check (End of Week 8):**
+- **Progress Check (After 1 week):**
   - Create a minor release: `v2.1`
   - Tag example: `milestone3-progress-v2.1`
   - Include wireframes/mockups, refined UML diagrams, and initial MVC code drafts (some coding optional).
   - Submit the release URL via Canvas
 > **Warning** Missing this release = 20% deduction from total milestone score
 
-- **Final Submission (End of Week 9):**
+- **Final Submission (After 2 weeks):**
   - Create a major release: `v3.0`
   - Tag example: `milestone3`
   - Include final documents, refactored code with GUI, and changelog summarizing additions/edits since `v2.1`.
@@ -104,10 +107,10 @@ Confirm the refactored app functions correctly.
   - **Feedback on this milestone (50 words):** Suggest improvements.
 
 ### Repository Documents
-- [ ] **Refined UML** (`/task_manager_app/docs/uml_use_case.md`, `/task_manager_app/docs/uml_class.md`, `/task_manager_app/docs/uml_sequence.md`)
-- [ ] **UI Wireframes/Mockups** (`/task_manager_app/docs/ui_wireframes.md`)
-- [ ] **Validation Scenarios** (`/task_manager_app/docs/validation_scenarios.md`)
-- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_3/`)
+- [ ] **Refined UML** (_suggested: `/task_manager_app/docs/uml/`_)
+- [ ] **UI Wireframes/Mockups** (_suggested: `/task_manager_app/docs/ui_wireframes/`_)
+- [ ] **Validation and Testing Scenarios** (_suggested: `/task_manager_app/docs/validation_scenarios.md`_)
+- [ ] **Meeting Minutes** (_suggested: `/task_manager_app/docs/meeting_minutes/milestone_3/`_)
 
 ---
 
@@ -139,7 +142,6 @@ Confirm the refactored app functions correctly.
 - [Wireframing Basics](https://www.youtube.com/watch?v=9JNH9Q_qXEQ)
 - [MVC in Python](https://realpython.com/the-model-view-controller-mvc-paradigm-summarized-with-legos/)
 - [Tkinter GUI Tutorial](https://realpython.com/python-gui-tkinter/)
-- [Python GUI Programming with Tkinter](https://www.pythontutorial.net/tkinter/)
 
 ### Tutorials
 
@@ -147,7 +149,6 @@ Confirm the refactored app functions correctly.
 - [Figma for Wireframes](https://www.figma.com/best-practices/wireframing/)
 - [UML Tools](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/)
 - [Building GUIs with PyQt](https://realpython.com/python-pyqt-gui/)
-- [Tkinter Layout Management](https://www.tutorialspoint.com/python/python_gui_programming.htm)
 
 ### GUI Libraries for Python
 - **Tkinter**: Built-in, simple for basic GUIs. Tutorial: [Official Docs](https://docs.python.org/3/library/tkinter.html)

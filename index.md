@@ -20,23 +20,23 @@ Whether you're aiming for roles in startups, big tech, or beyond, this course eq
 
 By the end of this course, you'll be able to:
 
-::::{grid} 2
-:::{grid-item-card} Master Agile Practices
+
+:::{card}  **Master Agile Practices**
 Apply Scrum roles, sprints, and tools like GitHub and Zenhub to manage projects iteratively, mirroring industry teams at companies like Atlassian.
 :::
-:::{grid-item-card} Engineer Requirements
+:::{card}  **Engineer Requirements**
 Elicit, document, and validate user needs using SRS and use cases, preventing common pitfalls seen in real-world product launches.
 :::
-:::{grid-item-card} Design Robust Systems
+:::{card}  **Design Robust Systems**   
 Create UML models, apply MVC and SOLID principles, and design for scalability—essential for building maintainable architectures like those at Netflix.
 :::
-:::{grid-item-card} Implement Advanced Features
+:::{card}  **Implement Advanced Features**
 Integrate design patterns and refactor code, enhancing applications efficiently as in feature-driven development at Uber.
 :::
-:::{grid-item-card} Ensure Quality & Present
+:::{card}  **Ensure Quality & Present**
 Conduct TDD, achieve high test coverage, and deliver professional presentations, simulating stakeholder demos in enterprise settings.
 :::
-::::
+
 
 
 
@@ -239,10 +239,15 @@ The project is supported by modules covering key software engineering topics thr
 - Tool setup (GitHub, Zenhub), 
 - Version control with Git/GitHub.
 
-**What to Expect**: Lectures on Agile processes and version control, labs for GitHub/Zenhub configuration, team meetings to define roles and backlogs.
-**Expected Outcomes**: Form effective teams, align on project goals, establish Git workflows, and practice iterative planning—building habits for adaptable development.
+**What to Expect**: 
+
+Lectures on Agile processes and version control, labs for GitHub/Zenhub configuration, team meetings to define roles and backlogs.
+**Expected Outcomes**: 
+
+Form effective teams, align on project goals, establish Git workflows, and practice iterative planning—building habits for adaptable development.
 :::
 :::{grid-item-card} Requirements and Prototyping
+
 **Topics Covered**: 
 - Requirements elicitation, 
 - Functional/non-functional requirements, 
@@ -251,9 +256,13 @@ The project is supported by modules covering key software engineering topics thr
 - A/B testing, 
 - UML basics (use case/class diagrams).
 
-**What to Expect**: Discussions on user needs, labs for drafting SRS/user stories and UML diagrams, prototyping CLI-based MVP, basic testing exercises.
+**What to Expect**: 
 
-**Expected Outcomes**: Document and validate requirements, create a CLI-based MVP with use case/class diagrams, ensuring alignment with real-world needs.
+Discussions on user needs, labs for drafting SRS/user stories and UML diagrams, prototyping CLI-based MVP, basic testing exercises.
+
+**Expected Outcomes**: 
+
+Document and validate requirements, create a CLI-based MVP with use case/class diagrams, ensuring alignment with real-world needs.
 :::
 :::{grid-item-card} Modeling and Architecture
 **Topics Covered**: 
@@ -263,9 +272,13 @@ The project is supported by modules covering key software engineering topics thr
 - SOLID principles (Single Responsibility, Open-Closed, Liskov, Interface Segregation, Dependency Inversion), modular design.
 
 
-**What to Expect**: Modeling tutorials, wireframing labs, MVC refactoring sessions, architecture critiques.
+**What to Expect**: 
 
-**Expected Outcomes**: Design scalable systems with advanced UML and MVC, apply SOLID principles for maintainability—preparing for complex engineering challenges.
+Modeling tutorials, wireframing labs, MVC refactoring sessions, architecture critiques.
+
+**Expected Outcomes**: 
+
+Design scalable systems with advanced UML and MVC, apply SOLID principles for maintainability—preparing for complex engineering challenges.
 :::
 :::{grid-item-card} Features and Patterns
 **Topics Covered**: 
@@ -274,21 +287,34 @@ The project is supported by modules covering key software engineering topics thr
 - Code integration, 
 - Documentation refinement.
 
-**What to Expect**: Pattern application labs, feature coding, peer reviews, documentation updates.
+**What to Expect**: 
 
-**Expected Outcomes**: Enhance applications with 3-5 design patterns, integrate features efficiently, produce maintainable code—fostering innovative implementation skills.
+
+
+Pattern application labs, feature coding, peer reviews, documentation updates.
+
+**Expected Outcomes**: 
+
+
+
+Enhance applications with 3-5 design patterns, integrate features efficiently, produce maintainable code—fostering innovative implementation skills.
 :::
 :::{grid-item-card} Quality Assurance and Testing
 **Topics Covered**: 
+
 - Testing strategies (unit, integration, TDD), 
 - Test coverage analysis (pytest, coverage.py), 
 - Code smells (duplication, long methods), 
 - Refactoring techniques, 
 - Clean code practices (meaningful naming, small functions, minimal comments, formatting, error handling).
 
-**What to Expect**: Testing workshops, refactoring labs with clean code focus, coverage report generation.
+**What to Expect**: 
 
-**Expected Outcomes**: Achieve reliable code with 20+ tests (80%+ coverage), refactor for quality, apply clean code principles—simulating professional quality gates.
+Testing workshops, refactoring labs with clean code focus, coverage report generation.
+
+**Expected Outcomes**: 
+
+Achieve reliable code with 20+ tests (80%+ coverage), refactor for quality, apply clean code principles—simulating professional quality gates.
 :::
 :::{grid-item-card} Presentation and Closure
 **Topics Covered**: 
@@ -300,9 +326,13 @@ The project is supported by modules covering key software engineering topics thr
 - Reflections on engineering practices, 
 - Career connections.
 
-**What to Expect**: Demo rehearsals, revision sessions, reflective writing, career discussions.
+**What to Expect**: 
 
-**Expected Outcomes**: Deliver professional presentations, finalize high-quality projects, gain career insights—emphasizing lifelong learning in software engineering.
+Demo rehearsals, revision sessions, reflective writing, career discussions.
+
+**Expected Outcomes**: 
+
+Deliver professional presentations, finalize high-quality projects, gain career insights—emphasizing lifelong learning in software engineering.
 :::
 ::::
 
@@ -418,24 +448,24 @@ Leverage reflections in submissions to connect concepts to your career goals— 
 
 ::::{grid} 2
 
-:::{grid-item-card} 📖 **Lectures**
-:link: lectures
+:::{card} **Lectures**
+:link: index-1
 Interactive lessons with real-world examples and demonstrations
 :::
 
-:::{grid-item-card} 📝 **Assignments**
-:link: assignments
+:::{card} **Assignments**
+:link: index-4
 Individual coding tasks and analysis exercises
 :::
 
-:::{grid-item-card} 🏗️ **Projects** 
-:link: projects
+:::{card} **Projects**
+:link: index-5
 Team-based Scrum project development
 :::
 
-:::{grid-item-card}  **Resources**
-:link: resources
-Setup guides, tools, and additional materials
+:::{card}  **In-Class Activities**
+:link: index-6
+Collaborative exercises and hands-on practice
 :::
 
 ::::
