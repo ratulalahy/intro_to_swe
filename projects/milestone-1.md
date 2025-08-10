@@ -8,7 +8,7 @@ description: Team formation, vision planning, and tool configuration for the {sp
 
 In the real world, the first days of a software project can feel like setting sail on a long voyage. You would not simply jump into a boat and start rowing. You would choose your crew, decide where you are headed, gather supplies, and make sure your navigation tools actually work. Software development is no different. The smartest teams spend time aligning their vision, clarifying responsibilities, and setting up their tools before writing a single line of code. This is what keeps projects from drifting off course.
 
-In this milestone, you will take those same professional first steps. Your team of three to five members will begin work on a {span .text-gradient-todo}`**To-Do List**` app designed to help busy students or professionals manage their tasks efficiently. Following practices used at companies like Google or Trello, you will establish your team structure, craft a clear project vision, build an initial feature backlog, and configure tools such as GitHub and Zenhub. These activities connect directly to what you have learned about version control, Agile methods, and team collaboration, giving you a smooth and confident start before diving into detailed requirements.
+In this milestone, you will take those same professional first steps. Your team of three to five members will begin work on a {span .text-gradient-todo}`**To-Do List**` app designed to help busy students or professionals manage their tasks efficiently. Following practices used at companies like Amazon or Meta, you will establish your team structure, craft a clear project vision, build an initial feature backlog, and configure tools such as GitHub and Zenhub. These activities connect directly to what you have learned about version control, Agile methods, and team collaboration, giving you a smooth and confident start before diving into detailed requirements.
 
 By the time this milestone is complete, your team will have a fully organized setup, a prioritized feature list, a draft project plan, and a working toolkit ready for future development cycles. Every submission will be documented through GitHub releases, giving you hands-on experience with the professional versioning practices used by real-world software teams. This is your launchpad for the rest of the semester — get it right now, and every step that follows will be easier and more effective.
 
@@ -80,7 +80,7 @@ Team meetings are crucial for aligning on goals and tasks.
 ### 4. Project Vision and Planning
 
 A shared vision ensures alignment and motivates progress. Your plan should sketch the product's mission, core features, early risks and other [essential elements](https://www.chatprd.ai/templates/prd-product-requirement-document-template).
-_example documentation_
+
 - **Vision Statement**:
   - Describe the “why” of the project.
   - Mention target users, pain points, and core value.
@@ -121,7 +121,7 @@ Before you write any code, your team should brainstorm and capture a well-priori
 
 ### 6. Individual Reflections
 
-- Submit a `.md` file via Canvas with links and reflection answers (see [Submission Checklist](#a-md-file-containing)).
+- Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
 ### 7. GitHub Releases
 

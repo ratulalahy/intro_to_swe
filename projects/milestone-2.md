@@ -87,7 +87,7 @@ Focus on core functionality for a testable prototype.
 - Manually [validate](https://www.scrum.org/resources/blog/doing-right-thing-right-validation-and-verification): Run the app, document sample inputs/outputs in `/task_manager_app/docs/mvp_validation.md`.
 
 ### 6. Individual Reflections
-- Submit a `.md` file via Canvas with links and reflection answers (see Submission Checklist).
+- Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
 ### 7. GitHub Releases
 - **Progress Check (After 1 week):**

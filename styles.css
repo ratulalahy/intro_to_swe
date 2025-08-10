@@ -203,18 +203,43 @@ blockquote {
 
 /* Gradient Logo for To-Do List */
 .text-gradient-todo {
-  font-family: Georgia, serif;
-  background: linear-gradient(135deg, #c026d3, #4820e9, var(--primary-400));
+  font-family: Courier New, monospace, -apple-system, BlinkMacSystemFont, "Segoe UI" ;
+  background: linear-gradient(135deg, #4a00a5, #4820e9, var(--primary-500));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 100;
-  font-size: 1.2rem;
-  letter-spacing: -0.015em;
-  /* text-transform: uppercase; */
+  font-weight: -100;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
   display: inline-block;
-  padding: 0.2rem 0.4rem;
+  padding: 0.25rem 0.5rem;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
+
+/* .text-gradient-todo:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.text-gradient-todo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(192, 38, 211, 0.1), rgba(72, 32, 233, 0.1), rgba(59, 130, 246, 0.1));
+  border-radius: 6px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+*/
+.text-gradient-todo:hover::before {
+  opacity: 1;
+} 
 
 /* ======================= */
 /* GORGEOUS HEADINGS       */
@@ -305,17 +330,58 @@ h6 {
 /* ELEGANT LINKS           */
 /* ======================= */
 
-a {
-  color: var(--primary-500);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(124, 58, 237, 0.3);
-  transition: all 0.3s ease;
-  padding-bottom: 0.1em;
+/* Base link styling - more specific selectors to override MyST defaults */
+a, 
+.content a, 
+.article a, 
+main a, 
+p a, 
+li a, 
+td a, 
+th a {
+  color: var(--primary-600) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--primary-300) !important;
+  transition: all 0.3s ease !important;
+  padding-bottom: 0.1em !important;
+  font-weight: 500 !important;
 }
 
-a:hover {
-  color: var(--accent-500);
-  border-bottom-color: currentColor;
+a:hover, 
+.content a:hover, 
+.article a:hover, 
+main a:hover, 
+p a:hover, 
+li a:hover, 
+td a:hover, 
+th a:hover {
+  color: var(--primary-700) !important;
+  border-bottom-color: var(--primary-500) !important;
+  text-decoration: none !important;
+}
+
+/* External links - specific styling for external references */
+a[href^="http"]:not([href*="localhost"]):not([href*="127.0.0.1"]),
+a[target="_blank"] {
+  color: var(--primary-600) !important;
+  border-bottom: 1px solid var(--primary-400) !important;
+}
+
+a[href^="http"]:not([href*="localhost"]):not([href*="127.0.0.1"]):hover,
+a[target="_blank"]:hover {
+  color: var(--primary-800) !important;
+  border-bottom-color: var(--primary-600) !important;
+}
+
+/* Preserve navigation link styles - exclude from general link styling */
+.nav-link,
+.toc a,
+.sidebar a,
+.header-nav a,
+.breadcrumb a,
+.pagination a {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
 
 /* ======================= */
@@ -436,43 +502,38 @@ a:hover {
 /* ======================= */
 
 pre {
-  background: linear-gradient(135deg, #1e293b, #334155);
-  border-radius: 12px;
-  padding: 1.5rem;
+  background: var(--gray-50);
+  border: 1px solid var(--primary-200);
+  border-radius: 8px;
+  padding: 1.25rem;
   margin: 2rem 0;
   overflow-x: auto;
-  box-shadow: 
-    0 4px 20px rgba(30, 41, 59, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
   position: relative;
 }
 
-pre::before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 16px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #ef4444;
-  box-shadow: 
-    18px 0 0 #f59e0b,
-    36px 0 0 #10b981;
-}
-
-code {
-  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+pre code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
   font-size: 0.9rem;
-  color: #e2e8f0;
+  color: var(--gray-800);
   line-height: 1.6;
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
 }
 
 /* Inline code */
 :not(pre) > code {
-  color: var(--primary-600);
-  font-size: 0.9rem;
-  font-weight: 500;
+  background: var(--primary-50);
+  color: var(--primary-700);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+  border: 1px solid var(--primary-200);
+  letter-spacing: -0.01em;
 }
 
 /* ======================= */
@@ -707,8 +768,39 @@ tr:nth-child(even) td {
 }
 
 tr:hover td {
-  background-color: rgba(59, 130, 246, 0.06);
+  background: linear-gradient(90deg, 
+    rgba(59, 130, 246, 0.08), 
+    rgba(59, 130, 246, 0.12), 
+    rgba(59, 130, 246, 0.08)) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  color: var(--primary-800) !important;
+  font-weight: 500;
+}
+
+/* Enhanced hover effect for table headers */
+th:hover {
+  background: linear-gradient(135deg, var(--primary-200), var(--primary-150)) !important;
+  color: var(--primary-800) !important;
   transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+/* Smooth transition for entire table on hover */
+table:hover {
+  box-shadow: 0 12px 40px rgba(30, 64, 175, 0.15);
+  transform: translateY(-2px);
+}
+
+/* First and last column special effects */
+tr:hover td:first-child {
+  border-left: 3px solid var(--primary-400);
+  padding-left: calc(1.5rem - 3px);
+}
+
+tr:hover td:last-child {
+  border-right: 3px solid var(--primary-400);
+  padding-right: calc(1rem - 3px);
 }
 
 /* Table responsive design */
@@ -747,7 +839,18 @@ tr:hover td {
   }
 
   pre {
-    background: #1e293b !important;
+    background: var(--gray-800) !important;
+    border-color: var(--gray-600) !important;
+  }
+
+  pre code {
+    color: var(--gray-200) !important;
+  }
+
+  :not(pre) > code {
+    background: var(--gray-800) !important;
+    color: var(--primary-300) !important;
+    border-color: var(--gray-600) !important;
   }
 
   table {
@@ -770,7 +873,39 @@ tr:hover td {
   }
 
   tr:hover td {
-    background-color: rgba(124, 58, 237, 0.1) !important;
+    background: linear-gradient(90deg, 
+      rgba(147, 197, 253, 0.1), 
+      rgba(147, 197, 253, 0.15), 
+      rgba(147, 197, 253, 0.1)) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(147, 197, 253, 0.2) !important;
+    color: var(--primary-200) !important;
+    font-weight: 500 !important;
+  }
+
+  /* Enhanced hover effect for table headers in dark mode */
+  th:hover {
+    background: linear-gradient(135deg, #4b5563, #6b7280) !important;
+    color: var(--primary-100) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 8px rgba(147, 197, 253, 0.3) !important;
+  }
+
+  /* Smooth transition for entire table on hover in dark mode */
+  table:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4) !important;
+    transform: translateY(-2px) !important;
+  }
+
+  /* First and last column special effects in dark mode */
+  tr:hover td:first-child {
+    border-left: 3px solid var(--primary-300) !important;
+    padding-left: calc(1.5rem - 3px) !important;
+  }
+
+  tr:hover td:last-child {
+    border-right: 3px solid var(--primary-300) !important;
+    padding-right: calc(1rem - 3px) !important;
   }
 
   .task-list-item-checkbox {
@@ -782,20 +917,60 @@ tr:hover td {
   }
 
   .text-gradient-todo {
-    background: linear-gradient(90deg, #d946ef, #7507b0, #005eea) !important;
+    background: linear-gradient(135deg, #2800ca, #005eea);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   }
 
-  a {
-    color: #93c5fd !important;
+  /* .text-gradient-todo:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.2);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  } */
+
+  /* .text-gradient-todo::before {
+    background: linear-gradient(135deg, rgba(217, 70, 239, 0.15), rgba(117, 7, 176, 0.15), rgba(0, 94, 234, 0.15));
+  } */
+
+  a, 
+  .content a, 
+  .article a, 
+  main a, 
+  p a, 
+  li a, 
+  td a, 
+  th a {
+    color: var(--primary-300) !important;
     border-bottom-color: rgba(147, 197, 253, 0.3) !important;
+    font-weight: 500 !important;
   }
 
-  a:hover {
-    color: #f0abfc !important;
-    border-bottom-color: #f0abfc !important;
+  a:hover, 
+  .content a:hover, 
+  .article a:hover, 
+  main a:hover, 
+  p a:hover, 
+  li a:hover, 
+  td a:hover, 
+  th a:hover {
+    color: var(--primary-200) !important;
+    border-bottom-color: var(--primary-200) !important;
+  }
+
+  /* External links in dark mode */
+  a[href^="http"]:not([href*="localhost"]):not([href*="127.0.0.1"]),
+  a[target="_blank"] {
+    color: var(--primary-300) !important;
+    border-bottom-color: rgba(147, 197, 253, 0.4) !important;
+  }
+
+  a[href^="http"]:not([href*="localhost"]):not([href*="127.0.0.1"]):hover,
+  a[target="_blank"]:hover {
+    color: var(--primary-100) !important;
+    border-bottom-color: var(--primary-100) !important;
   }
 
   .nav-link {
