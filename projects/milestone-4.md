@@ -151,10 +151,10 @@ Verify that new features and patterns work as intended.
 
 
 ### All Project Milestones
-1. [Milestone 1: Project Initiation](milestone-1)
-2. [Milestone 2: Requirements Engineering](milestone-2)
-3. [Milestone 3: System Modeling](milestone-3)
-4. 📌 **[Milestone 4: Advanced Features](milestone-4)** 
-5. [Milestone 5.1: Final Presentation](milestone-5-1)
-6. [Milestone 5.2: Final Submission](milestone-5-2)
-7. [Final Project Submission](final-submission)
+1. [Milestone 1](milestone-1)
+2. [Milestone 2](milestone-2)
+3. [Milestone 3](milestone-3)
+4. 📌 **[Milestone 4](milestone-4)**
+5. [Milestone 5](milestone-5-1)
+6. [Presentation](milestone-5-2)
+7. [Final Submission](milestone-final-submission)

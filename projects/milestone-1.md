@@ -33,7 +33,7 @@ Upon successful completion of this milestone, you will be able to:
 Before coding begins, a well-organized digital workspace must be in place. This section focuses on setting up your version control and task-tracking environment.
 
 - Initialize a [GitHub](https://github.com/) Repository:
-  - Create a new public or private repository under one team member’s account.
+  - Create a new **private** repository under one team member’s account.
   - Add all team members as collaborators. Add your instructor (email id: qratul@uvu.edu) too.
   - Establish these branches:
     - `main` – production-ready commits
@@ -216,6 +216,6 @@ Use GitHub Releases to version and document project checkpoints, just as profess
 2. [Milestone 2](milestone-2)
 3. [Milestone 3](milestone-3)
 4. [Milestone 4](milestone-4)
-5. [Milestone 5.1](milestone-5-1)
-6. [Milestone 5.2](milestone-5-2)
+5. [Milestone 5](milestone-5-1)
+6. [Presentation](milestone-5-2)
 7. [Final Submission](milestone-final-submission)

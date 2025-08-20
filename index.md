@@ -45,7 +45,7 @@ Conduct TDD, achieve high test coverage, and deliver professional presentations,
 [Detailed course schedule](https://intro-to-swe.vercel.app/temp_timeline/Course_Schedule_Table.html) with weekly topics, readings, and milestones.
 
 [Fall 2025 Course Schedule](https://intro-to-swe.vercel.app/temp_timeline/Course_Schedule_Fall_2025.html)
-
+<!-- 
 ```{admonition} Week 1: Course Introduction & Agile Foundations
 :class: dropdown
 
@@ -227,7 +227,7 @@ Conduct TDD, achieve high test coverage, and deliver professional presentations,
 **Readings:** Review all chapters; best practices summaries.
 
 ```
-
+ -->
 
 ## Course Modules and Expected Topics
 
@@ -339,7 +339,7 @@ Deliver professional presentations, finalize high-quality projects, gain career 
 ::::
 
 
-
+<!-- 
 ## Course Schedule
 
 | Week | Topics | Lectures/Details (Key Points) | Reading |
@@ -364,7 +364,8 @@ Deliver professional presentations, finalize high-quality projects, gain career 
 | 12 | **DevOps & Critical Revision** | DevOps, UML review (refinements, errors in diagrams); Agile real-world (scaling teams, hybrid models, common challenges like remote collaboration). | Chapter 10: DevOps<br>Chapter 4: Models |
 | 13 | **Project Presentation Preparation** | Presentation structure (intro/demo/design/metrics/Q&A); retrospective methods (well/improve/actions, process lessons). | None |
 | **Final Submission** | **Final Polish** | Address issues/code smells from feedback, reorganize README/docs/folders, add missing content (e.g., consolidated diagrams). **Important:** No new features; focus on fixes/maintainability; reflection on overall process improvements. | - |
-| **Final Exam** | - | - | - |
+| **Final Exam** | - | - | - | 
+-->
 
 
 ## The Semester-Long Project
@@ -376,7 +377,7 @@ At the heart of the course is a team-based project emphasizing software engineer
 - **Excellence:** Traceable artifacts and high-quality outcomes.
 
 This project is structured around key milestones that integrate course concepts, allowing you to apply what you've learned in a real-world simulation. Below are the milestones, each with deliverables and expectations.
-
+<!-- 
 ### Project Milestones
 
 1. **Milestone 1: Project Initiation and Setup**  
@@ -398,11 +399,12 @@ This project is structured around key milestones that integrate course concepts,
    Prepare slides, demo app, highlight engineering aspects. Deliver in-class presentation with Q&A. Focus: Professional communication.
 
 7. **Final Submission**  
-   Polish repository, incorporate feedback, submit reflections. Focus: Comprehensive project closure.
+   Polish repository, incorporate feedback, submit reflections. Focus: Comprehensive project closure. 
+-->
 
-View detailed descriptions: [Project Overview](project-overview.md)
+View detailed descriptions: [Project Overview](index-1)
 
-### Project Timeline with Scrum Sprints
+<!-- ### Project Timeline with Scrum Sprints
 
 ```{mermaid}
 gantt
@@ -429,14 +431,15 @@ gantt
     style milestone51 fill:#2563eb,stroke:#1e3a8a
     style milestone52 fill:#6366f1,stroke:#4f46e5
     style final fill:#10b981,stroke:#059669
-```
+``` 
+-->
 
 ## Resources
 
 - **Textbook:** *Software Engineering: A Practitioner's Approach* (Chapters 1-9).
 - **Tools:** GitHub, Zenhub, draw.io—access tutorials in the [Resources Folder](resources.md).
-- **Support:** Office hours Tuesdays 2-4 PM, or email instructor@university.edu.
-- **Extra Credit:** Attend peer presentations for insights into diverse approaches.
+- **Support:** MW 5:30 PM - 6:40 PM, TR 11:30 PM - 1:00 PM or By Appointment on MS Team or In-person.
+- **Extra Credit:** Will be discussed in class.
 
 ```{admonition} Pro Tip
 :class: hint

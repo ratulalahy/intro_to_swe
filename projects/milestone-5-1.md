@@ -147,10 +147,10 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 
 
 ### All Project Milestones
-1. [Milestone 1: Project Initiation](milestone-1)
-2. [Milestone 2: Requirements Engineering](milestone-2)
-3. [Milestone 3: System Modeling](milestone-3)
-4. [Milestone 4: Advanced Features](milestone-4)
-5. 📌 **[Milestone 5: Testing and Refactoring](milestone-5-1)**
+1. [Milestone 1](milestone-1)
+2. [Milestone 2](milestone-2)
+3. [Milestone 3](milestone-3)
+4. [Milestone 4](milestone-4)
+5. 📌 **[Milestone 5](milestone-5-1)**
 6. [Presentation](milestone-5-2)
-7. [Final Project Submission](milestone-final-submission)
+7. [Final Submission](milestone-final-submission)
