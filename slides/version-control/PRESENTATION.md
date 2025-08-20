@@ -8,20 +8,20 @@ An engaging, visually stunning presentation covering Git fundamentals and GitHub
 
 ### Option 1: Direct Launch
 ```bash
-cd slides/02-version-control
+cd slides/version-control
 ./start.sh
 ```
 
 ### Option 2: Manual Setup
 ```bash
-cd slides/02-version-control
+cd slides/version-control
 npm install
 npm run dev
 ```
 
 ### Option 3: Development Mode
 ```bash
-cd slides/02-version-control
+cd slides/version-control
 npx slidev
 ```
 

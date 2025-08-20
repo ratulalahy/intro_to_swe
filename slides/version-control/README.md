@@ -44,7 +44,7 @@ An engaging, premium-quality [Slidev](https://sli.dev/) presentation covering Gi
 
 1. **Navigate to the presentation directory:**
    ```bash
-   cd slides/02-version-control
+   cd slides/version-control
    ```
 
 2. **Install dependencies:**

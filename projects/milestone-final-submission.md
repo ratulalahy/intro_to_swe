@@ -127,16 +127,12 @@ Total: **20 points**. Focus on resolution thoroughness and organization.
 
 **This submission perfects your project—meticulous fixes ensure a standout portfolio piece.**
 
-## Navigation
-
-- **Previous:** [Milestone 5.2: Final Submission](milestone-5-2)
-- **Next:** [Project Milestones Overview](index)
 
 ### All Project Milestones
 1. [Milestone 1: Project Initiation](milestone-1)
 2. [Milestone 2: Requirements Engineering](milestone-2)
 3. [Milestone 3: System Modeling](milestone-3)
 4. [Milestone 4: Advanced Features](milestone-4)
-5. [Milestone 5.1: Final Presentation](milestone-5-1)
-6. [Milestone 5.2: Final Submission](milestone-5-2)
-7. 📌 **[Final Project Submission](final-submission)**
+5. [Milestone 5: Testing and Refactoring](milestone-5-1)
+6. [Presentation](milestone-5-2)
+7. 📌 **[Final Project Submission](milestone-final-submission)**

@@ -50,8 +50,8 @@ Navigate this structured adventure over the semester, with each milestone buildi
 | 2: Requirements Engineering and MVP Development | 2 Weeks | SRS, use cases, UML (class focus), console MVP with tests | **Elicitation and prototyping**, validating needs early as in UX-driven firms to avoid misaligned features. |
 | 3: System Modeling and Architecture Implementation | 2 Weeks | Advanced UML, wireframes, MVC refactor, SOLID application | **Design for scalability**, ensuring modularity akin to cloud architectures at AWS for future-proof systems. |
 | 4: Advanced Features and Integration | 2 Weeks | Feature implementations, design patterns, updated docs | **Pattern application**, enhancing code efficiency as in product sprints at Asana for innovative additions. |
-| 5: Testing and Code | 2 Weeks | Test suites (80%+ coverage), refactoring logs | **Quality control**, mirroring DevOps pipelines at Google to guarantee robustness and performance. |
-|Project Presentation | --- | Slides, demo, reflections | **Stakeholder communication**, simulating pitches in industry to highlight engineering achievements. |
+| 5: Testing and Refactoring | 2 Weeks | Test suites (80%+ coverage), refactoring logs | **Quality control**, mirroring DevOps pipelines at Google to guarantee robustness and performance. |
+| Presentation | --- | Slides, demo, reflections | **Stakeholder communication**, simulating pitches in industry to highlight engineering achievements. |
 | Final Submission | --- | Complete project with all artifacts, reflections | **End-to-end delivery**, showcasing your journey from concept to polished application, ready for real-world challenges. |
 
 > **Pro Tip:** Document meetings and updates in `Zenhub` for seamless traceability— a practice that slashes communication gaps in professional teams.
@@ -67,11 +67,11 @@ Dive into this exquisite engineering quest, where every step—from planning to 
 ## Navigation
 - **Next:** [Milestone 1: Project Initiation and Setup](milestone-1)
 ### All Project Milestones
-1. **[Milestone 1](milestone-1)**
-2. [Milestone 2](milestone-2)
-3. [Milestone 3](milestone-3)
-4. [Milestone 4](milestone-4)
-5. [Milestone 5](milestone-5-1)
+1. **[Milestone 1: Project Initiation](milestone-1)**
+2. [Milestone 2: Requirements Engineering](milestone-2)
+3. [Milestone 3: System Modeling](milestone-3)
+4. [Milestone 4: Advanced Features](milestone-4)
+5. [Milestone 5: Testing and Refactoring](milestone-5-1)
 6. [Presentation](milestone-5-2)
-7. [Final Submission](final-submission)
+7. [Final Project Submission](milestone-final-submission)
 ---

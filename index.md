@@ -1,6 +1,6 @@
 ---
-title: "Introduction to Software Engineering"
-subtitle: "Fall 2025"
+title: "Software Engineering"
+subtitle: "CS 2450"
 description: "Explore the foundational principles and practices of software engineering through hands-on projects, collaborative teamwork, and industry-aligned methodologies. Transform from a coder to a proficient engineer ready to tackle real-world challenges."
 authors:
   - name: Ratul

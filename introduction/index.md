@@ -2,7 +2,7 @@
 title: "Introduction to Software Engineering"
 subtitle: "Building the Digital World Around Us"
 description: "Discover the fascinating world of software engineering - from small apps to systems that power our civilization"
-date: 2025-01-14
+
 keywords:
   - software engineering
   - introduction
@@ -85,6 +85,10 @@ Take a moment to think about your day so far. How many software systems have you
 
 The Linux kernel (the core of many servers, smartphones, and devices) has over **30 million lines of code** and involves contributions from **65,000+ developers** worldwide. That's like a digital city built by people from every corner of the globe!
 ```
+:::{iframe} https://www.youtube.com/embed/O753uuutqH8
+:width: 100%
+Get up and running with MyST in Jupyter!
+:::
 
 ##  The Scale of Software Today
 
@@ -219,9 +223,6 @@ timeline
                : Software eating the world
 ```
 
-###  The Birth of Software Engineering
-
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/QGqlcL1lffM" title="History of Software Engineering" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 *A fascinating look at how software engineering emerged as a discipline*
 
@@ -773,4 +774,4 @@ Every line of code you write, every system you design, and every problem you sol
 
 *"The best way to predict the future is to invent it."* - Alan Kay, Computer Scientist
 
-**Next:** [Version Control with Git and GitHub →](../02-version-control/index.md)
+**Next:** [Version Control with Git and GitHub →](../version-control/index.md)

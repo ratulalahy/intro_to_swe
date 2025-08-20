@@ -1,37 +1,50 @@
 format: jb-book
 root: index
 chapters:
-  - file: lectures/index
-    title: Lectures
-    sections:
-      - file: lectures/01-introduction/index
-        title: "Lecture 1: Introduction to Software Engineering"
-      - file: lectures/02-version-control/index
-        title: "Lecture 2: Version Control with Git and GitHub"
-  - file: assignments/index
-    title: Assignments
-    sections:
-      - file: assignments/assignment-1
-        title: "Assignment 1: Git Basics"
   - file: projects/index
-    title: Project Milestones
+    title: Projects
     sections:
       - file: projects/milestone-1
-        title: "Milestone 1"
+        title: "Milestone 1: Project Initiation"
       - file: projects/milestone-2
-        title: "Milestone 2"
+        title: "Milestone 2: Requirements Engineering"
       - file: projects/milestone-3
-        title: "Milestone 3"
+        title: "Milestone 3: System Modeling"
       - file: projects/milestone-4
-        title: "Milestone 4"
+        title: "Milestone 4: Advanced Features"
       - file: projects/milestone-5-1
-        title: "Milestone 5.1"
+        title: "Milestone 5: Testing and Refactoring"
       - file: projects/milestone-5-2
-        title: "Milestone 5.2"
+        title: "Presentation"
       - file: projects/milestone-final-submission
         title: "Final Submission"
-  - file: in-class-activities/index
-    title: In-Class Activities
+  - file: introduction/index
+    title: "Introduction to Software Engineering"
+  - file: version-control/index
+    title: "Version Control with Git and GitHub"
+  - file: sdlc/index
+    title: "Software Development Life Cycle"
+  - file: agile-scrum/index
+    title: "Agile and Scrum"
+  - file: requirements/index
+    title: "Requirements Engineering"
+    sections:
+      - file: requirements/high-level-analysis/index
+        title: "High-Level Requirements Analysis"
+      - file: requirements/low-level-analysis/index
+        title: "Low-Level Requirements Analysis"
+  - file: ui-design/index
+    title: "UI Design and Wireframing"
+  - file: architecture/index
+    title: "Software Architecture"
+  - file: design-principles/index
+    title: "Design Principles"
+  - file: design-patterns/index
+    title: "Design Patterns"
+  - file: testing/index
+    title: "Testing"
+  - file: refactoring/index
+    title: "Refactoring"
   - file: resources/index
     title: Resources
     sections:

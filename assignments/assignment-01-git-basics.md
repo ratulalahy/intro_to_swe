@@ -25,7 +25,7 @@ By completing this assignment, you will:
 - Git installed on your computer
 - GitHub account created
 - Basic command line knowledge
-- Completed Lecture 2: Version Control with Git & GitHub
+- Completed Version Control with Git & GitHub topic
 
 ## **Part 1: Repository Setup (20 points)**
 

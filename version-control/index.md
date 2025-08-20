@@ -2,8 +2,7 @@
 title: "Version Control with Git and GitHub"
 subtitle: "Mastering Modern Development Workflows"
 description: "Interactive introduction to Git version control and GitHub collaboration"
-date: 2025-01-21
-duration: "75 minutes"
+
 objectives:
   - Understand version control fundamentals
   - Master basic Git commands and workflows
