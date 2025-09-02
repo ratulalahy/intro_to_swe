@@ -99,7 +99,7 @@ Confirm the refactored app functions correctly.
 
 #### A `.md` file containing:
 - [ ] **GitHub release link** (e.g., `https://github.com/user_name/project_name/releases/tag/v3.0`)
-- [ ] **Zenhub board link** (e.g., `https://app.zenhub.com/workspaces/...`)
+- [ ] **GitHub Project board link** (e.g., `https://github.com/user_name/project_name/projects/1`)
 - [ ] **Reflection answers:**
   - **Your Contribution to the project (50–100 words):** Describe your role (e.g., GUI integration).
   - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate and explain collaboration.

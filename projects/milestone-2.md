@@ -110,7 +110,7 @@ Focus on core functionality for a testable prototype.
 
 #### A `.md` file containing:
 - [ ] **GitHub release link** (_e.g., `https://github.com/user_name/project_name/releases/tag/v2.0`_)
-- [ ] **Zenhub board link** (_e.g., `https://app.zenhub.com/workspaces/...`_)
+- [ ] **GitHub Project board link** (_e.g., `https://github.com/user_name/project_name/projects/1`_)
 - [ ] **Reflection answers:**
   - **Your Contribution to the project (50–100 words):** Describe your role (e.g., UML modeling).
   - **Most important thing you learned in this milestone (40–60 words):** Share a key skill, concept, or tool you now understand better.

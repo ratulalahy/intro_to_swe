@@ -8,7 +8,7 @@ description: Team formation, vision planning, and tool configuration for the {sp
 
 In the real world, the first days of a software project can feel like setting sail on a long voyage. You would not simply jump into a boat and start rowing. You would choose your crew, decide where you are headed, gather supplies, and make sure your navigation tools actually work. Software development is no different. The smartest teams spend time aligning their vision, clarifying responsibilities, and setting up their tools before writing a single line of code. This is what keeps projects from drifting off course.
 
-In this milestone, you will take those same professional first steps. Your team of three to five members will begin work on a {span .text-gradient-todo}`**To-Do List**` app designed to help busy students or professionals manage their tasks efficiently. Following practices used at companies like Amazon or Meta, you will establish your team structure, craft a clear project vision, build an initial feature backlog, and configure tools such as GitHub and Zenhub. These activities connect directly to what you have learned about version control, Agile methods, and team collaboration, giving you a smooth and confident start before diving into detailed requirements.
+In this milestone, you will take those same professional first steps. Your team of three to five members will begin work on a {span .text-gradient-todo}`**To-Do List**` app designed to help busy students or professionals manage their tasks efficiently. Following practices used at companies like Amazon or Meta, you will establish your team structure, craft a clear project vision, build an initial feature backlog, and configure tools such as GitHub and GitHub Projects. These activities connect directly to what you have learned about version control, Agile methods, and team collaboration, giving you a smooth and confident start before diving into detailed requirements.
 
 By the time this milestone is complete, your team will have a fully organized setup, a prioritized feature list, a draft project plan, and a working toolkit ready for future development cycles. Every submission will be documented through GitHub releases, giving you hands-on experience with the professional versioning practices used by real-world software teams. This is your launchpad for the rest of the semester — get it right now, and every step that follows will be easier and more effective.
 
@@ -21,7 +21,7 @@ Upon successful completion of this milestone, you will be able to:
 - **Form and organize** a team with roles, rotation, and communication plans, emphasizing collaboration and accountability.
 - **Craft a project vision** and initial feature backlog aligned with Agile principles like Scrum.
 - **Create a preliminary plan** including timelines and risks to guide development.
-- **Set up and use tools** like Git/GitHub for version control and Zenhub for basic task tracking.
+- **Set up and use tools** like Git/GitHub for version control and GitHub Projects for basic task tracking.
 - **Apply basic Agile concepts** (e.g., Scrum roles, artifacts like backlogs) to start planning.
 - **Use GitHub releases** to version and document progress, mimicking industry workflows.
 
@@ -115,9 +115,11 @@ Before you write any code, your team should brainstorm and capture a well-priori
   - Format the final list in:
     - `/task_manager_app/docs/backlog/backlog.md`
 
-- Import all features as Zenhub issues:
-  - Link issues to the relevant Epic
-  - Tag them with priorities and assignees
+- Import all features as GitHub Project cards:
+  - Create issues for each feature in your GitHub repository
+  - Add the issues to your project board
+  - Assign labels for priorities (High, Medium, Low)
+  - Move cards to appropriate columns based on current status
 
 ### 6. Individual Reflections
 
@@ -152,7 +154,7 @@ Use GitHub Releases to version and document project checkpoints, just as profess
 
 #### A `.md` file containing:
 - [ ] **GitHub release link** (e.g., `https://github.com/user_name/project_name/releases/tag/v1.0`)
-- [ ] **Zenhub board link** (e.g., `https://app.zenhub.com/workspaces/...`)
+- [ ] **GitHub Project board link** (e.g., `https://github.com/user_name/project_name/projects/1`)
 - [ ] **Reflection answers:**
   - **Your Contribution to the project (50–100 words):** Describe your role (e.g., tool setup).
   - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate and explain collaboration.
@@ -174,7 +176,7 @@ Use GitHub Releases to version and document project checkpoints, just as profess
 | **Team Formation**         | 10     | Clear roles, rotation, communication plan     |
 | **Vision and Planning**    | 20     | Concise, user-focused vision and plan         |
 | **Product Backlog**        | 35     | Prioritized list of 10+ feature items         |
-| **Tool Setup & Releases**  | 20     | Functional GitHub/Zenhub, proper releases     |
+| **Tool Setup & Releases**  | 20     | Functional GitHub/GitHub Projects, proper releases |
 | **Meeting Minutes**        | 10     | Detailed, actionable notes                    |
 | **Individual Reflections** | 5      | Insightful responses                          |
 
@@ -192,15 +194,17 @@ Use GitHub Releases to version and document project checkpoints, just as profess
 - [Appendix: Git](https://softengbook.org/chapterAp)
 
 ### Beginner Friendly Resources
+
 - [Getting Started with Git](https://www.youtube.com/watch?v=8JJ101D3knE)
 - [Interactive Git Tutorial](https://learngitbranching.js.org/)
-- [Setting Up Zenhub](https://www.youtube.com/watch?v=gcVIYp2LKT4&list=PLFIGvQyXSp3DKqdBtwvedFIGeEn9XwDsT)
-- [Zenhub Tutorial](https://www.youtube.com/watch?v=tJ375ju3xTc&list=PLFIGvQyXSp3CGS8X300Aj-hUZ-VLIhHbk)
+- [GitHub Projects Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
+- [GitHub Projects Tutorial](https://www.youtube.com/watch?v=yFQ-p6wMS_Y)
 
 ### Tutorials
+
 - [Git basics by GitHub](https://docs.github.com/en/get-started/git-basics)
 - [Git usage guide by GitHub](https://docs.github.com/en/get-started/using-git)
-- [Zenhub Quick-Start](https://www.zenhub.com/getting-started)
+- [GitHub Projects Quick Start](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects)
 - [Agile and Scrum](https://www.visual-paradigm.com/tutorials/agile-tutorial/)
 
 ### Best Practices

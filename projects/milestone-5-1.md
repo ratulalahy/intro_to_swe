@@ -23,7 +23,7 @@ Upon successful completion of this milestone, you will be able to:
 
 - Add **exception handling** with `try/except` for robustness.
 
-- **Update project documents** (SRS with test details, Zenhub backlog) for consistency.
+- **Update project documents** (SRS with test details, GitHub Project backlog) for consistency.
 
 - **Reflect on quality enhancements** from testing/refactoring.
 
@@ -45,7 +45,7 @@ Upon successful completion of this milestone, you will be able to:
 
 ### 3. Tool Updates
 
-- Update Zenhub backlog with test/refactor tasks; link to commits.
+- Update GitHub Project board with test/refactor tasks; link to commits.
 
 - Enhance GitHub README with test instructions/coverage summary.
 
@@ -57,7 +57,7 @@ Upon successful completion of this milestone, you will be able to:
 
 ### 5. Individual Reflections
 
-- Submit a `.md` file via Canvas with release/Zenhub links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
+- Submit a `.md` file via Canvas with release/GitHub Project links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
 ### 6. GitHub Releases
 
@@ -73,7 +73,7 @@ Upon successful completion of this milestone, you will be able to:
 
   - GitHub release link (e.g., `https://github.com/user_name/project_name/releases/tag/v5.0`)
 
-  - Zenhub board link (e.g., `https://app.zenhub.com/workspaces/...`)
+  - GitHub Project board link (e.g., `https://github.com/user_name/project_name/projects/1`)
 
   - **Reflection answers:**
 
@@ -139,7 +139,7 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 - [Robustness with Try/Except](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 
 ### Best Practices
-- Update Zenhub with test tasks for traceability.
+- Update GitHub Project board with test tasks for traceability.
 - Use commit messages like "Refactor duplication in task class".
 - Ensure releases have detailed changelogs.
 

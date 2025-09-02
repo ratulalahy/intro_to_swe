@@ -14,7 +14,7 @@ As a second-year student, this hands-on experience bridges classroom theory with
 These core elements, drawn from professional workflows, form the backbone of your project, ensuring you practice concepts indispensable in the tech industry:
 
 ### Agile Project Management
-> **Tip** Form dynamic teams, assign roles like Scrum Master, and leverage tools such as GitHub and Zenhub for sprint planning and backlog refinement. This mirrors daily rituals at agile powerhouses like Spotify, where iterative cycles and accountability accelerate delivery while accommodating evolving requirements—reducing project failure rates by emphasizing flexibility and user feedback.
+> **Tip** Form dynamic teams, assign roles like Scrum Master, and leverage tools such as GitHub and GitHub Projects for sprint planning and backlog refinement. This mirrors daily rituals at agile powerhouses like Spotify, where iterative cycles and accountability accelerate delivery while accommodating evolving requirements—reducing project failure rates by emphasizing flexibility and user feedback.
 
 ### Requirements Engineering
 > **Note** Elicit and document user needs through Software Requirements Specifications (SRS), user stories, and use cases. Inspired by user-centered approaches at Airbnb, you'll validate assumptions early to prevent costly rework, ensuring your application addresses real pain points like efficient task management in collaborative settings.
@@ -39,19 +39,19 @@ Navigate this structured adventure over the semester, with each milestone buildi
 
 | Milestone | Duration | Key Deliverables | Core Concepts in Action |
 |-----------|----------|------------------|-------------------------|
-| 1: Project Initiation and Setup | 2 Weeks | Team docs, vision statement, initial backlog (10+ stories), Git/Zenhub setup | **Team building** and Agile setup, fostering collaboration like in startup environments to align on goals and tools. |
+| 1: Project Initiation and Setup | 2 Weeks | Team docs, vision statement, initial backlog (10+ stories), Git/GitHub Projects setup | **Team building** and Agile setup, fostering collaboration like in startup environments to align on goals and tools. |
 | 2: Requirements Engineering and MVP Development | 2 Weeks | SRS, 15+ user stories, UML (use case, class, sequence), CLI-based MVP, manual tests | **Elicitation and prototyping**, validating needs early as in UX-driven firms to avoid misaligned features. |
 | 3: System Modeling and Architecture Implementation | 2 Weeks | Refined UML, wireframes/mockups, MVC code, SOLID application, GUI integration | **Design for scalability**, ensuring modularity akin to cloud architectures at AWS for future-proof systems. |
 | 4: Advanced Features and Integration | 2 Weeks | 3–7 new features, 2–4 design patterns, updated UML/docs, manual validation | **Pattern application**, enhancing code efficiency as in product sprints at Asana for innovative additions. |
 | 5: Testing and Refactoring | 1 Week | 20+ tests (80%+ coverage), refactored code with try/except, updated SRS | **Quality control**, mirroring DevOps pipelines at Google to guarantee robustness and performance. |
-| Presentation | 1 Week | Slides, live demo, Zenhub board, reflections | **Stakeholder communication**, simulating pitches in industry to highlight engineering achievements, including testing and robustness. |
+| Presentation | 1 Week | Slides, live demo, GitHub Project board, reflections | **Stakeholder communication**, simulating pitches in industry to highlight engineering achievements, including testing and robustness. |
 | Final Submission | 1 Week | Issue resolution log, reorganized README/docs, final release (v6.0) | **End-to-end delivery**, polishing the project for clarity and maintainability, ready for real-world challenges. |
 
-> **Pro Tip**: Document meetings and updates in Zenhub for seamless traceability—a practice that slashes communication gaps in professional teams.
+> **Pro Tip**: Document meetings and updates in GitHub Project boards for seamless traceability—a practice that slashes communication gaps in professional teams.
 
 ## Resources for Success
 
-- **Essential Tools**: GitHub for versioning, Zenhub for tracking, draw.io for diagrams—industry standards for collaborative development.
+- **Essential Tools**: GitHub for versioning, GitHub Projects for tracking, draw.io for diagrams—industry standards for collaborative development.
 - **Guides**: SRS templates, UML resources from Visual Paradigm, pattern tutorials on Refactoring Guru, testing guides for pytest and coverage.py.
 - **Best Practices**: Use semantic commits, conduct peer reviews, embrace TDD, and document issue resolutions clearly to build habits valued in open-source and corporate settings.
 

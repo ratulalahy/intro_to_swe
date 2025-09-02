@@ -52,7 +52,7 @@ Submit the GitHub release link for the final submission via the course platform.
 
 ### 5. Tool Finalization
 
-- **Zenhub:** Close all open issues; archive boards if complete.
+- **GitHub Projects:** Close all open issues; archive project boards if complete.
 - **GitHub:** Final commits; ensure CI/CD runs successfully on updates.
 
 ### 6. GitHub Release

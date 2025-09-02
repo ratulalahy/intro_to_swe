@@ -33,10 +33,10 @@ By completing this milestone, you’ll demonstrate your project’s quality and 
 **Format:** 10-minute presentation in class + 5–10-minute Q&A  
 
 - All team members must speak and answer questions.
-- Show your `Zenhub` board to explain team contributions.
+- Show your `GitHub Project` board to explain team contributions.
 
 ### 3. **Tool Updates**
-- **`Zenhub`:** Mark tasks complete; update backlog.
+- **`GitHub Projects`:** Mark tasks complete; update backlog.
 - **`GitHub`:** Commit slides; update `README` with presentation details.
 
 ### 4. **Individual Reflections**
@@ -68,7 +68,7 @@ Major version (e.g., `v5.2`) tagged `"milestone5.2"`. Link slides and materials 
   - **Engineering**: Principles, patterns, **robustness**, **code smell removal**.
   - **Demo**: Show the app working.
   - **Future**: Ideas for improvement.
-- **Zenhub**: Display board to show contributions.
+- **GitHub Projects**: Display board to show contributions.
 - **Team**: All members speak equally and handle Q&A.
 - **Tips**:
   - Rehearse for smooth delivery.
@@ -79,10 +79,10 @@ Major version (e.g., `v5.2`) tagged `"milestone5.2"`. Link slides and materials 
 
 ## Tasks
 
-1. **Create Slides**: Cover all project aspects; use visuals (e.g., UML, `Zenhub` screenshots).
+1. **Create Slides**: Cover all project aspects; use visuals (e.g., UML, `GitHub Projects` screenshots).
 2. **Prepare Demo**: Test app for **robustness**; script key features.
 3. **Rehearse**: Practice as a team; assign roles.
-4. **Update Tools**: Sync `Zenhub`/`GitHub`; update `README`.
+4. **Update Tools**: Sync `GitHub Projects`/`GitHub`; update `README`.
 5. **Release**: Create `v5.2` with slides, changelog, and **code smell** comment.
 
 ---

@@ -22,7 +22,7 @@ By the end of this course, you'll be able to:
 
 
 :::{card}  **Master Agile Practices**
-Apply Scrum roles, sprints, and tools like GitHub and Zenhub to manage projects iteratively, mirroring industry teams at companies like Atlassian.
+Apply Scrum roles, sprints, and tools like GitHub and GitHub Projects to manage projects iteratively, mirroring industry teams at companies like Atlassian.
 :::
 :::{card}  **Engineer Requirements**
 Elicit, document, and validate user needs using SRS and use cases, preventing common pitfalls seen in real-world product launches.
@@ -51,7 +51,7 @@ Conduct TDD, achieve high test coverage, and deliver professional presentations,
 
 **Topics:** Overview of software engineering principles, Agile methodologies (Scrum, sprints), team dynamics.
 
-**Activities:** Lecture on intro concepts; form teams (3-5 members); initial tool setup (GitHub, Zenhub); brainstorm project vision.
+**Activities:** Lecture on intro concepts; form teams (3-5 members); initial tool setup (GitHub, GitHub Projects); brainstorm project vision.
 
 **Milestone Integration:** Start Milestone 1: Project Initiation and Setup—focus on team formation and roles.
 
@@ -64,20 +64,20 @@ Conduct TDD, achieve high test coverage, and deliver professional presentations,
 
 **Topics:** Git fundamentals (repos, commits, branches, staging area); GitHub features (remotes, PRs, issues, collaboration, actions); best practices (commit messages, branching models).
 
-**Activities:** Lab: Configure GitHub/Zenhub; hold first team meeting; draft backlog and plan.
+**Activities:** Lab: Configure GitHub/GitHub Projects; hold first team meeting; draft backlog and plan.
 
 **Milestone Integration:** Continue Milestone 1: Draft team docs, vision, initial backlog.
 
-**Readings:** Appendix: Git; Tutorials on GitHub Releases and Zenhub.
+**Readings:** Appendix: Git; Tutorials on GitHub Releases and GitHub Projects.
 
 ```
 
 ```{admonition} Week 3: SDLC, Agile Scrum, and Project Management
 :class: dropdown
 
-**Topics:** SDLC models (Waterfall, Agile, XP); Scrum framework (sprints, roles, ceremonies, artifacts); Zenhub for task tracking.
+**Topics:** SDLC models (Waterfall, Agile, XP); Scrum framework (sprints, roles, ceremonies, artifacts); GitHub Projects for task tracking.
 
-**Activities:** Lecture on Agile processes; finalize team roles and backlog; configure Zenhub workflows.
+**Activities:** Lecture on Agile processes; finalize team roles and backlog; configure GitHub Projects workflows.
 
 **Milestone Integration:** Complete Milestone 1: Submit team docs, vision, initial backlog (10+ stories) via GitHub release.
 
@@ -181,7 +181,7 @@ Conduct TDD, achieve high test coverage, and deliver professional presentations,
 
 **Topics:** Refactoring techniques (extract method/class, rename, inline temp); code smells (duplication, long methods, large classes); clean code practices (meaningful naming, small single-responsibility functions, minimal comments, consistent formatting, robust error handling); automated refactorings.
 
-**Activities:** Lab: Refactor code applying clean code principles; document changes; update Zenhub.
+**Activities:** Lab: Refactor code applying clean code principles; document changes; update GitHub Projects.
 
 **Milestone Integration:** Complete Milestone 5: Submit test suites (20+, 80%+ coverage), refactoring log via GitHub release.
 
@@ -238,12 +238,12 @@ The project is supported by modules covering key software engineering topics thr
 **Topics Covered**: 
 - Software engineering overview,   
 - Agile methodologies (Scrum, sprints), team dynamics, vision crafting, backlog management, 
-- Tool setup (GitHub, Zenhub), 
+- Tool setup (GitHub, GitHub Projects), 
 - Version control with Git/GitHub.
 
 **What to Expect**: 
 
-Lectures on Agile processes and version control, labs for GitHub/Zenhub configuration, team meetings to define roles and backlogs.
+Lectures on Agile processes and version control, labs for GitHub/GitHub Projects configuration, team meetings to define roles and backlogs.
 **Expected Outcomes**: 
 
 Form effective teams, align on project goals, establish Git workflows, and practice iterative planning—building habits for adaptable development.
@@ -346,8 +346,8 @@ Deliver professional presentations, finalize high-quality projects, gain career 
 |------|--------|-------------------------------|---------|
 | 1 | **Introduction to Software Engineering** | Course syllabus, grading, resources; SE definition/scope; historical evolution (software crisis, milestones); SE principles vs. programming (processes, teamwork, quality); industry role (scalability, maintainability, ethics). | Chapter 1: Introduction |
 | 2 | **Version Control with Git and GitHub** | Git fundamentals (repos, commits, branches, staging area); GitHub features (remotes, PRs, issues, collaboration, actions); advanced (merges, rebase, conflicts, tags/releases); best practices (commit messages, branching models like Git Flow, .gitignore). | Appendix: Git |
-| 3 | **SDLC, Agile Scrum, and Project Management with Zenhub** | SDLC models (Waterfall phases/pros/cons, Agile iterative/Manifesto, XP practices); Scrum framework (sprints, roles - PO/SM/Team, ceremonies - planning/standup/review/retrospective, artifacts - backlogs/burndowns); Zenhub (boards, epics, task tracking, GitHub integration for issues/PRs/labels). | Chapter 2: Processes |
-| **Milestone 1** | **Project Initiation and Setup** | Using Weeks 1-3 topics: Team roles/rotation, vision statement, initial backlog (10+ stories), Git/Zenhub setup, draft plan/timeline. Mid-check (Week 2 end): Team doc/backlog drafts. **Important:** Establish branching strategy, communication plan; reflection on Agile application. | - |
+| 3 | **SDLC, Agile Scrum, and Project Management with GitHub Projects** | SDLC models (Waterfall phases/pros/cons, Agile iterative/Manifesto, XP practices); Scrum framework (sprints, roles - PO/SM/Team, ceremonies - planning/standup/review/retrospective, artifacts - backlogs/burndowns); GitHub Projects (boards, issues, task tracking, GitHub integration for issues/PRs/labels). | Chapter 2: Processes |
+| **Milestone 1** | **Project Initiation and Setup** | Using Weeks 1-3 topics: Team roles/rotation, vision statement, initial backlog (10+ stories), Git/GitHub Projects setup, draft plan/timeline. Mid-check (Week 2 end): Team doc/backlog drafts. **Important:** Establish branching strategy, communication plan; reflection on Agile application. | - |
 | 4 | **Requirements Engineering I** | High-level analysis (stakeholders, goals elicitation techniques); low-level (user stories format/prioritization, use cases/text/diagrams, functional/non-functional classification, SRS structure/template); UML intro (purpose, notation for use case/class diagrams, tools like draw.io). | Chapter 3: Requirements<br>Chapter 4: Models (Use Case Diagrams) |
 | 5 | **Requirements Engineering II** | MVP selection (core features, validation methods); A/B testing (hypothesis/design/analysis); planning poker (estimation process, consensus building); UML expansion (class diagram - attributes/methods/relationships for CLI MVP design). | Chapter 3: Requirements<br>Chapter 4: Models (Class Diagrams) |
 | **Milestone 2** | **Requirements & MVP** | Using Weeks 4-5 topics: SRS (functional/non-functional), 15+ user stories, use case diagrams, CLI-based MVP in Python (e.g., task management features), basic tests (3-5). Mid-check (Week 4 end): SRS/user stories drafts. **Important:** UML class/use case integration; reflection on MVP validation. | - |
@@ -381,7 +381,7 @@ This project is structured around key milestones that integrate course concepts,
 ### Project Milestones
 
 1. **Milestone 1: Project Initiation and Setup**  
-   Team formation, vision planning, backlog creation, and tool configuration (GitHub, Zenhub). Expect to submit team docs, vision statement, and initial release. Focus: Agile setup and collaboration.
+   Team formation, vision planning, backlog creation, and tool configuration (GitHub, GitHub Projects). Expect to submit team docs, vision statement, and initial release. Focus: Agile setup and collaboration.
 
 2. **Milestone 2: Requirements Engineering and MVP Development**  
    SRS documentation, use cases, UML (class emphasized), console MVP with tests. Submit updated docs and code release. Focus: User needs validation and prototyping.
@@ -437,7 +437,7 @@ gantt
 ## Resources
 
 - **Textbook:** *Software Engineering: A Practitioner's Approach* (Chapters 1-9).
-- **Tools:** GitHub, Zenhub, draw.io—access tutorials in the [Resources Folder](resources.md).
+- **Tools:** GitHub, GitHub Projects, draw.io—access tutorials in the [Resources Folder](resources.md).
 - **Support:** MW 5:30 PM - 6:40 PM, TR 11:30 PM - 1:00 PM or By Appointment on MS Team or In-person.
 - **Extra Credit:** Will be discussed in class.
 
