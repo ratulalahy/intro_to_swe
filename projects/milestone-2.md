@@ -42,7 +42,7 @@ Transform your initial feature list into actionable, user-focused items.
     As a [user], I want [feature] so that [benefit].
     ```
 - Include functional and non-functional requirements; prioritize using planning poker for estimation and consensus.
-- Update `/task_manager_app/docs/backlog/` and **import/refine issues in Zenhub with priorities and assignees.**
+- Update `/task_manager_app/docs/backlog/` and **import/refine issues in GitHub Projects with priorities and assignees.**
 
 ### 3. Create SRS
 

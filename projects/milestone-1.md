@@ -42,14 +42,15 @@ Before coding begins, a well-organized digital workspace must be in place. This 
     - `/task_manager_app/src/`: source code
     - `/task_manager_app/docs/`: documentation and planning assets
 
-- Connect and Configure [Zenhub](https://www.zenhub.com/):
-  - Add your team members to the Zenhub workspace.
-  - Add instructor (email id: qratul@uvu.edu) to the Zenhub workspace.
-  - Enable Zenhub on the GitHub repository.
-  - Create:
-    - 1–2 Epics (e.g., “Core Task Features”)
-    - A few Issues or user stories (3–6 minimum)
-    - Workflow pipeline: `Backlog`, `In Progress`, `Review`, `Done`
+- Configure [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects):
+  - Create a new **GitHub Project** private board in your repository (Projects tab).
+  - Add your team members to the GitHub Projects workspace (Settings > Manage access).
+  - Add instructor (email id: qratul@uvu.edu) to the GitHub Projects workspace.
+  - Enable GitHub Projects on the GitHub repository.
+  - Add views:
+    - Board: `Backlog`, `To Do`, `In Progress`, `Done`, `Blocked`
+    - Table: with filters for assignees, labels, milestones
+    - Timeline view: for visualizing project milestones and deadlines
 
 > _Assign issues during your first meeting. Track progress weekly._
 
