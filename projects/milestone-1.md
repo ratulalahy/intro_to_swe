@@ -116,17 +116,20 @@ Before you write any code, your team should brainstorm and capture a well-priori
   - Format the final list in:
     - `/task_manager_app/docs/backlog/backlog.md`
 
+### 6. GitHub Project Board Setup
+- Create a new **GitHub Project** private board in your repository (Projects tab).
+- Setup your github project board ([tutorial](https://www.youtube.com/live/hMEdSCrWOTk))
 - Import all features as GitHub Project cards:
   - Create issues for each feature in your GitHub repository
   - Add the issues to your project board
   - Assign labels for priorities (High, Medium, Low)
   - Move cards to appropriate columns based on current status
 
-### 6. Individual Reflections
+### 7. Individual Reflections
 
 - Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
-### 7. GitHub Releases
+### 8. GitHub Releases
 
 Use GitHub Releases to version and document project checkpoints, just as professional teams do.
 
@@ -167,6 +170,13 @@ Use GitHub Releases to version and document project checkpoints, just as profess
 - [ ] **Project Vision and Plan** (_suggested: `/task_manager_app/docs/vision_plan.md`_)
 - [ ] **Initial Product Backlog** (_suggested: `/task_manager_app/docs/backlog/`_)
 - [ ] **First Meeting Minutes** (_suggested: `/task_manager_app/docs/meeting_minutes/milestone_1/`_)
+
+### GitHub Releases
+  - [ ] Progress Check 
+  - [ ] Final Submission 
+
+### GitHub Project Board
+  - [ ] Complete setup of github project board ([like this](https://www.youtube.com/live/hMEdSCrWOTk?feature=shared&t=3072))
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Milestone 4: Design Patterns & Feature Integration"
-description: Enhancement of core application with advanced features and third-party integrations
+description: Enhancement of core application with advanced features and design patterns
 ---
 
 ## Overview
@@ -30,7 +30,7 @@ Upon successful completion of this milestone, you will be able to:
 Foster collaboration to plan and review pattern adoption and feature implementation.
 
 - Conduct team meetings for selection and drafting (e.g., mapping patterns to backlog features) and integration review (e.g., code walkthroughs, issue resolution).
-- Develop detailed agendas covering feature prioritization from backlog, pattern selection criteria (e.g., does it solve a real problem? Is there a simpler way?), integration strategies with MVC/SOLID/UI, and validation planning.
+- Develop detailed agendas covering feature prioritization from backlog, pattern selection criteria (e.g., does it solve a real problem? Is there a simpler way?), and integration strategies with MVC/SOLID/UI.
 - Assign specific tasks with owners, deadlines, and milestones; encourage role rotation as per your schedule.
 - Promote active discussion on avoiding forced pattern use—challenge each choice to ensure it addresses a genuine code smell or need.
 - Save the meeting minutes in the repository.
@@ -64,16 +64,18 @@ Reflect pattern integrations in your diagrams for accurate documentation.
 ### 5. Manual Validation
 Verify that new features and patterns work as intended.
 
-- Create 10+ validation scenarios targeting new features, pattern behaviors, and integrations (e.g., demonstrating flexibility from a pattern).
 - Execute manually via GUI/CLI; document inputs, expected vs. actual outputs, and any issues resolved.
 - Highlight how patterns improve scenarios without forcing (e.g., easier maintenance if applicable, or note if a pattern was avoided).
 - Add test cases to check functionalities.
-- Save in `/task_manager_app/docs/validation_scenarios.md` (append or update with Milestone 4 section, including screenshots).
 
-### 6. Individual Reflections
+
+### 6. GitHub Project Board
+- Update GitHub Project board with new user stories, SRS tasks, UML tasks, and MVP implementation tasks; link to commits.
+
+### 7. Individual Reflections
 - Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
-### 7. GitHub Releases
+### 8. GitHub Releases
 - **Progress Check (End of Week 10):**
   - Create a minor release: `v3.1`
   - Tag example: `milestone4-progress-v3.1`
@@ -84,7 +86,7 @@ Verify that new features and patterns work as intended.
 - **Final Submission (End of Week 11):**
   - Create a major release: `v4.0`
   - Tag example: `milestone4`
-  - Include final code, documents, validation, and changelog detailing new features, patterns, and improvements since `v3.1`.
+  - Include final code, documents, and changelog detailing new features, patterns, and improvements since `v3.1`.
   - Submit the final release URL via Canvas
 
 ---
@@ -104,10 +106,16 @@ Verify that new features and patterns work as intended.
 
 ### Repository Documents
 - [ ] **Selected Design Patterns** (_suggested: `/task_manager_app/docs/design_patterns_selected.md`_)
-- [ ] **Updated UML** (_suggested: `/task_manager_app/docs/uml_class.md`, `/task_manager_app/docs/uml_sequence.md`)
-- [ ] **Validation and Testing Scenarios** (_suggested: `/task_manager_app/docs/validation_scenarios.md`_)
+- [ ] **Updated UML** (_suggested: `/task_manager_app/docs/uml_class.md`, `/task_manager_app/docs/uml_sequence.md`_)
 - [ ] **Meeting Minutes** (_suggested: `/task_manager_app/docs/meeting_minutes/milestone_4/`_)
 
+
+### GitHub Releases
+  - [ ] Progress Check 
+  - [ ] Final Submission 
+
+### GitHub Project Board
+  - [ ] Updated github project board.
 ---
 
 ## Evaluation Rubric (100 Points)

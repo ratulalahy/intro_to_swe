@@ -84,10 +84,14 @@ Focus on core functionality for a testable prototype.
   - Example: Command-line menu for operations; persist data in a text file/json file if needed.
 - Manually [validate](https://www.scrum.org/resources/blog/doing-right-thing-right-validation-and-verification): Run the app, document sample inputs/outputs in `/task_manager_app/docs/mvp_validation.md`.
 
-### 6. Individual Reflections
+### 6. Github project Board
+- Update GitHub Project board with new user stories, SRS tasks, UML tasks, and
+  MVP implementation tasks; link to commits.
+
+### 7. Individual Reflections
 - Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
-### 7. GitHub Releases
+### 8. GitHub Releases
 - **Progress Check (After 1 week):**
   - Create a minor release: `v1.1`
   - Tag example: `milestone2-progress-v1.1`
@@ -124,6 +128,12 @@ Focus on core functionality for a testable prototype.
 - [ ] **MVP Validation** (_suggested: `/task_manager_app/docs/mvp_validation.md`_)
 - [ ] **Meeting Minutes** (_suggested: `/task_manager_app/docs/meeting_minutes/milestone_2/`_)
 
+### GitHub Releases
+  - [ ] Progress Check 
+  - [ ] Final Submission 
+
+### GitHub Project Board
+  - [ ] Updated with new user stories, SRS tasks, UML tasks, and MVP implementation tasks; linked to commits.
 ---
 
 ## Evaluation Rubric (100 Points)

@@ -55,11 +55,14 @@ Upon successful completion of this milestone, you will be able to:
 
 - Document in `/task_manager_app/docs/meeting_minutes/milestone_5/week_1.md`.
 
-### 5. Individual Reflections
+### 5. GitHub Project Board
+- Update GitHub Project board with new test and refactor tasks; link to commits.
+
+### 6. Individual Reflections
 
 - Submit a `.md` file via Canvas with release/GitHub Project links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
-### 6. GitHub Releases
+### 7. GitHub Releases
 
 - **Submission:** Create a major release (`v5.0`, tagged `milestone5`) with all linked in notes and changelog (e.g., "Achieved <percent>% coverage; refined class diagram in SRS"). Submit URL via Canvas.
 
@@ -111,6 +114,12 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 
   - Attendance, agenda, decisions, action items.
 
+### GitHub Releases
+  - [ ] Progress Check 
+  - [ ] Final Submission 
+
+### GitHub Project Board
+  - [ ] Updated github project board.
 ---
 
 ## Evaluation Rubric (60 Points)

@@ -73,11 +73,14 @@ Confirm the refactored app functions correctly.
 - Add basic test cases to check functionalities.
 - Document in `/task_manager_app/docs/validation_scenarios.md` with step-by-step results and screenshots.
 
-### 6. Individual Reflections
+### 6. GitHub Project Board
+- Update GitHub Project board with new user stories, SRS tasks, UML tasks, and MVP implementation tasks; link to commits.
+
+### 7. Individual Reflections
 
 - Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#a-md-file-containing)_).
 
-### 7. GitHub Releases
+### 8. GitHub Releases
 - **Progress Check (After 1 week):**
   - Create a minor release: `v2.1`
   - Tag example: `milestone3-progress-v2.1`
@@ -112,6 +115,12 @@ Confirm the refactored app functions correctly.
 - [ ] **Validation and Testing Scenarios** (_suggested: `/task_manager_app/docs/validation_scenarios.md`_)
 - [ ] **Meeting Minutes** (_suggested: `/task_manager_app/docs/meeting_minutes/milestone_3/`_)
 
+### GitHub Releases
+  - [ ] Progress Check 
+  - [ ] Final Submission 
+
+### GitHub Project Board
+  - [ ] Updated project board with new user stories, SRS tasks, UML tasks, and MVP implementation tasks; linked to commits.
 ---
 
 ## Evaluation Rubric (100 Points)
