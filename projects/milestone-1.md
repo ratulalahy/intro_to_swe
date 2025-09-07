@@ -208,6 +208,12 @@ Use GitHub Releases to version and document project checkpoints, just as profess
 - [GitHub Projects Quick Start](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects)
 - [Agile and Scrum](https://www.visual-paradigm.com/tutorials/agile-tutorial/)
 
+### Github Projects
+- [What is Github Issue](https://www.youtube.com/watch?v=6HWw7rhwvtY)
+- [Managing Iterations with Issues](https://www.youtube.com/watch?v=tCJi4M6MdIc)
+- [Using Projects for feature planning](https://www.youtube.com/watch?v=yFQ-p6wMS_Y)
+- [Implementing Scrum with GitHub Projects](https://www.youtube.com/watch?v=hMEdSCrWOTk)**
+
 ### Best Practices
 
 - Use semantic versioning.

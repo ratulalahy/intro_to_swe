@@ -51,7 +51,7 @@ Navigate this structured adventure over the semester, with each milestone buildi
 
 ## Resources for Success
 
-- **Essential Tools**: GitHub for versioning, GitHub Projects for tracking, draw.io for diagrams—industry standards for collaborative development.
+- **Essential Tools**: [GitHub](https://github.com) for versioning, [GitHub Projects](https://docs.github.com/en/issues) for tracking, [draw.io](https://app.diagrams.net/) for diagrams—industry standards for collaborative development.
 - **Guides**: SRS templates, UML resources from Visual Paradigm, pattern tutorials on Refactoring Guru, testing guides for pytest and coverage.py.
 - **Best Practices**: Use semantic commits, conduct peer reviews, embrace TDD, and document issue resolutions clearly to build habits valued in open-source and corporate settings.
 
