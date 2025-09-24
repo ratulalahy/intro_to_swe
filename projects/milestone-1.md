@@ -49,7 +49,7 @@ Before coding begins, a well-organized digital workspace must be in place. This 
 
 > _Assign issues during your first meeting. Track progress weekly._
 
-### 3. Team Formation (with rotation schedule)
+### 2. Team Formation (with rotation schedule)
 Clear team structure and responsibilities are essential to avoid confusion during development.
 
 - Assign roles (with rotation schedule):
@@ -65,7 +65,7 @@ Clear team structure and responsibilities are essential to avoid confusion durin
     - _Posting progress updates using MS Teams._
 - Document in `/task_manager_app/docs/team_formation.md`.
 
-### 2. Team Meeting Execution
+### 3. Team Meeting Execution
 Team meetings are crucial for aligning on goals and tasks. 
 - Hold your team meeting with clear agenda, covering roles, vision, and initial features.
 - Assign action items with owners and deadlines.
