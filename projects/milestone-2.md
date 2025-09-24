@@ -17,7 +17,7 @@ By the end of this milestone, you will have `documented requirements`, `visual m
 Upon successful completion of this milestone, you will be able to:
 
 - **Elicit and document requirements** using user stories, use cases, and a structured SRS.
-- **Model software systems** with UML use case, class diagrams and sequence diagrams to visualize interactions and structure.
+- **Model software systems** with UML use case, class diagrams.
 - **Define an MVP** by selecting core features and outlining validation approaches.
 - **Implement a basic CLI application** in Python, applying requirements and models.
 - **Prioritize requirements** using techniques like planning poker for consensus.
@@ -37,7 +37,7 @@ Align your team on requirements and MVP through focused discussions.
 ### 2. Refine Product Backlog
 Transform your initial feature list into actionable, user-focused items.
 
-- Convert features to 15+ user stories in the format: 
+- Convert features to user stories in the format: 
     ```plaintext
     As a [user], I want [feature] so that [benefit].
     ```
@@ -71,8 +71,7 @@ Visualize your system's interactions and structure.
 
 - Create UML `use case diagrams`.
 - Develop `class diagrams` for the CLI MVP.
-- Create `sequence diagrams` for key interactions.
-- Use tools like [draw.io](https://app.diagrams.net/); export diagrams as images or embeddable files.
+- Use tools like [lucidchart](https://www.lucidchart.com/); export diagrams as images or embeddable files.
 - Save to `/task_manager_app/docs/uml/`.
 
 ### 5. Define and Implement MVP
@@ -143,7 +142,7 @@ Focus on core functionality for a testable prototype.
 | **Team Meetings**          | 5     | Detailed, actionable minutes                  |
 | **Refined Backlog**        | 10     | 15+ user stories, prioritized effectively     |
 | **SRS**                    | 10     | Comprehensive and well-structured             |
-| **UML Modeling**           | 20     | Accurate use case, class, and sequence diagrams          |
+| **UML Modeling**           | 20     | Accurate use case, class|
 | **MVP Implementation & Validation** | 50    | Functional CLI with manual proof              |
 | **Individual Reflections** | 5     | Insightful responses                          |
 

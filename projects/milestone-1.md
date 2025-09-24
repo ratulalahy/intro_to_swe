@@ -34,10 +34,7 @@ Before coding begins, a well-organized digital workspace must be in place. This 
 
 - Initialize a [GitHub](https://github.com/) Repository:
   - Create a new **private** repository under one team member’s account.
-  - Add all team members as collaborators. Add your instructor (email id: qratul@uvu.edu) too.
-  - Establish these branches:
-    - `main` – production-ready commits
-    - `dev` – staging area for features and fixes
+  - Add all team members as collaborators. Add your instructor (id: ratulalahy) too.
   - Add folders:
     - `/task_manager_app/src/`: source code
     - `/task_manager_app/docs/`: documentation and planning assets
@@ -45,12 +42,10 @@ Before coding begins, a well-organized digital workspace must be in place. This 
 - Configure [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects):
   - Create a new **GitHub Project** private board in your repository (Projects tab).
   - Add your team members to the GitHub Projects workspace (Settings > Manage access).
-  - Add instructor (email id: qratul@uvu.edu) to the GitHub Projects workspace.
+  - Add instructor (id: ratulalahy) to the GitHub Projects workspace.
   - Enable GitHub Projects on the GitHub repository.
   - Add views:
     - Board: `Backlog`, `To Do`, `In Progress`, `Done`, `Blocked`
-    - Table: with filters for assignees, labels, milestones
-    - Timeline view: for visualizing project milestones and deadlines
 
 > _Assign issues during your first meeting. Track progress weekly._
 
