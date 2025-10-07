@@ -7,7 +7,7 @@ description: UML modeling, MVC architecture implementation, and wireframe design
 ## Overview
 In previous milestones, you transformed your vision into clear requirements, built your first models, and delivered a functional CLI-based MVP. That was like constructing the frame of a house; the structure was sound, but the rooms were bare and the layout simple. Now, it’s time to add architecture, style, and a better living experience.
 
-In this milestone, you will evolve your {span .text-gradient-todo}`**To-Do List**` app from a basic working prototype into a structured, scalable, and more user-friendly system. Just as professional teams refine blueprints before moving to full-scale construction, you will update your {span .term}`UML diagrams` to reflect a well-defined architecture, design {span .term}`wireframes` and {span .term}`mockups` for an intuitive {span .term}`GUI`, and restructure your code using the {span .term}`Model-View-Controller (MVC)` pattern. Along the way, you’ll apply {span .term}`SOLID principles` to improve maintainability and prepare your codebase for future features.
+In this milestone, you will evolve your {span .text-gradient-todo}`**To-Do List**` app from a basic working prototype into a structured, scalable, and more user-friendly system. Just as professional teams refine blueprints before moving to full-scale construction, you will update your {span .term}`UML diagrams` to reflect a well-defined architecture, design {span .term}`wireframes` or {span .term}`mockups` for an intuitive {span .term}`GUI`, and restructure your code using the {span .term}`Model-View-Controller (MVC)` pattern. Along the way, you’ll apply {span .term}`SOLID principles` to improve maintainability and prepare your codebase for future features.
 
 This is also where you will take the first step away from the command line by **integrating a basic GUI**, giving users a visual interface to interact with. Finally, you will **manually {span .term}`validate`** that your refactored design works as intended, capturing proof of improved modularity, separation of concerns, and user experience.
 
@@ -19,8 +19,8 @@ By the end, you'll have updated models, UI prototypes, refactored code following
 
 Upon successful completion of this milestone, you will be able to:
 
-- **Refine UML modeling** by updating use case, class, and sequence diagrams to reflect architectural changes.
-- **Design UI elements** using wireframes, mockups, and prototypes for better usability.
+- **Refine UML modeling** by updating use case and **class diagrams** to reflect architectural changes.
+- **Design UI elements** using wireframes or mockups or prototypes for better usability.
 - **Implement architecture** like MVC to separate concerns in your code.
 - **Apply design principles** (SOLID) to refactor and improve code quality.
 - **Integrate GUI** with MVC to enhance user interaction.
@@ -44,7 +44,6 @@ Update diagrams to align with new architecture and principles—focus on incorpo
 
 - Refine UML use case diagrams to include GUI-specific interactions (e.g., button clicks).
 - Update class diagrams to show MVC classes (e.g., separate Model, View, Controller) and SOLID-compliant relationships.
-- Revise sequence diagrams for flows involving GUI and refactored logic.
 - Use tools like [draw.io](https://draw.io) to ensure diagrams are versioned and explained.
 - Save updates.
 
@@ -128,8 +127,8 @@ Confirm the refactored app functions correctly.
 | Criteria               | Points | Description                                   |
 | :---------------------- | :------: | :----------------: |
 | **Team Meetings**          | 5     | Detailed, actionable minutes with clear agendas |
-| **Refined UML Modeling**   | 10     | Updated use case, class, and sequence diagrams |
-| **UI Design Planning**     | 15     | Well-designed wireframes and mockups          |
+| **Refined UML Modeling**   | 10     | Updated use case and **class diagrams** |
+| **UI Design Planning**     | 15     | Well-designed wireframes or mockups          |
 | **Architecture & Principles Implementation** | 50   | Effective MVC setup, SOLID refactoring, and GUI integration |
 | **Manual Validation**      | 10     | Comprehensive scenarios with proof            |
 | **Individual Reflections** | 10     | Insightful responses, including principles discussion |
