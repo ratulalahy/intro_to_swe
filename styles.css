@@ -845,9 +845,129 @@ tr:hover td:last-child {
 /* DARK MODE SUPPORT       */
 /* ======================= */
 
+/* Dark mode for manual theme toggle */
+html[data-theme="dark"] body,
+html[data-theme="dark"] body.myst,
+html[data-theme="dark"] .site,
+html[data-theme="dark"] .site-layout,
+html[data-theme="dark"] .content,
+html[data-theme="dark"] main,
+html[data-theme="dark"] article,
+body[data-theme="dark"],
+body[data-theme="dark"].myst,
+body[data-theme="dark"] .site,
+body[data-theme="dark"] .site-layout,
+body[data-theme="dark"] .content,
+body[data-theme="dark"] main,
+body[data-theme="dark"] article {
+  background: #111827 !important;
+  color: #f3f4f6 !important;
+}
+
+/* Brighter text for manual dark mode */
+html[data-theme="dark"] p,
+html[data-theme="dark"] li,
+html[data-theme="dark"] td,
+html[data-theme="dark"] span,
+html[data-theme="dark"] div {
+  color: #f3f4f6 !important;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+  color: #f9fafb !important;
+}
+
+html[data-theme="dark"] h1 {
+  background: linear-gradient(135deg, #93c5fd, #dbeafe) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+html[data-theme="dark"] h2 {
+  background: linear-gradient(135deg, #93c5fd, #bfdbfe) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border-bottom-color: #374151 !important;
+}
+
+html[data-theme="dark"] h3 {
+  color: #93c5fd !important;
+}
+
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5 {
+  color: #bfdbfe !important;
+}
+
+html[data-theme="dark"] a {
+  color: #93c5fd !important;
+  border-bottom-color: rgba(147, 197, 253, 0.5) !important;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #bfdbfe !important;
+  border-bottom-color: #bfdbfe !important;
+}
+
+/* Brighter To-Do List gradient for manual dark mode */
+html[data-theme="dark"] .text-gradient-todo {
+  background: linear-gradient(135deg, #a78bfa, #60a5fa, #3b82f6) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-weight: 600 !important;
+  text-shadow: 0 2px 4px rgba(147, 197, 253, 0.3) !important;
+  filter: brightness(1.15) !important;
+}
+
+/* Dark mode for system preference */
 @media (prefers-color-scheme: dark) {
   body, body.myst, .site, .site-layout, .content, main, article {
     background: #111827 !important;
+    color: #f3f4f6 !important;
+  }
+
+  /* Brighter text for better contrast */
+  p, li, td, span, div {
+    color: #f3f4f6 !important;
+  }
+
+  /* Headings with better contrast */
+  h1, h2, h3, h4, h5, h6 {
+    color: #f9fafb !important;
+  }
+
+  h1 {
+    background: linear-gradient(135deg, #93c5fd, #dbeafe) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+
+  h2 {
+    background: linear-gradient(135deg, #93c5fd, #bfdbfe) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-bottom-color: #374151 !important;
+  }
+
+  h3 {
+    color: #93c5fd !important;
+  }
+
+  h4, h5 {
+    color: #bfdbfe !important;
+  }
+
+  h6 {
     color: #e5e7eb !important;
   }
 
@@ -855,6 +975,20 @@ tr:hover td:last-child {
     background: #111827 !important;
     border-color: #374151 !important;
   }
+
+  /* List items brighter */
+  ul:not(.secondary-sidebar ul) li,
+  ol li {
+    color: #f3f4f6 !important;
+  }
+
+  /* Blockquotes brighter */
+  blockquote {
+    color: #e5e7eb !important;
+    border-left-color: #60a5fa !important;
+  }
+
+  /* Continue with all other dark mode styles... */
 
   .myst-card,
   div[class*="myst-card"],
@@ -951,11 +1085,11 @@ tr:hover td:last-child {
 
   th {
     background: #374151 !important;
-    color: #e5e7eb !important;
+    color: #f9fafb !important;
   }
 
   td {
-    color: #d1d5db !important;
+    color: #f3f4f6 !important;
     border-color: #374151 !important;
   }
 
@@ -1008,12 +1142,13 @@ tr:hover td:last-child {
   }
 
   .text-gradient-todo {
-    background: linear-gradient(135deg, #2800ca, #005eea);
+    background: linear-gradient(135deg, #a78bfa, #60a5fa, #3b82f6);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 500;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(147, 197, 253, 0.3);
+    filter: brightness(1.15);
   }
 
 /* Dark mode adjustment */
@@ -1043,8 +1178,8 @@ tr:hover td:last-child {
   li a, 
   td a, 
   th a {
-    color: var(--primary-300) !important;
-    border-bottom-color: rgba(147, 197, 253, 0.3) !important;
+    color: #93c5fd !important;
+    border-bottom-color: rgba(147, 197, 253, 0.5) !important;
     font-weight: 500 !important;
   }
 
@@ -1056,35 +1191,35 @@ tr:hover td:last-child {
   li a:hover, 
   td a:hover, 
   th a:hover {
-    color: var(--primary-200) !important;
-    border-bottom-color: var(--primary-200) !important;
+    color: #bfdbfe !important;
+    border-bottom-color: #bfdbfe !important;
   }
 
   /* External links in dark mode */
   a[href^="http"]:not([href*="localhost"]):not([href*="127.0.0.1"]),
   a[target="_blank"] {
-    color: var(--primary-300) !important;
-    border-bottom-color: rgba(147, 197, 253, 0.4) !important;
+    color: #93c5fd !important;
+    border-bottom-color: rgba(147, 197, 253, 0.6) !important;
   }
 
   a[href^="http"]:not([href*="localhost"]):not([href*="127.0.0.1"]):hover,
   a[target="_blank"]:hover {
-    color: var(--primary-100) !important;
-    border-bottom-color: var(--primary-100) !important;
+    color: #dbeafe !important;
+    border-bottom-color: #dbeafe !important;
   }
 
   .nav-link {
-    color: #d1d5db !important;
+    color: #e5e7eb !important;
   }
 
   .nav-link:hover {
-    color: #93c5fd !important;
-    background: rgba(147, 197, 253, 0.1) !important;
+    color: #bfdbfe !important;
+    background: rgba(147, 197, 253, 0.15) !important;
   }
 
   .nav-link.active {
-    color: #93c5fd !important;
-    background: rgba(147, 197, 253, 0.2) !important;
+    color: #bfdbfe !important;
+    background: rgba(147, 197, 253, 0.25) !important;
   }
 
   .top-nav {
@@ -1152,6 +1287,105 @@ tr:hover td:last-child {
   blockquote {
     border-left-color: var(--primary-300) !important;
     color: #d1d5db !important;
+  }
+}
+
+/* ================================ */
+/* DARK MODE: Card & Code Enhancements */
+/* Adds glow, depth, and higher contrast */
+/* Applies to manual theme toggle and system preference */
+/* ================================ */
+
+/* Card glow & elevated appearance */
+html[data-theme="dark"] .myst-card,
+html[data-theme="dark"] div[class*="myst-card"],
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .grid-item-card,
+html[data-theme="dark"] .admonition,
+.theme-dark .myst-card,
+.theme-dark div[class*="myst-card"],
+.theme-dark .card,
+.theme-dark .grid-item-card,
+.theme-dark .admonition {
+  background: linear-gradient(180deg, rgba(31,41,55,0.86), rgba(17,24,39,0.92)) !important;
+  border: 1px solid rgba(99,102,241,0.14) !important;
+  box-shadow: 0 12px 40px rgba(2,6,23,0.6), 0 6px 24px rgba(59,130,246,0.06) !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+  border-radius: 12px !important;
+}
+
+html[data-theme="dark"] .myst-card:hover,
+html[data-theme="dark"] div[class*="myst-card"]:hover,
+html[data-theme="dark"] .card:hover,
+html[data-theme="dark"] .grid-item-card:hover,
+html[data-theme="dark"] .admonition:hover,
+.theme-dark .myst-card:hover,
+.theme-dark div[class*="myst-card"]:hover,
+.theme-dark .card:hover,
+.theme-dark .grid-item-card:hover,
+.theme-dark .admonition:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 24px 60px rgba(2,6,23,0.65), 0 0 0 3px rgba(99,102,241,0.08) !important;
+}
+
+/* Code block glow and contrast */
+html[data-theme="dark"] pre,
+.theme-dark pre {
+  background: linear-gradient(180deg, #0b1220, #0f1724) !important;
+  border: 1px solid rgba(99,102,241,0.12) !important;
+  box-shadow: 0 18px 50px rgba(2,6,23,0.75), inset 0 1px 0 rgba(255,255,255,0.02) !important;
+}
+
+html[data-theme="dark"] pre code,
+.theme-dark pre code {
+  color: #e6f0ff !important;
+}
+
+/* Inline code subtle glow */
+html[data-theme="dark"] :not(pre) > code,
+.theme-dark :not(pre) > code {
+  background: rgba(147,197,253,0.06) !important;
+  color: #cfe9ff !important;
+  border-color: rgba(147,197,253,0.12) !important;
+  box-shadow: 0 4px 18px rgba(59,130,246,0.04) inset !important;
+}
+
+/* Apply similar styles for system dark preference */
+@media (prefers-color-scheme: dark) {
+  .myst-card,
+  div[class*="myst-card"],
+  .card,
+  .grid-item-card,
+  .admonition {
+    background: linear-gradient(180deg, rgba(31,41,55,0.86), rgba(17,24,39,0.92)) !important;
+    border: 1px solid rgba(99,102,241,0.14) !important;
+    box-shadow: 0 12px 40px rgba(2,6,23,0.6), 0 6px 24px rgba(59,130,246,0.06) !important;
+  }
+
+  .myst-card:hover,
+  div[class*="myst-card"]:hover,
+  .card:hover,
+  .grid-item-card:hover,
+  .admonition:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 24px 60px rgba(2,6,23,0.65), 0 0 0 3px rgba(99,102,241,0.08) !important;
+  }
+
+  pre {
+    background: linear-gradient(180deg, #0b1220, #0f1724) !important;
+    border: 1px solid rgba(99,102,241,0.12) !important;
+    box-shadow: 0 18px 50px rgba(2,6,23,0.75), inset 0 1px 0 rgba(255,255,255,0.02) !important;
+  }
+
+  pre code {
+    color: #e6f0ff !important;
+  }
+
+  :not(pre) > code {
+    background: rgba(147,197,253,0.06) !important;
+    color: #cfe9ff !important;
+    border-color: rgba(147,197,253,0.12) !important;
+    box-shadow: 0 4px 18px rgba(59,130,246,0.04) inset !important;
   }
 }
 
