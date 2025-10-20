@@ -4,7 +4,7 @@ description: Testing, robustness, and code smell removal
 ---
 
 ## Overview
-Your {span .text-gradient-todo}`**To-Do List**` app is now feature-rich, visually polished, and architecturally sound—this milestone is about **proving its reliability and fine-tuning it for excellence**. In just one focused week, you’ll put your code under the microscope: building a targeted test suite, aiming for a reasonable coverage percentage (~80%), and refactoring problem areas to ensure the system is clean, maintainable, and ready for real-world use.
+Your {span .text-gradient-todo}`**To-Do List**` app is now feature-rich, visually polished, and architecturally sound—this milestone is about **proving its reliability and fine-tuning it for excellence**. In just one focused week, you’ll put your code under the microscope: building a targeted test suite, aiming for a reasonable coverage percentage (e.g.: ~20%), and refactoring problem areas to ensure the system is clean, maintainable, and ready for real-world use.
 
 This is not a feature-building sprint—it’s a **quality sprint**. You’ll combine unit tests for individual components with integration tests for key flows. Alongside testing, you’ll identify and fix code smells, and add robust error handling with {span .term}`try/except` blocks, simplify complex logic, and eliminate redundancy, keeping changes isolated and well-documented. Updated project artifacts—like adding test summaries to your SRS and refining diagrams if necessary—will ensure your technical documentation matches your final codebase.
 
@@ -35,7 +35,7 @@ Upon successful completion of this milestone, you will be able to:
 
 - Create 20+ tests for features/patterns in `/task_manager_app/tests` (unit/integration, TDD approach).
 
-- Generate coverage report (80%+, using pytest-cov); include in `/task_manager_app/docs/coverage.md`.
+- Generate coverage report (using pytest-cov or similar); include in `/task_manager_app/docs/coverage.md`.
 
 ### 2. Refactoring
 
@@ -88,7 +88,7 @@ Upon successful completion of this milestone, you will be able to:
 
     - **How did you improve the robustness of your code? (50–100 words):** Discuss specific changes made for error handling.
 
-    - **Feedback/comment about this milestone (50 words):** Suggest improvement.
+    - **Reflection about this milestone (50 words):** Reflect on your experience and learning during this milestone.
 
 ### Repository Documents
 
@@ -126,7 +126,7 @@ All documents must be checked into the GitHub repository under `/task_manager_ap
 
 | Criteria               | Points | Description                                   |
 | :---------------------- | :------: | :----------------: |
-| **Test Suite & Coverage**  | 20     | Comprehensive tests, 80%+ coverage            |
+| **Test Suite & Coverage**  | 20     | Comprehensive tests, test coverage            |
 | **Refactoring and Robustness**            | 20     | Smells fixed, documented improvements         |
 | **Document Updates**       | 5     | SRS/test details added, class diagram if needed |
 | **Tool Setup & Releases**  | 5     | Updated backlog/README, proper releases       |

@@ -158,7 +158,7 @@ Use GitHub Releases to version and document project checkpoints, just as profess
   - **Your Contribution to the project (50–100 words):** Describe your role (e.g., tool setup).
   - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate and explain collaboration.
   - **How does the project vision align with your software engineering goals? (50–100 words):** Connect to personal aspirations.
-  - **Feedback on this milestone (50 words):** Suggest improvements.
+  - **Reflection on this milestone (50 words):** Reflect on your experience and learning during this milestone.
 
 ### Repository Documents
 - [ ] **Team Formation** (_suggested: `/task_manager_app/docs/team_formation.md`_)

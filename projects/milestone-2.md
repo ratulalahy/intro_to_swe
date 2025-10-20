@@ -118,7 +118,7 @@ Focus on core functionality for a testable prototype.
   - **Your Contribution to the project (50–100 words):** Describe your role (e.g., UML modeling).
   - **Most important thing you learned in this milestone (40–60 words):** Share a key skill, concept, or tool you now understand better.
   - **How does the project vision align with your software engineering goals? (50–100 words):** Connect to personal aspirations.
-  - **Feedback on this milestone (50 words):** Suggest improvements.
+  - **Reflection on this milestone (50 words):** Reflect on your experience and learning during this milestone.
 
 ### Repository Documents
 - [ ] **Refined Product Backlog** (_suggested: `/task_manager_app/docs/backlog/`_)

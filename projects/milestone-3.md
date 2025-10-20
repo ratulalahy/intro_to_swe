@@ -106,7 +106,7 @@ Confirm the refactored app functions correctly.
   - **Your Contribution to the project (50–100 words):** Describe your role (e.g., GUI integration).
   - **Rating team dynamics (1–5 scale, with justification, 50 words):** Rate and explain collaboration.
   - **What design principles and architecture have you incorporated, and how are they helping your code? (50–100 words):** Discuss SOLID, MVC, and benefits like modularity.
-  - **Feedback on this milestone (50 words):** Suggest improvements.
+  - **Reflection on this milestone (50 words):** Reflect on your experience and learning during this milestone.
 
 ### Repository Documents
 - [ ] **Refined UML** (_suggested: `/task_manager_app/docs/uml/`_)
