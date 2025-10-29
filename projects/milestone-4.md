@@ -122,7 +122,7 @@ Verify that new features and patterns work as intended.
 | Criteria               | Points | Description                                   |
 | :---------------------- | :------: | :----------------: |
 | **Team Meetings**          | 5     | Detailed agendas and actionable minutes, emphasizing natural pattern use |
-| **Design Pattern Selection & Drafts** | 10    | Thoughtful choice of 3-5 patterns with strong rationale and alternatives considered |
+| **Design Pattern Selection & Drafts** | 10    | Thoughtful choice of 1+ patterns with strong rationale and alternatives considered |
 | **Feature Implementation & Integration** | 65   | 3-7 new features integrated naturally with patterns, MVC/SOLID/UI; no forced applications |
 | **UML Updates**            | 5     | Accurate reflections of patterns in diagrams  |
 | **Manual Validation and Testing**      | 10     | Comprehensive scenarios with proof of functionality and adherence to design principles |
