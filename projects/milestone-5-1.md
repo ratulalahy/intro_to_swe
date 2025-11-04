@@ -19,8 +19,6 @@ Upon successful completion of this milestone, you will be able to:
 - **Develop and execute automated tests** using unit and integration testing.
 - **Measure and report code coverage** using tools like `pytest-cov` or `coverage.py`.
 - **Analyze test results** to assess the completeness and reliability of your codebase.
-- **Update documentation** to reflect your testing outcomes and reliability evidence.
-- **Communicate testing progress** through updated GitHub Project boards and release notes.
 
 ---
 
@@ -127,9 +125,36 @@ Use checkboxes to confirm completion:
 | :----------------------------- | :------: | :-------------------------------------------- |
 | **Test Suite (Unit & Integration)** | 25 | Quality, variety, and reliability of tests     |
 | **Coverage Report**            | 15 | Clear report with analysis and interpretation |
-| **Documentation Updates**      | 5  | SRS, README, and report properly updated       |
+| **Documentation Updates**      | 5  | README, and report properly updated       |
 | **Tool Setup & Releases**      | 5  | Coverage tool used, clean release notes       |
 | **Meeting Minutes**            | 5  | Team collaboration documented                 |
 | **Individual Reflections**     | 5  | Clear insights on testing process             |
 
-{span .text-red-500}`**Penalties:** 20% deduction for missing progress check.`
+---
+
+## Resources
+### Textbook
+- Chapter 8: Testing (Unit, Coverage, TDD)
+- Chapter 9: Refactoring (Smells, Techniques)
+
+### Tutorials
+- [Pytest Coverage Guide](https://pytest-cov.readthedocs.io/en/latest/)
+- [Refactoring in Python](https://refactoring.com/catalog/)
+- [Robustness with Try/Except](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
+
+### Best Practices
+- Update GitHub Project board with test tasks for traceability.
+- Use commit messages like "Refactor duplication in task class".
+- Ensure releases have detailed changelogs.
+
+> **Refine your project to peak quality—rigorous testing, robust error handling, and code smell removal fortify your engineering prowess.**
+
+
+### All Project Milestones
+1. [Milestone 1](milestone-1)
+2. [Milestone 2](milestone-2)
+3. [Milestone 3](milestone-3)
+4. [Milestone 4](milestone-4)
+5. 📌 **[Milestone 5](milestone-5-1)**
+6. [Presentation](milestone-5-2)
+7. [Final Submission](milestone-final-submission)
