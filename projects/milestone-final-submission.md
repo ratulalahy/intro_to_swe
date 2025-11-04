@@ -1,139 +1,264 @@
 ---
-title: "Final Project Submission: Polish and Issue Resolution"
-description: Final refinement and organization of project repository based on feedback
+title: "Final Project Submission: Refactoring and Polish"
+description: Refactor code, improve robustness and typing, organize the repository, and ship a professional README
 ---
 
-# Final Project Submission: Polish and Issue Resolution
+
 
 ## Overview
 
-As the culminating step in your Introduction to Software Engineering course project, this final submission focuses on refining your {span .text-gradient-todo}`**To-Do List**` application based on feedback from Milestone 5.2 (presentation and retrospective). This phase is dedicated to addressing identified issues, reorganizing project artifacts for clarity and accessibility, and ensuring all components are properly placed and documented. Emphasizing professional polish and maintainability, you will apply insights from the semester to produce a cohesive, production-ready repository. This mirrors post-review revisions in industry workflows, where teams iterate to resolve defects and optimize structure before archiving or handover.
+You’ve validated your {span .text-gradient-todo}`**To-Do List**` app through rigorous testing—now it’s time to **refine, polish, and present your final product**.  
 
-By completing this submission, your team will deliver a fully resolved, well-organized project repository, demonstrating attention to detail and commitment to quality engineering standards.
+This milestone is all about **engineering excellence**: completing any unfinished aspects of the project, refactoring code for clarity and maintainability, improving robustness through exception handling, enhancing documentation, and ensuring your repository is clean, readable, and professional.  
 
-## Learning Objectives
-
-Upon successful completion of this final submission, you will be able to:
-
-- Systematically identify and resolve technical, documentation, and structural issues from prior feedback, enhancing project integrity.
-- Reorganize repository contents, including the README file, to improve navigability and usability for external reviewers or future maintainers.
-- Strategically add or relocate content and documents (e.g., diagrams, reports) to appropriate locations, ensuring comprehensive and logical organization.
-- Update tools and releases to reflect final changes, maintaining a complete version history.
-- Apply best practices in project closure, such as clear changelogs and verification of resolutions.
-
-## Deliverables
-
-Submit the GitHub release link for the final submission via the course platform. Commit all updates to the repository, linking resolved items in release notes. Focus on fixes and organization—no new features or reflections; reference textbook Chapters 9 (Refactoring for code fixes) and 10 (DevOps for tool updates) as needed.
-
-### 1. Issue Resolution Log
-**Format:** Markdown or PDF in repo/docs/final-resolution.md, 1-2 pages
-
-- List of issues from Milestone 5.2 feedback (e.g., "Bug in task search function," "Incomplete UML diagram labels," "Disorganized docs folder").
-- For each: Description, resolution steps taken (e.g., "Fixed via commit XYZ: Adjusted search algorithm"), and verification (e.g., "Tested with new unit test; coverage increased to 85%").
-
-### 2. Reorganized README File
-**Format:** README.md in repo root
-
-- Updated structure: Sections for project overview, installation/setup, usage guide (with examples), architecture overview (linking to diagrams), testing instructions, and contribution guidelines.
-- Ensure brevity and clarity; include badges (e.g., for CI status) if applicable.
-
-### 3. Content and Document Additions/Relocations
-**Format:** Throughout repo
-
-- Place artifacts in logical folders (e.g., /docs for SRS, UML, reports; /src for code; /tests for test files).
-- Add missing content if necessary (e.g., a consolidated architecture diagram PDF in /docs, or a setup script in /scripts).
-- Examples: Move stray UML images to /docs/uml/; add a LICENSE file if absent.
-
-### 4. Updated Codebase and Tests
-**Format:** In repo/src and /tests
-
-- Fixes for any code-related issues (e.g., refactor duplicated logic, patch bugs).
-- Updated tests to validate resolutions.
-
-### 5. Tool Finalization
-
-- **GitHub Projects:** Close all open issues; archive project boards if complete.
-- **GitHub:** Final commits; ensure CI/CD runs successfully on updates.
-
-### 6. GitHub Release
-
-Major version (e.g., v6.0) tagged "final-submission". Include resolution log and key updates in notes; changelog summarizing fixes (e.g., "Resolved 5 issues from presentation feedback; reorganized repo structure"). Submit the release URL—no separate ZIP; instructor reviews via repo.
-
-**Example GitHub Release Creation:**
-- Repo > Releases > New release.
-- Tag: "final-submission-v6.0".
-- Title: "Final Project Submission".
-- Description: "- Issue Resolution Log: [docs/final-resolution.md] \n - Updated README: [README.md] \n - Changelog: Fixed bugs in search; relocated docs to /docs folder."
-
-## Tasks and Instructions
-
-Base work on Milestone 5.2 feedback; use a dedicated branch like "final-fixes" for changes.
-
-### 1. Issue Identification and Prioritization
-- Compile feedback from presentation/retrospective/instructor comments.
-- Categorize (e.g., code bugs, doc gaps, structure issues); prioritize critical fixes.
-
-### 2. Code and Test Fixes
-- Address bugs/refactors; rerun tests and CI pipeline to confirm.
-- Commit with messages like "Fix: Resolved search bug per feedback."
-
-### 3. Repository Reorganization
-- Audit folder structure: Standardize (e.g., /src/main.py for entry point).
-- Relocate files (e.g., move old reports to /docs/archive if redundant).
-
-### 4. README Enhancement
-- Rewrite for completeness: Include quick-start, dependencies, and links to key files.
-- Add sections like "Known Issues" (if any remain) or "Future Work."
-
-### 5. Content Additions
-- If gaps exist (e.g., missing test coverage doc), create and place them appropriately.
-- Ensure all semester deliverables are accessible (e.g., link milestones in README).
-
-### 6. Verification and Release
-- Test full app; confirm no regressions.
-- Create the final release with detailed notes.
-
-## Evaluation Rubric
-
-Total: **20 points**. Focus on resolution thoroughness and organization.
-
-| Criteria | Points | Description |
-|----------|--------|-------------|
-| **Issue Resolution** | 10 | All feedback addressed; detailed log with verifications. |
-| **README Reorganization** | 5 | Clear, comprehensive README; user-friendly and professional. |
-| **Content/Doc Placement** | 5 | Logical structure; additions fill gaps effectively. |
-| **Code/Test Updates** | 5 | Fixes implemented; tests pass without issues. |
-| **Tool & Release** | 5 | Final updates; informative release notes. |
-
-
-## Resources and Best Practices
-
-
-### Tool Guides
-- [Basic writing and formatting syntax by GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [The Ultimate Guide to Writing a Great README.md for Your Project](https://medium.com/@kc_clintone/the-ultimate-guide-to-writing-a-great-readme-md-for-your-project-3d49c2023357)
-- [Make a README](https://www.makeareadme.com/)
-- [Awesome README](https://github.com/matiassingers/awesome-readme)
-
-### Tips for Excellence
-- **Thoroughness:** Cross-check against feedback; test on fresh clone.
-- **Professionalism:** Use consistent naming; add a project logo if desired.
-- **Avoid Pitfalls:** Backup before reorganizing; verify links.
-
-### Support
-- Final office hours for clarification.
+You’ll also finalize your GitHub release, README, and documentation artifacts, ensuring everything reflects the quality of your software engineering journey. The result should be a product that not only *works* but also *feels production-ready*—organized, well-documented, and robust.
 
 ---
 
-**This submission perfects your project—meticulous fixes ensure a standout portfolio piece.**
+## Learning Objectives
 
+Upon successful completion of this milestone, you will be able to:
 
-### All Project Milestones
-1. [Milestone 1](milestone-1)
-2. [Milestone 2](milestone-2)
-3. [Milestone 3](milestone-3)
-4. [Milestone 4](milestone-4)
-5. [Milestone 5](milestone-5-1)
-6. [Presentation](milestone-5-2)
-7. 📌 **[Final Submission](milestone-final-submission)**
+- **Complete unfinished project elements** including code, features, and documentation to deliver a fully functional app.
 
+- **Refactor and improve** code structure, readability, and maintainability.  
+
+- **Identify and remove code smells**, improving performance and clarity.  
+
+- Add **exception handling** for robust runtime behavior.  
+
+- Enhance **documentation and comments** for clarity and understanding.  
+
+- Apply **typing, docstrings, and modular organization** for professional code quality.  
+
+- Deliver a **final, well-documented release** with polished artifacts.  
+
+---
+
+## Tasks and Instructions
+
+### 1. Complete Unfinished Project Elements
+
+Review your project for any incomplete or pending items and finalize them.
+
+- Address any unfinished code, features, or bug fixes from previous milestones.
+
+- Update and complete all documentation, diagrams, and artifacts that were drafted but not finalized.
+
+- Ensure the entire app is fully functional, integrated, and meets the original requirements outlined in the SRS.
+
+- Verify that all aspects (e.g., UI, backend, testing) are cohesive and ready for final submission.
+
+Document these completions in `/task_manager_app/docs/final_completions.md`:
+
+  - List of unfinished items addressed.
+
+  - Brief descriptions of changes made.
+
+  - Links to relevant commits or updated files.
+
+### 2. Code Refactoring and Quality Improvements
+
+Perform a final cleanup pass on your project. Refactor any parts that feel complex, redundant, or inconsistent.
+
+- Identify **5+ code smells** and fix them (duplication, long methods, inconsistent naming, etc.).
+
+- Apply **PEP 8** styling, proper function/variable names, and consistent indentation.
+
+- Add **docstrings** (`""" """`) to all public classes and functions.
+
+- Include **type hints** throughout (`def add_task(task: Task) -> None:`).
+
+- Simplify and modularize any overly long code blocks.
+
+Document these updates in `/task_manager_app/docs/refactoring.md`:
+
+  - Before/After code snippets.
+
+  - Description of the issue (smell) and the fix.
+
+  - Justification of improvement.
+
+### 3. Robustness and Exception Handling
+
+Improve system reliability by handling edge cases and unexpected errors gracefully.
+
+- Add meaningful `try/except` blocks where user or file interactions may fail.
+
+- Log or print user-friendly error messages.
+
+- Document changes in `/task_manager_app/docs/robustness.md` with:
+
+  - Description of changes.
+
+  - Examples of handled exceptions.
+
+### 4. Documentation and Repository Cleanup
+
+Ensure your documentation and repo reflect your final, polished state.
+
+- **README.md** (top-level):
+
+  - Clear project overview and installation instructions.
+
+  - Screenshots or GIFs of the app (if available).
+
+  - Section on testing and refactoring outcomes.
+
+  - Contributor information and acknowledgments.
+
+  - Include visual or presentation artifacts if applicable.
+
+- **SRS (`/task_manager_app/docs/srs.md`):**
+
+  - Updated with final architecture diagrams or design refinements.
+
+  - Notes on testing and robustness sections.
+
+- **Docs Folder (`/task_manager_app/docs`):**
+
+  - Include all artifacts: `coverage.md`, `refactoring.md`, `robustness.md`, `final_completions.md`, `meeting_minutes/`, etc.
+
+### 5. GitHub Release
+
+- Create a **final release** (`v6.0`, tagged `final-submission`), summarizing:
+
+  - Key improvements, completions, and refactoring efforts.
+
+  - Robustness and code smell fixes.
+
+  - Coverage and test outcomes.
+
+  - Link all documentation (coverage, refactoring, SRS, etc.).
+
+  - Add screenshots or visual assets for presentation polish.
+
+### 6. Presentation Integration
+
+Ensure your presentation materials reflect the technical improvements made.
+
+- Incorporate short before/after code examples into slides (if applicable).
+
+- Emphasize your refactoring process, testing results, and design choices.
+
+- Highlight professional polish (typing, docstrings, structured repo).
+
+### 7. Individual Reflections
+
+Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#submission-checklist)_).
+
+---
+
+## Submission Checklist
+
+### Submit via Canvas
+
+A `.md` file containing:
+
+- **Final GitHub release link:**  
+
+  (e.g., `https://github.com/user_name/project_name/releases/tag/v6.0`)
+
+- **GitHub Project board link:**  
+
+  (e.g., `https://github.com/user_name/project_name/projects/1`)
+
+- **Reflection Answers:**
+
+  - **Your contribution to final improvements (50–100 words):**  
+
+    What specific refactoring, documentation, or robustness improvements did you contribute?
+
+  - **How did refactoring improve your code quality? (50–100 words):**  
+
+    Discuss how your changes made the code clearer or more maintainable.
+
+  - **How did you improve robustness and readability? (50–100 words):**  
+
+    Mention specific exception handling or readability enhancements.
+
+  - **How did documentation improve your project? (50–100 words):**  
+
+    Explain how organized documentation helps the user and future developers.
+
+  - **Final reflection (50 words):**  
+
+    Reflect on your journey, team collaboration, and engineering growth.
+
+---
+
+### Repository Documents
+
+All documents must be up to date, committed, and linked in your final release.
+
+Use checkboxes to confirm completion:
+
+- [ ] **Final Completions Log** (`/task_manager_app/docs/final_completions.md`)  
+
+  - Unfinished items addressed with descriptions.
+
+- [ ] **Refactoring Log** (`/task_manager_app/docs/refactoring.md`)  
+
+  - Smells identified, fixes, before/after examples.
+
+- [ ] **Robustness Improvements** (`/task_manager_app/docs/robustness.md`)  
+
+  - Error handling additions and justifications.
+
+- [ ] **Updated SRS** (`/task_manager_app/docs/srs.md`)  
+
+  - Final testing and robustness details.
+
+- [ ] **Updated README.md** (root)  
+
+  - Clear, professional overview, visuals, and setup guide.
+
+- [ ] **Coverage Report** (`/task_manager_app/docs/coverage.md`)  
+
+  - Linked and updated from Milestone 5.1.
+
+- [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_5/`)  
+
+  - Final team discussion notes.
+
+---
+
+### GitHub Releases
+
+  - [ ] Final Release (`v6.0`)  
+
+  - [ ] All documents linked in release notes  
+
+### GitHub Project Board
+
+  - [ ] All tasks marked completed with clear traceability  
+
+---
+
+## Evaluation Rubric (40 Points)
+
+| Criteria                          | Points | Description |
+
+| :-------------------------------- | :------: | :----------- |
+
+| **Project Completion and Finalization** | 10 | All unfinished elements addressed; app fully functional |
+
+| **Refactoring and Code Quality**  | 10 | Code smells removed, clarity and maintainability improved |
+
+| **Robustness Improvements**       | 5 | Exception handling and resilience enhancements |
+
+| **Documentation and Readability** | 10 | README, SRS, and supporting docs are professional and complete |
+
+| **Final Release and Organization**| 5 | Clean release notes, repo structure, and polish |
+
+---
+
+## Resources
+
+- [Refactoring catalog](https://refactoring.com/)
+- [Code smells overview](https://refactoring.guru/refactoring/smells)
+- [Python docstrings (PEP 257)](https://peps.python.org/pep-0257/)
+- [Type hints (PEP 484)](https://peps.python.org/pep-0484/)
+- [Python exceptions](https://docs.python.org/3/tutorial/errors.html)
+
+You may extend or enhance functionality and fix bugs in this phase, provided changes are covered by tests and documented in the release notes.

@@ -2,18 +2,17 @@
 
 A comprehensive course website built with [MyST Markdown](https://mystmd.org) covering fundamental software engineering principles, practices, and methodologies.
 
-## 🎓 Course Information
+## Course Information
 
 - **Course Code:** CS 2450
-- **Semester:** Spring 2025
 - **Instructor:** Ratul Alahy
 - **Institution:** Utah Valley University
 
-## 🌐 Website
+## Website
 
 Visit the course website: [https://ratulalahy.github.io/intro_to_swe](https://ratulalahy.github.io/intro_to_swe)
 
-##  Course Topics
+## Course Topics
 
 - Introduction to Software Engineering
 - Version Control with Git and GitHub
@@ -28,7 +27,7 @@ Visit the course website: [https://ratulalahy.github.io/intro_to_swe](https://ra
 - Refactoring
 - Kanban
 
-## 🏗️ Repository Structure
+## Repository Structure
 
 ```
 ├── lectures/              # Interactive lecture materials
@@ -43,7 +42,7 @@ Visit the course website: [https://ratulalahy.github.io/intro_to_swe](https://ra
 └── index.md             # Homepage
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Content:** MyST Markdown
 - **Hosting:** GitHub Pages
@@ -87,7 +86,7 @@ myst build --html
 
 The built site will be in `_build/html/`.
 
-## 📝 Content Development
+## Content Development
 
 ### Adding New Content
 
@@ -107,7 +106,7 @@ The built site will be in `_build/html/`.
 - **Responsive Design:** Mobile-friendly layouts
 - **Accessibility:** Semantic markup and alt text
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 The course website emphasizes:
 
@@ -124,7 +123,7 @@ The course website emphasizes:
 - **Projects:** 3 team-based developments (1000 points total)
 - **Participation:** In-class activities and engagement (300 points total)
 
-## 🤝 Contributing
+## Contributing
 
 This repository serves as course material. Students and faculty can:
 
@@ -132,12 +131,12 @@ This repository serves as course material. Students and faculty can:
 - Suggest improvements via Pull Requests
 - Share additional resources in Discussions
 
-## 📄 License
+## License
 
 Course content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
 Code examples and projects may have different licenses as specified.
 
-##  Links
+## Links
 
 - **Course Website:** [https://ratulalahy.github.io/intro_to_swe](https://ratulalahy.github.io/intro_to_swe)
 - **MyST Documentation:** [https://mystmd.org](https://mystmd.org)

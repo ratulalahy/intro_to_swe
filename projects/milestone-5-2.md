@@ -9,81 +9,71 @@ description: Project demonstration and presentation to stakeholders
 
 ## Overview
 
-> In this final milestone, your group will deliver a **10-minute in-person presentation** to showcase your {span .text-gradient-todo}`**To-Do List**` project, covering all aspects from planning to testing. This is your chance to present your work to the instructor and peers in class, like a client meeting with executives. You’ll highlight features, software engineering practices, **testing**, **robustness (try-catch)**, and **code smell removal**. 
+> In this milestone, your group will deliver a **10-minute in-person presentation** to showcase your {span .text-gradient-todo}`**To-Do List**` project. Treat this as a professional client presentation where you demonstrate your team’s work, communication, and engineering quality.  
+> Focus on clearly explaining your project’s purpose, design, implementation, and testing. Highlight your **most outstanding features**; the parts of the project you are most proud of, and show how your engineering practices (e.g., **testing**, **robustness (try-catch)**, and **code smell removal**) contributed to a high-quality product.
 
-By completing this milestone, you’ll demonstrate your project’s quality and your team’s engineering skills.
+By completing this milestone, your team will demonstrate both the technical depth and professional polish of your work.
 
 ---
 
-## Deliverables
+## Learning Objectives
+Upon successful completion of this milestone, you will be able to:
 
-> **Submit** a `GitHub` release link for the final submission via the course platform. Commit slides and materials to the repository (e.g., in `docs`), linking them in release notes. Include a comment on **code smells** removed (e.g., “Removed long methods and duplicated code”).
+- Communicate project details professionally in a clear, concise presentation.
+- Highlight key achievements like outstanding features and engineering practices.
+- Demonstrate functionality via a reliable live demo.
+- Showcase collaboration using GitHub tools.
+- Handle Q&A on design and implementation.
+
+---
+
+## Presentation Requirements
+
+Your presentation should demonstrate a complete and professional view of your project. The audience should understand **what you built**, **how you built it**, and **why it matters**.
+
+- **Duration**: 10 minutes + 5-minute Q&A.
 
 ### 1. **Presentation Slides**
-**Format:** *PDF or PowerPoint* in `docs`  
 
-- Clean, numbered slides covering:
-  - Project overview: Purpose and key features.
-  - Development: Planning, requirements, UML diagrams, wireframes.
-  - Engineering: Design principles, patterns, **testing**, **robustness (try-catch)**, **code smell removal**.
-  - Live demo: Show working features (e.g., task creation, prioritization).
-  - Future ideas: Possible enhancements (e.g., mobile app).
+**Format:** *PDF or PowerPoint* (commit to `docs` folder in your repository)
 
-### 2. **In-Person Presentation**
-**Format:** 10-minute presentation in class + 5–10-minute Q&A  
+Your slides should be well-structured, visual, and concise. Include the following:
 
-- All team members must speak and answer questions.
-- Show your `GitHub Project` board to explain team contributions.
+- **Project Overview:** Purpose, audience, and main problem solved.  
+- **Outstanding Features:** Highlight unique or technically challenging aspects that make your project stand out.  
+- **Development Process:** Planning, requirements, UML diagrams, and wireframes.  
+- **Engineering Practices:** Design principles, patterns, **testing**, **robustness**, and **code smell removal**.  
+- **Demo Plan:** What you will show live and how it demonstrates the project’s reliability.  
+- **Future Enhancements:** Potential improvements, scalability ideas, or new features.
 
-### 3. **Tool Updates**
-- **`GitHub Projects`:** Mark tasks complete; update backlog.
-- **`GitHub`:** Commit slides; update `README` with presentation details.
-
-### 4. **Individual Reflections**
-**Format:** Submitted via form  
-
-- Answer: (1) How did presenting highlight your project’s strengths? (2) What engineering aspect (e.g., testing, code smells) are you proud of?
-
-### 5. **GitHub Release**
-
-#### Final Submission (End of Week)
-Major version (e.g., `v5.2`) tagged `"milestone5.2"`. Link slides and materials in release notes, with a changelog and comment on **code smells** removed (e.g., “Removed long methods and duplicated code”). **Submit** URL.
-
-**Example GitHub Release:**  
-```markdown
-- Repo > Releases > New release.
-- Tag: "milestone5.2".
-- Title: "Milestone 5.2 Final".
-- Description: "- Slides: [docs/slides.pdf] \n- Changelog: Added presentation materials. \n- Code Smells Removed: Long methods, duplicated code."
-```
-
+### 2. **Live Demo and Supporting Artifacts**
+**Format:** Integrated into the presentation
+- Conduct a live demo to showcase the application's functionality, robustness (e.g., try-catch error handling), and outstanding features.
+- Reference the GitHub Projects board to illustrate work distribution, task completion, and team contributions.
+- Highlight relevant Git commits to explain key development milestones, code changes, and engineering practices.
+- All team members must participate and present.  
+- The presentation should flow logically and stay within the time limit.  
+- Use visuals and live demonstration effectively to keep the audience engaged.  
+- Be prepared to answer questions on design, testing, and implementation choices.
+- **Tips**:
+  - Rehearse for smooth delivery.
+  - Test the demo for **robustness (try-catch)**.
+  - Review sample: [https://www.youtube.com/watch?v=obmtKP0fAE4](https://www.youtube.com/watch?v=obmtKP0fAE4)
 ---
 
-## Presentation Guidelines
-
-- **Duration**: 10 minutes + 5–10-minute Q&A.
-- **Content**:
-  - **Overview**: Purpose and features.
-  - **Process**: Planning, requirements, UML, wireframes, development, **testing**.
-  - **Engineering**: Principles, patterns, **robustness**, **code smell removal**.
-  - **Demo**: Show the app working.
-  - **Future**: Ideas for improvement.
-- **GitHub Projects**: Display board to show contributions.
-- **Team**: All members speak equally and handle Q&A.
-- **Tips**:
+##### Tips
   - Rehearse for smooth delivery.
   - Test the demo for **robustness (try-catch)**.
   - Review sample: [https://www.youtube.com/watch?v=obmtKP0fAE4](https://www.youtube.com/watch?v=obmtKP0fAE4)
 
 ---
 
-## Tasks
+## Submission Checklist
+### Repository Documents
+- [ ] `/docs/slides.pdf` or `/docs/slides.pptx` committedion
 
-1. **Create Slides**: Cover all project aspects; use visuals (e.g., UML, `GitHub Projects` screenshots).
-2. **Prepare Demo**: Test app for **robustness**; script key features.
-3. **Rehearse**: Practice as a team; assign roles.
-4. **Update Tools**: Sync `GitHub Projects`/`GitHub`; update `README`.
-5. **Release**: Create `v5.2` with slides, changelog, and **code smell** comment.
+### Submit via Canvas:
+- [ ] **Direct presentation slides link** (e.g., `https://github.com/user_name/project_name/blob/main/docs/slides.pdf`)
 
 ---
 
@@ -95,8 +85,7 @@ Total: **20 points**. Assessed on clarity and professionalism.
 |------------------------------------|------------|---------------------------------------------------------------------------------|
 | **Presentation Content & Demo**    | 10         | Covers all project aspects; demo shows **robustness**.                           |
 | **Team Participation & Professionalism** | 5     | Equal participation; confident Q&A.                                             |
-| **Slides & Supporting Materials**  | 3          | Clear slides; includes **code smell** comment in release.                        |
-| **Individual Reflections**         | 2          | Ties to project strengths and engineering.                                      |
+| **Slides & Supporting Materials**  | 5          | Clear slides; includes **code smell** comment in release.                        |
 
 
 ---
