@@ -111,7 +111,6 @@ Use checkboxes to confirm completion:
 ---
 
 ### GitHub Releases
-  - [ ] Progress Check  
   - [ ] Final Submission  
 
 ### GitHub Project Board
