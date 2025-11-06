@@ -134,7 +134,6 @@ Use checkboxes to confirm completion:
 ## Resources
 ### Textbook
 - Chapter 8: Testing (Unit, Coverage, TDD)
-- Chapter 9: Refactoring (Smells, Techniques)
 
 ### Tutorials
 - [Pytest Coverage Guide](https://pytest-cov.readthedocs.io/en/latest/)
@@ -145,9 +144,6 @@ Use checkboxes to confirm completion:
 - Update GitHub Project board with test tasks for traceability.
 - Use commit messages like "Refactor duplication in task class".
 - Ensure releases have detailed changelogs.
-
-> **Refine your project to peak quality—rigorous testing, robust error handling, and code smell removal fortify your engineering prowess.**
-
 
 ### All Project Milestones
 1. [Milestone 1](milestone-1)

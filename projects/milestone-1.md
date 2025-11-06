@@ -34,7 +34,7 @@ Before coding begins, a well-organized digital workspace must be in place. This 
 
 - Initialize a [GitHub](https://github.com/) Repository:
   - Create a new **private** repository under one team member’s account.
-  - Add all team members as collaborators. Add your instructor (id: ratulalahy) too.
+  - Add all team members as collaborators. Add your instructor (id: ratulalahy) with `Admin` permissions.
   - Add folders:
     - `/task_manager_app/src/`: source code
     - `/task_manager_app/docs/`: documentation and planning assets
