@@ -55,11 +55,7 @@ Your slides should be well-structured, visual, and concise. Include the followin
 - The presentation should flow logically and stay within the time limit.  
 - Use visuals and live demonstration effectively to keep the audience engaged.  
 - Be prepared to answer questions on design, testing, and implementation choices.
-- **Tips**:
-  - Rehearse for smooth delivery.
-  - Test the demo for **robustness (try-catch)**.
-  - Review sample: [https://www.youtube.com/watch?v=obmtKP0fAE4](https://www.youtube.com/watch?v=obmtKP0fAE4)
----
+
 
 ##### Tips
   - Rehearse for smooth delivery.
