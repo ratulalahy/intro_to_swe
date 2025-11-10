@@ -93,9 +93,8 @@ Total: **20 points**. Assessed on clarity and professionalism.
   - [`PowerPoint`](https://support.microsoft.com/en-us/powerpoint) for slides.
   - [`Google Slides`](https://www.google.com/slides/about/) for team editing.
   - [`Canva`](https://www.canva.com/) for visual slides.
-  - [`pytest-cov`](https://pytest-cov.readthedocs.io/en/latest/) for coverage.
-  - [`coverage.py`](https://coverage.readthedocs.io/en/latest/) for coverage.
-  - [`unittest`](https://docs.python.org/3/library/unittest.html) for testing.
+  - [Presentation Design: Beginner’s Guide](https://visme.co/blog/presentation-design/?utm_source=chatgpt.com) for design tips.
+  - [20 presentation ideas that will inspire you](https://www.canva.com/learn/presentation-ideas/?utm_source=chatgpt.com)
 - **Tips**:
   - Ensure demo runs smoothly.
   - Test presentation setup.
@@ -104,7 +103,6 @@ Total: **20 points**. Assessed on clarity and professionalism.
 
 ---
 
-> **Show off your project’s quality—deliver a clear, confident presentation!**
 
 ### All Project Milestones
 1. [Milestone 1](milestone-1)
