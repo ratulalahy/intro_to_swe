@@ -81,7 +81,7 @@ Total: **20 points**. Assessed on clarity and professionalism.
 |------------------------------------|------------|---------------------------------------------------------------------------------|
 | **Presentation Content & Demo**    | 10         | Covers all project aspects; demo shows **robustness**.                           |
 | **Team Participation & Professionalism** | 5     | Equal participation; confident Q&A.                                             |
-| **Slides & Supporting Materials**  | 5          | Clear slides; includes **code smell** comment in release.                        |
+| **Slides & Supporting Materials**  | 5          | Visually clear, well-organized, supporting materials (e.g., visuals, data, code)     |
 
 
 ---
@@ -97,7 +97,6 @@ Total: **20 points**. Assessed on clarity and professionalism.
   - [`coverage.py`](https://coverage.readthedocs.io/en/latest/) for coverage.
   - [`unittest`](https://docs.python.org/3/library/unittest.html) for testing.
 - **Tips**:
-  - Highlight **testing** and **code smell removal**.
   - Ensure demo runs smoothly.
   - Test presentation setup.
 - **Extra Credit**: 5 points for attending another presentation and asking questions.
