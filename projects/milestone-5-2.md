@@ -10,7 +10,7 @@ description: Project demonstration and presentation to stakeholders
 ## Overview
 
 > In this milestone, your group will deliver a **10-minute in-person presentation** to showcase your {span .text-gradient-todo}`**To-Do List**` project. Treat this as a professional client presentation where you demonstrate your team’s work, communication, and engineering quality.  
-> Focus on clearly explaining your project’s purpose, design, implementation, and testing. Highlight your **most outstanding features**; the parts of the project you are most proud of, and show how your engineering practices (e.g., **testing**, **robustness (try-catch)**, and **code smell removal**) contributed to a high-quality product.
+> Focus on clearly explaining your project’s purpose, design, implementation, and testing. Highlight your **most outstanding features**; the parts of the project you are most proud of, and show how your engineering practices (e.g., **testing**, **robustness (try-catch)**, code architecture, design patterns, design principles, code quality, UI/UX, etc.) contributed to a high-quality product.
 
 By completing this milestone, your team will demonstrate both the technical depth and professional polish of your work.
 
@@ -42,7 +42,7 @@ Your slides should be well-structured, visual, and concise. Include the followin
 - **Project Overview:** Purpose, audience, and main problem solved.  
 - **Outstanding Features:** Highlight unique or technically challenging aspects that make your project stand out.  
 - **Development Process:** Planning, requirements, UML diagrams, and wireframes.  
-- **Engineering Practices:** Design principles, patterns, **testing**, **robustness**, and **code smell removal**.  
+- **Engineering Practices:** Design principles, patterns, **testing**, **robustness**, 
 - **Demo Plan:** What you will show live and how it demonstrates the project’s reliability.  
 - **Future Enhancements:** Potential improvements, scalability ideas, or new features.
 
