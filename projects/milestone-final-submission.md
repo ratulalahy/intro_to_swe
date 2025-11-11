@@ -41,7 +41,7 @@ Upon successful completion of this milestone, you will be able to:
 
 Review your project for any incomplete or pending items and finalize them.
 
-- Address any unfinished code, features, or bug fixes from previous milestones.
+- Address any unfinished code, **features**, or **bug fixes** from previous milestones.
 
 - Update and complete all documentation, diagrams, and artifacts that were drafted but not finalized.
 
@@ -49,7 +49,7 @@ Review your project for any incomplete or pending items and finalize them.
 
 - Verify that all aspects (e.g., UI, backend, testing) are cohesive and ready for final submission.
 
-Document these completions in `/task_manager_app/docs/final_completions.md`:
+Document these completions in `/task_manager_app/docs/final_completions.md` _(short but clear_)_:
 
   - List of unfinished items addressed.
 
@@ -63,7 +63,7 @@ Perform a final cleanup pass on your project. Refactor any parts that feel compl
 
 - Identify **5+ code smells** and fix them (duplication, long methods, inconsistent naming, etc.).
 
-- Apply **PEP 8** styling, proper function/variable names, and consistent indentation.
+- Apply `PEP 8` or similar styling, proper function/variable names, and consistent indentation.
 
 - Add **docstrings** (`""" """`) to all public classes and functions.
 
@@ -73,7 +73,7 @@ Perform a final cleanup pass on your project. Refactor any parts that feel compl
 
 Document these updates in `/task_manager_app/docs/refactoring.md`:
 
-  - Before/After code snippets.
+  - Before/After code snippets (optional).
 
   - Description of the issue (smell) and the fix.
 
@@ -90,8 +90,6 @@ Improve system reliability by handling edge cases and unexpected errors graceful
 - Document changes in `/task_manager_app/docs/robustness.md` with:
 
   - Description of changes.
-
-  - Examples of handled exceptions.
 
 ### 4. Documentation and Repository Cleanup
 
@@ -113,11 +111,6 @@ Ensure your documentation and repo reflect your final, polished state.
 
   - Updated with final architecture diagrams or design refinements.
 
-  - Notes on testing and robustness sections.
-
-- **Docs Folder (`/task_manager_app/docs`):**
-
-  - Include all artifacts: `coverage.md`, `refactoring.md`, `robustness.md`, `final_completions.md`, `meeting_minutes/`, etc.
 
 ### 5. GitHub Release
 
@@ -133,17 +126,8 @@ Ensure your documentation and repo reflect your final, polished state.
 
   - Add screenshots or visual assets for presentation polish.
 
-### 6. Presentation Integration
 
-Ensure your presentation materials reflect the technical improvements made.
-
-- Incorporate short before/after code examples into slides (if applicable).
-
-- Emphasize your refactoring process, testing results, and design choices.
-
-- Highlight professional polish (typing, docstrings, structured repo).
-
-### 7. Individual Reflections
+### 6. Individual Reflections
 
 Submit a `.md` file via Canvas with links and reflection answers (_see [Submission Checklist](#submission-checklist)_).
 
@@ -238,27 +222,28 @@ Use checkboxes to confirm completion:
 ## Evaluation Rubric (40 Points)
 
 | Criteria                          | Points | Description |
-
 | :-------------------------------- | :------: | :----------- |
-
 | **Project Completion and Finalization** | 10 | All unfinished elements addressed; app fully functional |
-
 | **Refactoring and Code Quality**  | 10 | Code smells removed, clarity and maintainability improved |
-
 | **Robustness Improvements**       | 5 | Exception handling and resilience enhancements |
-
 | **Documentation and Readability** | 10 | README, SRS, and supporting docs are professional and complete |
-
 | **Final Release and Organization**| 5 | Clean release notes, repo structure, and polish |
 
 ---
 
 ## Resources
-
 - [Refactoring catalog](https://refactoring.com/)
 - [Code smells overview](https://refactoring.guru/refactoring/smells)
 - [Python docstrings (PEP 257)](https://peps.python.org/pep-0257/)
 - [Type hints (PEP 484)](https://peps.python.org/pep-0484/)
 - [Python exceptions](https://docs.python.org/3/tutorial/errors.html)
 
-You may extend or enhance functionality and fix bugs in this phase, provided changes are covered by tests and documented in the release notes.
+## Libraries and Tools
+- [py2puml](https://pypi.org/project/py2puml/) for generating UML diagrams from Python code.
+- [Pylint](https://pylint.pycqa.org/) for code analysis and style checking.
+- 
+
+## Readme Finalization Guide
+- [How to Write a Great README](https://www.makeareadme.com/)
+- [Awesome README Templates](https://github.com/matiassingers/awesome-readme)
+- [README.so](https://readme.so/) for easy README creation.
