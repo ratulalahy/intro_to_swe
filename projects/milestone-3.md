@@ -159,10 +159,14 @@ Confirm the refactored app functions correctly.
 - [Building GUIs with PyQt](https://realpython.com/python-pyqt-gui/)
 
 ### GUI Libraries for Python
+- [Comprehensive Guide to Python GUI Frameworks](https://fullscale.io/blog/python-gui-frameworks/)
+- **Kivy**: For cross-platform, touch-friendly apps. Tutorial: [Kivy Crash Course](https://kivy.org/doc/stable/tutorials/crashcourse.html)
+- **KivyMD**: For building cross-platform apps with Kivy. Tutorial: [KivyMD Docs](https://kivymd.readthedocs.io/en/latest/)
+- **streamlit**: For data apps and dashboards. Tutorial: [Streamlit Docs](https://docs.streamlit.io/get-started)
+- **PySimpleGUI**: Simplified GUI creation. Tutorial: [PySimpleGUI Docs](https://realpython.com/pysimplegui-python/)
 - **Tkinter**: Built-in, simple for basic GUIs. Tutorial: [Official Docs](https://docs.python.org/3/library/tkinter.html)
 - **PyQt**: More advanced, feature-rich. Tutorial: [PyQt6 Tutorial](https://www.pythonguis.com/pyqt6/)
-- **Kivy**: For cross-platform, touch-friendly apps. Tutorial: [Kivy Crash Course](https://kivy.org/doc/stable/tutorials/crashcourse.html)
-- [Comprehensive Guide to Python GUI Frameworks](https://fullscale.io/blog/python-gui-frameworks/)
+
 
 ### Best Practices
 

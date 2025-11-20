@@ -7,11 +7,11 @@ description: Refactor code, improve robustness and typing, organize the reposito
 
 ## Overview
 
-You’ve validated your {span .text-gradient-todo}`**To-Do List**` app through rigorous testing—now it’s time to **refine, polish, and present your final product**.  
+You’ve validated your {span .text-gradient-todo}`**To-Do List**` app through rigorous testing, now it’s time to **refine, polish, and present your final product**.  
 
 This milestone is all about **engineering excellence**: completing any unfinished aspects of the project, refactoring code for clarity and maintainability, improving robustness through exception handling, enhancing documentation, and ensuring your repository is clean, readable, and professional.  
 
-You’ll also finalize your GitHub release, README, and documentation artifacts, ensuring everything reflects the quality of your software engineering journey. The result should be a product that not only *works* but also *feels production-ready*—organized, well-documented, and robust.
+You’ll also finalize your GitHub release, **README**, and documentation artifacts, ensuring everything reflects the quality of your software engineering journey. The result should be a product that not only *works* but also *feels production-ready*, organized, well-documented, and robust.
 
 ---
 
@@ -49,13 +49,6 @@ Review your project for any incomplete or pending items and finalize them.
 
 - Verify that all aspects (e.g., UI, backend, testing) are cohesive and ready for final submission.
 
-Document these completions in `/task_manager_app/docs/final_completions.md` _(short but clear_)_:
-
-  - List of unfinished items addressed.
-
-  - Brief descriptions of changes made.
-
-  - Links to relevant commits or updated files.
 
 ### 2. Code Refactoring and Quality Improvements
 
@@ -71,13 +64,6 @@ Perform a final cleanup pass on your project. Refactor any parts that feel compl
 
 - Simplify and modularize any overly long code blocks.
 
-Document these updates in `/task_manager_app/docs/refactoring.md`:
-
-  - Before/After code snippets (optional).
-
-  - Description of the issue (smell) and the fix.
-
-  - Justification of improvement.
 
 ### 3. Robustness and Exception Handling
 
@@ -87,9 +73,7 @@ Improve system reliability by handling edge cases and unexpected errors graceful
 
 - Log or print user-friendly error messages.
 
-- Document changes in `/task_manager_app/docs/robustness.md` with:
-
-  - Description of changes.
+- Document robustness of your app in `/task_manager_app/docs/robustness.md` with
 
 ### 4. Documentation and Repository Cleanup
 
@@ -109,22 +93,30 @@ Ensure your documentation and repo reflect your final, polished state.
 
 - **SRS (`/task_manager_app/docs/srs.md`):**
 
-  - Updated with final architecture diagrams or design refinements.
+  - Updated with final architecture diagrams or design refinements. _(if time permits)_
 
 
-### 5. GitHub Release
+### 5. Logging
 
-- Create a **final release** (`v6.0`, tagged `final-submission`), summarizing:
+Add meaningful **logging** throughout your application to improve debuggability, traceability, and runtime visibility.
 
-  - Key improvements, completions, and refactoring efforts.
+- Use structured, consistent log messages across the project.
+- Log key events such as:
+  - Application startup and shutdown
+  - Database operations
+  - Errors, exceptions, and unexpected conditions
+  - Important user actions or state changes
+- Ensure logs differentiate between levels (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`).
+- Keep logs readable, concise, and helpful for debugging and maintenance.
 
+### 6. GitHub Release
+
+Create a **final release** (`v6.0`, tagged `final-submission`), and release notes summarizing:
+  - Known limitations
+  - Identified bugs
+  - Future work
   - Robustness and code smell fixes.
-
-  - Coverage and test outcomes.
-
-  - Link all documentation (coverage, refactoring, SRS, etc.).
-
-  - Add screenshots or visual assets for presentation polish.
+  - Summary of final improvements  
 
 
 ### 6. Individual Reflections
@@ -177,29 +169,22 @@ All documents must be up to date, committed, and linked in your final release.
 
 Use checkboxes to confirm completion:
 
-- [ ] **Final Completions Log** (`/task_manager_app/docs/final_completions.md`)  
+- [ ] **Updated README.md** (root)  
 
-  - Unfinished items addressed with descriptions.
+  - Clear, professional overview, visuals, and setup guide.
 
 - [ ] **Refactoring Log** (`/task_manager_app/docs/refactoring.md`)  
 
-  - Smells identified, fixes, before/after examples.
+  - Smells identified, fixes.
 
 - [ ] **Robustness Improvements** (`/task_manager_app/docs/robustness.md`)  
 
   - Error handling additions and justifications.
 
-- [ ] **Updated SRS** (`/task_manager_app/docs/srs.md`)  
+- [ ] **Updated SRS** (`/task_manager_app/docs/srs.md`)  (_if time permits_) 
 
   - Final testing and robustness details.
 
-- [ ] **Updated README.md** (root)  
-
-  - Clear, professional overview, visuals, and setup guide.
-
-- [ ] **Coverage Report** (`/task_manager_app/docs/coverage.md`)  
-
-  - Linked and updated from Milestone 5.1.
 
 - [ ] **Meeting Minutes** (`/task_manager_app/docs/meeting_minutes/milestone_5/`)  
 
@@ -209,13 +194,12 @@ Use checkboxes to confirm completion:
 
 ### GitHub Releases
 
-  - [ ] Final Release (`v6.0`)  
+  - [ ] Final Release (`v6.0`)  with release notes.
 
-  - [ ] All documents linked in release notes  
 
 ### GitHub Project Board
 
-  - [ ] All tasks marked completed with clear traceability  
+  - [ ] Updated project board reflecting final tasks and completion status.
 
 ---
 
@@ -226,7 +210,7 @@ Use checkboxes to confirm completion:
 | **Project Completion and Finalization** | 10 | All unfinished elements addressed; app fully functional |
 | **Refactoring and Code Quality**  | 10 | Code smells removed, clarity and maintainability improved |
 | **Robustness Improvements**       | 5 | Exception handling and resilience enhancements |
-| **Documentation and Readability** | 10 | README, SRS, and supporting docs are professional and complete |
+| **Documentation and Readability** | 10 | **README**, and supporting docs are professional and complete |
 | **Final Release and Organization**| 5 | Clean release notes, repo structure, and polish |
 
 ---
@@ -241,9 +225,11 @@ Use checkboxes to confirm completion:
 ## Libraries and Tools
 - [py2puml](https://pypi.org/project/py2puml/) for generating UML diagrams from Python code.
 - [Pylint](https://pylint.pycqa.org/) for code analysis and style checking.
-- 
 
 ## Readme Finalization Guide
 - [How to Write a Great README](https://www.makeareadme.com/)
 - [Awesome README Templates](https://github.com/matiassingers/awesome-readme)
 - [README.so](https://readme.so/) for easy README creation.
+
+## Tutorials
+- [Youtube: Python Logging: How to Write Logs Like a Pro!](https://www.youtube.com/watch?v=pxuXaaT1u3k)
