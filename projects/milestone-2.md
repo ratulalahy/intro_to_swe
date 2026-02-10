@@ -48,7 +48,7 @@ Transform your initial feature list into actionable, user-focused items.
 
 Develop a formal **Software Requirements Specification (SRS)** to document your system's intended functionality and constraints.
 
-- Use the [SRS template](https://github.com/jam01/SRS-Template/blob/master/template.md) as your structural guide. Modify or omit sections only if clearly justified.
+- Use the [SRS template](https://github.com/jam01/SRS-Template/blob/master/srs-template.md) as your structural guide. Modify or omit sections only if clearly justified.
 - Complete the SRS based on what you have developed so far in **Milestone 1 (vision, backlog, roles)** and **Current Milestone (user stories, UML diagrams, MVP design)**.
 - Your initial SRS should include:
 
@@ -168,7 +168,6 @@ Focus on core functionality for a testable prototype.
 - [Writing Effective User Stories](https://www.atlassian.com/agile/agile-at-scale/user-stories)
 - [draw.io for UML](https://www.drawio.com/doc/faq/uml-diagrams)
 - [Planning Poker Guide](https://www.mountaingoatsoftware.com/agile/planning-poker)
-- [SRS Template](https://www.softwaretestinghelp.com/requirements-specification-srs/)
 - [Reading and Writing Files in Python](https://realpython.com/read-write-files-python/)
 
 ### CLI Enhancement Libraries (Python)
