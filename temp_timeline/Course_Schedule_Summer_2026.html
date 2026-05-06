@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering Course Schedule</title>
+    <style>
+        body {
+            background: #f8f9fa url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><g opacity="0.2" stroke="#007bff" stroke-width="1"><line x1="20" y1="20" x2="80" y2="80"/><line x1="80" y1="20" x2="20" y2="80"/><line x1="50" y1="0" x2="50" y2="100"/><line x1="0" y1="50" x2="100" y2="50"/><circle cx="25" cy="25" r="3" fill="#007bff"/><circle cx="75" cy="75" r="3" fill="#007bff"/><circle cx="25" cy="75" r="3" fill="#007bff"/><circle cx="75" cy="25" r="3" fill="#007bff"/></g></svg>') repeat;
+            background-size: 100px 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px 40px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 40px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            background: linear-gradient(145deg, rgba(0, 123, 255, 0.85), rgba(81, 81, 239, 0.65));
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 0 0 25px 25px;
+            margin: 0 auto 30px;
+            max-width: 700px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba(255, 255, 255, 0.15);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .banner:hover {
+            transform: translateY(2px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: -30%;
+            width: 160%;
+            height: 160%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 15%, transparent 50%);
+            opacity: 0.4;
+            animation: liquidFlow 12s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        .banner::after {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 60%);
+            opacity: 0.3;
+            animation: liquidFlowReverse 10s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        @keyframes liquidFlow {
+            0% {
+                transform: translate(0, 0) scale(1) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(20%, 20%) scale(1.2) rotate(45deg);
+            }
+
+            100% {
+                transform: translate(0, 0) scale(1) rotate(0deg);
+            }
+        }
+
+        @keyframes liquidFlowReverse {
+            0% {
+                transform: translate(0, 0) scale(1) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-15%, -15%) scale(1.1) rotate(-30deg);
+            }
+
+            100% {
+                transform: translate(0, 0) scale(1) rotate(0deg);
+            }
+        }
+
+        .banner h1 {
+            font-size: 1.8em;
+            margin: 0 0 5px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .banner p {
+            margin: 2px 0;
+            font-size: 0.9em;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+
+        .banner a {
+            color: #e0e7ff;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s, background 0.3s;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        .banner a:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                padding: 10px;
+                border-radius: 0 0 20px 20px;
+                max-width: 90%;
+            }
+
+            .banner h1 {
+                font-size: 1.6em;
+            }
+
+            .banner p {
+                font-size: 0.85em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                padding: 8px;
+                border-radius: 0 0 15px 15px;
+            }
+
+            .banner h1 {
+                font-size: 1.4em;
+            }
+
+            .banner p {
+                font-size: 0.8em;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #6c757d;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            background-color: #ffffff;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 8px;
+            min-width: 900px;
+        }
+
+        th,
+        td {
+            padding: 15px 20px;
+            text-align: left;
+            background-color: #ffffff;
+            border: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #6aadf4;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        tr td:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        tr td:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .topic-cell {
+            font-weight: bold;
+            color: #212529;
+        }
+
+        .milestone-row td {
+            background-color: #e5d5ff;
+            font-weight: bold;
+            color: #000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .midterm-row td,
+        .final-row td {
+            background-color: #ffb1b1 !important;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .holiday-row td {
+            background-color: #fff9c4 !important;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+            color: #f57c00;
+        }
+
+        /* Cohesive Color Palette - Blues to Purples Gradient */
+        .intro {
+            background-color: #ffffff;
+        }
+
+        .version-control {
+            background-color: #a8d8f9;
+        }
+
+        .sdlc-agile {
+            background-color: #caee90;
+        }
+
+        .requirements {
+            background-color: #b9f1ff;
+        }
+
+        .ui-arch {
+            background-color: #f8bae9;
+        }
+
+        .design-principles {
+            background-color: #f5ff9a;
+        }
+
+        .design-patterns {
+            background-color: #f5ff9a;
+        }
+
+        .testing {
+            background-color: #f4a460;
+        }
+
+        .refactor-secure {
+            background-color: #d3d3d3;
+        }
+
+        .devops-ai {
+            background-color: #caee90;
+        }
+
+        .presentation {
+            background-color: #e5d5ff;
+        }
+
+        .review {
+            background-color: #e5d5ff;
+        }
+
+        table tr:hover {
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(100, 50, 200, 0.1));
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2), inset 0 0 0 2px rgba(0, 123, 255, 0.3);
+            border-radius: 8px;
+            transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        table tr:hover td {
+            background: transparent !important;
+            /* Override individual cell backgrounds */
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        ul {
+            margin: 0 0 10px 0;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        .date-cell {
+            white-space: nowrap;
+            font-size: 0.9em;
+        }
+
+        .date-cell small {
+            display: block;
+            color: #dc3545;
+            font-style: italic;
+        }
+
+        .holiday-note {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                border-spacing: 0 5px;
+            }
+
+            th,
+            td {
+                padding: 10px 12px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1 style="color: #ffffff; text-shadow: #192477 2px 1px 2px;">Software Engineering I (CS 2450)</h1>
+        <p style="color: #00843D; text-shadow: #01160b 0.5px 0px 0px;">Utah Valley University - Summer 2026</p>
+        <p>Instructor: Ratul (<a href="mailto:qratul@uvu.edu">qratul@uvu.edu</a>)</p>
+    </div>
+    <h2>Classes Begin: May 6, 2026 | Classes End: Aug 7, 2026 | Final: Last Day of Class</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Dates</th>
+                    <th>Topics</th>
+                    <th>Lectures/Details (Key Points)</th>
+                    <th>Reading</th>
+                    <th>Project Milestones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="date-cell">May 6-10<br><small>(Classes start Wed May 6)</small></td>
+                    <td class="topic-cell intro">Introduction to Software Engineering</td>
+                    <td>
+                        <ul>
+                            <li>Course syllabus, grading, resources</li>
+                            <li>SE definition/scope; historical evolution (software crisis, milestones) </li>
+                            <li>SE principles vs. programming (processes, teamwork, quality)</li>
+                            <li>Industry role (scalability, maintainability, ethics).</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter1.html">Chapter 1: Introduction</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="date-cell">May 11-17</td>
+                    <td class="topic-cell version-control">Version Control with Git and GitHub</td>
+                    <td>
+                        <ul>
+                            <li> <a href="https://git-scm.com/">git</a> fundamentals (repos, commits, branches, staging
+                                area)</li>
+                            <li> <a href="https://github.com/">GitHub</a> features (remotes, PRs, issues, collaboration,
+                                actions)</li>
+                            <li>Advanced (merges, rebase, conflicts, tags/releases)</li>
+                            <li>Best practices (commit messages, branching models like Git Flow, .gitignore)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapterAp.html">Appendix: Git</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="date-cell">May 18-24</td>
+                    <td class="topic-cell sdlc-agile">SDLC, Agile Scrum, and Project Management with GitHub Project</td>
+                    <td>
+                        <ul>
+                            <li>SDLC models (Waterfall phases/pros/cons, Agile iterative/Manifesto, XP practices)</li>
+                            <li>Scrum framework (sprints, roles - PO/SM/Team, ceremonies -
+                                planning/standup/review/retrospective, artifacts - backlogs/burndowns)</li>
+                            <li> <a href="https://github.com/features/issues">GitHub Project</a> (boards, epics, task tracking,
+                                GitHub integration for issues/PRs/labels)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter2.html">Chapter 2: Processes</a></td>
+                    <td></td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="6">Milestone 1: Project Launch and Setup (Weeks 4-5: May 25-Jun 7) – Using Weeks 1-3
+                        topics: Team roles/rotation, vision statement, initial backlog (10+ stories), Git/GitHub Project setup,
+                        draft plan/timeline. Mid-check (Week 4 end): Team doc/backlog drafts. Important: Establish
+                        branching strategy, communication plan; reflection on Agile application.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="date-cell">May 25-31<br><small class="holiday-note">Holiday: Memorial Day (Mon May 25)</small></td>
+                    <td class="topic-cell requirements">Requirements Engineering I</td>
+                    <td>
+                        <ul>
+                            <li>High-level analysis (stakeholders, goals elicitation techniques)</li>
+                            <li>Low-level (user stories format/prioritization, use cases/text/diagrams,
+                                functional/non-functional classification, SRS structure/template)</li>
+                            <li>UML intro (purpose, notation for use case/class diagrams, tools like draw.io)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter3.html">Chapter 3: Requirements</a></br><a
+                            href="https://softengbook.org/chapter4.html">Chapter 4: Models</a></td>
+                    <td>Milestone 1 Ongoing</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="date-cell">Jun 1-7</td>
+                    <td class="topic-cell requirements">Requirements Engineering II</td>
+                    <td>
+                        <ul>
+                            <li>MVP selection (core features, validation methods)</li>
+                            <li>A/B testing (hypothesis/design/analysis)</li>
+                            <li>Planning poker (estimation process, consensus building)</li>
+                            <li>UML expansion (class diagram - attributes/methods/relationships for CLI MVP design)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter3.html">Chapter 3: Requirements</a><br><a
+                            href="https://softengbook.org/chapter4.html#class-diagrams">Chapter 4: Models (Class
+                            Diagrams)</a></td>
+                    <td>Milestone 1 Final Due (End of Week 5)</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="6">Milestone 2: Requirements & MVP (Weeks 6-7: Jun 8-21) – Using Weeks 4-5 topics:
+                        SRS (functional/non-functional), 15+ user stories, use case diagrams, CLI-based MVP in Python
+                        (e.g., task management features), basic tests (3-5). Mid-check (Week 6 end): SRS/user stories
+                        drafts. Important: UML class/use case integration; reflection on MVP validation.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="date-cell">Jun 8-14</td>
+                    <td class="topic-cell ui-arch">UI Design and Architecture</td>
+                    <td>
+                        <ul>
+                            <li>GUI concepts (usability principles, UX elements, interface design guidelines)</li>
+                            <li>Wireframes/mockups/prototypes (creation tools, iteration for user feedback)</li>
+                            <li>Architectures (Layered design - separation of concerns, MVC - Model data/View
+                                UI/Controller logic, examples in Python)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter7.html">Chapter 7: Architecture</a></td>
+                    <td>Milestone 2 Ongoing</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="date-cell">Jun 15-21<br><small class="holiday-note">Holiday: Juneteenth (Fri Jun 19)</small></td>
+                    <td class="topic-cell design-principles">Design Principles</td>
+                    <td>
+                        <ul>
+                            <li>Conceptual integrity (unified vision, consistency across modules)</li>
+                            <li>Information hiding (abstraction/modularity benefits)</li>
+                            <li>Cohesion (high for focused responsibilities)</li>
+                            <li>Coupling (low for independence/reusability)</li>
+                            <li>SOLID principles</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter5.html">Chapter 5: Design Principles</a></td>
+                    <td>Milestone 2 Final Due (End of Week 7)</td>
+                </tr>
+                <tr class="midterm-row">
+                    <td colspan="6">Midterm Exam (Approx. during Week 8: Jun 22-28)</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="6">Milestone 3: Modeling & Architecture (Weeks 8-9: Jun 22-Jul 5) – Using Weeks 6-7 topics:
+                        Wireframes/mockups, MVC code setup, SOLID application to MVP, manual validation scenarios (5+).
+                        Mid-check (Week 8 end): Wireframes/MVC drafts. Reflection on code improvements from principles.
+                        Important: Integrate UI prototypes with architecture; ensure modularity.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="date-cell">Jun 22-28</td>
+                    <td class="topic-cell design-patterns">Design Patterns I</td>
+                    <td>
+                        <ul>
+                            <li>Factory (abstract creation, simple/abstract/method types, when to use for flexibility)
+                            </li>
+                            <li>Singleton (ensure single instance, lazy/eager initialization, thread-safety)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter6.html">Chapter 6: Design Patterns</a></td>
+                    <td>Milestone 3 Ongoing</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="date-cell">Jun 29-Jul 5<br><small class="holiday-note">Holiday: Independence Day (Fri Jul 3)</small></td>
+                    <td class="topic-cell design-patterns">Design Patterns II</td>
+                    <td>
+                        <ul>
+                            <li>Adapter (interface compatibility, object/class adapters, legacy integration)</li>
+                            <li>Command (encapsulate requests as objects, invoker/receiver roles, undo/redo support)</li>
+                            <li>Strategy - Bonus (algorithm families, context/strategy interface, runtime swapping)</li>
+                            <li>Pattern review (trade-offs, combinations like Factory with Strategy)</li>
+                            <li>Application guidelines (when to apply/avoid, common pitfalls in OO design)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter6.html">Chapter 6: Design Patterns</a></td>
+                    <td>Milestone 3 Final Due (End of Week 9)</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="6">Milestone 4: Design Patterns & Feature Integration (Weeks 10-11: Jul 6-19) –
+                        Using Weeks 8-9 topics: Adopt 3-5 patterns to 3-7 backlog features, enhance with prior
+                        principles/architecture/UI, 10+ tests. Mid-check (Week 10 end): Pattern/feature drafts.
+                        Reflection on design improvements. Important: Ensure patterns fit naturally; integrate with
+                        MVC/SOLID.</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="date-cell">Jul 6-12</td>
+                    <td class="topic-cell testing">Testing</td>
+                    <td>
+                        <ul>
+                            <li>Unit testing (isolated components, assertions/mocks)</li>
+                            <li>Integration testing (module interactions, stubs)</li>
+                            <li>TDD cycle (red-green-refactor process)</li>
+                            <li>Tools (pytest/unittest setup)</li>
+                            <li>Test coverage (statement/branch metrics, tools like coverage.py for analysis)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter8.html">Chapter 8: Testing</a></td>
+                    <td>Milestone 4 Ongoing</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="date-cell">Jul 13-19</td>
+                    <td class="topic-cell refactor-secure">Refactoring, Clean Code & Secure Coding</td>
+                    <td>
+                        <ul>
+                            <li>Refactoring techniques (extract method/class, rename, inline temp)</li>
+                            <li>Code smells (duplication, long methods, large classes - detection/fixes)</li>
+                            <li>Clean code practices (meaningful naming, small single-responsibility functions, minimal
+                                effective comments, consistent formatting, robust error handling)</li>
+                            <li><strong>Secure Coding Principles:</strong> Input validation/sanitization, OWASP Top 10 awareness,
+                                authentication/authorization basics, dependency security</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter9.html">Chapter 9: Refactoring</a></td>
+                    <td>Milestone 4 Final Due (End of Week 11)</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="6">Milestone 5 (<b>mini Milestone</b>): DevOps, AI & Final Integration (Week 12: Jul 20-26) – Using
+                        Weeks 10-11 topics: Comprehensive tests (20+, 80%+ coverage for features/patterns), refactor
+                        code smells, security audit. DevOps CI/CD setup (GitHub Actions), AI ethics documentation. Prepare presentation materials.</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="date-cell">Jul 20-26<br><small class="holiday-note">Holiday: Pioneer Day (Fri Jul 24)</small></td>
+                    <td class="topic-cell devops-ai">DevOps, AI Ethics & Critical Revision</td>
+                    <td>
+                        <ul>
+                            <li>DevOps fundamentals (CI/CD pipelines, GitHub Actions, automated testing)</li>
+                            <li><strong>AI in Software Engineering:</strong> AI code assistants (Copilot, ChatGPT), ethical implications
+                                (bias, privacy, accountability), documenting AI assistance</li>
+                            <li>UML review (refinements, errors in diagrams)</li>
+                            <li>Agile real-world (scaling teams, hybrid models, common challenges like remote
+                                collaboration)</li>
+                        </ul>
+                    </td>
+                    <td><a href="https://softengbook.org/chapter10.html">Chapter 10: DevOps</a> </br><a
+                            href="https://softengbook.org/chapter4.html">Chapter 4: Models</a></td>
+                    <td>Milestone 5 Final Due (End of Week 12)</td>
+                </tr>
+                <tr>
+                    <td class="presentation">13</td>
+                    <td class="date-cell presentation">Jul 27-Aug 2</td>
+                    <td class="topic-cell presentation">Project Presentations</td>
+                    <td class="topic-cell presentation">
+                        <ul>
+                            <li>Project Presentations (intro/demo/design/metrics/Q&A)</li>
+                            <li>Peer evaluations and feedback</li>
+                            <li>Kanban methodology (if time allows)</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                    <td>Present Projects</td>
+                </tr>
+                <tr class="milestone-row">
+                    <td colspan="6">Final Polish (Week 14: Aug 3-7) – Address issues/code smells from presentation feedback,
+                        reorganize README/docs/folders, add missing content (e.g., consolidated diagrams). Important: No
+                        new features; focus on fixes/maintainability; reflection on overall process improvements.</td>
+                </tr>
+                <tr>
+                    <td class="review">14</td>
+                    <td class="date-cell review">Aug 3-7<br><small>(Last week of classes)</small></td>
+                    <td class="topic-cell review">Review & Final Exam</td>
+                    <td class="topic-cell review">
+                        <ul>
+                            <li>Comprehensive course review</li>
+                            <li>Final exam preparation and Q&A</li>
+                            <li>Key concepts recap across all topics</li>
+                            <li>Final Exam on last day of class</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="final-row">
+                    <td colspan="6">Final Exam (Last Day of Class - Aug 7, 2026)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2026 Software Engineering I (CS 2450) | <a href="https://www.uvu.edu">Utah Valley University</a> | Instructor:
+        Ratul (<a href="mailto:qratul@uvu.edu">qratul@uvu.edu</a>)
+    </p>
+
+</footer>
+</html>
